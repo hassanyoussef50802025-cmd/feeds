@@ -10,8 +10,10 @@
  *   &debug=1                 إرجاع JSON بالمقالات المستخرجة بدل RSS (للتجربة)
  * وكل عنصر يحصل على pubDate؛ وإن غاب تاريخ في الصفحة يُقرأ من صفحة الخبر نفسها.
  *
- * نسخة 11: فكّ ترميز الصفحات القديمة (windows-1256 وغيرها) — تُقرأ الصفحة كبايتات
- * ثم تُفكّ بالترميز الصحيح، فتظهر العناوين العربية سليمة بدل رموز مشوّهة.
+ * نسخة 12: فكّ ترميز الصفحات القديمة (windows-1256 وغيرها) — تُقرأ الصفحة كبايتات ثم تُفكّ
+ * بالترميز الصحيح، فتظهر العناوين العربية سليمة بدل رموز مشوّهة؛ وتُقدَّم واجهة ووردبريس
+ * عندما تكون خلاصة الموقع الأصلية قصيرة جدًا (١٠ عناصر مثلًا)؛ وأُضيف مصدر «ريادي» إلى
+ * القائمة المدمجة (feed-riadynews-com-1nw2k).
  *
  * يعمل بلا أي واجهة ولا حساب: عند كل طلب يتفحص الصفحة ويعيد خلاصة RSS محدّثة،
  * وذاكرة مؤقتة 10 دقائق تخفّف الضغط. لا صفحة ولا تبويب مفتوح ولا رجوع لأي مكان.
@@ -1222,19 +1224,29 @@ async function buildFeed(targetUrl, selfUrl, params) {
 
   const base = new URL(finalUrl);
 
-  // Native declared feed? Prefer it (self-updating, complete, real dates).
+  // Native declared feed? Prefer it (self-updating, complete, real dates) — unless it is clearly
+  // shorter than what the site's WordPress REST API can give us: many WordPress feeds carry only
+  // ~10 items, and a site's own XML is sometimes exactly what a reader chokes on, so a fuller
+  // generated feed is the better answer then. A thin native feed is still our fallback when REST
+  // is unavailable.
+  let native = null;
   const declared = declaredFeedUrls(pageText, finalUrl);
   for (const u of declared.slice(0, 3)) {
     const f = await fetchWithFallback(u, 12000);
     if (f.ok && looksLikeFeed(f.text)) {
       const isAtom = /<feed[\s>]/i.test(f.text.slice(0, 800));
-      return { passthrough: f.text, type: isAtom ? "application/atom+xml" : "application/rss+xml" };
+      const count = (f.text.match(/<item[\s>]/g) || []).length + (f.text.match(/<entry[\s>]/g) || []).length;
+      if (count >= 15) {
+        return { passthrough: f.text, type: isAtom ? "application/atom+xml" : "application/rss+xml" };
+      }
+      native = { xml: f.text, atom: isAtom, count };
+      break;
     }
   }
 
   // WordPress REST (cheap, exact dates).
   const wp = await tryWordPress(finalUrl);
-  if (wp && wp.items.length >= 3) {
+  if (wp && wp.items.length >= 3 && (!native || wp.items.length > native.count + 5)) {
     const items = wp.items.slice(0, limit);
     applyPrevDates(items);
     fillMissingDates(items);
@@ -1245,6 +1257,9 @@ async function buildFeed(targetUrl, selfUrl, params) {
       pageUrl: finalUrl
     };
   }
+
+  // The declared feed was thin and REST gave us nothing better: publish the site's own feed.
+  if (native) return { passthrough: native.xml, type: native.atom ? "application/atom+xml" : "application/rss+xml" };
 
   // Generic DOM extraction.
   const root = parseHTML(pageText);
@@ -1344,7 +1359,8 @@ const LIST_URL = "https://editable.uploads.dev/file/qsswnafa2z/rss-feeds-list";
 
 const FEEDS = [
   { name: "mugtama", url: "https://mugtama.com/", title: "مجتمع" },
-  { name: "mobizil", url: "https://www.mobizil.com/", title: "موبيزل" }
+  { name: "mobizil", url: "https://www.mobizil.com/", title: "موبيزل" },
+  { name: "feed-riadynews-com-1nw2k", url: "https://riadynews.com/", title: "ريادي" }
 ];
 
 function sanitizeName(n) {
