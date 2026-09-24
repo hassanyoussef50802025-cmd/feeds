@@ -915,7 +915,25 @@ function xmlEsc(s) {
 
 function cdata(s) { return String(s || "").replace(/]]>/g, "]]&gt;"); }
 
+/* Some pages print local time (e.g. Cairo, +2/+3) with no timezone, so a whole page's dates can
+   land in the future; readers then hide those items. If the newest item is in the future, shift
+   every date back by the same offset (relative order preserved) so the newest sits just before now. */
+function fixFutureDates(items) {
+  let maxT = 0;
+  for (const it of items) { const t = Date.parse(it.date || ""); if (isFinite(t) && t > maxT) maxT = t; }
+  const now = Date.now();
+  if (!maxT || maxT <= now + 120000) return 0;
+  const delta = maxT - now + 60000;
+  for (const it of items) {
+    const t = Date.parse(it.date || "");
+    if (isFinite(t)) it.date = new Date(t - delta).toUTCString();
+  }
+  return delta;
+}
+
 function buildRssXml(opts) {
+  const shifted = fixFutureDates(opts.items || []);
+  if (shifted) console.log("   ملاحظة: أُرجعت تواريخ " + (opts.items || []).length + " عنصرًا إلى الوراء بمقدار " + Math.round(shifted / 60000) + " دقيقة (توقيت الموقع كانت متقدّمًا).");
   const L = [];
   L.push('<?xml version="1.0" encoding="UTF-8"?>');
   L.push('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">');
@@ -1139,10 +1157,11 @@ async function scrapeWithRetry(url) {
 }
 
 async function run() {
-  const { mkdir, writeFile, rm, readdir, stat } = await import("node:fs/promises");
+  const { mkdir, writeFile, rm, readdir } = await import("node:fs/promises");
   const root = new URL("./feeds/", import.meta.url);
   await mkdir(root, { recursive: true });
   const { list: feeds, fromTool } = await loadFeedList();
+  const written = new Set();
   let ok = 0, fail = 0;
   for (const f of feeds) {
     try {
@@ -1150,6 +1169,7 @@ async function run() {
       if (out && out.error) {
         console.error("✗ " + f.name + ": " + out.error);
         await writeFile(new URL(f.name + ".error.txt", root), out.error, "utf8");
+        written.add(f.name + ".error.txt");
         fail++;
         continue;
       }
@@ -1168,13 +1188,14 @@ async function run() {
         });
       }
       await writeFile(new URL(f.name + ".xml", root), xml, "utf8");
+      written.add(f.name + ".xml");
       await rm(new URL(f.name + ".error.txt", root), { force: true });
       console.log("✓ " + f.name + ": " + (out.passthrough ? "خلاصة أصلية" : (out.items ? out.items.length : 0) + " عنصرًا"));
       ok++;
     } catch (e) {
       const msg = "استثناء: " + (e && e.message ? e.message : String(e));
       console.error("✗ " + f.name + ": " + msg);
-      try { await writeFile(new URL(f.name + ".error.txt", root), msg, "utf8"); } catch (e2) {}
+      try { await writeFile(new URL(f.name + ".error.txt", root), msg, "utf8"); written.add(f.name + ".error.txt"); } catch (e2) {}
       fail++;
     }
   }
@@ -1183,13 +1204,10 @@ async function run() {
       const keep = new Set();
       for (const f of feeds) { keep.add(f.name + ".xml"); keep.add(f.name + ".error.txt"); }
       const files = await readdir(root);
-      const cutoff = Date.now() - 60 * 60 * 1000;
       for (const file of files) {
         if (!/\.xml$/.test(file) && !/\.error\.txt$/.test(file)) continue;
-        if (keep.has(file)) continue;
+        if (keep.has(file) || written.has(file)) continue;
         try {
-          const st = await stat(new URL(file, root));
-          if (st.mtimeMs > cutoff) continue;
           await rm(new URL(file, root), { force: true });
           console.log("حذفت ملفًا قديمًا: " + file);
         } catch (e) {}
