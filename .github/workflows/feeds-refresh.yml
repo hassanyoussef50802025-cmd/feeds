@@ -1,9 +1,8 @@
 name: feeds-refresh
 on:
-  schedule:
-    - cron: "4,14,24,34,44,54 * * * *"
   workflow_dispatch:
 permissions:
+  actions: write
   contents: write
 jobs:
   refresh:
@@ -14,8 +13,10 @@ jobs:
         with:
           node-version: "20"
       - name: run scraper
+        continue-on-error: true
         run: node scrape.mjs
       - name: commit and push
+        continue-on-error: true
         run: |
           git config user.name "rss-bot"
           git config user.email "rss-bot@users.noreply.github.com"
@@ -27,3 +28,33 @@ jobs:
             git pull --rebase --autostash
             git push
           fi
+      - name: wait before next refresh
+        env:
+          RUN_NUMBER: ${{ github.run_number }}
+        run: |
+          WAIT=600
+          if [ "$RUN_NUMBER" -le 2 ]; then WAIT=45; fi
+          echo "waiting ${WAIT}s before the next refresh"
+          sleep "$WAIT"
+      - name: dispatch next run
+        if: always()
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          API="https://api.github.com/repos/${REPO}/actions/workflows/feeds-refresh.yml"
+          AUTH="Authorization: Bearer ${TOKEN}"
+          ACTIVE=$(curl -sS -H "$AUTH" -H "Accept: application/vnd.github+json" "${API}/runs?per_page=100" | jq --arg id "${RUN_ID}" '[.workflow_runs[] | select(.status != "completed") | select((.id|tostring) != $id)] | length')
+          if [ "${ACTIVE:-0}" -gt 0 ]; then
+            echo "another run is active (${ACTIVE}) - stopping this chain branch"
+            exit 0
+          fi
+          for i in 1 2 3; do
+            CODE=$(curl -sS -o /dev/null -w "%{http_code}" -X POST -H "$AUTH" -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" "${API}/dispatches" -d '{"ref":"main"}')
+            echo "dispatch attempt ${i}: HTTP ${CODE}"
+            if [ "$CODE" = "204" ]; then exit 0; fi
+            sleep 20
+          done
+          echo "failed to dispatch the next run"
+          exit 1
