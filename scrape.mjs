@@ -49,6 +49,14 @@ let PREV_DATES = new Map();
    value that is re-computed at every run and must never overwrite a known stable date. */
 let LAST_REL = false;
 
+/* v8 — تثبيت ثابت للتواريخ:
+   1) PICKED_REL: نحفظ علم "التاريخ نسبي" في لحظة نجاح التحليل داخل pickDate. في v7 كان العلم
+      يُقرأ بعد pickDate الذي يجرّب عدة نصوص متتالية، فآخر محاولة (نص البطاقة كاملًا) كانت تصفّره
+      حتى لو كان التاريخ المختار نفسه نسبيًا => لا يُثبَّت التاريخ ويعاد ختمه كل دورة.
+   2) extractAllLinks (المسار المسطح) كان يبني العناصر بدون حقل relDate إطلاقًا.
+   3) حراسة إضافية: أي تاريخ يقع داخل 20 دقيقة من وقت التشغيل يُعدّ نسبيًا ويُؤخذ من التحديث السابق. */
+let PICKED_REL = false;
+
 /* Give undated items their date from the previous run's feed, so dates don't churn every cycle. */
 function applyPrevDates(items) {
   let n = 0;
@@ -56,7 +64,9 @@ function applyPrevDates(items) {
     if (!it || !it.url) continue;
     const prev = PREV_DATES.get(it.url);
     if (!prev) continue;
-    if (!it.date || it.relDate) { it.date = prev; it.carried = true; it.approx = false; n++; }
+    const t = it.date ? Date.parse(it.date) : NaN;
+    const looksLikeNow = !isNaN(t) && Math.abs(Date.now() - t) < 20 * 60000;
+    if (!it.date || it.relDate || looksLikeNow) { it.date = prev; it.carried = true; it.approx = false; n++; }
   }
   if (n) console.log("   ثبّتنا تواريخ " + n + " عنصرًا من التحديث السابق.");
   return n;
@@ -389,24 +399,25 @@ function toRfc822(v) {
 }
 
 function pickDate(el) {
+  const take = (v) => { const d = parseDateText(v); if (d) PICKED_REL = LAST_REL; return d; };
   const t = q1(el, "time[datetime],[datetime],[data-date],[data-time],[data-timestamp]");
   if (t) {
     const v = attrOf(t, "datetime") || attrOf(t, "content") || attrOf(t, "data-date") || attrOf(t, "data-time") || attrOf(t, "data-timestamp") || textOf(t) || "";
-    const d = parseDateText(v);
+    const d = take(v);
     if (d) return d;
   }
   for (const c of qsa(el, "[class],[itemprop]")) {
     const cls = (attrOf(c, "class") || "") + " " + (attrOf(c, "itemprop") || "");
     if (!DATE_CLASS.test(cls)) continue;
     const s = attrOf(c, "title") || attrOf(c, "content") || textOf(c) || "";
-    const d = parseDateText(s);
+    const d = take(s);
     if (d) return d;
   }
   for (const e of qsa(el, "[title]")) {
-    const d = parseDateText(attrOf(e, "title") || "");
+    const d = take(attrOf(e, "title") || "");
     if (d) return d;
   }
-  return parseDateText(textOf(el) || "");
+  return take(textOf(el) || "");
 }
 
 function normText(s) { return String(s == null ? "" : s).replace(/\s+/g, " ").replace(/^[•·▪◦*\-–—|]+/, "").trim(); }
@@ -625,7 +636,7 @@ function itemsFromList(list, base, strict, limit) {
     seen.add(url);
     LAST_REL = false;
     const picked = pickDate(k);
-    const relDate = !!picked && LAST_REL;
+    const relDate = !!picked && PICKED_REL;
     items.push({
       url,
       title: title.length > 220 ? title.slice(0, 220).trim() + "…" : title,
@@ -671,6 +682,7 @@ function extractAllLinks(root, base, limit) {
       url,
       title: title.length > 220 ? title.slice(0, 220).trim() + "…" : title,
       date: toRfc822(pickDate(box)) || dateFromUrl(u),
+      relDate: PICKED_REL,
       img: pickImage(box, base),
       desc: itemSummary(box, title)
     });
