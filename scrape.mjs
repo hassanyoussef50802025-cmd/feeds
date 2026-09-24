@@ -10,6 +10,9 @@
  *   &debug=1                 إرجاع JSON بالمقالات المستخرجة بدل RSS (للتجربة)
  * وكل عنصر يحصل على pubDate؛ وإن غاب تاريخ في الصفحة يُقرأ من صفحة الخبر نفسها.
  *
+ * نسخة 11: فكّ ترميز الصفحات القديمة (windows-1256 وغيرها) — تُقرأ الصفحة كبايتات
+ * ثم تُفكّ بالترميز الصحيح، فتظهر العناوين العربية سليمة بدل رموز مشوّهة.
+ *
  * يعمل بلا أي واجهة ولا حساب: عند كل طلب يتفحص الصفحة ويعيد خلاصة RSS محدّثة،
  * وذاكرة مؤقتة 10 دقائق تخفّف الضغط. لا صفحة ولا تبويب مفتوح ولا رجوع لأي مكان.
  */
@@ -849,6 +852,57 @@ function dateNearTitle(root) {
 
 /* ============================ networking ============================ */
 
+/* ---- الترميز: مواقع عربية قديمة تُصدِّر الصفحة بترميز windows-1256 بدل UTF-8 ---- */
+
+function decodedScore(text) {
+  const s = text.length > 120000 ? text.slice(0, 120000) : text;
+  let arabic = 0, bad = 0, moji = 0;
+  for (let i = 0; i < s.length; i++) {
+    const c = s.charCodeAt(i);
+    if (c === 0xfffd) bad++;
+    else if ((c >= 0x600 && c <= 0x6ff) || (c >= 0x750 && c <= 0x77f) || (c >= 0x8a0 && c <= 0x8ff) || (c >= 0xfb50 && c <= 0xfdff) || (c >= 0xfe70 && c <= 0xfeff)) arabic++;
+    else if (c === 0xd8 || c === 0xd9 || c === 0xc3 || c === 0xc2 || c === 0x98 || c === 0x99) moji++;
+  }
+  return arabic * 2 - bad * 60 - moji * 3;
+}
+
+function decodeHtmlBytes(bytes, contentType) {
+  let strict = null;
+  try {
+    strict = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+    if (strict.charCodeAt(0) === 0xfeff) strict = strict.slice(1);
+  } catch (e) { strict = null; }
+  if (strict !== null && strict.indexOf("\uFFFD") === -1) {
+    return { text: strict, score: decodedScore(strict), label: "utf-8" };
+  }
+  const cands = [];
+  const ct = /charset\s*=\s*["']?\s*([\w.:-]+)/i.exec(contentType || "");
+  if (ct) cands.push(ct[1]);
+  try {
+    const sniff = new TextDecoder("latin1").decode(bytes.subarray(0, 4096));
+    let m = /<meta[^>]+charset\s*=\s*["']?\s*([\w.:-]+)/i.exec(sniff);
+    if (m) cands.push(m[1]);
+    m = /<\?xml[^>]+encoding\s*=\s*["']\s*([\w.:-]+)/i.exec(sniff);
+    if (m) cands.push(m[1]);
+  } catch (e) {}
+  cands.push("utf-8", "windows-1256", "iso-8859-6");
+  const seen = new Set();
+  let best = null;
+  for (const rawLabel of cands) {
+    const label = String(rawLabel || "").toLowerCase().replace(/["']/g, "").trim();
+    if (!label || seen.has(label)) continue;
+    seen.add(label);
+    let text;
+    try { text = new TextDecoder(label).decode(bytes); } catch (e) { continue; }
+    if (text.charCodeAt(0) === 0xfeff) text = text.slice(1);
+    const score = decodedScore(text);
+    const repl = (text.match(/\uFFFD/g) || []).length;
+    if (!best || repl < best.repl || (repl === best.repl && score > best.score)) best = { text, score, repl, label };
+  }
+  if (best) return best;
+  return { text: new TextDecoder("utf-8").decode(bytes), score: 0, label: "utf-8" };
+}
+
 async function fetchText(url, timeout, extraHeaders) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeout || 14000);
@@ -867,8 +921,21 @@ async function fetchText(url, timeout, extraHeaders) {
       signal: ctrl.signal,
       headers
     });
-    const text = await res.text();
-    return { ok: res.ok, status: res.status, url: res.url || url, contentType: res.headers.get("content-type") || "", text };
+    const contentType = res.headers.get("content-type") || "";
+    let text = "";
+    let encoding = "utf-8";
+    try {
+      const buf = new Uint8Array(await res.arrayBuffer());
+      const dec = decodeHtmlBytes(buf, contentType);
+      text = dec.text;
+      encoding = dec.label;
+    } catch (e) {
+      text = await res.text();
+    }
+    if (encoding !== "utf-8" && /html|xml/i.test(contentType)) {
+      console.log("   ترميز الصفحة: " + encoding + " — " + url);
+    }
+    return { ok: res.ok, status: res.status, url: res.url || url, contentType, encoding, text };
   } catch (e) {
     return { ok: false, status: 0, url, contentType: "", text: "", error: String(e && e.message || e) };
   } finally { clearTimeout(t); }
