@@ -10,10 +10,12 @@
  *   &debug=1                 إرجاع JSON بالمقالات المستخرجة بدل RSS (للتجربة)
  * وكل عنصر يحصل على pubDate؛ وإن غاب تاريخ في الصفحة يُقرأ من صفحة الخبر نفسها.
  *
- * نسخة 12: فكّ ترميز الصفحات القديمة (windows-1256 وغيرها) — تُقرأ الصفحة كبايتات ثم تُفكّ
- * بالترميز الصحيح، فتظهر العناوين العربية سليمة بدل رموز مشوّهة؛ وتُقدَّم واجهة ووردبريس
- * عندما تكون خلاصة الموقع الأصلية قصيرة جدًا (١٠ عناصر مثلًا)؛ وأُضيف مصدر «ريادي» إلى
- * القائمة المدمجة (feed-riadynews-com-1nw2k).
+ * نسخة 13: (١) فكّ ترميز الصفحات القديمة (windows-1256 وغيرها) — تُقرأ الصفحة كبايتات ثم تُفكّ
+ * بالترميز الصحيح فتظهر العناوين العربية سليمة؛ (٢) تُقدَّم واجهة ووردبريس عندما تكون خلاصة
+ * الموقع الأصلية قصيرة جدًا (١٠ عناصر مثلًا)؛ (٣) تجاوز المواقع التي تحجب مراكز البيانات: نكشف
+ * صفحات «Human verification»/تحدي كلاودفلير وننتقل إلى الوسائط الاحتياطية، وآخرها وسيط منصّة
+ * Perchance نفسه (fetch-plugin) الذي يمرّ من خوادم المنصّة فينجح مع هذه المواقع؛ (٤) مصدر
+ * «ريادي» في القائمة المدمجة (feed-riadynews-com-1nw2k).
  *
  * يعمل بلا أي واجهة ولا حساب: عند كل طلب يتفحص الصفحة ويعيد خلاصة RSS محدّثة،
  * وذاكرة مؤقتة 10 دقائق تخفّف الضغط. لا صفحة ولا تبويب مفتوح ولا رجوع لأي مكان.
@@ -945,16 +947,34 @@ async function fetchText(url, timeout, extraHeaders) {
 
 /* ---- fallback sources for sites that block the crawler's own IP (e.g. 403 Cloudflare) ---- */
 
+/* وسيط منصّة Perchance نفسه (نفس ما تستعمله الأداة في المتصفح عبر superFetch). بعض المواقع تحجب
+   كل عناوين مراكز البيانات وتردّ على غيرها بصفحة «Human verification»، فيفشل الجلب المباشر وكل
+   الوسائط العامة، بينما يمرّ هذا الوسيط من خوادم المنصّة فينجح. نستعمله كآخر محاولة فقط. */
+const PERCHANCE_ORIGIN = "https://aeb47c27fa872c122527f995305d6c1c.perchance.org";
+const PERCHANCE_GENERATOR = "qsswnafa2z";
+
 const PROXY_BUILDERS = [
   [(u) => "https://r.jina.ai/" + u, { "x-respond-with": "html" }],
   [(u) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u), {}],
-  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}]
+  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}],
+  [(u) => "https://fetch-plugin.perchance.org/proxy1/" + encodeURIComponent(u) +
+    "?origin=" + encodeURIComponent(PERCHANCE_ORIGIN) + "&generator=" + PERCHANCE_GENERATOR, {}]
 ];
 
 function looksLikeProxyError(text) {
   const head = String(text || "").slice(0, 400);
   if (head.length > 3000) return false;
   return /"success"\s*:\s*false|Failed to fetch|upstream|Bad Gateway|Not Found/i.test(head);
+}
+
+/* صفحات الحجب: بعض المواقع تردّ بحالة 200 لكن بصفحة «Human verification» أو تحدي Cloudflare،
+   فيظنّ الجلب أنه نجح. نكشفها لننتقل إلى الوسائط الاحتياطية بدل أن نسقط إلى «لا مقالات». */
+function looksLikeBlockPage(text) {
+  const head = String(text || "").slice(0, 3000);
+  if (!head) return true;
+  if (/Human verification|Just a moment|Attention Required|cf-error|Checking your browser|Verifying you are human|Please verify you are a human|Enable JavaScript and cookies|challenge-platform|Access denied|Attention required/i.test(head)) return true;
+  if (head.length < 600 && !/<(a|title|h1|h2|body|article)\b/i.test(head)) return true;
+  return false;
 }
 
 const ALT_UAS = [
@@ -967,9 +987,11 @@ let FETCH_DEADLINE = 0;
 
 async function fetchWithFallback(url, timeout) {
   const direct = await fetchText(url, timeout);
-  if (direct.ok && direct.text && direct.text.length > 250) return direct;
-  const worthProxy = direct.status === 0 || direct.status === 401 || direct.status === 403 ||
-    direct.status === 406 || direct.status === 429 || direct.status >= 500;
+  const blocked = looksLikeBlockPage(direct.text || "");
+  if (direct.ok && direct.text && direct.text.length > 250 && !blocked) return direct;
+  if (blocked) console.log("   الصفحة ردّت بصفحة حجب — سنجرّب الوسائط الاحتياطية.");
+  const worthProxy = !direct.ok || direct.status === 0 || direct.status === 401 || direct.status === 403 ||
+    direct.status === 406 || direct.status === 429 || direct.status >= 500 || blocked;
   if (!worthProxy) return direct;
   if (direct.status === 401 || direct.status === 403 || direct.status === 406) {
     for (const ua of ALT_UAS) {
