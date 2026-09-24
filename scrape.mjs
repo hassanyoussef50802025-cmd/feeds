@@ -700,24 +700,81 @@ function dateNearTitle(root) {
 
 /* ============================ networking ============================ */
 
-async function fetchText(url, timeout) {
+async function fetchText(url, timeout, extraHeaders) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), timeout || 14000);
   try {
+    const headers = {
+      "user-agent": UA,
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "accept-language": "ar,en-US;q=0.8,en;q=0.6",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "upgrade-insecure-requests": "1"
+    };
+    if (extraHeaders) for (const k of Object.keys(extraHeaders)) headers[k] = extraHeaders[k];
     const res = await fetch(url, {
       redirect: "follow",
       signal: ctrl.signal,
-      headers: {
-        "user-agent": UA,
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "accept-language": "ar,en-US;q=0.8,en;q=0.6"
-      }
+      headers
     });
     const text = await res.text();
     return { ok: res.ok, status: res.status, url: res.url || url, contentType: res.headers.get("content-type") || "", text };
   } catch (e) {
     return { ok: false, status: 0, url, contentType: "", text: "", error: String(e && e.message || e) };
   } finally { clearTimeout(t); }
+}
+
+/* ---- fallback sources for sites that block the crawler's own IP (e.g. 403 Cloudflare) ---- */
+
+const PROXY_BUILDERS = [
+  [(u) => "https://r.jina.ai/" + u, { "x-respond-with": "html" }],
+  [(u) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u), {}],
+  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}]
+];
+
+function looksLikeProxyError(text) {
+  const head = String(text || "").slice(0, 400);
+  if (head.length > 3000) return false;
+  return /"success"\s*:\s*false|Failed to fetch|upstream|Bad Gateway|Not Found/i.test(head);
+}
+
+async function fetchWithFallback(url, timeout) {
+  const direct = await fetchText(url, timeout);
+  if (direct.ok && direct.text && direct.text.length > 250) return direct;
+  const worthProxy = direct.status === 0 || direct.status === 401 || direct.status === 403 ||
+    direct.status === 406 || direct.status === 429 || direct.status >= 500;
+  if (!worthProxy) return direct;
+  for (const pair of PROXY_BUILDERS) {
+    const built = pair[0](url);
+    let pr;
+    try { pr = await fetchText(built, Math.max(timeout || 15000, 25000), pair[1]); } catch (e) { continue; }
+    if (pr.ok && pr.text && pr.text.length > 400 && !looksLikeProxyError(pr.text)) {
+      console.log("   مصدر احتياطي نجح: " + new URL(built).host + " → " + url);
+      return { ok: true, status: 200, url: url, contentType: pr.contentType || "text/html", text: pr.text, viaProxy: true };
+    }
+  }
+  return direct;
+}
+
+async function fetchJson(url, timeout) {
+  const attempts = [
+    () => fetchText(url, timeout),
+    () => fetchText("https://r.jina.ai/" + url, Math.max(timeout || 15000, 20000), { "x-respond-with": "text" }),
+    () => fetchText("https://api.allorigins.win/raw?url=" + encodeURIComponent(url), Math.max(timeout || 15000, 20000)),
+    () => fetchText("https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(url), Math.max(timeout || 15000, 20000))
+  ];
+  for (const attempt of attempts) {
+    let r;
+    try { r = await attempt(); } catch (e) { continue; }
+    if (!r || !r.text) continue;
+    if (r.ok) {
+      try { const j = JSON.parse(r.text); if (j && typeof j === "object") return j; } catch (e) {}
+      if (/just a moment|cf-browser-verification|attention required|checking your browser|enable javascript/i.test(r.text.slice(0, 3000))) continue;
+      return null;
+    }
+  }
+  return null;
 }
 
 function looksLikeFeed(text) {
@@ -748,7 +805,7 @@ function declaredFeedUrls(html, pageUrl) {
 }
 
 async function fetchArticleMeta(url) {
-  const r = await fetchText(url, 12000);
+  const r = await fetchWithFallback(url, 12000);
   const html = r.text || "";
   if (!html || html.length < 200) return null;
   const head = html.slice(0, 80000);
@@ -797,17 +854,12 @@ async function tryWordPress(pageUrl) {
     const slug = segs[0];
     for (const tax of ["categories", "tags"]) {
       try {
-        const rr = await fetchText(api + "/" + tax + "?slug=" + encodeURIComponent(slug), 12000);
-        const arr = JSON.parse(rr.text);
+        const arr = await fetchJson(api + "/" + tax + "?slug=" + encodeURIComponent(slug), 12000);
         if (Array.isArray(arr) && arr[0] && arr[0].id) { postsUrl = api + "/posts?per_page=25&" + fields + "&" + tax + "=" + arr[0].id; break; }
       } catch (e) {}
     }
   }
-  let posts = null;
-  try {
-    const r = await fetchText(postsUrl, 20000);
-    posts = JSON.parse(r.text);
-  } catch (e) { return null; }
+  const posts = await fetchJson(postsUrl, 20000);
   if (!Array.isArray(posts) || posts.length < 2) return null;
 
   const mediaIds = posts.map((p) => {
@@ -819,8 +871,7 @@ async function tryWordPress(pageUrl) {
   const ids = mediaIds.filter(Boolean).slice(0, 25);
   if (ids.length) {
     try {
-      const r = await fetchText(api + "/media?per_page=50&_fields=id,source_url&include=" + ids.join(","), 15000);
-      const arr = JSON.parse(r.text);
+      const arr = await fetchJson(api + "/media?per_page=50&_fields=id,source_url&include=" + ids.join(","), 15000);
       if (Array.isArray(arr)) arr.forEach((m) => { mediaMap[m.id] = m.source_url; });
     } catch (e) {}
   }
@@ -892,23 +943,21 @@ async function buildFeed(targetUrl, selfUrl, params) {
   const limit = Math.max(1, Math.min(60, parseInt(params.get("limit") || String(DEFAULT_LIMIT), 10) || DEFAULT_LIMIT));
   const titleParam = params.get("title") || "";
 
-  const first = await fetchText(targetUrl, 16000);
-  if (!first.ok || !first.text) {
-    return { error: "تعذّر جلب الصفحة (الحالة " + first.status + ")." + (first.error ? " " + first.error : "") };
-  }
-  const finalUrl = first.url || targetUrl;
+  const first = await fetchWithFallback(targetUrl, 16000);
+  const pageText = (first.ok && first.text) ? first.text : "";
+  const finalUrl = (first.ok && first.url) ? first.url : targetUrl;
 
   // If the URL itself is a feed, pass it through.
-  if (looksLikeFeed(first.text) || /(rss|atom)\+xml/i.test(first.contentType)) {
-    return { passthrough: first.text, type: /application\/atom/i.test(first.contentType) ? "application/atom+xml" : "application/rss+xml" };
+  if (looksLikeFeed(pageText) || /(rss|atom)\+xml/i.test(first.contentType)) {
+    return { passthrough: pageText, type: /application\/atom/i.test(first.contentType) ? "application/atom+xml" : "application/rss+xml" };
   }
 
   const base = new URL(finalUrl);
 
   // Native declared feed? Prefer it (self-updating, complete, real dates).
-  const declared = declaredFeedUrls(first.text, finalUrl);
+  const declared = declaredFeedUrls(pageText, finalUrl);
   for (const u of declared.slice(0, 3)) {
-    const f = await fetchText(u, 12000);
+    const f = await fetchWithFallback(u, 12000);
     if (f.ok && looksLikeFeed(f.text)) {
       const isAtom = /<feed[\s>]/i.test(f.text.slice(0, 800));
       return { passthrough: f.text, type: isAtom ? "application/atom+xml" : "application/rss+xml" };
@@ -929,23 +978,45 @@ async function buildFeed(targetUrl, selfUrl, params) {
   }
 
   // Generic DOM extraction.
-  const root = parseHTML(first.text);
+  const root = parseHTML(pageText);
   let ex = null;
   try { ex = extractFromDom(root, finalUrl, limit); } catch (e) { ex = null; }
-  if (!ex || ex.items.length < 3) {
-    return { error: "لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار)." };
+  if (ex && ex.items.length >= 3) {
+    const items = ex.items.slice(0, limit);
+    const backfilled = await backfillItemDates(items, 8);
+    const approx = fillMissingDates(items);
+    return {
+      items,
+      via: "استخراج مباشر من الصفحة",
+      title: titleParam || (base.host + (base.pathname !== "/" ? base.pathname : "")),
+      pageUrl: finalUrl,
+      backfilled,
+      approx
+    };
   }
-  const items = ex.items.slice(0, limit);
-  const backfilled = await backfillItemDates(items, 8);
-  const approx = fillMissingDates(items);
-  return {
-    items,
-    via: "استخراج مباشر من الصفحة",
-    title: titleParam || (base.host + (base.pathname !== "/" ? base.pathname : "")),
-    pageUrl: finalUrl,
-    backfilled,
-    approx
-  };
+
+  // Last resort: probe the address's usual feed locations.
+  const common = await probeCommonFeeds(base);
+  if (common) return common;
+
+  if (!pageText) {
+    return { error: "تعذّر جلب الصفحة (الحالة " + first.status + ")." + (first.error ? " " + first.error : "") };
+  }
+  return { error: "لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار)." };
+}
+
+async function probeCommonFeeds(base) {
+  const paths = ["/feed/", "/feed", "/rss", "/rss.xml", "/atom.xml", "/feed.xml", "/index.xml", "/?feed=rss2"];
+  for (const p of paths) {
+    let u;
+    try { u = new URL(p, base.origin).href; } catch (e) { continue; }
+    const f = await fetchWithFallback(u, 12000);
+    if (f.ok && f.text && looksLikeFeed(f.text)) {
+      const isAtom = /<feed[\s>]/i.test(f.text.slice(0, 800));
+      return { passthrough: f.text, type: isAtom ? "application/atom+xml" : "application/rss+xml" };
+    }
+  }
+  return null;
 }
 
 /* ============================ HTTP entry ============================ */
@@ -1022,13 +1093,12 @@ async function loadFeedList() {
 
   let fromTool = 0;
   try {
-    const r = await fetchText(LIST_URL, 15000);
-    if (r.ok && r.text) {
-      const obj = JSON.parse(r.text);
-      const arr = Array.isArray(obj) ? obj : (obj && Array.isArray(obj.feeds) ? obj.feeds : null);
-      if (arr) {
-        for (const f of arr) { if (f && f.url) { add(f.name, f.url, f.title); fromTool++; } }
-      }
+    const obj = await fetchJson(LIST_URL + "?t=" + Date.now(), 15000) || await fetchJson(LIST_URL, 15000);
+    const arr = obj ? (Array.isArray(obj) ? obj : (Array.isArray(obj.feeds) ? obj.feeds : null)) : null;
+    if (arr) {
+      for (const f of arr) { if (f && f.url) { add(f.name, f.url, f.title); fromTool++; } }
+    } else {
+      console.error("تنبيه: تعذّر قراءة قائمة الأداة (سأعتمد على القائمة المدمجة).");
     }
   } catch (e) {
     console.error("تنبيه: تعذّر قراءة قائمة الأداة — " + (e && e.message ? e.message : e));
