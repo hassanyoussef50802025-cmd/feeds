@@ -44,6 +44,9 @@ const AR_MONTHS_HINT = new RegExp("(" + Object.keys(AR_MONTHS).join("|") + ")");
    keep the date they already have, instead of being re-stamped with "now" on every run (which made
    readers treat the whole feed as new every 10 minutes). */
 let PREV_DATES = new Map();
+let PREV_XML = "";
+let PREV_BUILD = 0;
+let PREV_SRC = "";
 
 /* True when the last parsed date came from a relative expression ("منذ 5 دقائق", "today"), i.e. a
    value that is re-computed at every run and must never overwrite a known stable date. */
@@ -59,22 +62,39 @@ let LAST_REL = false;
        محلية أو "12:00" الافتراضية)، فيتناقص كل تشغيل بمقدار مختلف — وهذا ما جعل تواريخ مجتمع
        تنزل من 04:27 إلى 02:21 ثم 00:27 وهي ثابتة المفروض. الآن يُزاح العنصر المتقدّم وحده،
        والتحريك الجماعي لا يحدث إلا إذا كان معظم الخلاصة متقدّمًا (مشكلة منطقة زمنية حقيقية).
-       (ب) افتراضي الساعة لتاريخ بلا وقت صار 00:00 بدل 12:00 (الظهر) فلا يقع في المستقبل صباحًا. */
+       (ب) افتراضي الساعة لتاريخ بلا وقت صار 00:00 بدل 12:00 (الظهر) فلا يقع في المستقبل صباحًا.
+   v10: (1) تاريخ أي عنصر سبق نشره يُثبَّت كما هو ما لم يختلف الجديد عنه بأكثر من 4 ساعات: فروق
+        المصدر (توقيت الموقع المحلي مقابل UTC = 3 ساعات، أو قائمة صفحة مختلفة) لم تعد تحرّك تاريخ
+        خبر قديم. (2) مسار WordPress REST صار يقرأ date_gmt (الوقت الحقيقي UTC) بدل date (توقيت
+        الموقع)، ويتابع بقية الوسطاء إذا ردّ وسيط بنصّ غير JSON بدل أن يستسلم — فصار ينجح في كل
+        دورة تقريبًا. (3) الخلاصة لا تُفسد نفسها: إن جاءت دورة بقائمة لا تتقاطع مع ما نُشر سابقًا
+        (أقل من 30% من نفس رتبة المصدر) نُعيد نشر النسخة السابقة كما هي، وتُلغى الحماية تلقائيًا
+        بعد 6 ساعات. السبب: موقع mobizil يعطي أحيانًا قائمته الكاملة (25 خبرًا بتواريخ) وأحيانًا
+        يسقط إلى قائمة جانبية قديمة (صفحات 2023/2024)، فكانت الخلاصة تقفز بين مجموعتين كل 11 دقيقة. */
 let PICKED_REL = false;
 
-/* Give undated items their date from the previous run's feed, so dates don't churn every cycle. */
+/* Give undated items their date from the previous run's feed, so dates don't churn every cycle.
+   v10: العنصر الموجود في التحديث السابق خبرٌ قديم، فتاريخه يجب ألّا يتحرك أبدًا. نُثبّت التاريخ
+   السابق متى كان التاريخ الجديد قريبًا منه (أقل من 4 ساعات)، لأن الفروق الصغيرة تأتي من تغيّر
+   مصدر القراءة (توقيت الموقع المحلي مقابل UTC، أو قائمة صفحة مختلفة) لا من تغيّر الخبر نفسه.
+   وإذا اختلف التاريخ بأكثر من 4 ساعات فهذا تصحيح حقيقي فنأخذ الجديد. */
 function applyPrevDates(items) {
-  let n = 0;
+  let n = 0, frozen = 0;
   for (const it of items) {
     if (!it || !it.url) continue;
     const prev = PREV_DATES.get(it.url);
     if (!prev) continue;
     const t = it.date ? Date.parse(it.date) : NaN;
+    const pt = Date.parse(prev);
     const looksLikeNow = !isNaN(t) && Math.abs(Date.now() - t) < 90 * 60000;
-    if (!it.date || it.relDate || looksLikeNow) { it.date = prev; it.carried = true; it.approx = false; n++; }
+    if (!it.date || it.relDate || looksLikeNow) { it.date = prev; it.carried = true; it.approx = false; n++; continue; }
+    if (isFinite(t) && isFinite(pt) && Math.abs(t - pt) <= 4 * 3600000) {
+      it.date = prev; it.carried = true; it.approx = false; frozen++;
+    }
   }
   if (n) console.log("   ثبّتنا تواريخ " + n + " عنصرًا من التحديث السابق.");
-  return n;
+  if (frozen) console.log("   حافظنا على تاريخ " + frozen + " عنصرًا من التحديث السابق (فرق المصدر أقل من 4 ساعات).");
+  return n + frozen;
 }
 
 function xmlUnesc(s) {
@@ -84,6 +104,9 @@ function xmlUnesc(s) {
 
 async function loadPrevDates(fileUrl, readFile) {
   const map = new Map();
+  PREV_XML = "";
+  PREV_BUILD = 0;
+  PREV_SRC = "";
   try {
     const xml = await readFile(fileUrl, "utf8");
     for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
@@ -91,8 +114,36 @@ async function loadPrevDates(fileUrl, readFile) {
       const d = (m[1].match(/<pubDate>([^<]*)<\/pubDate>/) || [])[1];
       if (u && d) map.set(xmlUnesc(u).trim(), d.trim());
     }
+    /* v10: نحتفظ بنصّ الخلاصة السابقة كاملًا، فإن جاءت هذه الدورة بقائمة لا تشبهها (مصدر تعذّر
+       الوصول إليه، أو قائمة صفحة أخرى) نُعيد نشر النسخة السابقة بدل أن نُفسد الخلاصة. */
+    if (map.size) {
+      PREV_XML = xml;
+      const b = (xml.match(/<lastBuildDate>([^<]*)<\/lastBuildDate>/) || [])[1];
+      const t = b ? Date.parse(b) : NaN;
+      PREV_BUILD = isFinite(t) ? t : 0;
+      const src = xml.match(/<!--\s*rss-src:\s*([a-z]+)\s*-->/);
+      PREV_SRC = /<generator>RSS Worker<\/generator>/.test(xml) ? (src ? src[1] : "dom") : "native";
+    }
   } catch (e) {}
   return map;
+}
+
+/* v10: ترتيب جودة المصادر. الخلاصة الأصلية للموقع أفضل شيء، ثم واجهة WordPress (تواريخ دقيقة
+   وثابتة)، ثم الاستخراج من الصفحة (يتغيّر بتغيّر نسخة الصفحة). نستخدمه فقط للسماح بالترقية إلى
+   مصدر أفضل، ولا يمنع الرجوع لمصدر أردأ. */
+const SRC_RANK = { dom: 1, rest: 2, native: 2 };
+
+/* v10: هل القائمة التي استخرجناها هذه الدورة تختلف جذريًا عمّا نشرناه سابقًا من نفس المصدر؟
+   إن نعم نُبقي النسخة السابقة (انظر run). */
+function checkInconsistent(items, src) {
+  if (!PREV_XML || PREV_DATES.size < 5) return { overlap: 0, bad: false };
+  const overlap = items.filter((i) => PREV_DATES.has(i.url)).length;
+  if (PREV_BUILD > 0 && Date.now() - PREV_BUILD > 6 * 3600000) return { overlap, bad: false };
+  const better = (SRC_RANK[src] || 1) > (SRC_RANK[PREV_SRC] || 1);
+  /* دورة لا تُضيف شيئًا جديدًا وتحذف عناصر (قائمة أصغر كلها موجودة) لا فائدة من نشرها. */
+  const subsetOnly = items.length > 0 && items.length < PREV_DATES.size && overlap >= items.length;
+  const bad = !better && (overlap < Math.max(2, Math.floor(PREV_DATES.size * 0.3)) || subsetOnly);
+  return { overlap, bad };
 }
 
 const REL_UNITS = {
@@ -888,7 +939,9 @@ async function fetchJson(url, timeout) {
     if (r.ok) {
       try { const j = JSON.parse(r.text); if (j && typeof j === "object") return j; } catch (e) {}
       if (/just a moment|cf-browser-verification|attention required|checking your browser|enable javascript/i.test(r.text.slice(0, 3000))) continue;
-      return null;
+      /* v10: ردّ سليم لكن ليس JSON (مثلاً نسخة r.jina.ai النصّية) كان يُنهي كل المحاولات فورًا،
+         فيسقط مسار WordPress REST إلى الاستخراج من الصفحة رغم أن وسيطًا آخر كان سينجح. الآن نُجرّب الباقي. */
+      continue;
     }
   }
   return null;
@@ -964,7 +1017,7 @@ async function tryWordPress(pageUrl) {
   const u = new URL(pageUrl);
   const origin = u.origin;
   const api = origin + "/wp-json/wp/v2";
-  const fields = "_fields=link,title,date,excerpt,_links";
+  const fields = "_fields=link,title,date,date_gmt,excerpt,_links";
   let postsUrl = api + "/posts?per_page=25&" + fields;
   const segs = u.pathname.split("/").filter(Boolean);
   if (segs.length >= 1 && /^[a-z0-9\u0600-\u06FF-]{2,60}$/i.test(segs[0])) {
@@ -995,7 +1048,7 @@ async function tryWordPress(pageUrl) {
   const items = posts.map((p, i) => ({
     url: p.link,
     title: stripTags(p.title && (p.title.rendered || p.title)),
-    date: toRfc822(p.date),
+    date: (p.date_gmt ? toRfc822(new Date(p.date_gmt + "Z")) : null) || toRfc822(p.date),
     img: mediaIds[i] ? (mediaMap[mediaIds[i]] || null) : null,
     desc: stripTags(p.excerpt && (p.excerpt.rendered || p.excerpt)).slice(0, 450)
   })).filter((it) => it.url && it.title);
@@ -1054,6 +1107,7 @@ function buildRssXml(opts) {
   L.push('<language>ar</language>');
   L.push('<lastBuildDate>' + new Date().toUTCString() + '</lastBuildDate>');
   L.push('<generator>RSS Worker</generator>');
+  L.push('<!-- rss-src: ' + (opts.src || "dom") + ' -->');
   L.push('<atom:link href="' + xmlEsc(opts.selfUrl || opts.pageUrl) + '" rel="self" type="application/rss+xml"/>');
   for (const it of opts.items) {
     L.push('<item>');
@@ -1291,14 +1345,25 @@ async function run() {
         xml = out.passthrough;
       } else {
         const items = out.items || [];
-        fillMissingDates(items);
-        xml = buildRssXml({
-          title: f.title || out.title,
-          pageUrl: out.pageUrl || f.url,
-          selfUrl: f.url,
-          description: "خلاصة تُحدَّث تلقائيًا من " + (f.title || out.title),
-          items
-        });
+        /* v10: خلاصة لا تُفسد نفسها. إن جاءت هذه الدورة بقائمة لا تتقاطع مع ما نشرناه سابقًا (مصدر
+           تعذّر الوصول إليه فسقطنا إلى قائمة صفحة أخرى) نُعيد نشر النسخة السابقة كما هي، فالخلاصة
+           تتحسّن أو تبقى، ولا تتدهور. الشرط ينتهي تلقائيًا إذا مرّ 6 ساعات على آخر نشر سليم. */
+        const src = out.via === "WordPress REST" ? "rest" : "dom";
+        const chk = checkInconsistent(items, src);
+        if (chk.bad) {
+          console.log("   أبقينا النسخة السابقة: القائمة الجديدة لا تشبه السابقة (" + chk.overlap + " من " + PREV_DATES.size + " رابطًا).");
+          xml = PREV_XML;
+        } else {
+          fillMissingDates(items);
+          xml = buildRssXml({
+            title: f.title || out.title,
+            pageUrl: out.pageUrl || f.url,
+            selfUrl: f.url,
+            description: "خلاصة تُحدَّث تلقائيًا من " + (f.title || out.title),
+            items,
+            src
+          });
+        }
       }
       await writeFile(new URL(f.name + ".xml", root), xml, "utf8");
       written.add(f.name + ".xml");
