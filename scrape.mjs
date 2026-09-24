@@ -54,7 +54,12 @@ let LAST_REL = false;
       يُقرأ بعد pickDate الذي يجرّب عدة نصوص متتالية، فآخر محاولة (نص البطاقة كاملًا) كانت تصفّره
       حتى لو كان التاريخ المختار نفسه نسبيًا => لا يُثبَّت التاريخ ويعاد ختمه كل دورة.
    2) extractAllLinks (المسار المسطح) كان يبني العناصر بدون حقل relDate إطلاقًا.
-   3) حراسة إضافية: أي تاريخ يقع داخل 20 دقيقة من وقت التشغيل يُعدّ نسبيًا ويُؤخذ من التحديث السابق. */
+   3) حراسة إضافية: أي تاريخ يقع داخل 90 دقيقة من وقت التشغيل يُعدّ نسبيًا ويُؤخذ من التحديث السابق.
+   v9: (أ) fixFutureDates كان يزيح كل تواريخ الخلاصة للوراء إذا وُجد عنصر واحد متقدّم (بطاقة ساعتها
+       محلية أو "12:00" الافتراضية)، فيتناقص كل تشغيل بمقدار مختلف — وهذا ما جعل تواريخ مجتمع
+       تنزل من 04:27 إلى 02:21 ثم 00:27 وهي ثابتة المفروض. الآن يُزاح العنصر المتقدّم وحده،
+       والتحريك الجماعي لا يحدث إلا إذا كان معظم الخلاصة متقدّمًا (مشكلة منطقة زمنية حقيقية).
+       (ب) افتراضي الساعة لتاريخ بلا وقت صار 00:00 بدل 12:00 (الظهر) فلا يقع في المستقبل صباحًا. */
 let PICKED_REL = false;
 
 /* Give undated items their date from the previous run's feed, so dates don't churn every cycle. */
@@ -65,7 +70,7 @@ function applyPrevDates(items) {
     const prev = PREV_DATES.get(it.url);
     if (!prev) continue;
     const t = it.date ? Date.parse(it.date) : NaN;
-    const looksLikeNow = !isNaN(t) && Math.abs(Date.now() - t) < 20 * 60000;
+    const looksLikeNow = !isNaN(t) && Math.abs(Date.now() - t) < 90 * 60000;
     if (!it.date || it.relDate || looksLikeNow) { it.date = prev; it.carried = true; it.approx = false; n++; }
   }
   if (n) console.log("   ثبّتنا تواريخ " + n + " عنصرًا من التحديث السابق.");
@@ -344,7 +349,7 @@ function parseArabicDate(src) {
     if (/^\d{1,4}$/.test(tk) && !day) { const v = +tk; if (v >= 1 && v <= 31) day = v; }
   }
   if (!day) day = 1;
-  if (!hasTime) hh = 12;
+  if (!hasTime) hh = 0; /* v9: كان 12 (الظهر) فتقع تواريخ "24 سبتمبر" وحدها في المستقبل وقت تشغيل الصباح، فيزيح fixFutureDates الخلاصة كلها للوراء كل دورة */
   if (period) {
     if (/^(م|مساء|مساءً|pm|p\.m\.)$/i.test(period) && hh < 12) hh += 12;
     if (/^(ص|صباحا|صباحًا|am|a\.m\.)$/i.test(period) && hh === 12) hh = 0;
@@ -1012,11 +1017,23 @@ function cdata(s) { return String(s || "").replace(/]]>/g, "]]&gt;"); }
    land in the future; readers then hide those items. If the newest item is in the future, shift
    every date back by the same offset (relative order preserved) so the newest sits just before now. */
 function fixFutureDates(items) {
-  let maxT = 0;
-  for (const it of items) { const t = Date.parse(it.date || ""); if (isFinite(t) && t > maxT) maxT = t; }
   const now = Date.now();
-  if (!maxT || maxT <= now + 120000) return 0;
-  const delta = maxT - now + 60000;
+  const times = items.map((it) => Date.parse(it.date || "")).filter((t) => isFinite(t));
+  if (!times.length) return 0;
+  const future = times.filter((t) => t > now + 120000);
+  if (!future.length) return 0;
+  const delta = Math.max(...times) - now + 60000;
+  /* v9: إن كان المتقدّم قلة (بطاقة واحدة ساعتها غلط أو "12:00" افتراضية) فلا نحرّك بقية الخلاصة،
+     وإلا كان كل تشغيل يزيح كل التواريخ للوراء بمقدار مختلف فتفقد الخلاصة استقرارها نهائيًا. */
+  if (future.length * 2 < times.length) {
+    let n = 0;
+    for (const it of items) {
+      const t = Date.parse(it.date || "");
+      if (isFinite(t) && t > now + 120000) { it.date = new Date(t - delta).toUTCString(); it.approx = true; n++; }
+    }
+    console.log("   ملاحظة: أُرجعت " + n + " تواريخ متقدّمة إلى الوراء (ساعة الموقع) دون تحريك بقية الخلاصة.");
+    return 0;
+  }
   for (const it of items) {
     const t = Date.parse(it.date || "");
     if (isFinite(t)) it.date = new Date(t - delta).toUTCString();
