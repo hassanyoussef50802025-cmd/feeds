@@ -5,7 +5,7 @@
 <link>https://saharazoom.com/m/</link>
 <description>خلاصة تُحدَّث تلقائيًا من saharazoom.com/m/</description>
 <language>ar</language>
-<lastBuildDate>Thu, 24 Sep 2026 14:16:13 GMT</lastBuildDate>
+<lastBuildDate>Thu, 24 Sep 2026 14:29:13 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: dom -->
 <atom:link href="https://saharazoom.com/m/" rel="self" type="application/rss+xml"/>
@@ -14,9 +14,7 @@
 <link>https://saharazoom.com/m/news32280.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/news32280.html</guid>
 <pubDate>Thu, 24 Sep 2026 14:15:13 GMT</pubDate>
-<media:thumbnail url="https://saharazoom.com/imagesnews/1790114355.jpg"/>
-<description><![CDATA[<img src="https://saharazoom.com/imagesnews/1790114355.jpg" alt=""/><p>������� ���� : ����� ������� // ��� ���� ������ ���� ����� ���� ��� �����ϡ ��� ������ ��������� ���� ��������� ����� ������ �� ����� ������</p>]]></description>
-<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/1790114355.jpg" alt=""/><p>������� ���� : ����� ������� // ��� ���� ������ ���� ����� ���� ��� �����ϡ ��� ������ ��������� ���� ��������� ����� ������ �� ����� ������</p>]]></content:encoded>
+<description>��� ������ ����� ����� ������ ������ ���������� �������� �������� ��������� �� ���� ������ �������</description>
 </item>
 <item>
 <title>����� ���� ����� ���� ����� ������ �������� ������ �������� (IRI) ������� ������� ����������</title>
@@ -164,9 +162,8 @@
 <link>https://saharazoom.com/m/news32309.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/news32309.html</guid>
 <pubDate>Thu, 24 Sep 2026 01:37:29 GMT</pubDate>
-<media:thumbnail url="https://saharazoom.com/imagesnews/1790258588.jpg"/>
-<description><![CDATA[<img src="https://saharazoom.com/imagesnews/1790258588.jpg" alt=""/><p>������� ���� : ����� ������� // ���� ������� ���������� ������� ������� ������ɡ ���� ��� ����� �����ɡ �25 ���ӡ</p>]]></description>
-<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/1790258588.jpg" alt=""/><p>������� ���� : ����� ������� // ���� ������� ���������� ������� ������� ������ɡ ���� ��� ����� �����ɡ �25 ���ӡ</p>]]></content:encoded>
+<description><![CDATA[<p>������� ���� : ����� ������� // ���� ������� ���������� ������� ������� ������ɡ ���� ��� ����� �����ɡ �25 ���ӡ</p>]]></description>
+<content:encoded><![CDATA[<p>������� ���� : ����� ������� // ���� ������� ���������� ������� ������� ������ɡ ���� ��� ����� �����ɡ �25 ���ӡ</p>]]></content:encoded>
 </item>
 <item>
 <title>��� ��������� ����� ������ ������ ��9 ���� ���.. ������ ����� �� ���� ����� �� ���� �������</title>
