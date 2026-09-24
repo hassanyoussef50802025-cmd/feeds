@@ -14,7 +14,7 @@
  * وذاكرة مؤقتة 10 دقائق تخفّف الضغط. لا صفحة ولا تبويب مفتوح ولا رجوع لأي مكان.
  */
 
-const UA = "Mozilla/5.0 (compatible; rss-worker/1.0; +https://workers.dev)";
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
 
 const MAX_HTML = 3000000;
 const DEFAULT_LIMIT = 30;
@@ -992,24 +992,75 @@ function errorFeed(message, selfUrl) {
 }
 
 /* =======================================================================
- *  نقطة التشغيل على GitHub (Actions): تقرأ قائمة FEEDS وتكتب ملفات XML
- *  في مجلد feeds/ — ثم يرفعها سير العمل تلقائيًا.
+ *  نقطة التشغيل على GitHub (Actions)
+ *  - تقرأ قائمة الخلاصات من أداتنا (ملف rss-feeds-list) فتلتقط تلقائيًا
+ *    كل موقع تولّده في الأداة، دون تعديل هذا الملف.
+ *  - ويمكنك أيضًا إضافة مواقع يدويًا في FEEDS أدناه.
+ *  - تكتب النتيجة في مجلد feeds/<name>.xml
  * ======================================================================= */
+
+const LIST_URL = "https://editable.uploads.dev/file/qsswnafa2z/rss-feeds-list";
 
 const FEEDS = [
   { name: "mugtama", url: "https://mugtama.com/", title: "مجتمع" },
   { name: "mobizil", url: "https://www.mobizil.com/", title: "موبيزل" }
 ];
 
+function sanitizeName(n) {
+  return String(n || "").toLowerCase().replace(/[^a-z0-9._-]/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
+}
+
+async function loadFeedList() {
+  const byUrl = new Map();
+  const add = (name, url, title) => {
+    if (!url) return;
+    let key;
+    try { const u = new URL(url); key = (u.host + u.pathname.replace(/\/$/, "")).toLowerCase(); } catch (e) { key = String(url).toLowerCase(); }
+    byUrl.set(key, { name: sanitizeName(name) || ("feed-" + byUrl.size), url, title: title || name });
+  };
+  for (const f of FEEDS || []) add(f.name, f.url, f.title);
+
+  let fromTool = 0;
+  try {
+    const r = await fetchText(LIST_URL, 15000);
+    if (r.ok && r.text) {
+      const obj = JSON.parse(r.text);
+      const arr = Array.isArray(obj) ? obj : (obj && Array.isArray(obj.feeds) ? obj.feeds : null);
+      if (arr) {
+        for (const f of arr) { if (f && f.url) { add(f.name, f.url, f.title); fromTool++; } }
+      }
+    }
+  } catch (e) {
+    console.error("تنبيه: تعذّر قراءة قائمة الأداة — " + (e && e.message ? e.message : e));
+  }
+  console.log("عدد الخلاصات: " + byUrl.size + " (من الأداة: " + fromTool + ")");
+  return [...byUrl.values()];
+}
+
+async function scrapeWithRetry(url) {
+  let out = await buildFeed(url, url, new URLSearchParams()).catch((e) => ({ error: "استثناء: " + (e && e.message ? e.message : String(e)) }));
+  if (out && out.error) {
+    await new Promise((r) => setTimeout(r, 4000));
+    out = await buildFeed(url, url, new URLSearchParams()).catch((e) => ({ error: "استثناء: " + (e && e.message ? e.message : String(e)) }));
+  }
+  return out;
+}
+
 async function run() {
-  const { mkdir, writeFile } = await import("node:fs/promises");
+  const { mkdir, writeFile, rm } = await import("node:fs/promises");
   const root = new URL("./feeds/", import.meta.url);
   await mkdir(root, { recursive: true });
+  const feeds = await loadFeedList();
   let ok = 0, fail = 0;
-  for (const f of FEEDS) {
+  for (const f of feeds) {
     try {
-      const out = await buildFeed(f.url, f.url, new URLSearchParams());
-      if (out && out.error) { console.error("✗ " + f.name + ": " + out.error); fail++; continue; }
+      const out = await scrapeWithRetry(f.url);
+      if (out && out.error) {
+        console.error("✗ " + f.name + ": " + out.error);
+        await writeFile(new URL(f.name + ".error.txt", root), out.error, "utf8");
+        fail++;
+        continue;
+      }
       let xml;
       if (out.passthrough) {
         xml = out.passthrough;
@@ -1025,15 +1076,17 @@ async function run() {
         });
       }
       await writeFile(new URL(f.name + ".xml", root), xml, "utf8");
-      console.log("✓ " + f.name + ": " + (out.passthrough ? "خلاصة أصلية" : items2count(out)));
+      await rm(new URL(f.name + ".error.txt", root), { force: true });
+      console.log("✓ " + f.name + ": " + (out.passthrough ? "خلاصة أصلية" : (out.items ? out.items.length : 0) + " عنصرًا"));
       ok++;
     } catch (e) {
-      console.error("✗ " + f.name + ": " + (e && e.message ? e.message : String(e)));
+      const msg = "استثناء: " + (e && e.message ? e.message : String(e));
+      console.error("✗ " + f.name + ": " + msg);
+      try { await writeFile(new URL(f.name + ".error.txt", root), msg, "utf8"); } catch (e2) {}
       fail++;
     }
   }
   console.log("انتهى: نجحت " + ok + " وفشلت " + fail + ".");
 }
-function items2count(out) { return (out.items ? out.items.length : 0) + " عنصرًا"; }
 
 run();
