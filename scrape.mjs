@@ -40,6 +40,29 @@ const AR_MONTHS = {
 
 const AR_MONTHS_HINT = new RegExp("(" + Object.keys(AR_MONTHS).join("|") + ")");
 
+/* Dates remembered from the previous run's XML, keyed by item URL. Items whose page shows no date
+   keep the date they already have, instead of being re-stamped with "now" on every run (which made
+   readers treat the whole feed as new every 10 minutes). */
+let PREV_DATES = new Map();
+
+function xmlUnesc(s) {
+  return String(s == null ? "" : s).replace(/&#39;/g, "'").replace(/&quot;/g, '"')
+    .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+}
+
+async function loadPrevDates(fileUrl, readFile) {
+  const map = new Map();
+  try {
+    const xml = await readFile(fileUrl, "utf8");
+    for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+      const u = (m[1].match(/<link>([^<]*)<\/link>/) || [])[1];
+      const d = (m[1].match(/<pubDate>([^<]*)<\/pubDate>/) || [])[1];
+      if (u && d) map.set(xmlUnesc(u).trim(), d.trim());
+    }
+  } catch (e) {}
+  return map;
+}
+
 const REL_UNITS = {
   "دقيقة": 60000, "دقيقه": 60000, "دقائق": 60000, "دقيقتين": 120000,
   "ساعة": 3600000, "ساعه": 3600000, "ساعات": 3600000, "ساعتين": 7200000,
@@ -656,6 +679,8 @@ function fillMissingDates(items) {
   step = Math.min(Math.max(step, 60000), 86400000);
   for (let i = 0; i < items.length; i++) {
     if (!isNaN(known[i])) continue;
+    const prevDate = PREV_DATES.get(items[i].url);
+    if (prevDate) { items[i].date = prevDate; items[i].carried = true; continue; }
     let prev = -1, next = -1;
     for (let j = i - 1; j >= 0; j--) if (!isNaN(known[j])) { prev = j; break; }
     for (let j = i + 1; j < items.length; j++) if (!isNaN(known[j])) { next = j; break; }
@@ -1190,7 +1215,7 @@ async function scrapeWithRetry(url) {
 }
 
 async function run() {
-  const { mkdir, writeFile, rm, readdir } = await import("node:fs/promises");
+  const { mkdir, writeFile, rm, readdir, readFile } = await import("node:fs/promises");
   const root = new URL("./feeds/", import.meta.url);
   await mkdir(root, { recursive: true });
   const { list: feeds, fromTool } = await loadFeedList();
@@ -1198,6 +1223,7 @@ async function run() {
   let ok = 0, fail = 0;
   for (const f of feeds) {
     try {
+      PREV_DATES = await loadPrevDates(new URL(f.name + ".xml", root), readFile);
       const out = await scrapeWithRetry(f.url);
       if (out && out.error) {
         console.error("✗ " + f.name + ": " + out.error);
