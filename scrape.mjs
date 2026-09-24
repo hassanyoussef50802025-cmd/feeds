@@ -45,6 +45,23 @@ const AR_MONTHS_HINT = new RegExp("(" + Object.keys(AR_MONTHS).join("|") + ")");
    readers treat the whole feed as new every 10 minutes). */
 let PREV_DATES = new Map();
 
+/* True when the last parsed date came from a relative expression ("منذ 5 دقائق", "today"), i.e. a
+   value that is re-computed at every run and must never overwrite a known stable date. */
+let LAST_REL = false;
+
+/* Give undated items their date from the previous run's feed, so dates don't churn every cycle. */
+function applyPrevDates(items) {
+  let n = 0;
+  for (const it of items) {
+    if (!it || !it.url) continue;
+    const prev = PREV_DATES.get(it.url);
+    if (!prev) continue;
+    if (!it.date || it.relDate) { it.date = prev; it.carried = true; it.approx = false; n++; }
+  }
+  if (n) console.log("   ثبّتنا تواريخ " + n + " عنصرًا من التحديث السابق.");
+  return n;
+}
+
 function xmlUnesc(s) {
   return String(s == null ? "" : s).replace(/&#39;/g, "'").replace(/&quot;/g, '"')
     .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
@@ -277,16 +294,18 @@ function normalizeDigits(s) {
 }
 
 function parseRelative(src) {
+  LAST_REL = false;
   const s = src.toLowerCase();
-  if (/(^|[\s(،,.:])(الآن|قبل قليل|قبل لحظات|لحظات|just now|moments ago|ثوان)/.test(s)) return new Date(Date.now() - 60000);
-  if (/(^|[\s(،,.:])(أمس|امس|yesterday)/.test(s)) return new Date(Date.now() - 86400000);
-  if (/(^|[\s(،,.:])(اليوم|today)/.test(s)) return new Date(Date.now() - 3600000);
+  const done = (d) => { LAST_REL = true; return d; };
+  if (/(^|[\s(،,.:])(الآن|قبل قليل|قبل لحظات|لحظات|just now|moments ago|ثوان)/.test(s)) return done(new Date(Date.now() - 60000));
+  if (/(^|[\s(،,.:])(أمس|امس|yesterday)/.test(s)) return done(new Date(Date.now() - 86400000));
+  if (/(^|[\s(،,.:])(اليوم|today)/.test(s)) return done(new Date(Date.now() - 3600000));
   const half = s.match(/نصف\s+(ساعة|ساعه|يوم|شهر|hour|day|month)/);
-  if (half && REL_UNITS[half[1]]) return new Date(Date.now() - REL_UNITS[half[1]] / 2);
+  if (half && REL_UNITS[half[1]]) return done(new Date(Date.now() - REL_UNITS[half[1]] / 2));
   let m = s.match(/(\d+)\s*(دقيقة|دقيقه|دقائق|ساعة|ساعه|ساعات|يوم|أيام|ايام|أسبوع|اسبوع|أسابيع|شهر|أشهر|اشهر|سنة|سنه|سنوات|minutes?|mins?|hours?|days?|weeks?|months?|years?)/);
-  if (m && REL_UNITS[m[2]]) return new Date(Date.now() - Number(m[1]) * REL_UNITS[m[2]]);
+  if (m && REL_UNITS[m[2]]) return done(new Date(Date.now() - Number(m[1]) * REL_UNITS[m[2]]));
   m = s.match(/(ساعتين|يومين|شهرين|أسبوعين|اسبوعين|سنتين|دقيقتين)/);
-  if (m && REL_UNITS[m[1]]) return new Date(Date.now() - REL_UNITS[m[1]]);
+  if (m && REL_UNITS[m[1]]) return done(new Date(Date.now() - REL_UNITS[m[1]]));
   return null;
 }
 
@@ -604,10 +623,14 @@ function itemsFromList(list, base, strict, limit) {
     if (!title) continue;
     if (strict && articleScore(l.u) < 3) continue;
     seen.add(url);
+    LAST_REL = false;
+    const picked = pickDate(k);
+    const relDate = !!picked && LAST_REL;
     items.push({
       url,
       title: title.length > 220 ? title.slice(0, 220).trim() + "…" : title,
-      date: toRfc822(pickDate(k)) || dateFromUrl(l.u),
+      date: toRfc822(picked) || dateFromUrl(l.u),
+      relDate,
       img: pickImage(k, base),
       desc: itemSummary(k, title)
     });
@@ -902,7 +925,7 @@ async function fetchArticleMeta(url) {
 }
 
 async function backfillItemDates(items, limit) {
-  const undated = items.filter((i) => !i.date).slice(0, limit);
+  const undated = items.filter((i) => !i.date && !PREV_DATES.get(i.url)).slice(0, limit);
   if (!undated.length) return 0;
   let filled = 0;
   const CONC = 4;
@@ -1063,6 +1086,7 @@ async function buildFeed(targetUrl, selfUrl, params) {
   const wp = await tryWordPress(finalUrl);
   if (wp && wp.items.length >= 3) {
     const items = wp.items.slice(0, limit);
+    applyPrevDates(items);
     fillMissingDates(items);
     return {
       items,
@@ -1078,6 +1102,7 @@ async function buildFeed(targetUrl, selfUrl, params) {
   try { ex = extractFromDom(root, finalUrl, limit); } catch (e) { ex = null; }
   if (ex && ex.items.length >= 3) {
     const items = ex.items.slice(0, limit);
+    applyPrevDates(items);
     const backfilled = await backfillItemDates(items, 8);
     const approx = fillMissingDates(items);
     return {
