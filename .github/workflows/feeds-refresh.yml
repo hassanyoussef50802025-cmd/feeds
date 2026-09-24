@@ -1,0 +1,29 @@
+name: feeds-refresh
+on:
+  schedule:
+    - cron: "4,14,24,34,44,54 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: run scraper
+        run: node scrape.mjs
+      - name: commit and push
+        run: |
+          git config user.name "rss-bot"
+          git config user.email "rss-bot@users.noreply.github.com"
+          git add feeds
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "update feeds"
+            git pull --rebase --autostash
+            git push
+          fi
