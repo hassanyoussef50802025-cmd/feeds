@@ -1,0 +1,31 @@
+name: تحديث الخلاصات
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: feeds
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: تشغيل سكربت الزحف
+        run: node scrape.mjs
+      - name: حفظ الخلاصات المحدَّثة
+        run: |
+          git config user.name "rss-bot"
+          git config user.email "rss-bot@users.noreply.github.com"
+          git add feeds
+          if git diff --cached --quiet; then
+            echo "لا تغييرات"
+          else
+            git commit -m "تحديث الخلاصات"
+            git push
+          fi
