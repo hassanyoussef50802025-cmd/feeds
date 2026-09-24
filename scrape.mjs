@@ -739,13 +739,31 @@ function looksLikeProxyError(text) {
   return /"success"\s*:\s*false|Failed to fetch|upstream|Bad Gateway|Not Found/i.test(head);
 }
 
+const ALT_UAS = [
+  "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+  "Feedly/1.0 (+http://www.feedly.com/fetcher.html; like FeedFetcher-Google)",
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
+];
+
+let FETCH_DEADLINE = 0;
+
 async function fetchWithFallback(url, timeout) {
   const direct = await fetchText(url, timeout);
   if (direct.ok && direct.text && direct.text.length > 250) return direct;
   const worthProxy = direct.status === 0 || direct.status === 401 || direct.status === 403 ||
     direct.status === 406 || direct.status === 429 || direct.status >= 500;
   if (!worthProxy) return direct;
+  if (direct.status === 401 || direct.status === 403 || direct.status === 406) {
+    for (const ua of ALT_UAS) {
+      try {
+        const alt = await fetchText(url, timeout, { "user-agent": ua });
+        if (alt.ok && alt.text && alt.text.length > 250) return alt;
+      } catch (e) {}
+    }
+  }
+  if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) return direct;
   for (const pair of PROXY_BUILDERS) {
+    if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) break;
     const built = pair[0](url);
     let pr;
     try { pr = await fetchText(built, Math.max(timeout || 15000, 25000), pair[1]); } catch (e) { continue; }
@@ -764,7 +782,8 @@ async function fetchJson(url, timeout) {
     () => fetchText("https://api.allorigins.win/raw?url=" + encodeURIComponent(url), Math.max(timeout || 15000, 20000)),
     () => fetchText("https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(url), Math.max(timeout || 15000, 20000))
   ];
-  for (const attempt of attempts) {
+  const list = (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) ? attempts.slice(0, 1) : attempts;
+  for (const attempt of list) {
     let r;
     try { r = await attempt(); } catch (e) { continue; }
     if (!r || !r.text) continue;
@@ -1104,23 +1123,26 @@ async function loadFeedList() {
     console.error("تنبيه: تعذّر قراءة قائمة الأداة — " + (e && e.message ? e.message : e));
   }
   console.log("عدد الخلاصات: " + byUrl.size + " (من الأداة: " + fromTool + ")");
-  return [...byUrl.values()];
+  return { list: [...byUrl.values()], fromTool };
 }
 
 async function scrapeWithRetry(url) {
+  FETCH_DEADLINE = Date.now() + 150000;
   let out = await buildFeed(url, url, new URLSearchParams()).catch((e) => ({ error: "استثناء: " + (e && e.message ? e.message : String(e)) }));
   if (out && out.error) {
     await new Promise((r) => setTimeout(r, 4000));
+    FETCH_DEADLINE = Date.now() + 90000;
     out = await buildFeed(url, url, new URLSearchParams()).catch((e) => ({ error: "استثناء: " + (e && e.message ? e.message : String(e)) }));
   }
+  FETCH_DEADLINE = 0;
   return out;
 }
 
 async function run() {
-  const { mkdir, writeFile, rm } = await import("node:fs/promises");
+  const { mkdir, writeFile, rm, readdir, stat } = await import("node:fs/promises");
   const root = new URL("./feeds/", import.meta.url);
   await mkdir(root, { recursive: true });
-  const feeds = await loadFeedList();
+  const { list: feeds, fromTool } = await loadFeedList();
   let ok = 0, fail = 0;
   for (const f of feeds) {
     try {
@@ -1155,6 +1177,24 @@ async function run() {
       try { await writeFile(new URL(f.name + ".error.txt", root), msg, "utf8"); } catch (e2) {}
       fail++;
     }
+  }
+  if (fromTool > 0) {
+    try {
+      const keep = new Set();
+      for (const f of feeds) { keep.add(f.name + ".xml"); keep.add(f.name + ".error.txt"); }
+      const files = await readdir(root);
+      const cutoff = Date.now() - 60 * 60 * 1000;
+      for (const file of files) {
+        if (!/\.xml$/.test(file) && !/\.error\.txt$/.test(file)) continue;
+        if (keep.has(file)) continue;
+        try {
+          const st = await stat(new URL(file, root));
+          if (st.mtimeMs > cutoff) continue;
+          await rm(new URL(file, root), { force: true });
+          console.log("حذفت ملفًا قديمًا: " + file);
+        } catch (e) {}
+      }
+    } catch (e) {}
   }
   console.log("انتهى: نجحت " + ok + " وفشلت " + fail + ".");
 }
