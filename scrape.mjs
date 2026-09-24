@@ -38,6 +38,8 @@ const AR_MONTHS = {
   "نوفمبر": 11, "تشرين2": 11, "تشرين الثاني": 11, "ديسمبر": 12, "كانون2": 12, "كانون الأول": 12, "كانون الاول": 12
 };
 
+const AR_MONTHS_HINT = new RegExp("(" + Object.keys(AR_MONTHS).join("|") + ")");
+
 const REL_UNITS = {
   "دقيقة": 60000, "دقيقه": 60000, "دقائق": 60000, "دقيقتين": 120000,
   "ساعة": 3600000, "ساعه": 3600000, "ساعات": 3600000, "ساعتين": 7200000,
@@ -367,6 +369,19 @@ function pickDate(el) {
 
 function normText(s) { return String(s == null ? "" : s).replace(/\s+/g, " ").replace(/^[•·▪◦*\-–—|]+/, "").trim(); }
 
+/* Cheap signal that a candidate card actually shows a date (used to prefer dated lists). */
+function hasDateHint(k) {
+  if (q1(k, "time[datetime],[datetime],[data-timestamp],[data-date]")) return true;
+  for (const c of qsa(k, "p,span,small,div,li,time")) {
+    const sig = (attrOf(c, "class") || "") + " " + (attrOf(c, "itemprop") || "");
+    if (!DATE_CLASS.test(sig)) continue;
+    const t = textOf(c) || "";
+    if (t.length > 60) continue;
+    if (/\d/.test(t) && (AR_MONTHS_HINT.test(t) || /\d{1,4}[:/.-]\d/.test(t))) return true;
+  }
+  return false;
+}
+
 function isJunkTitle(t) {
   if (!t || t.length < 8) return true;
   if (SECTION_LABEL.test(t)) return true;
@@ -503,6 +518,7 @@ function findItemLists(root, base) {
     const kids = childrenOf(el);
     if (kids.length < 4 || kids.length > 250) continue;
     let n = 0, withHeading = 0, titleSum = 0;
+    let dated = 0;
     const sigs = new Set();
     const picks = [];
     for (const k of kids) {
@@ -515,14 +531,16 @@ function findItemLists(root, base) {
       if (!h && txt.length < 35 && !slug) continue;
       n++;
       if (h) withHeading++;
+      if (hasDateHint(k)) dated++;
       sigs.add(k.tagName + "|" + String(attrOf(k, "class") || "").slice(0, 80));
       titleSum += Math.min((h ? textOf(h) : (l.text || slug)).replace(/\s+/g, " ").trim().length, 140);
       picks.push(k);
     }
     if (n < 4) continue;
     const uniformity = 1 - (sigs.size / n);
-    const score = n * 10 + uniformity * 45 + Math.min(titleSum / n, 100) * 0.4 + withHeading * 1.5;
-    out.push({ el, n, score, picks });
+    const dateBonus = (dated / n) * 60;
+    const score = n * 10 + uniformity * 45 + Math.min(titleSum / n, 100) * 0.4 + withHeading * 1.5 + dateBonus;
+    out.push({ el, n, score, picks, dated });
   }
   out.sort((a, b) => b.score - a.score);
   return out;
@@ -627,15 +645,24 @@ function sortByDate(items) {
 function fillMissingDates(items) {
   const known = items.map((i) => (i.date ? Date.parse(i.date) : NaN));
   let approx = 0;
+  const gaps = [];
+  for (let i = 1; i < known.length; i++) {
+    if (isNaN(known[i]) || isNaN(known[i - 1])) continue;
+    const g = Math.abs(known[i - 1] - known[i]);
+    if (g > 0) gaps.push(g);
+  }
+  gaps.sort((a, b) => a - b);
+  let step = gaps.length ? gaps[Math.floor(gaps.length / 2)] : 1800000;
+  step = Math.min(Math.max(step, 60000), 86400000);
   for (let i = 0; i < items.length; i++) {
     if (!isNaN(known[i])) continue;
     let prev = -1, next = -1;
     for (let j = i - 1; j >= 0; j--) if (!isNaN(known[j])) { prev = j; break; }
     for (let j = i + 1; j < items.length; j++) if (!isNaN(known[j])) { next = j; break; }
     let t;
-    if (prev >= 0) t = known[prev] - 60000 * (i - prev);
-    else if (next >= 0) t = known[next] + 60000 * (next - i);
-    else t = Date.now() - 1800000 * (i + 1);
+    if (prev >= 0) t = known[prev] - step * (i - prev);
+    else if (next >= 0) t = known[next] + step * (next - i);
+    else t = Date.now() - step * (i + 1);
     items[i].date = new Date(t).toUTCString();
     items[i].approx = true;
     approx++;
@@ -675,6 +702,12 @@ function extractFromDom(root, pageUrl, limit) {
     if (flat.length > items.length) items = flat;
   }
   if (items.length < 3) return null;
+  const dated = items.filter((i) => i.date).length;
+  if (dated && dated < items.length) {
+    const withDates = items.filter((i) => i.date);
+    const withoutDates = items.filter((i) => !i.date);
+    items = withDates.concat(withoutDates);
+  }
   items = sortByDate(items.slice(0, limit));
   return { items, missing: items.filter((i) => !i.date).length };
 }
@@ -832,7 +865,7 @@ async function fetchArticleMeta(url) {
   let m = head.match(/<meta[^>]+(?:property|name|itemprop)=["'](?:article:published_time|datePublished|pubdate|publish-date|published_time|date)["'][^>]*content=["']([^"']+)["']/i)
     || head.match(/<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name|itemprop)=["'](?:article:published_time|datePublished|pubdate|publish-date|date)["']/i);
   if (m) date = m[1];
-  if (!date) { const ld = head.match(/"datePublished"\s*:\s*"([^"]+)"/i) || head.match(/"uploadDate"\s*:\s*"([^"]+)"/i); if (ld) date = ld[1]; }
+  if (!date) { const ld = head.match(/"datePublished"\s*:\s*"([^"]+)"/i) || head.match(/"dateModified"\s*:\s*"([^"]+)"/i) || head.match(/"uploadDate"\s*:\s*"([^"]+)"/i); if (ld) date = ld[1]; }
   if (!date) { const tm = head.match(/<time[^>]+datetime=["']([^"']+)["']/i); if (tm) date = tm[1]; }
   if (!date) { const dm = head.match(/<meta[^>]+name=["'](?:date|sailthru\.date|DC\.date[^"']*)["'][^>]*content=["']([^"']+)["']/i); if (dm) date = dm[1]; }
   if (!date) { const inPage = dateNearTitle(parseHTML(html)); if (inPage) date = toRfc822(inPage); }
