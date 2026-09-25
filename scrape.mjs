@@ -985,6 +985,43 @@ async function fetchText(url, timeout, extraHeaders) {
   } finally { clearTimeout(t); }
 }
 
+
+/* v15: تشخيص. سجلّ تشغيل GitHub لا يمكن قراءته إلا لصاحب المستودع، فإذا فشل جلب موقع لا سبيل
+   لمعرفة أي وسيط رفضه ولماذا. لذلك نكتب لكل خلاصة تفشل ملف `<name>.diag.txt` فيه نتيجة كل محاولة
+   (الحالة، عدد الأحرف، بداية الرد) إضافة إلى ملف الخطأ. يُحذفان بمجرد نجاح دورة. */
+let DIAG = [];
+let DIAG_DROPPED = 0;
+const DIAG_MAX = 70;
+function diag(line) {
+  if (DIAG.length >= DIAG_MAX) { DIAG_DROPPED++; return; }
+  DIAG.push(String(line).slice(0, 240));
+}
+function diagText(t) { return String(t || "").replace(/\s+/g, " ").slice(0, 90); }
+function diagResult(name, r) {
+  if (!r) { diag("  - " + name + ": لا رد"); return; }
+  diag("  - " + name + ": حالة " + r.status + " / " + (r.text ? r.text.length : 0) + " حرفًا" + (r.error ? " / خطأ: " + r.error : "") + (r.text ? " / «" + diagText(r.text) + "»" : ""));
+}
+
+/* v15: الموقع الذي عرفنا كيف نجلبه يُثبَّت مصدره في ملف `feeds/.transport.json` فيُستعمل في الدورات
+   التالية مباشرة (وسيط معيّن، أو بحث أخبار جوجل) — فلا تتقلّب الخلاصة بين مجموعتين مختلفتين من
+   الروابط كل دورة، ولا يُعاد اختبار الطرق الفاشلة. */
+let TRANSPORT = new Map();
+let TRANSPORT_START = "";
+let LAST_VIA = "";
+
+function diagText2() {
+  const body = DIAG.length ? DIAG.join("\n") : "لا محاولات مسجّلة.";
+  return body + (DIAG_DROPPED ? "\n(وأُسقط " + DIAG_DROPPED + " سطرًا زائدًا)" : "");
+}
+
+async function loadTransport(root, readFile) {
+  try {
+    const txt = await readFile(new URL(".transport.json", root), "utf8");
+    const obj = JSON.parse(txt);
+    return (obj && typeof obj === "object" && !Array.isArray(obj)) ? obj : {};
+  } catch (e) { return {}; }
+}
+
 /* ---- fallback sources for sites that block the crawler's own IP (e.g. 403 Cloudflare) ---- */
 
 /* وسيط منصّة Perchance نفسه (نفس ما تستعمله الأداة في المتصفح عبر superFetch). بعض المواقع تحجب
@@ -994,6 +1031,11 @@ const PERCHANCE_ORIGIN = "https://aeb47c27fa872c122527f995305d6c1c.perchance.org
 const PERCHANCE_GENERATOR = "qsswnafa2z";
 
 const PROXY_BUILDERS = [
+  /* نفس النداء الذي تصنعه الأداة في المتصفح: المتصفح يرسل ترويستي Origin و Referer مع الطلب،
+     ويبدو أن خدمة الوسيط تعتمد عليهما، فنرسلهما صراحةً من الخادم أيضًا. */
+  [(u) => "https://fetch-plugin.perchance.org/proxy1/" + encodeURIComponent(u) +
+    "?origin=" + encodeURIComponent(PERCHANCE_ORIGIN) + "&generator=" + PERCHANCE_GENERATOR,
+    { "origin": PERCHANCE_ORIGIN, "referer": PERCHANCE_ORIGIN + "/" }],
   [(u) => "https://fetch-plugin.perchance.org/proxy1/" + encodeURIComponent(u) +
     "?origin=" + encodeURIComponent(PERCHANCE_ORIGIN) + "&generator=" + PERCHANCE_GENERATOR, {}],
   [(u) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u), {}],
@@ -1043,20 +1085,27 @@ let FETCH_DEADLINE = 0;
 
 async function fetchWithFallback(url, timeout) {
   const host = hostOf(url);
-  /* نطاق عرفنا أنه محجوب: نستعمل الوسيط الذي نجح معه سابقًا مباشرة، بلا إهدار الوقت على جلب مباشر
-     فاشل مسبقًا. إن فشل هذا الوسيط نكمل الطريق العادي كأن شيئًا لم يكن. */
-  const known = host && HOST_PROXY.has(host) ? HOST_PROXY.get(host) : -1;
+  /* نطاق عرفنا أنه محجوب: نستعمل الوسيط الذي نجح معه سابقًا (خلال هذه الدورة أو الدورة السابقة)
+     مباشرة، بلا إهدار وقت على جلب مباشر فاشل مسبقًا. */
+  let known = -1;
+  if (host && HOST_PROXY.has(host)) known = HOST_PROXY.get(host);
+  else if (host) {
+    const m = String(TRANSPORT.get(host) || "").match(/^proxy:(\d+)$/);
+    if (m && PROXY_BUILDERS[+m[1]]) known = +m[1];
+  }
   if (known >= 0) {
     const pair = PROXY_BUILDERS[known];
     let pr = null;
-    try { pr = await fetchText(pair[0](url), Math.max(20000, Math.min(timeout || 15000, 30000)), pair[1]); } catch (e) {}
+    try { pr = await fetchText(pair[0](url), Math.max(20000, Math.min(timeout || 15000, 30000)), pair[1]); } catch (e) { diag("وسيط متذكَّر: استثناء " + (e && e.message)); }
+    diagResult("وسيط#" + known + " متذكَّر", pr);
     const hit = proxyResult(pr, url, pair[0](url));
-    if (hit) return hit;
+    if (hit) { LAST_VIA = "proxy:" + known; return hit; }
     HOST_PROXY.delete(host);
   }
   const direct = await fetchText(url, timeout);
+  diag("مباشر " + host + ": حالة " + direct.status + " / " + (direct.text ? direct.text.length : 0) + " حرفًا" + (direct.error ? " / خطأ: " + direct.error : "") + (direct.text ? " / «" + diagText(direct.text) + "»" : ""));
   const blocked = looksLikeBlockPage(direct.text || "");
-  if (direct.ok && direct.text && direct.text.length > 250 && !blocked) return direct;
+  if (direct.ok && direct.text && direct.text.length > 250 && !blocked) { LAST_VIA = "direct"; return direct; }
   if (blocked) console.log("   الصفحة ردّت بصفحة حجب — سنجرّب الوسائط الاحتياطية.");
   const worthProxy = !direct.ok || direct.status === 0 || direct.status === 401 || direct.status === 403 ||
     direct.status === 406 || direct.status === 429 || direct.status >= 500 || blocked;
@@ -1064,10 +1113,11 @@ async function fetchWithFallback(url, timeout) {
   if (direct.status === 401 || direct.status === 403 || direct.status === 406) {
     try {
       const alt = await fetchText(url, Math.max(8000, Math.min(timeout || 15000, 9000)), { "user-agent": ALT_UAS[0] });
-      if (alt.ok && alt.text && alt.text.length > 250 && !looksLikeBlockPage(alt.text)) return alt;
+      diagResult("هوية Googlebot", alt);
+      if (alt.ok && alt.text && alt.text.length > 250 && !looksLikeBlockPage(alt.text)) { LAST_VIA = "direct"; return alt; }
     } catch (e) {}
   }
-  if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE - 5000) return direct;
+  if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE - 5000) { diag("تجاوزنا مهلة الدورة قبل الوسائط"); return direct; }
   /* كل الوسائط في وقت واحد: الأسرع يفوز، وترتيب PROXY_BUILDERS هو الأولوية عند تساوي السرعة،
      فلا تنتهي المهلة قبل الوصول إلى الوسيط الذي ينجح فعلًا. */
   const budget = FETCH_DEADLINE ? Math.min(45000, Math.max(15000, FETCH_DEADLINE - Date.now())) : 45000;
@@ -1079,10 +1129,12 @@ async function fetchWithFallback(url, timeout) {
   });
   const settled = await Promise.all(race);
   settled.sort((a, b) => a.idx - b.idx);
+  for (const r of settled) diagResult("وسيط#" + r.idx, r.pr);
   for (const r of settled) {
     const hit = proxyResult(r.pr, url, r.built);
     if (hit) {
       if (host) HOST_PROXY.set(host, r.idx);
+      LAST_VIA = "proxy:" + r.idx;
       return hit;
     }
   }
@@ -1103,7 +1155,8 @@ async function fetchJson(url, timeout) {
   for (const attempt of list) {
     if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) break;
     let r;
-    try { r = await attempt.fn(); } catch (e) { continue; }
+    try { r = await attempt.fn(); } catch (e) { diag("JSON عبر " + (attempt.idx >= 0 ? "وسيط#" + attempt.idx : "مباشر") + ": استثناء " + (e && e.message)); continue; }
+    diagResult("JSON " + (attempt.idx >= 0 ? "وسيط#" + attempt.idx : "مباشر"), r);
     if (!r || !r.text) continue;
     if (r.ok) {
       try {
@@ -1318,6 +1371,13 @@ function isBlockedHost(hostname) {
 async function buildFeed(targetUrl, selfUrl, params) {
   const limit = Math.max(1, Math.min(60, parseInt(params.get("limit") || String(DEFAULT_LIMIT), 10) || DEFAULT_LIMIT));
   const titleParam = params.get("title") || "";
+  const host = (() => { try { return new URL(targetUrl).host; } catch (e) { return ""; } })();
+  /* موقع سبق أن حُسم أمره في دورة سابقة: إن كان مصدره «بحث أخبار جوجل» نبني منه مباشرة، فلا
+     تتقلّب الخلاصة بين مجموعتين من الروابط (روابط الموقع مقابل روابط جوجل) في كل دورة. */
+  if (host && TRANSPORT.get(host) === "gnews") {
+    const locked = await googleNewsFallback(host, limit);
+    if (locked) return locked;
+  }
 
   const first = await fetchWithFallback(targetUrl, 16000);
   const pageText = (first.ok && first.text) ? first.text : "";
@@ -1390,10 +1450,50 @@ async function buildFeed(targetUrl, selfUrl, params) {
   const common = await probeCommonFeeds(base);
   if (common) return common;
 
+  /* v15: لم نجد خلاصة من الموقع نفسه (حجب كامل، أو صفحة بلا قوائم) — بحث أخبار جوجل قبل الاستسلام. */
+  const gnews = await googleNewsFallback(host, limit);
+  if (gnews) return gnews;
+
   if (!pageText) {
     return { error: "تعذّر جلب الصفحة (الحالة " + first.status + ")." + (first.error ? " " + first.error : "") };
   }
   return { error: "لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار)." };
+}
+
+
+/* v15: آخر ملاذ للمواقع التي تحجب خوادمنا: خلاصة بحث «أخبار جوجل» عن الموقع نفسه. جوجل تزحف كل
+   المواقع الإخبارية وتحفظ العناوين والتواريخ، فالخلاصة تبقى حيّة حتى لو حجب الموقع كل وسائطنا.
+   الروابط في هذه الحالة روابط جوجل (تُفتح عادة إلى الخبر الأصلي)، ولهذا لا نستعملها إلا إذا فشل
+   كل شيء آخر، ونُثبّتها في .transport.json حتى لا تتقلّب الخلاصة بين مجموعتين من الروابط. */
+function googleNewsItems(xml, limit) {
+  const out = [];
+  const seen = new Set();
+  for (const m of String(xml || "").matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+    const b = m[1];
+    const link = ((b.match(/<link>([^<]*)<\/link>/) || [])[1] || "").trim();
+    let title = (b.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "";
+    title = xmlUnesc(title.replace(/<!\[CDATA\[|\]\]>/g, "")).replace(/\s+-\s+[^-]{2,50}$/, "").replace(/\s+/g, " ").trim();
+    const date = toRfc822((b.match(/<pubDate>([^<]*)<\/pubDate>/) || [])[1]);
+    if (!link || !title || seen.has(link)) continue;
+    seen.add(link);
+    out.push({ url: link, title: title.slice(0, 220), date, relDate: false, img: null, desc: "" });
+    if (out.length >= (limit || 30)) break;
+  }
+  return out;
+}
+
+async function googleNewsFallback(host, limit) {
+  if (!host) return null;
+  const tries = [["LB", "LB"], ["EG", "EG"], ["US", "US"]];
+  for (const [gl, ceid] of tries) {
+    const u = "https://news.google.com/rss/search?q=" + encodeURIComponent("site:" + host) +
+      "&hl=ar&gl=" + gl + "&ceid=" + ceid + ":ar";
+    const f = await fetchWithFallback(u, 20000);
+    const items = f && f.ok ? googleNewsItems(f.text, limit) : [];
+    diag("بحث أخبار جوجل (" + gl + "): " + (f ? f.status + " / " + items.length + " عنصرًا" : "لا رد"));
+    if (items.length >= 3) { LAST_VIA = "gnews"; return { items, via: "بحث أخبار جوجل", note: "المصدر: بحث أخبار جوجل عن هذا الموقع (الموقع يحجب خوادم الجلب المباشر)", pageUrl: "https://news.google.com/" }; }
+  }
+  return null;
 }
 
 async function probeCommonFeeds(base) {
@@ -1516,16 +1616,24 @@ async function run() {
   const root = new URL("./feeds/", import.meta.url);
   await mkdir(root, { recursive: true });
   const { list: feeds, fromTool } = await loadFeedList();
+  const transport = await loadTransport(root, readFile);
+  TRANSPORT = new Map(Object.entries(transport));
+  TRANSPORT_START = JSON.stringify(transport);
   const written = new Set();
   let ok = 0, fail = 0;
   for (const f of feeds) {
     try {
       PREV_DATES = await loadPrevDates(new URL(f.name + ".xml", root), readFile);
+      DIAG = []; DIAG_DROPPED = 0; LAST_VIA = "";
       const out = await scrapeWithRetry(f.url);
       if (out && out.error) {
         console.error("✗ " + f.name + ": " + out.error);
         await writeFile(new URL(f.name + ".error.txt", root), out.error, "utf8");
         written.add(f.name + ".error.txt");
+        const txt = "الخطأ: " + out.error + "\n" + diagText2();
+        await writeFile(new URL(f.name + ".diag.txt", root), txt, "utf8");
+        written.add(f.name + ".diag.txt");
+        console.log(txt);
         fail++;
         continue;
       }
@@ -1557,6 +1665,8 @@ async function run() {
       await writeFile(new URL(f.name + ".xml", root), xml, "utf8");
       written.add(f.name + ".xml");
       await rm(new URL(f.name + ".error.txt", root), { force: true });
+      await rm(new URL(f.name + ".diag.txt", root), { force: true });
+      TRANSPORT.set(hostOf(f.url), LAST_VIA || "direct");
       console.log("✓ " + f.name + ": " + (out.passthrough ? "خلاصة أصلية" : (out.items ? out.items.length : 0) + " عنصرًا"));
       ok++;
     } catch (e) {
@@ -1566,13 +1676,23 @@ async function run() {
       fail++;
     }
   }
+  try {
+    const obj = {};
+    for (const f of feeds) { const t = TRANSPORT.get(hostOf(f.url)); if (t) obj[hostOf(f.url)] = t; }
+    const txt = JSON.stringify(obj, null, 1);
+    if (txt !== TRANSPORT_START) {
+      await writeFile(new URL(".transport.json", root), txt, "utf8");
+      written.add(".transport.json");
+      console.log("حُفظت مصادر الجلب في .transport.json (" + Object.keys(obj).length + " موقعًا)");
+    }
+  } catch (e) {}
   if (fromTool > 0) {
     try {
       const keep = new Set();
-      for (const f of feeds) { keep.add(f.name + ".xml"); keep.add(f.name + ".error.txt"); }
+      for (const f of feeds) { keep.add(f.name + ".xml"); keep.add(f.name + ".error.txt"); keep.add(f.name + ".diag.txt"); }
       const files = await readdir(root);
       for (const file of files) {
-        if (!/\.xml$/.test(file) && !/\.error\.txt$/.test(file)) continue;
+        if (!/\.xml$/.test(file) && !/\.error\.txt$/.test(file) && !/\.diag\.txt$/.test(file)) continue;
         if (keep.has(file) || written.has(file)) continue;
         try {
           await rm(new URL(file, root), { force: true });
