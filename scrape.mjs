@@ -25,6 +25,21 @@
  * إن كانت صفحة حجب؛ (٤) محاولة واحدة بهوية Googlebot بدل ثلاث؛ (٥) قراءة الوقت وحده («11:37 AM»)
  * كتاريخ اليوم، فقد كانت عناصر الصفحة الأولى تبقى بلا تاريخ فتتأخّر في الترتيب.
  *
+ * نسخة 17 (إصلاح جذري لمواقع كلاودفلير، مثل mobizil و«المركزية»):
+ *   (١) كان الاستخراج يقارن الـorigin حرفيًا، فموقع يُفتح على www.mobizil.com بينما روابط أخباره
+ *   mobizil.com/… تُرفض كلها ويعود الاستخراج صفرًا — وهذا وحده كان يُفشل مسار الأرشيف والوسائط.
+ *   الآن المقارنة بـ«نفس الموقع» (تجاهل www والنطاقات الفرعية مثل m./amp.).
+ *   (٢) مسار «أرشيف الإنترنت» صار مسارًا كاملًا: يُعاد استعمال التقاط حديث (< ٣٠ دقيقة)، وإن غاب
+ *   الطابع الزمني في ردّ الحفظ نسأل واجهة الأرشيف عن أقرب نسخة، وإن تعذّرت النسخة الخام نُقرأ النسخة
+ *   المعروضة ونُزيل لفّة /web/<ts>/ عن الروابط، ثم يُفحص العنصر مستخرَجًا (عدد + حداثة) قبل النشر.
+ *   (٣) عند حجب الصفحة (403) لم نعد نهدر الدقائق في إعادة تجربة الوسائط: نجرّب واجهة WordPress ثم
+ *   الأرشيف مباشرة.
+ *   (٤) «أبقِ النسخة السابقة» كان يمنع الترقية من خلاصة «بحث أخبار جوجل» إلى قائمة الموقع الأصلية
+ *   (لا تقاطع بالروابط إطلاقًا)؛ الآن يُقاس التقاطع بالعناوين أيضًا، وللأرشيف/واجهة REST رتبة أعلى
+ *   من خلاصة جوجل فتُقبل الترقية، مع حماية من نشر قائمة أقدم زمنيًا.
+ *   (٥) ملف feeds/run-log.txt الجديد يسجّل نتيجة كل خلاصة في كل دورة (المصدر، عدد العناصر، أحدث
+ *   تاريخ، سبب الإبقاء على النسخة السابقة) لتشخيص أي توقّف بلا حاجة إلى سجلات Actions.
+ *
  * يعمل بلا أي واجهة ولا حساب: عند كل طلب يتفحص الصفحة ويعيد خلاصة RSS محدّثة،
  * وذاكرة مؤقتة 10 دقائق تخفّف الضغط. لا صفحة ولا تبويب مفتوح ولا رجوع لأي مكان.
  */
@@ -88,6 +103,9 @@ let LAST_REL = false;
         بعد 6 ساعات. السبب: موقع mobizil يعطي أحيانًا قائمته الكاملة (25 خبرًا بتواريخ) وأحيانًا
         يسقط إلى قائمة جانبية قديمة (صفحات 2023/2024)، فكانت الخلاصة تقفز بين مجموعتين كل 11 دقيقة. */
 let PICKED_REL = false;
+/* v17: تاريخ «وقت بلا تاريخ» (ساعة الموقع مثل «11:59 AM») — يُثبَّت للعنصر نفسه بين الدورات. */
+let LAST_TIME_ONLY = false;
+let PICKED_TIME_ONLY = false;
 
 /* Give undated items their date from the previous run's feed, so dates don't churn every cycle.
    v10: العنصر الموجود في التحديث السابق خبرٌ قديم، فتاريخه يجب ألّا يتحرك أبدًا. نُثبّت التاريخ
@@ -103,7 +121,7 @@ function applyPrevDates(items) {
     const t = it.date ? Date.parse(it.date) : NaN;
     const pt = Date.parse(prev);
     const looksLikeNow = !isNaN(t) && Math.abs(Date.now() - t) < 90 * 60000;
-    if (!it.date || it.relDate || looksLikeNow) { it.date = prev; it.carried = true; it.approx = false; n++; continue; }
+    if (!it.date || it.relDate || it.timeOnly || looksLikeNow) { it.date = prev; it.carried = true; it.approx = false; n++; continue; }
     if (isFinite(t) && isFinite(pt) && Math.abs(t - pt) <= 4 * 3600000) {
       it.date = prev; it.carried = true; it.approx = false; frozen++;
     }
@@ -151,19 +169,43 @@ async function loadPrevDates(fileUrl, readFile) {
 /* v10: ترتيب جودة المصادر. الخلاصة الأصلية للموقع أفضل شيء، ثم واجهة WordPress (تواريخ دقيقة
    وثابتة)، ثم الاستخراج من الصفحة (يتغيّر بتغيّر نسخة الصفحة). نستخدمه فقط للسماح بالترقية إلى
    مصدر أفضل، ولا يمنع الرجوع لمصدر أردأ. */
-const SRC_RANK = { dom: 1, rest: 2, native: 2 };
+/* v17: نسخة الأرشيف مصدر حقيقي من الموقع (روابط أصلية + قوائم الصفحة كاملة)، فهي أعلى رتبة من
+   «بحث أخبار جوجل» (روابط جوجل). الرتبة الأعلى تسمح بالترقية دائمًا: خلاصة بُنيت من بحث جوجل
+   يُسمح باستبدالها بقائمة الموقع الأصلية. */
+const SRC_RANK = { gnews: 1, dom: 1, native: 2, rest: 3, wayback: 3 };
 
 /* v10: هل القائمة التي استخرجناها هذه الدورة تختلف جذريًا عمّا نشرناه سابقًا من نفس المصدر؟
-   إن نعم نُبقي النسخة السابقة (انظر run). */
+   إن نعم نُبقي النسخة السابقة (انظر run).
+   v17: نقيس التقاطع بالروابط وبالعناوين معًا. خلاصة سابقة بُنيت من بحث جوجل تحمل روابط جوجل
+   وعناوين أخبار الموقع نفسها، فقائمة الموقع الأصلية لا تتقاطع معها بالروابط إطلاقًا (فكانت
+   تُرفض ويعود الموقع إلى خلاصة جوجل القديمة كل دورة). */
 function checkInconsistent(items, src) {
   if (!PREV_XML || PREV_DATES.size < 5) return { overlap: 0, bad: false };
   const overlap = items.filter((i) => PREV_DATES.has(i.url)).length;
-  if (PREV_BUILD > 0 && Date.now() - PREV_BUILD > 6 * 3600000) return { overlap, bad: false };
+  const prevTitles = new Set();
+  for (const m of PREV_XML.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+    const t = normTitleKey((m[1].match(/<title>([^<]*)<\/title>/) || [])[1]);
+    if (t) prevTitles.add(t);
+  }
+  const titleOverlap = items.filter((i) => prevTitles.has(normTitleKey(i.title))).length;
+  if (PREV_BUILD > 0 && Date.now() - PREV_BUILD > 6 * 3600000) return { overlap, titleOverlap, bad: false };
   const better = (SRC_RANK[src] || 1) > (SRC_RANK[PREV_SRC] || 1);
   /* دورة لا تُضيف شيئًا جديدًا وتحذف عناصر (قائمة أصغر كلها موجودة) لا فائدة من نشرها. */
   const subsetOnly = items.length > 0 && items.length < PREV_DATES.size && overlap >= items.length;
-  const bad = !better && (overlap < Math.max(2, Math.floor(PREV_DATES.size * 0.3)) || subsetOnly);
-  return { overlap, bad };
+  const related = overlap >= Math.max(2, Math.floor(PREV_DATES.size * 0.3)) ||
+    titleOverlap >= Math.max(3, Math.floor(items.length * 0.3));
+  const bad = !better && (!related || subsetOnly);
+  return { overlap, titleOverlap, bad };
+}
+
+/* مفتاح مقارنة العنوان: بلا وسوم/تشكيل ولا لاحقة اسم الموقع. */
+function normTitleKey(t) {
+  return normText(xmlUnesc(String(t || "")))
+    .replace(/[\u064B-\u0652\u0640]/g, "")
+    .replace(/[أإآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه")
+    .replace(/\s*[-–—|]\s*[^-–—|]{2,40}$/, "")
+    .replace(/[^\u0600-\u06FFa-zA-Z0-9 ]+/g, "")
+    .replace(/\s+/g, " ").trim().slice(0, 60);
 }
 
 const REL_UNITS = {
@@ -435,6 +477,7 @@ function parseArabicDate(src) {
 }
 
 function parseDateText(v) {
+  LAST_TIME_ONLY = false;
   const raw = normalizeDigits(v).replace(/[\u200e\u200f\u061c\u00a0]/g, " ").replace(/\s+/g, " ").trim();
   if (!raw) return null;
   if (/^\d{10}$/.test(raw)) { const d = new Date(Number(raw) * 1000); return isNaN(d.getTime()) ? null : d; }
@@ -476,6 +519,10 @@ function parseTimeOnly(src) {
   if (!s || s.length > 24) return null;
   const now = new Date();
   const atToday = (hh, mm) => new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), hh, mm, 0, 0));
+  /* v17: نُعلّم هذا التاريخ بأنه «وقت بلا تاريخ» — موقع يكتب «11:59 AM» يعني ساعة الموقع المحلية،
+     وهذا التاريخ (اليوم في ساعة الموقع) يجب أن يبقى ثابتًا للعنصر نفسه بين الدورات كما يفعل
+     التاريخ النسبي، وإلّا تحرّك مع كل دورة. */
+  const done = (d) => { LAST_TIME_ONLY = true; return d; };
   let m = s.match(/^(\d{1,2}):(\d{2})(?::\d{2})?\s*(am|pm|a\.m\.|p\.m\.)$/i);
   if (m) {
     let hh = +m[1];
@@ -483,7 +530,7 @@ function parseTimeOnly(src) {
     if (hh > 12 || mm > 59) return null;
     if (/^p/.test(ap) && hh < 12) hh += 12;
     if (/^a/.test(ap) && hh === 12) hh = 0;
-    return atToday(hh, mm);
+    return done(atToday(hh, mm));
   }
   m = s.match(/^(\d{1,2}):(\d{2})(?::\d{2})?\s*(ص|م|صباحا|صباحًا|صباحاً|مساء|مساءً|مساءا)$/);
   if (m) {
@@ -492,7 +539,7 @@ function parseTimeOnly(src) {
     if (hh > 23 || mm > 59) return null;
     if (/^(م|مساء)/.test(ap) && hh < 12) hh += 12;
     if (/^(ص|صباحا)/.test(ap) && hh === 12) hh = 0;
-    return atToday(hh, mm);
+    return done(atToday(hh, mm));
   }
   return null;
 }
@@ -507,7 +554,7 @@ function toRfc822(v) {
 }
 
 function pickDate(el) {
-  const take = (v) => { const d = parseDateText(v); if (d) PICKED_REL = LAST_REL; return d; };
+  const take = (v) => { const d = parseDateText(v); if (d) { PICKED_REL = LAST_REL; PICKED_TIME_ONLY = LAST_TIME_ONLY; } return d; };
   const t = q1(el, "time[datetime],[datetime],[data-date],[data-time],[data-timestamp]");
   if (t) {
     const v = attrOf(t, "datetime") || attrOf(t, "content") || attrOf(t, "data-date") || attrOf(t, "data-time") || attrOf(t, "data-timestamp") || textOf(t) || "";
@@ -639,7 +686,7 @@ function mainLink(el, base) {
     if (!href || href === "#" || /^(javascript|mailto|tel):/i.test(href)) continue;
     let u;
     try { u = new URL(href, base); } catch (e) { continue; }
-    if (u.origin !== base.origin) continue;
+    if (!sameSite(u.host, base.host)) continue;
     if (u.pathname === base.pathname && !u.search) continue;
     const txt = normText(textOf(a));
     let s = articleScore(u);
@@ -745,11 +792,13 @@ function itemsFromList(list, base, strict, limit) {
     LAST_REL = false;
     const picked = pickDate(k);
     const relDate = !!picked && PICKED_REL;
+    const timeOnly = !!picked && PICKED_TIME_ONLY;
     items.push({
       url,
       title: title.length > 220 ? title.slice(0, 220).trim() + "…" : title,
       date: toRfc822(picked) || dateFromUrl(l.u),
       relDate,
+      timeOnly,
       img: pickImage(k, base),
       desc: itemSummary(k, title)
     });
@@ -777,7 +826,7 @@ function extractAllLinks(root, base, limit) {
     if (!href || href === "#" || /^(javascript|mailto|tel):/i.test(href)) continue;
     let u;
     try { u = new URL(href, base); } catch (e) { continue; }
-    if (u.origin !== base.origin) continue;
+    if (!sameSite(u.host, base.host)) continue;
     if (articleScore(u) < 3) continue;
     const url = u.href.split("#")[0];
     if (seen.has(url)) continue;
@@ -791,6 +840,7 @@ function extractAllLinks(root, base, limit) {
       title: title.length > 220 ? title.slice(0, 220).trim() + "…" : title,
       date: toRfc822(pickDate(box)) || dateFromUrl(u),
       relDate: PICKED_REL,
+      timeOnly: PICKED_TIME_ONLY,
       img: pickImage(box, base),
       desc: itemSummary(box, title)
     });
@@ -1069,6 +1119,22 @@ function hostOf(url) {
   try { return new URL(url).host; } catch (e) { return ""; }
 }
 
+/* v17: المقارنة بنفس «الموقع» لا بنفس الـorigin. كثير من المواقع تفتح على www بينما روابط
+   أخبارها بلا www (أو العكس)، فكانت كل الروابط تُرفض ويعود الاستخراج صفرًا — وهذا بالضبط ما
+   أفشل مسار «نسخة الأرشيف» لموقع mobizil. */
+function siteKey(host) {
+  let h = String(host || "").toLowerCase().replace(/\.$/, "");
+  if (/^www\d*\./.test(h)) h = h.replace(/^www\d*\./, "");
+  return h;
+}
+
+function sameSite(a, b) {
+  const x = siteKey(a), y = siteKey(b);
+  if (!x || !y) return false;
+  if (x === y) return true;
+  return x.endsWith("." + y) || y.endsWith("." + x);
+}
+
 function proxyResult(pr, url, built) {
   if (!pr || !pr.ok || !pr.text || pr.text.length < 400) return null;
   if (looksLikeProxyError(pr.text) || looksLikeBlockPage(pr.text)) return null;
@@ -1258,7 +1324,8 @@ async function backfillItemDates(items, limit) {
   return filled;
 }
 
-async function tryWordPress(pageUrl) {
+async function tryWordPress(pageUrl, timeout) {
+  const tmo = timeout || 20000;
   const u = new URL(pageUrl);
   const origin = u.origin;
   const api = origin + "/wp-json/wp/v2";
@@ -1269,12 +1336,12 @@ async function tryWordPress(pageUrl) {
     const slug = segs[0];
     for (const tax of ["categories", "tags"]) {
       try {
-        const arr = await fetchJson(api + "/" + tax + "?slug=" + encodeURIComponent(slug), 12000);
+        const arr = await fetchJson(api + "/" + tax + "?slug=" + encodeURIComponent(slug), Math.min(tmo, 12000));
         if (Array.isArray(arr) && arr[0] && arr[0].id) { postsUrl = api + "/posts?per_page=25&" + fields + "&" + tax + "=" + arr[0].id; break; }
       } catch (e) {}
     }
   }
-  const posts = await fetchJson(postsUrl, 20000);
+  const posts = await fetchJson(postsUrl, tmo);
   if (!Array.isArray(posts) || posts.length < 2) return null;
 
   const mediaIds = posts.map((p) => {
@@ -1286,7 +1353,7 @@ async function tryWordPress(pageUrl) {
   const ids = mediaIds.filter(Boolean).slice(0, 25);
   if (ids.length) {
     try {
-      const arr = await fetchJson(api + "/media?per_page=50&_fields=id,source_url&include=" + ids.join(","), 15000);
+      const arr = await fetchJson(api + "/media?per_page=50&_fields=id,source_url&include=" + ids.join(","), Math.min(tmo, 15000));
       if (Array.isArray(arr)) arr.forEach((m) => { mediaMap[m.id] = m.source_url; });
     } catch (e) {}
   }
@@ -1311,9 +1378,13 @@ function xmlEsc(s) {
 
 function cdata(s) { return String(s || "").replace(/]]>/g, "]]&gt;"); }
 
-/* Some pages print local time (e.g. Cairo, +2/+3) with no timezone, so a whole page's dates can
-   land in the future; readers then hide those items. If the newest item is in the future, shift
-   every date back by the same offset (relative order preserved) so the newest sits just before now. */
+/* Some pages print local time (e.g. Beirut, +3) with no timezone, so a whole page's dates can land
+   in the future; readers then hide those items. v17:
+   - إن كان الفارق بين أحدث تاريخ وساعة التشغيل يساوي ساعات كاملة (فارق منطقة زمنية للموقع) نُزيح كل
+     العناصر الجديدة بالمقدار نفسه، فيبقى الترتيب صحيحًا وتُصحَّح الساعة لكل العناصر، بدل إرجاع
+     البطاقات المتقدّمة وحدها (كان ذلك يخلط ترتيب آخر ساعة).
+   - لا نُحرّك عنصرًا نُشر في دورة سابقة (it.carried): تواريخ الخلاصة تبقى ثابتة فلا تظهر الأخبار
+     القديمة كأنها جديدة كل ٢٠ دقيقة. */
 function fixFutureDates(items) {
   const now = Date.now();
   const times = items.map((it) => Date.parse(it.date || "")).filter((t) => isFinite(t));
@@ -1321,22 +1392,25 @@ function fixFutureDates(items) {
   const future = times.filter((t) => t > now + 120000);
   if (!future.length) return 0;
   const delta = Math.max(...times) - now + 60000;
-  /* v9: إن كان المتقدّم قلة (بطاقة واحدة ساعتها غلط أو "12:00" افتراضية) فلا نحرّك بقية الخلاصة،
-     وإلا كان كل تشغيل يزيح كل التواريخ للوراء بمقدار مختلف فتفقد الخلاصة استقرارها نهائيًا. */
-  if (future.length * 2 < times.length) {
-    let n = 0;
-    for (const it of items) {
-      const t = Date.parse(it.date || "");
-      if (isFinite(t) && t > now + 120000) { it.date = new Date(t - delta).toUTCString(); it.approx = true; n++; }
-    }
-    console.log("   ملاحظة: أُرجعت " + n + " تواريخ متقدّمة إلى الوراء (ساعة الموقع) دون تحريك بقية الخلاصة.");
-    return 0;
-  }
+  const hours = Math.round(delta / 3600000);
+  const tzShift = future.length >= 2 && hours >= 1 && hours <= 11 && Math.abs(delta - hours * 3600000) < 45 * 60000;
+  const shift = tzShift ? hours * 3600000 : delta;
+  let n = 0;
   for (const it of items) {
+    if (it.carried) continue;
     const t = Date.parse(it.date || "");
-    if (isFinite(t)) it.date = new Date(t - delta).toUTCString();
+    if (!isFinite(t)) continue;
+    const hit = tzShift ? t > now - 72 * 3600000 : t > now + 120000;
+    if (!hit) continue;
+    it.date = new Date(t - shift).toUTCString();
+    it.approx = true;
+    n++;
   }
-  return delta;
+  if (n) {
+    console.log("   ملاحظة: أُرجعت " + n + " تواريخ متقدّمة إلى الوراء" +
+      (tzShift ? " (" + hours + " ساعات — ساعة الموقع المحلية)" : " (ساعة الموقع)") + " دون تحريك ما نُشر سابقًا.");
+  }
+  return 0;
 }
 
 function buildRssXml(opts) {
@@ -1385,6 +1459,28 @@ function isBlockedHost(hostname) {
   return false;
 }
 
+function feedTitle(base, titleParam) {
+  return titleParam || (base.host + (base.pathname !== "/" ? base.pathname : ""));
+}
+
+function wpFeed(wp, limit, title, finalUrl) {
+  const items = wp.items.slice(0, limit);
+  applyPrevDates(items);
+  fillMissingDates(items);
+  return { items, via: wp.via, title, pageUrl: finalUrl };
+}
+
+/* استخراج DOM من نصّ صفحة. لا يعمل على صفحة حجب، ولهذا لا يُستدعى إلا على صفحة حقيقية. */
+function domFeed(text, pageUrl, limit, title) {
+  let ex = null;
+  try { ex = extractFromDom(parseHTML(text), pageUrl, limit); } catch (e) { ex = null; }
+  if (!ex || ex.items.length < 3) return null;
+  const items = ex.items.slice(0, limit);
+  applyPrevDates(items);
+  const approx = fillMissingDates(items);
+  return { items, via: "استخراج مباشر من الصفحة", title, pageUrl, approx };
+}
+
 async function buildFeed(targetUrl, selfUrl, params) {
   const limit = Math.max(1, Math.min(60, parseInt(params.get("limit") || String(DEFAULT_LIMIT), 10) || DEFAULT_LIMIT));
   const titleParam = params.get("title") || "";
@@ -1400,92 +1496,60 @@ async function buildFeed(targetUrl, selfUrl, params) {
   }
 
   const base = new URL(finalUrl);
+  const title = feedTitle(base, titleParam);
+  /* v17: هل وصلت الصفحة نفسها؟ (أحد الوسائط نجح) أم أن الموقع حجبنا كلنا؟ الفرق مهم: استخراج DOM
+     من صفحة حجب لا ينفع، وإعادة تجربة الوسائط على كل مسار مضيعة للدقائق داخل دورة قصيرة. */
+  const pageOk = !!(pageText && pageText.length > 250 && !looksLikeBlockPage(pageText));
 
-  // Native declared feed? Prefer it (self-updating, complete, real dates) — unless it is clearly
-  // shorter than what the site's WordPress REST API can give us: many WordPress feeds carry only
-  // ~10 items, and a site's own XML is sometimes exactly what a reader chokes on, so a fuller
-  // generated feed is the better answer then. A thin native feed is still our fallback when REST
-  // is unavailable.
-  let native = null;
-  const declared = declaredFeedUrls(pageText, finalUrl);
-  for (const u of declared.slice(0, 3)) {
-    const f = await fetchWithFallback(u, 12000);
-    if (f.ok && looksLikeFeed(f.text)) {
-      const isAtom = /<feed[\s>]/i.test(f.text.slice(0, 800));
-      const count = (f.text.match(/<item[\s>]/g) || []).length + (f.text.match(/<entry[\s>]/g) || []).length;
-      if (count >= 15) {
-        return { passthrough: f.text, type: isAtom ? "application/atom+xml" : "application/rss+xml" };
+  /* ---------- (١) الصفحة وصلت: نجرب من الأفضل إلى الأردأ ---------- */
+  if (pageOk) {
+    // خلاصة الموقع الأصلية، إن كانت معلنة في الصفحة وكاملة (١٥ عنصرًا أو أكثر).
+    let native = null;
+    const declared = declaredFeedUrls(pageText, finalUrl);
+    for (const u of declared.slice(0, 3)) {
+      const f = await fetchWithFallback(u, 12000);
+      if (f.ok && looksLikeFeed(f.text)) {
+        const isAtom = /<feed[\s>]/i.test(f.text.slice(0, 800));
+        const count = (f.text.match(/<item[\s>]/g) || []).length + (f.text.match(/<entry[\s>]/g) || []).length;
+        if (count >= 15) {
+          return { passthrough: f.text, type: isAtom ? "application/atom+xml" : "application/rss+xml" };
+        }
+        native = { xml: f.text, atom: isAtom, count };
+        break;
       }
-      native = { xml: f.text, atom: isAtom, count };
-      break;
     }
-  }
 
-  // WordPress REST (cheap, exact dates).
-  const wp = await tryWordPress(finalUrl);
-  if (wp && wp.items.length >= 3 && (!native || wp.items.length > native.count + 5)) {
-    const items = wp.items.slice(0, limit);
-    applyPrevDates(items);
-    fillMissingDates(items);
-    return {
-      items,
-      via: wp.via,
-      title: titleParam || (base.host + (base.pathname !== "/" ? base.pathname : "")),
-      pageUrl: finalUrl
-    };
-  }
-
-  // The declared feed was thin and REST gave us nothing better: publish the site's own feed.
-  if (native) return { passthrough: native.xml, type: native.atom ? "application/atom+xml" : "application/rss+xml" };
-
-  // Generic DOM extraction.
-  const root = parseHTML(pageText);
-  let ex = null;
-  try { ex = extractFromDom(root, finalUrl, limit); } catch (e) { ex = null; }
-  if (ex && ex.items.length >= 3) {
-    const items = ex.items.slice(0, limit);
-    applyPrevDates(items);
-    const backfilled = await backfillItemDates(items, 8);
-    const approx = fillMissingDates(items);
-    return {
-      items,
-      via: "استخراج مباشر من الصفحة",
-      title: titleParam || (base.host + (base.pathname !== "/" ? base.pathname : "")),
-      pageUrl: finalUrl,
-      backfilled,
-      approx
-    };
-  }
-
-  // Last resort: probe the address's usual feed locations.
-  const common = await probeCommonFeeds(base);
-  if (common) return common;
-
-  /* v16: كلاودفلير يحجب كل عناوين مراكز البيانات، لكن «أرشيف الإنترنت» مُفهرس معروف فيسمح له
-     بالمرور: نطلب منه التقاطًا جديدًا للصفحة الآن ثم نقرأ النسخة الخام — محتوى طازج بروابط أصلية. */
-  const wb = await waybackPage(finalUrl || targetUrl, host);
-  if (wb) {
-    let exWb = null;
-    try { exWb = extractFromDom(parseHTML(wb.text), finalUrl || targetUrl, limit); } catch (e) { exWb = null; }
-    if (exWb && exWb.items.length >= 3) {
-      const items = exWb.items.slice(0, limit);
-      applyPrevDates(items);
-      const approx = fillMissingDates(items);
-      LAST_VIA = "wayback";
-      LAST_SNAP = { url: wb.snap, ts: wb.ts };
-      diag("استخراج من نسخة الأرشيف: " + items.length + " عنصرًا");
-      return {
-        items,
-        via: "نسخة أرشيف الإنترنت",
-        title: titleParam || (base.host + (base.pathname !== "/" ? base.pathname : "")),
-        pageUrl: finalUrl || targetUrl,
-        approx
-      };
+    // واجهة WordPress REST: تواريخ دقيقة وروابط أصلية.
+    const wp = await tryWordPress(finalUrl, 20000);
+    if (wp && wp.items.length >= 3 && (!native || wp.items.length > native.count + 5)) {
+      return wpFeed(wp, limit, title, finalUrl);
     }
-    diag("نسخة الأرشيف لم تُنتج قوائم أخبار كافية");
+
+    if (native) return { passthrough: native.xml, type: native.atom ? "application/atom+xml" : "application/rss+xml" };
+
+    const dom = domFeed(pageText, finalUrl, limit, title);
+    if (dom) {
+      dom.backfilled = await backfillItemDates(dom.items, 8);
+      return dom;
+    }
+
+    const common = await probeCommonFeeds(base, 12000);
+    if (common) return common;
+  } else {
+    /* ---------- (٢) الصفحة محجوبة/غير متاحة ---------- */
+    diag("الصفحة غير متاحة (" + (first.status || "؟") + ") — المسار: WordPress ثم أرشيف الإنترنت.");
+    /* واجهة WordPress تعمل غالبًا حتى مع حجب الصفحة، وتُعطي تواريخ دقيقة وروابط أصلية. */
+    const wp = await tryWordPress(finalUrl, 9000);
+    if (wp && wp.items.length >= 3) return wpFeed(wp, limit, title, finalUrl);
+    const arch = await archiveItems(finalUrl || targetUrl, host, limit, title);
+    if (arch) return arch;
   }
 
-  /* v15: لم نجد خلاصة من الموقع نفسه (حجب كامل، أو صفحة بلا قوائم) — بحث أخبار جوجل قبل الاستسلام. */
+  /* (٣) الصفحة وصلت لكن بلا قوائم، أو حُجبت وكل ما سبق فشل: نجرب الأرشيف ثم بحث أخبار جوجل. */
+  if (pageOk) {
+    const arch = await archiveItems(finalUrl || targetUrl, host, limit, title);
+    if (arch) return arch;
+  }
   const gnews = await googleNewsFallback(host, limit);
   if (gnews) return gnews;
 
@@ -1495,29 +1559,86 @@ async function buildFeed(targetUrl, selfUrl, params) {
   return { error: "لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار)." };
 }
 
+/* v17: «أرشيف الإنترنت» وسيلة جلب طازجة للمواقع المحجوبة: Save Page Now يزحف الصفحة في اللحظة
+   من عناوين الأرشيف المسموح لها (كلاودفلير تسمح لأرشيف الإنترنت)، ثم نقرأ نسخته الخام (id_) فيبقى
+   HTML أصليًا بروابط أصلية. نحترم الخدمة: إن كان لدينا التقاط أحدث من ٣٠ دقيقة نستعمله بدل طلب
+   التقاط جديد. وإن لم نجد طابع زمني في ردّ الحفظ نسأل واجهة الأرشيف عن أقرب نسخة، وإن لم تُقرأ
+   النسخة الخام نقرأ النسخة المعروضة ونُزيل لفّتها (/web/<ts>/) عن الروابط. */
+const WB_REUSE_MS = 30 * 60000;
 
+function ts14Now() { return new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14); }
 
-/* v16: «أرشيف الإنترنت» وسيلة جلب طازجة للمواقع المحجوبة: Save Page Now يزحف الصفحة في اللحظة من
-   عناوين الأرشيف المسموح لها، ثم نقرأ نسخته الخام (id_) فيبقى HTML بأصلي وروابطه الأصلية.
-   نحترم الخدمة: إن كان لدينا التقاط أحدث من ٣٠ دقيقة نستعمله بدل طلب التقاط جديد. */
+function stripWaybackUrl(u) {
+  return String(u || "").replace(/^(?:https?:)?\/\/web\.archive\.org\/web\/[0-9]{4,14}[a-z_]*\//, "");
+}
+
+/* النسخة المعروضة من الأرشيف تُعيد كتابة كل رابط إلى /web/<ts>/<الرابط الأصلي>، فنُزيل اللفّة قبل
+   الاستخراج حتى يعمل فحص «نفس الموقع» وتخرج الروابط أصلية. */
+function unwrapWayback(html) {
+  return String(html || "")
+    .replace(/(["'(])(?:https?:)?\/\/web\.archive\.org\/web\/[0-9]{4,14}[a-z_]*\//g, "$1")
+    .replace(/(["'(])\/web\/[0-9]{4,14}[a-z_]*\//g, "$1");
+}
+
 async function waybackPage(pageUrl, host) {
   if (!pageUrl) return null;
   const rec = transportRec(host);
-  if (rec.snap && rec.snapTs && (Date.now() - rec.snapTs < 30 * 60000)) {
+  if (rec.snap && rec.snapTs && (Date.now() - rec.snapTs < WB_REUSE_MS)) {
     const f = await fetchWithFallback(rec.snap, 20000);
-    diag("نسخة أرشيف حديثة أُعيد استخدامها: " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد"));
-    if (f && f.ok && f.text && f.text.length > 2000) return { text: f.text, snap: rec.snap, ts: rec.snapTs };
+    const good = f && f.ok && f.text && f.text.length > 2000 && !looksLikeBlockPage(f.text);
+    diag("نسخة أرشيف حديثة أُعيد استخدامها: " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
+    if (good) return { text: f.text, snap: rec.snap, ts: rec.snapTs };
   }
   const save = await fetchWithFallback("https://web.archive.org/save/" + pageUrl, 30000);
-  const ts = save && save.text ? (save.text.match(/\/web\/(\d{14})\//) || [])[1] || "" : "";
+  let ts = save && save.text ? (save.text.match(/\/web\/(\d{14})[a-z_]*\//) || [])[1] || "" : "";
   diag("أرشيف الإنترنت (التقاط): " + (save ? save.status + " / " + (save.text ? save.text.length : 0) + " حرفًا" : "لا رد") + (ts ? " / " + ts : ""));
-  const snapUrl = ts ? "https://web.archive.org/web/" + ts + "id_/" + pageUrl
-                     : "https://web.archive.org/web/2026id_/" + pageUrl;
-  const f = await fetchWithFallback(snapUrl, 25000);
-  const good = f && f.ok && f.text && f.text.length > 2000 && !looksLikeBlockPage(f.text);
-  diag("نسخة الأرشيف: " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
-  if (!good) return null;
-  return { text: f.text, snap: snapUrl, ts: Date.now() };
+  if (!ts) {
+    try {
+      const av = await fetchJson("https://archive.org/wayback/available?url=" + encodeURIComponent(pageUrl) + "&timestamp=" + ts14Now(), 15000);
+      const snap = av && av.archived_snapshots && av.archived_snapshots.closest;
+      if (snap && snap.available && snap.timestamp) {
+        ts = snap.timestamp;
+        diag("أقرب نسخة من واجهة الأرشيف: " + ts);
+      }
+    } catch (e) {}
+  }
+  const tries = [];
+  if (ts) tries.push({ url: "https://web.archive.org/web/" + ts + "id_/" + pageUrl, raw: true, label: "خام" });
+  tries.push({ url: "https://web.archive.org/web/" + ts14Now() + "id_/" + pageUrl, raw: true, label: "خام (أقرب)" });
+  tries.push({ url: "https://web.archive.org/web/" + (ts || ts14Now()) + "/" + pageUrl, raw: false, label: "معروضة" });
+  for (const c of tries) {
+    const f = await fetchWithFallback(c.url, 25000);
+    const good = f && f.ok && f.text && f.text.length > 2000 && !looksLikeBlockPage(f.text);
+    diag("نسخة الأرشيف (" + c.label + "): " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
+    if (!good) continue;
+    return { text: c.raw ? f.text : unwrapWayback(f.text), snap: c.url, ts: Date.now() };
+  }
+  return null;
+}
+
+/* v17: مسار الأرشيف كاملًا: نجلب نسخة الأرشيف ثم نستخرج القوائم منها ونعيد الروابط أصلية. */
+const ARCHIVE_MAX_AGE = 7 * 86400000;
+
+async function archiveItems(pageUrl, host, limit, title) {
+  const wb = await waybackPage(pageUrl, host);
+  if (!wb) return null;
+  let ex = null;
+  try { ex = extractFromDom(parseHTML(wb.text), pageUrl, limit); } catch (e) { ex = null; }
+  if (ex && ex.items && ex.items.length) {
+    for (const it of ex.items) { it.url = stripWaybackUrl(it.url); if (it.img) it.img = stripWaybackUrl(it.img); }
+  }
+  if (!ex || ex.items.length < 3) { diag("نسخة الأرشيف لم تُنتج قوائم أخبار كافية (" + (ex && ex.items ? ex.items.length : 0) + " عنصرًا)"); return null; }
+  const items = ex.items.slice(0, limit);
+  if (!freshEnough(items, ARCHIVE_MAX_AGE)) {
+    diag("نسخة الأرشيف قديمة — رُفضت (أحدث عنصر: " + (newestTime(items) ? new Date(newestTime(items)).toISOString() : "بلا تاريخ") + ")");
+    return null;
+  }
+  applyPrevDates(items);
+  const approx = fillMissingDates(items);
+  LAST_VIA = "wayback";
+  LAST_SNAP = { url: wb.snap, ts: wb.ts };
+  diag("استخراج من نسخة الأرشيف: " + items.length + " عنصرًا / أحدثها " + new Date(newestTime(items) || Date.now()).toISOString());
+  return { items, via: "نسخة أرشيف الإنترنت", title, pageUrl, approx };
 }
 
 /* v15: آخر ملاذ للمواقع التي تحجب خوادمنا: خلاصة بحث «أخبار جوجل» عن الموقع نفسه. جوجل تزحف كل
@@ -1584,12 +1705,13 @@ function newestTime(items) {
   return t;
 }
 
-async function probeCommonFeeds(base) {
+async function probeCommonFeeds(base, timeout) {
   const paths = ["/feed/", "/feed", "/rss", "/rss.xml", "/atom.xml", "/feed.xml", "/index.xml", "/?feed=rss2"];
+  const tmo = timeout || 12000;
   for (const p of paths) {
     let u;
     try { u = new URL(p, base.origin).href; } catch (e) { continue; }
-    const f = await fetchWithFallback(u, 12000);
+    const f = await fetchWithFallback(u, tmo);
     if (f.ok && f.text && looksLikeFeed(f.text)) {
       const isAtom = /<feed[\s>]/i.test(f.text.slice(0, 800));
       return { passthrough: f.text, type: isAtom ? "application/atom+xml" : "application/rss+xml" };
@@ -1708,8 +1830,12 @@ async function run() {
   TRANSPORT = new Map(Object.entries(transport));
   TRANSPORT_START = JSON.stringify(transport);
   const written = new Set();
+  const runLog = [];
+  const iso = (t) => (t ? new Date(t).toISOString().replace("T", " ").slice(0, 16) : "بلا تاريخ");
   let ok = 0, fail = 0;
   for (const f of feeds) {
+    const t0 = Date.now();
+    let summary = "";
     try {
       PREV_DATES = await loadPrevDates(new URL(f.name + ".xml", root), readFile);
       DIAG = []; DIAG_DROPPED = 0; LAST_VIA = ""; LAST_SNAP = null;
@@ -1722,53 +1848,76 @@ async function run() {
         await writeFile(new URL(f.name + ".diag.txt", root), txt, "utf8");
         written.add(f.name + ".diag.txt");
         console.log(txt);
+        summary = "خطأ: " + out.error;
         fail++;
-        continue;
-      }
-      let xml;
-      if (out.passthrough) {
-        xml = out.passthrough;
       } else {
-        const items = out.items || [];
-        /* v10: خلاصة لا تُفسد نفسها. إن جاءت هذه الدورة بقائمة لا تتقاطع مع ما نشرناه سابقًا (مصدر
-           تعذّر الوصول إليه فسقطنا إلى قائمة صفحة أخرى) نُعيد نشر النسخة السابقة كما هي، فالخلاصة
-           تتحسّن أو تبقى، ولا تتدهور. الشرط ينتهي تلقائيًا إذا مرّ 6 ساعات على آخر نشر سليم. */
-        const src = out.via === "WordPress REST" ? "rest" : "dom";
-        const chk = checkInconsistent(items, src);
-        if (chk.bad) {
-          console.log("   أبقينا النسخة السابقة: القائمة الجديدة لا تشبه السابقة (" + chk.overlap + " من " + PREV_DATES.size + " رابطًا).");
-          xml = PREV_XML;
+        let xml;
+        if (out.passthrough) {
+          xml = out.passthrough;
+          summary = "خلاصة الموقع الأصلية (" + xml.length + " حرفًا)";
         } else {
-          fillMissingDates(items);
-          xml = buildRssXml({
-            title: f.title || out.title,
-            pageUrl: out.pageUrl || f.url,
-            selfUrl: f.url,
-            description: "خلاصة تُحدَّث تلقائيًا من " + (f.title || out.title) + (out.note ? " — " + out.note : ""),
-            items,
-            src
-          });
+          const items = out.items || [];
+          /* v10: خلاصة لا تُفسد نفسها. إن جاءت هذه الدورة بقائمة لا تتقاطع مع ما نشرناه سابقًا (مصدر
+             تعذّر الوصول إليه فسقطنا إلى قائمة صفحة أخرى) نُعيد نشر النسخة السابقة كما هي، فالخلاصة
+             تتحسّن أو تبقى، ولا تتدهور. الشرط ينتهي تلقائيًا إذا مرّ 6 ساعات على آخر نشر سليم.
+             v17: الرتبة تسمح بالترقية من خلاصة «بحث أخبار جوجل» إلى قائمة الموقع الأصلية، والتقاطع
+             يُقاس بالعناوين أيضًا لا بالروابط وحدها. */
+          const src = out.via === "WordPress REST" ? "rest"
+            : out.via === "نسخة أرشيف الإنترنت" ? "wayback"
+            : out.via === "بحث أخبار جوجل" ? "gnews" : "dom";
+          const chk = checkInconsistent(items, src);
+          /* v17: حماية من التدهور الزمني: لا نستبدل خلاصة حديثة بقائمة أقدم منها بفارق كبير. */
+          const newest = newestTime(items);
+          const stale = !chk.bad && newest > 0 && PREV_NEWEST > 0 &&
+            newest < Date.now() - 3 * 86400000 && newest < PREV_NEWEST - 12 * 3600000;
+          if (chk.bad) {
+            console.log("   أبقينا النسخة السابقة: القائمة الجديدة لا تشبه السابقة (" + chk.overlap + " رابطًا / " + chk.titleOverlap + " عنوانًا مشتركًا).");
+            summary = "أُبقيت النسخة السابقة (تقاطع " + chk.overlap + "/" + chk.titleOverlap + ")";
+            xml = PREV_XML;
+          } else if (stale) {
+            console.log("   أبقينا النسخة السابقة: القائمة الجديدة أقدم (أحدث عنصر " + iso(newest) + " مقابل " + iso(PREV_NEWEST) + ").");
+            summary = "أُبقيت النسخة السابقة (الجديدة أقدم: " + iso(newest) + ")";
+            xml = PREV_XML;
+          } else {
+            fillMissingDates(items);
+            xml = buildRssXml({
+              title: f.title || out.title,
+              pageUrl: out.pageUrl || f.url,
+              selfUrl: f.url,
+              description: "خلاصة تُحدَّث تلقائيًا من " + (f.title || out.title) + (out.note ? " — " + out.note : ""),
+              items,
+              src
+            });
+            summary = "نُشرت " + items.length + " عنصرًا (via " + (out.via || "?") + ") أحدثها " + iso(newestTime(items));
+          }
         }
+        await writeFile(new URL(f.name + ".xml", root), xml, "utf8");
+        written.add(f.name + ".xml");
+        await rm(new URL(f.name + ".error.txt", root), { force: true });
+        await rm(new URL(f.name + ".diag.txt", root), { force: true });
+        {
+          const h = hostOf(f.url);
+          const rec = { via: LAST_VIA || "direct" };
+          if (rec.via === "wayback" && LAST_SNAP) { rec.snap = LAST_SNAP.url; rec.snapTs = LAST_SNAP.ts; }
+          TRANSPORT.set(h, rec);
+        }
+        console.log("✓ " + f.name + ": " + summary);
+        ok++;
       }
-      await writeFile(new URL(f.name + ".xml", root), xml, "utf8");
-      written.add(f.name + ".xml");
-      await rm(new URL(f.name + ".error.txt", root), { force: true });
-      await rm(new URL(f.name + ".diag.txt", root), { force: true });
-      {
-        const h = hostOf(f.url);
-        const rec = { via: LAST_VIA || "direct" };
-        if (rec.via === "wayback" && LAST_SNAP) { rec.snap = LAST_SNAP.url; rec.snapTs = LAST_SNAP.ts; }
-        TRANSPORT.set(h, rec);
-      }
-      console.log("✓ " + f.name + ": " + (out.passthrough ? "خلاصة أصلية" : (out.items ? out.items.length : 0) + " عنصرًا"));
-      ok++;
     } catch (e) {
       const msg = "استثناء: " + (e && e.message ? e.message : String(e));
       console.error("✗ " + f.name + ": " + msg);
+      summary = msg;
       try { await writeFile(new URL(f.name + ".error.txt", root), msg, "utf8"); written.add(f.name + ".error.txt"); } catch (e2) {}
       fail++;
     }
+    runLog.push(f.name + " | " + f.url + " | " + Math.round((Date.now() - t0) / 1000) + "s | via=" + (LAST_VIA || "-") + " | " + summary + (DIAG.length ? "\n    " + DIAG.join("\n    ") : ""));
   }
+  try {
+    await writeFile(new URL("run-log.txt", root), "دورة " + new Date().toISOString() + "\n" + runLog.join("\n") + "\n", "utf8");
+    written.add("run-log.txt");
+  } catch (e) {}
+
   try {
     const obj = {};
     for (const f of feeds) {
