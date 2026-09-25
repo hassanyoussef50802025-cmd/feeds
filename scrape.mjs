@@ -25,6 +25,12 @@
  * إن كانت صفحة حجب؛ (٤) محاولة واحدة بهوية Googlebot بدل ثلاث؛ (٥) قراءة الوقت وحده («11:37 AM»)
  * كتاريخ اليوم، فقد كانت عناصر الصفحة الأولى تبقى بلا تاريخ فتتأخّر في الترتيب.
  *
+ * نسخة 18 (تكملة 17): الخلاصة السابقة التي بُنيت من «بحث أخبار جوجل» كانت تُعامل كمصدر مساوٍ
+ *   للاستخراج من الموقع (كلتاهما "dom")، فترفض حماية «لا نُفسد الخلاصة» قائمة الموقع الأصلية لأن
+ *   روابطها لا تتقاطع مع روابط جوجل — وتبقى الخلاصة رهينة نتائج جوجل القديمة. الآن: (١) الاستخراج
+ *   من صفحة الموقع رتبته أعلى من خلاصة جوجل فتُقبل الترقية؛ (٢) وإن كانت خلاصة سابقة أكثرها روابط
+ *   news.google.com فتُعامل كمصدر أدنى حتى لو حملت وسم "dom" من نسخة قديمة.
+ *
  * نسخة 17 (إصلاح جذري لمواقع كلاودفلير، مثل mobizil و«المركزية»):
  *   (١) كان الاستخراج يقارن الـorigin حرفيًا، فموقع يُفتح على www.mobizil.com بينما روابط أخباره
  *   mobizil.com/… تُرفض كلها ويعود الاستخراج صفرًا — وهذا وحده كان يُفشل مسار الأرشيف والوسائط.
@@ -138,6 +144,7 @@ function xmlUnesc(s) {
 
 async function loadPrevDates(fileUrl, readFile) {
   const map = new Map();
+  let gnewsPrev = 0;
   PREV_XML = "";
   PREV_BUILD = 0;
   PREV_SRC = "";
@@ -148,6 +155,7 @@ async function loadPrevDates(fileUrl, readFile) {
     for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
       const u = (m[1].match(/<link>([^<]*)<\/link>/) || [])[1];
       const d = (m[1].match(/<pubDate>([^<]*)<\/pubDate>/) || [])[1];
+      if (u && /news\.google\.com/.test(u)) gnewsPrev++;
       if (u && d) map.set(xmlUnesc(u).trim(), d.trim());
       const t = d ? Date.parse(d.trim()) : NaN;
       if (isFinite(t) && t > PREV_NEWEST) PREV_NEWEST = t;
@@ -161,6 +169,10 @@ async function loadPrevDates(fileUrl, readFile) {
       PREV_BUILD = isFinite(t) ? t : 0;
       const src = xml.match(/<!--\s*rss-src:\s*([a-z]+)\s*-->/);
       PREV_SRC = /<generator>RSS Worker<\/generator>/.test(xml) ? (src ? src[1] : "dom") : "native";
+      /* v18: خلاصة سابقة أكثرها روابط «بحث أخبار جوجل» تُعامَل كمصدر أدنى رتبة، فتُقبل الترقية إلى
+         قائمة الموقع الأصلية من أول دورة تنجح فيها (النسخ قبل 18 كانت تكتب وسمها "dom" زورًا فتبقى
+         الخلاصة رهينة روابط جوجل القديمة). */
+      if (PREV_SRC === "dom" && gnewsPrev >= Math.max(2, Math.floor(map.size / 3))) PREV_SRC = "gnews";
     }
   } catch (e) {}
   return map;
@@ -172,7 +184,7 @@ async function loadPrevDates(fileUrl, readFile) {
 /* v17: نسخة الأرشيف مصدر حقيقي من الموقع (روابط أصلية + قوائم الصفحة كاملة)، فهي أعلى رتبة من
    «بحث أخبار جوجل» (روابط جوجل). الرتبة الأعلى تسمح بالترقية دائمًا: خلاصة بُنيت من بحث جوجل
    يُسمح باستبدالها بقائمة الموقع الأصلية. */
-const SRC_RANK = { gnews: 1, dom: 1, native: 2, rest: 3, wayback: 3 };
+const SRC_RANK = { gnews: 1, dom: 2, native: 2, rest: 3, wayback: 3 };
 
 /* v10: هل القائمة التي استخرجناها هذه الدورة تختلف جذريًا عمّا نشرناه سابقًا من نفس المصدر؟
    إن نعم نُبقي النسخة السابقة (انظر run).
