@@ -62,6 +62,7 @@ let PREV_DATES = new Map();
 let PREV_XML = "";
 let PREV_BUILD = 0;
 let PREV_SRC = "";
+let PREV_NEWEST = 0;
 
 /* True when the last parsed date came from a relative expression ("منذ 5 دقائق", "today"), i.e. a
    value that is re-computed at every run and must never overwrite a known stable date. */
@@ -122,12 +123,16 @@ async function loadPrevDates(fileUrl, readFile) {
   PREV_XML = "";
   PREV_BUILD = 0;
   PREV_SRC = "";
+  PREV_NEWEST = 0;
   try {
     const xml = await readFile(fileUrl, "utf8");
+    PREV_NEWEST = 0;
     for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
       const u = (m[1].match(/<link>([^<]*)<\/link>/) || [])[1];
       const d = (m[1].match(/<pubDate>([^<]*)<\/pubDate>/) || [])[1];
       if (u && d) map.set(xmlUnesc(u).trim(), d.trim());
+      const t = d ? Date.parse(d.trim()) : NaN;
+      if (isFinite(t) && t > PREV_NEWEST) PREV_NEWEST = t;
     }
     /* v10: نحتفظ بنصّ الخلاصة السابقة كاملًا، فإن جاءت هذه الدورة بقائمة لا تشبهها (مصدر تعذّر
        الوصول إليه، أو قائمة صفحة أخرى) نُعيد نشر النسخة السابقة بدل أن نُفسد الخلاصة. */
@@ -1008,6 +1013,18 @@ function diagResult(name, r) {
 let TRANSPORT = new Map();
 let TRANSPORT_START = "";
 let LAST_VIA = "";
+let LAST_SNAP = null;
+
+function transportRec(host) {
+  const v = host ? TRANSPORT.get(host) : null;
+  if (!v) return {};
+  if (typeof v === "string") return { via: v };
+  return v && typeof v === "object" ? v : {};
+}
+
+function transportVia(host) {
+  return String(transportRec(host).via || "");
+}
 
 function diagText2() {
   const body = DIAG.length ? DIAG.join("\n") : "لا محاولات مسجّلة.";
@@ -1090,7 +1107,7 @@ async function fetchWithFallback(url, timeout) {
   let known = -1;
   if (host && HOST_PROXY.has(host)) known = HOST_PROXY.get(host);
   else if (host) {
-    const m = String(TRANSPORT.get(host) || "").match(/^proxy:(\d+)$/);
+    const m = transportVia(host).match(/^proxy:(\d+)$/);
     if (m && PROXY_BUILDERS[+m[1]]) known = +m[1];
   }
   if (known >= 0) {
@@ -1372,12 +1389,6 @@ async function buildFeed(targetUrl, selfUrl, params) {
   const limit = Math.max(1, Math.min(60, parseInt(params.get("limit") || String(DEFAULT_LIMIT), 10) || DEFAULT_LIMIT));
   const titleParam = params.get("title") || "";
   const host = (() => { try { return new URL(targetUrl).host; } catch (e) { return ""; } })();
-  /* موقع سبق أن حُسم أمره في دورة سابقة: إن كان مصدره «بحث أخبار جوجل» نبني منه مباشرة، فلا
-     تتقلّب الخلاصة بين مجموعتين من الروابط (روابط الموقع مقابل روابط جوجل) في كل دورة. */
-  if (host && TRANSPORT.get(host) === "gnews") {
-    const locked = await googleNewsFallback(host, limit);
-    if (locked) return locked;
-  }
 
   const first = await fetchWithFallback(targetUrl, 16000);
   const pageText = (first.ok && first.text) ? first.text : "";
@@ -1450,6 +1461,30 @@ async function buildFeed(targetUrl, selfUrl, params) {
   const common = await probeCommonFeeds(base);
   if (common) return common;
 
+  /* v16: كلاودفلير يحجب كل عناوين مراكز البيانات، لكن «أرشيف الإنترنت» مُفهرس معروف فيسمح له
+     بالمرور: نطلب منه التقاطًا جديدًا للصفحة الآن ثم نقرأ النسخة الخام — محتوى طازج بروابط أصلية. */
+  const wb = await waybackPage(finalUrl || targetUrl, host);
+  if (wb) {
+    let exWb = null;
+    try { exWb = extractFromDom(parseHTML(wb.text), finalUrl || targetUrl, limit); } catch (e) { exWb = null; }
+    if (exWb && exWb.items.length >= 3) {
+      const items = exWb.items.slice(0, limit);
+      applyPrevDates(items);
+      const approx = fillMissingDates(items);
+      LAST_VIA = "wayback";
+      LAST_SNAP = { url: wb.snap, ts: wb.ts };
+      diag("استخراج من نسخة الأرشيف: " + items.length + " عنصرًا");
+      return {
+        items,
+        via: "نسخة أرشيف الإنترنت",
+        title: titleParam || (base.host + (base.pathname !== "/" ? base.pathname : "")),
+        pageUrl: finalUrl || targetUrl,
+        approx
+      };
+    }
+    diag("نسخة الأرشيف لم تُنتج قوائم أخبار كافية");
+  }
+
   /* v15: لم نجد خلاصة من الموقع نفسه (حجب كامل، أو صفحة بلا قوائم) — بحث أخبار جوجل قبل الاستسلام. */
   const gnews = await googleNewsFallback(host, limit);
   if (gnews) return gnews;
@@ -1460,6 +1495,30 @@ async function buildFeed(targetUrl, selfUrl, params) {
   return { error: "لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار)." };
 }
 
+
+
+/* v16: «أرشيف الإنترنت» وسيلة جلب طازجة للمواقع المحجوبة: Save Page Now يزحف الصفحة في اللحظة من
+   عناوين الأرشيف المسموح لها، ثم نقرأ نسخته الخام (id_) فيبقى HTML بأصلي وروابطه الأصلية.
+   نحترم الخدمة: إن كان لدينا التقاط أحدث من ٣٠ دقيقة نستعمله بدل طلب التقاط جديد. */
+async function waybackPage(pageUrl, host) {
+  if (!pageUrl) return null;
+  const rec = transportRec(host);
+  if (rec.snap && rec.snapTs && (Date.now() - rec.snapTs < 30 * 60000)) {
+    const f = await fetchWithFallback(rec.snap, 20000);
+    diag("نسخة أرشيف حديثة أُعيد استخدامها: " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد"));
+    if (f && f.ok && f.text && f.text.length > 2000) return { text: f.text, snap: rec.snap, ts: rec.snapTs };
+  }
+  const save = await fetchWithFallback("https://web.archive.org/save/" + pageUrl, 30000);
+  const ts = save && save.text ? (save.text.match(/\/web\/(\d{14})\//) || [])[1] || "" : "";
+  diag("أرشيف الإنترنت (التقاط): " + (save ? save.status + " / " + (save.text ? save.text.length : 0) + " حرفًا" : "لا رد") + (ts ? " / " + ts : ""));
+  const snapUrl = ts ? "https://web.archive.org/web/" + ts + "id_/" + pageUrl
+                     : "https://web.archive.org/web/2026id_/" + pageUrl;
+  const f = await fetchWithFallback(snapUrl, 25000);
+  const good = f && f.ok && f.text && f.text.length > 2000 && !looksLikeBlockPage(f.text);
+  diag("نسخة الأرشيف: " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
+  if (!good) return null;
+  return { text: f.text, snap: snapUrl, ts: Date.now() };
+}
 
 /* v15: آخر ملاذ للمواقع التي تحجب خوادمنا: خلاصة بحث «أخبار جوجل» عن الموقع نفسه. جوجل تزحف كل
    المواقع الإخبارية وتحفظ العناوين والتواريخ، فالخلاصة تبقى حيّة حتى لو حجب الموقع كل وسائطنا.
@@ -1484,16 +1543,45 @@ function googleNewsItems(xml, limit) {
 
 async function googleNewsFallback(host, limit) {
   if (!host) return null;
-  const tries = [["LB", "LB"], ["EG", "EG"], ["US", "US"]];
-  for (const [gl, ceid] of tries) {
-    const u = "https://news.google.com/rss/search?q=" + encodeURIComponent("site:" + host) +
+  /* نطلب نافذة زمنية (when:) وإلّا أعادت جوجل نتائج «الأكثر صلة» وقد تكون قديمة جدًا (جرّبناه: عادت
+     بأخبار سنة 2025 في المقدمة). ثم نرتّب نحن تنازليًا بالتاريخ ولا نقبل ما هو أقدم من ٣ أيام. */
+  const tries = [["LB", "LB", "2d"], ["EG", "EG", "2d"], ["LB", "LB", "7d"], ["US", "US", "7d"], ["LB", "LB", ""]];
+  for (const [gl, ceid, when] of tries) {
+    let q = "site:" + host;
+    if (when) q += " when:" + when;
+    const u = "https://news.google.com/rss/search?q=" + encodeURIComponent(q) +
       "&hl=ar&gl=" + gl + "&ceid=" + ceid + ":ar";
     const f = await fetchWithFallback(u, 20000);
-    const items = f && f.ok ? googleNewsItems(f.text, limit) : [];
-    diag("بحث أخبار جوجل (" + gl + "): " + (f ? f.status + " / " + items.length + " عنصرًا" : "لا رد"));
-    if (items.length >= 3) { LAST_VIA = "gnews"; return { items, via: "بحث أخبار جوجل", note: "المصدر: بحث أخبار جوجل عن هذا الموقع (الموقع يحجب خوادم الجلب المباشر)", pageUrl: "https://news.google.com/" }; }
+    let items = f && f.ok ? googleNewsItems(f.text, limit) : [];
+    items = sortByDate(items);
+    const fresh = freshEnough(items, 3 * 86400000);
+    diag("بحث أخبار جوجل (" + gl + (when ? " " + when : "") + "): " + (f ? f.status + " / " + items.length + " عنصرًا" : "لا رد") + (items.length ? " / أحدثها " + (items[0].date || "بلا تاريخ") : "") + (fresh ? "" : " (مرفوض: قديم)"));
+    if (fresh) {
+      LAST_VIA = "gnews";
+      return { items, via: "بحث أخبار جوجل", note: "المصدر: بحث أخبار جوجل عن هذا الموقع (رفض الموقع خوادم الجلب)", pageUrl: "https://news.google.com/" };
+    }
   }
   return null;
+}
+
+/* عناصر مقبولة: ثلاثة على الأقل، وأحدثها لم يتجاوز عمره الحد المسموح (خلاصة الأرشيف/جوجل ليست أقدم
+   من الوضع الراهن، فلا نستبدل خلاصة طازجة بأخرى قديمة). */
+function freshEnough(items, maxAgeMs) {
+  if (!items || items.length < 3) return false;
+  const newest = newestTime(items);
+  if (!newest) return false;
+  const floor = Date.now() - maxAgeMs;
+  const prev = PREV_NEWEST || 0;
+  return newest >= Math.min(floor, prev ? prev - 12 * 3600000 : floor);
+}
+
+function newestTime(items) {
+  let t = 0;
+  for (const it of items || []) {
+    const v = Date.parse(it.date || "");
+    if (isFinite(v) && v > t) t = v;
+  }
+  return t;
 }
 
 async function probeCommonFeeds(base) {
@@ -1624,7 +1712,7 @@ async function run() {
   for (const f of feeds) {
     try {
       PREV_DATES = await loadPrevDates(new URL(f.name + ".xml", root), readFile);
-      DIAG = []; DIAG_DROPPED = 0; LAST_VIA = "";
+      DIAG = []; DIAG_DROPPED = 0; LAST_VIA = ""; LAST_SNAP = null;
       const out = await scrapeWithRetry(f.url);
       if (out && out.error) {
         console.error("✗ " + f.name + ": " + out.error);
@@ -1656,7 +1744,7 @@ async function run() {
             title: f.title || out.title,
             pageUrl: out.pageUrl || f.url,
             selfUrl: f.url,
-            description: "خلاصة تُحدَّث تلقائيًا من " + (f.title || out.title),
+            description: "خلاصة تُحدَّث تلقائيًا من " + (f.title || out.title) + (out.note ? " — " + out.note : ""),
             items,
             src
           });
@@ -1666,7 +1754,12 @@ async function run() {
       written.add(f.name + ".xml");
       await rm(new URL(f.name + ".error.txt", root), { force: true });
       await rm(new URL(f.name + ".diag.txt", root), { force: true });
-      TRANSPORT.set(hostOf(f.url), LAST_VIA || "direct");
+      {
+        const h = hostOf(f.url);
+        const rec = { via: LAST_VIA || "direct" };
+        if (rec.via === "wayback" && LAST_SNAP) { rec.snap = LAST_SNAP.url; rec.snapTs = LAST_SNAP.ts; }
+        TRANSPORT.set(h, rec);
+      }
       console.log("✓ " + f.name + ": " + (out.passthrough ? "خلاصة أصلية" : (out.items ? out.items.length : 0) + " عنصرًا"));
       ok++;
     } catch (e) {
@@ -1678,7 +1771,11 @@ async function run() {
   }
   try {
     const obj = {};
-    for (const f of feeds) { const t = TRANSPORT.get(hostOf(f.url)); if (t) obj[hostOf(f.url)] = t; }
+    for (const f of feeds) {
+      const h = hostOf(f.url);
+      const r = transportRec(h);
+      if (r && r.via) obj[h] = r;
+    }
     const txt = JSON.stringify(obj, null, 1);
     if (txt !== TRANSPORT_START) {
       await writeFile(new URL(".transport.json", root), txt, "utf8");
