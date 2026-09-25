@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
 <title>mobizil.com</title>
-<link>https://mobizil.com/</link>
+<link>https://www.mobizil.com/</link>
 <description>خلاصة تُحدَّث تلقائيًا من mobizil.com</description>
 <language>ar</language>
-<lastBuildDate>Fri, 25 Sep 2026 08:30:59 GMT</lastBuildDate>
+<lastBuildDate>Fri, 25 Sep 2026 14:47:22 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: rest -->
 <atom:link href="https://www.mobizil.com/" rel="self" type="application/rss+xml"/>
