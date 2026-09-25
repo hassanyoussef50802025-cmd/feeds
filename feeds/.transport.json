@@ -9,7 +9,7 @@
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "gnews"
+  "via": "proxy:2"
  },
  "newslb.org": {
   "via": "gnews"
