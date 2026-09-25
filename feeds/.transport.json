@@ -3,7 +3,9 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20260925150218id_/https://www.mobizil.com/",
+  "snapTs": 1790359822906
  },
  "riadynews.com": {
   "via": "direct"
@@ -11,10 +13,10 @@
  "almarkazia.com": {
   "via": "wayback",
   "snap": "https://web.archive.org/web/20251222193748id_/https://almarkazia.com/",
-  "snapTs": 1790357974559
+  "snapTs": 1790359912313
  },
  "newslb.org": {
-  "via": "direct"
+  "via": "gnews"
  },
  "saharazoom.com": {
   "via": "direct"
