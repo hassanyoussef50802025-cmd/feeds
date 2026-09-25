@@ -9,10 +9,12 @@
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "gnews"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20251222193748id_/https://almarkazia.com/",
+  "snapTs": 1790357974559
  },
  "newslb.org": {
-  "via": "proxy:2"
+  "via": "gnews"
  },
  "saharazoom.com": {
   "via": "direct"
