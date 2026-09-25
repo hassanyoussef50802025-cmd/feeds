@@ -25,6 +25,15 @@
  * إن كانت صفحة حجب؛ (٤) محاولة واحدة بهوية Googlebot بدل ثلاث؛ (٥) قراءة الوقت وحده («11:37 AM»)
  * كتاريخ اليوم، فقد كانت عناصر الصفحة الأولى تبقى بلا تاريخ فتتأخّر في الترتيب.
  *
+ * نسخة 19 (إصلاح خطير لخلاصة «المركزية»): أرشيف الإنترنت قد لا يزحف موقعًا محجوبًا لشهور، فكانت
+ *   «أقرب نسخة» للمركزية من ٢٢ ديسمبر ٢٠٢٥ — وبما أن بطاقات الصفحة تكتب الساعة بلا تاريخ فقد
+ *   نُشرت أخبار ديسمبر ٢٠٢٥ بتواريخ «اليوم»! الآن: (١) لا نعتمد التقاطًا أقدم من ٣ أيام مهما كان
+ *   (ويُتحقّق من عمر الالتقاط من ترويسة الصفحة المعروضة أو من الطابع الزمني لردّ الحفظ أو من واجهة
+ *   الأرشيف)، فإن لم يوجد التقاط حديث نتجاوز الأرشيف إلى بحث أخبار جوجل (تواريخ حقيقية)؛ (٢) تُسقط
+ *   الخلاصة العناصر الأقدم من ٤٥ يومًا (أقسام «الأكثر قراءة» ومعارض الصور القديمة)؛ (٣) مقارنة
+ *   الروابط تتجاهل البروتوكول وwww والشرطة النهائية (كانت ترفض قوائم طازجة لاختلاف الشرطة)؛
+ *   (٤) بحث أخبار جوجل يجرّب كل النوافذ ويختار أطول قائمة طازجة.
+ *
  * نسخة 18 (تكملة 17): الخلاصة السابقة التي بُنيت من «بحث أخبار جوجل» كانت تُعامل كمصدر مساوٍ
  *   للاستخراج من الموقع (كلتاهما "dom")، فترفض حماية «لا نُفسد الخلاصة» قائمة الموقع الأصلية لأن
  *   روابطها لا تتقاطع مع روابط جوجل — وتبقى الخلاصة رهينة نتائج جوجل القديمة. الآن: (١) الاستخراج
@@ -122,7 +131,7 @@ function applyPrevDates(items) {
   let n = 0, frozen = 0;
   for (const it of items) {
     if (!it || !it.url) continue;
-    const prev = PREV_DATES.get(it.url);
+    const prev = PREV_DATES.get(urlKey(it.url));
     if (!prev) continue;
     const t = it.date ? Date.parse(it.date) : NaN;
     const pt = Date.parse(prev);
@@ -156,7 +165,7 @@ async function loadPrevDates(fileUrl, readFile) {
       const u = (m[1].match(/<link>([^<]*)<\/link>/) || [])[1];
       const d = (m[1].match(/<pubDate>([^<]*)<\/pubDate>/) || [])[1];
       if (u && /news\.google\.com/.test(u)) gnewsPrev++;
-      if (u && d) map.set(xmlUnesc(u).trim(), d.trim());
+      if (u && d) map.set(urlKey(xmlUnesc(u)), d.trim());
       const t = d ? Date.parse(d.trim()) : NaN;
       if (isFinite(t) && t > PREV_NEWEST) PREV_NEWEST = t;
     }
@@ -193,7 +202,7 @@ const SRC_RANK = { gnews: 1, dom: 2, native: 2, rest: 3, wayback: 3 };
    تُرفض ويعود الموقع إلى خلاصة جوجل القديمة كل دورة). */
 function checkInconsistent(items, src) {
   if (!PREV_XML || PREV_DATES.size < 5) return { overlap: 0, bad: false };
-  const overlap = items.filter((i) => PREV_DATES.has(i.url)).length;
+  const overlap = items.filter((i) => PREV_DATES.has(urlKey(i.url))).length;
   const prevTitles = new Set();
   for (const m of PREV_XML.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
     const t = normTitleKey((m[1].match(/<title>([^<]*)<\/title>/) || [])[1]);
@@ -206,7 +215,13 @@ function checkInconsistent(items, src) {
   const subsetOnly = items.length > 0 && items.length < PREV_DATES.size && overlap >= items.length;
   const related = overlap >= Math.max(2, Math.floor(PREV_DATES.size * 0.3)) ||
     titleOverlap >= Math.max(3, Math.floor(items.length * 0.3));
-  const bad = !better && (!related || subsetOnly);
+  /* v19: قائمة طازجة من الموقع نفسه تُقبل حتى لو جاءت من قسم آخر في الصفحة (أخبار مقابل مراجعات
+     مثلًا). الحماية الآن من «القائمة الأقدم» (انظر run: ضابط التدهور الزمني + إسقاط ما مضى عليه
+     ٤٥ يومًا) ومن «قائمة أصغر لا تُضيف جديدًا» (subsetOnly). */
+  const newestItems = newestTime(items);
+  const freshList = newestItems > 0 && (PREV_NEWEST === 0 || newestItems >= PREV_NEWEST - 12 * 3600000);
+  const acceptable = related || (freshList && items.length >= 5);
+  const bad = !better && (!acceptable || subsetOnly);
   return { overlap, titleOverlap, bad };
 }
 
@@ -884,7 +899,7 @@ function fillMissingDates(items) {
   step = Math.min(Math.max(step, 60000), 86400000);
   for (let i = 0; i < items.length; i++) {
     if (!isNaN(known[i])) continue;
-    const prevDate = PREV_DATES.get(items[i].url);
+    const prevDate = PREV_DATES.get(urlKey(items[i].url));
     if (prevDate) { items[i].date = prevDate; items[i].carried = true; continue; }
     let prev = -1, next = -1;
     for (let j = i - 1; j >= 0; j--) if (!isNaN(known[j])) { prev = j; break; }
@@ -912,6 +927,15 @@ function extractFromDom(root, pageUrl, limit) {
   }
   built.sort((a, b) => b.sc - a.sc);
   let items = built.length ? built[0].items : [];
+  /* v19: الصفحة قد تحمل أكثر من قسم (أخبار/مراجعات/معارض)، فيتبدّل اختيار القائمة بين الدورات
+     فتظهر الخلاصة وكأنها «قائمة أخرى» وتُرفض. نفضّل القائمة التي تتقاطع بوضوح مع ما ننشره. */
+  if (PREV_DATES.size >= 5 && built.length > 1) {
+    const hit = built.find((b) => {
+      const n = b.items.filter((i) => PREV_DATES.has(urlKey(i.url))).length;
+      return n >= 3 && n >= Math.floor(b.items.length * 0.3);
+    });
+    if (hit) items = hit.items;
+  }
   if (built.length > 1) {
     const seen = new Set(items.map((i) => i.url));
     const merged = items.slice();
@@ -1145,6 +1169,12 @@ function sameSite(a, b) {
   if (!x || !y) return false;
   if (x === y) return true;
   return x.endsWith("." + y) || y.endsWith("." + x);
+}
+
+/* v19: مفتاح مقارنة الروابط: بلا بروتوكول ولا www ولا شرطة نهائية — فالرابط نفسه يظهر أحيانًا
+   معها وأحيانًا بدونها (mobizil مثلًا)، فكان التقاطع يُحسب منخفضًا فتُرفض قائمة طازجة. */
+function urlKey(u) {
+  return String(u || "").trim().replace(/^https?:\/\/(www\.)?/i, "").replace(/\/+$/, "").toLowerCase();
 }
 
 function proxyResult(pr, url, built) {
@@ -1577,8 +1607,24 @@ async function buildFeed(targetUrl, selfUrl, params) {
    التقاط جديد. وإن لم نجد طابع زمني في ردّ الحفظ نسأل واجهة الأرشيف عن أقرب نسخة، وإن لم تُقرأ
    النسخة الخام نقرأ النسخة المعروضة ونُزيل لفّتها (/web/<ts>/) عن الروابط. */
 const WB_REUSE_MS = 30 * 60000;
+/* v19: عمر أقصى للالتقاط الذي نقبله. هذا أهم ضابط في النسخة: أرشيف الإنترنت قد لا يزحف موقعًا
+   محجوبًا لشهور، فيكون «أقرب نسخة» له من سنة 2025 — ولو نشرنا تلك الصفحة لظهرت أخبارها القديمة
+   بتواريخ «اليوم» (لأن بطاقاتها تكتب الساعة بلا تاريخ) وهذا أسوأ من ألّا ننشر شيئًا. */
+const MAX_CAPTURE_AGE = 3 * 86400000;
 
 function ts14Now() { return new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14); }
+
+function ts14ToMs(ts) {
+  const m = String(ts || "").match(/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})$/);
+  if (!m) return 0;
+  const t = Date.parse(m[1] + "-" + m[2] + "-" + m[3] + "T" + m[4] + ":" + m[5] + ":" + m[6] + "Z");
+  return isFinite(t) ? t : 0;
+}
+
+function isRecentCapture(ts) {
+  const t = ts14ToMs(ts);
+  return !!t && (Date.now() - t) < MAX_CAPTURE_AGE;
+}
 
 function stripWaybackUrl(u) {
   return String(u || "").replace(/^(?:https?:)?\/\/web\.archive\.org\/web\/[0-9]{4,14}[a-z_]*\//, "");
@@ -1601,30 +1647,40 @@ async function waybackPage(pageUrl, host) {
     diag("نسخة أرشيف حديثة أُعيد استخدامها: " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
     if (good) return { text: f.text, snap: rec.snap, ts: rec.snapTs };
   }
+  /* Save Page Now: نأخذ **أحدث** طابع زمني في الردّ — الردّ يذكر أيضًا تقاطعات قديمة للموقع. */
   const save = await fetchWithFallback("https://web.archive.org/save/" + pageUrl, 30000);
-  let ts = save && save.text ? (save.text.match(/\/web\/(\d{14})[a-z_]*\//) || [])[1] || "" : "";
+  let ts = "";
+  if (save && save.text) {
+    for (const m of save.text.matchAll(/\/web\/(\d{14})[a-z_]*\//g)) if (m[1] > ts) ts = m[1];
+  }
   diag("أرشيف الإنترنت (التقاط): " + (save ? save.status + " / " + (save.text ? save.text.length : 0) + " حرفًا" : "لا رد") + (ts ? " / " + ts : ""));
-  if (!ts) {
+  const cands = [];
+  if (isRecentCapture(ts)) cands.push({ ts: ts, how: "التقاط جديد" });
+  if (!cands.length) {
     try {
       const av = await fetchJson("https://archive.org/wayback/available?url=" + encodeURIComponent(pageUrl) + "&timestamp=" + ts14Now(), 15000);
       const snap = av && av.archived_snapshots && av.archived_snapshots.closest;
-      if (snap && snap.available && snap.timestamp) {
-        ts = snap.timestamp;
-        diag("أقرب نسخة من واجهة الأرشيف: " + ts);
-      }
+      const tsAv = snap && snap.available ? String(snap.timestamp || "") : "";
+      diag("أقرب نسخة من واجهة الأرشيف: " + (tsAv || "لا شيء"));
+      if (isRecentCapture(tsAv)) cands.push({ ts: tsAv, how: "أقرب نسخة" });
     } catch (e) {}
   }
-  const tries = [];
-  if (ts) tries.push({ url: "https://web.archive.org/web/" + ts + "id_/" + pageUrl, raw: true, label: "خام" });
-  tries.push({ url: "https://web.archive.org/web/" + ts14Now() + "id_/" + pageUrl, raw: true, label: "خام (أقرب)" });
-  tries.push({ url: "https://web.archive.org/web/" + (ts || ts14Now()) + "/" + pageUrl, raw: false, label: "معروضة" });
-  for (const c of tries) {
-    const f = await fetchWithFallback(c.url, 25000);
+  for (const c of cands) {
+    const url = "https://web.archive.org/web/" + c.ts + "id_/" + pageUrl;
+    const f = await fetchWithFallback(url, 25000);
     const good = f && f.ok && f.text && f.text.length > 2000 && !looksLikeBlockPage(f.text);
-    diag("نسخة الأرشيف (" + c.label + "): " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
-    if (!good) continue;
-    return { text: c.raw ? f.text : unwrapWayback(f.text), snap: c.url, ts: Date.now() };
+    diag("نسخة الأرشيف (" + c.how + " " + c.ts + "): " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
+    if (good) return { text: f.text, snap: url, ts: Date.now() };
   }
+  /* لا طابع زمني موثوق: نقرأ النسخة المعروضة (تظهر فيها ساعة الالتقاط في ترويستها) ونتحقّق من عمرها. */
+  const plainUrl = "https://web.archive.org/web/" + ts14Now() + "/" + pageUrl;
+  const p = await fetchWithFallback(plainUrl, 25000);
+  let tsPlain = "";
+  if (p && p.text) { const m = p.text.match(/\/web\/(\d{14})[a-z_]*\//); if (m) tsPlain = m[1]; }
+  const pGood = p && p.ok && p.text && p.text.length > 2000 && !looksLikeBlockPage(p.text);
+  diag("نسخة الأرشيف (معروضة): " + (p ? p.status + " / " + (p.text ? p.text.length : 0) + " حرفًا" : "لا رد") + (tsPlain ? " / التقاط " + tsPlain : "") + (pGood && isRecentCapture(tsPlain) ? "" : " (غير صالحة أو قديمة)"));
+  if (pGood && isRecentCapture(tsPlain)) return { text: unwrapWayback(p.text), snap: plainUrl, ts: Date.now() };
+  if (pGood) diag("أرشيف الإنترنت: أحدث التقاط متاح أقدم من " + Math.round(MAX_CAPTURE_AGE / 86400000) + " أيام — لا نعتمده (وإلا نشرنا أخبارًا قديمة بتواريخ اليوم).");
   return null;
 }
 
@@ -1679,6 +1735,8 @@ async function googleNewsFallback(host, limit) {
   /* نطلب نافذة زمنية (when:) وإلّا أعادت جوجل نتائج «الأكثر صلة» وقد تكون قديمة جدًا (جرّبناه: عادت
      بأخبار سنة 2025 في المقدمة). ثم نرتّب نحن تنازليًا بالتاريخ ولا نقبل ما هو أقدم من ٣ أيام. */
   const tries = [["LB", "LB", "2d"], ["EG", "EG", "2d"], ["LB", "LB", "7d"], ["US", "US", "7d"], ["LB", "LB", ""]];
+  /* v19: نجمع كل النوافذ الطازجة ونختار أطولها (الخلاصة تبقى ممتلئة وحديثة معًا). */
+  let best = null, bestWhen = "";
   for (const [gl, ceid, when] of tries) {
     let q = "site:" + host;
     if (when) q += " when:" + when;
@@ -1689,10 +1747,13 @@ async function googleNewsFallback(host, limit) {
     items = sortByDate(items);
     const fresh = freshEnough(items, 3 * 86400000);
     diag("بحث أخبار جوجل (" + gl + (when ? " " + when : "") + "): " + (f ? f.status + " / " + items.length + " عنصرًا" : "لا رد") + (items.length ? " / أحدثها " + (items[0].date || "بلا تاريخ") : "") + (fresh ? "" : " (مرفوض: قديم)"));
-    if (fresh) {
-      LAST_VIA = "gnews";
-      return { items, via: "بحث أخبار جوجل", note: "المصدر: بحث أخبار جوجل عن هذا الموقع (رفض الموقع خوادم الجلب)", pageUrl: "https://news.google.com/" };
-    }
+    if (fresh && (!best || items.length > best.length)) { best = items; bestWhen = gl + (when ? " " + when : ""); }
+    if (items.length >= (limit || 30) && fresh) break;
+  }
+  if (best) {
+    LAST_VIA = "gnews";
+    diag("اخترنا نافذة أخبار جوجل: " + bestWhen + " / " + best.length + " عنصرًا");
+    return { items: best, via: "بحث أخبار جوجل", note: "المصدر: بحث أخبار جوجل عن هذا الموقع (رفض الموقع خوادم الجلب)", pageUrl: "https://news.google.com/" };
   }
   return null;
 }
@@ -1868,7 +1929,8 @@ async function run() {
           xml = out.passthrough;
           summary = "خلاصة الموقع الأصلية (" + xml.length + " حرفًا)";
         } else {
-          const items = out.items || [];
+          let items = out.items || [];
+          let dropped = 0;
           /* v10: خلاصة لا تُفسد نفسها. إن جاءت هذه الدورة بقائمة لا تتقاطع مع ما نشرناه سابقًا (مصدر
              تعذّر الوصول إليه فسقطنا إلى قائمة صفحة أخرى) نُعيد نشر النسخة السابقة كما هي، فالخلاصة
              تتحسّن أو تبقى، ولا تتدهور. الشرط ينتهي تلقائيًا إذا مرّ 6 ساعات على آخر نشر سليم.
@@ -1891,6 +1953,15 @@ async function run() {
             summary = "أُبقيت النسخة السابقة (الجديدة أقدم: " + iso(newest) + ")";
             xml = PREV_XML;
           } else {
+            /* v19: نُسقط العناصر الأقدم من ٤٥ يومًا (أقسام «الأكثر قراءة» أو معارض صور قديمة في
+               الصفحة تُضاف إلى القائمة) ما دام يبقى ٥ عناصر على الأقل. */
+            const CUT_MS = 45 * 86400000;
+            const kept = items.filter((it) => { const t = Date.parse(it.date || ""); return !isFinite(t) || t > Date.now() - CUT_MS; });
+            if (kept.length >= 5 && kept.length < items.length) {
+              console.log("   أسقطنا " + (items.length - kept.length) + " عنصرًا أقدم من ٤٥ يومًا.");
+              dropped = items.length - kept.length;
+              items = kept;
+            }
             fillMissingDates(items);
             xml = buildRssXml({
               title: f.title || out.title,
@@ -1900,7 +1971,7 @@ async function run() {
               items,
               src
             });
-            summary = "نُشرت " + items.length + " عنصرًا (via " + (out.via || "?") + ") أحدثها " + iso(newestTime(items));
+            summary = "نُشرت " + items.length + " عنصرًا (via " + (out.via || "?") + ") أحدثها " + iso(newestTime(items)) + (dropped ? " / أُسقط " + dropped + " قديمًا" : "");
           }
         }
         await writeFile(new URL(f.name + ".xml", root), xml, "utf8");
