@@ -1,10 +1,26 @@
 {
- "mugtama.com": "direct",
- "www.mobizil.com": "direct",
- "riadynews.com": "direct",
- "almarkazia.com": "gnews",
- "newslb.org": "gnews",
- "saharazoom.com": "direct",
- "www.saharaexpo.com": "direct",
- "alhayapress.com": "direct"
+ "mugtama.com": {
+  "via": "direct"
+ },
+ "www.mobizil.com": {
+  "via": "direct"
+ },
+ "riadynews.com": {
+  "via": "direct"
+ },
+ "almarkazia.com": {
+  "via": "gnews"
+ },
+ "newslb.org": {
+  "via": "gnews"
+ },
+ "saharazoom.com": {
+  "via": "direct"
+ },
+ "www.saharaexpo.com": {
+  "via": "direct"
+ },
+ "alhayapress.com": {
+  "via": "direct"
+ }
 }
