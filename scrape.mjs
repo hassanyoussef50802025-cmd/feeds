@@ -17,6 +17,14 @@
  * Perchance نفسه (fetch-plugin) الذي يمرّ من خوادم المنصّة فينجح مع هذه المواقع؛ (٤) مصدر
  * «ريادي» في القائمة المدمجة (feed-riadynews-com-1nw2k).
  *
+ * نسخة 14: المواقع التي تحجب مراكز البيانات (كلاودفلير…) كانت تُجمَّد خلاصتها: الجلب المباشر يردّ
+ * 403، ثم تُجرَّب الوسائط الاحتياطية واحدةً تلو الأخرى حتى تنتهي مهلة الدورة قبل الوصول إلى الوسيط
+ * الذي ينجح فعلًا (هكذا بقيت خلاصة «المركزية» ساعاتٍ بلا تحديث). الآن: (١) تُجرَّب الوسائط كلها في
+ * وقت واحد وتُختار أول نتيجة صالحة، ووسيط منصّة Perchance أولها؛ (٢) يُتذكَّر لكل نطاق الوسيط الذي
+ * نجح معه فتُستعمل بقية دورة الزحف نفسها (سريع ولا يُثقل الوسائط العامة)؛ (٣) لا تُقبل نتيجة وسيط
+ * إن كانت صفحة حجب؛ (٤) محاولة واحدة بهوية Googlebot بدل ثلاث؛ (٥) قراءة الوقت وحده («11:37 AM»)
+ * كتاريخ اليوم، فقد كانت عناصر الصفحة الأولى تبقى بلا تاريخ فتتأخّر في الترتيب.
+ *
  * يعمل بلا أي واجهة ولا حساب: عند كل طلب يتفحص الصفحة ويعيد خلاصة RSS محدّثة،
  * وذاكرة مؤقتة 10 دقائق تخفّف الضغط. لا صفحة ولا تبويب مفتوح ولا رجوع لأي مكان.
  */
@@ -414,10 +422,10 @@ function parseArabicDate(src) {
   }
   let y = year;
   if (!y) {
-    y = new Date().getFullYear();
-    if (new Date(y, mon - 1, day, hh, mm).getTime() - Date.now() > 2 * 86400000) y -= 1;
+    y = new Date().getUTCFullYear();
+    if (new Date(Date.UTC(y, mon - 1, day, hh, mm)).getTime() - Date.now() > 2 * 86400000) y -= 1;
   }
-  const d = new Date(y, mon - 1, day, hh, mm);
+  const d = new Date(Date.UTC(y, mon - 1, day, hh, mm));
   return isNaN(d.getTime()) ? null : d;
 }
 
@@ -431,7 +439,7 @@ function parseDateText(v) {
   let m = raw.match(/(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?:[ T](\d{1,2}):(\d{2})(?::\d{2})?)?/);
   if (m) {
     const hasTime = m[4] !== undefined;
-    const d = new Date(+m[1], +m[2] - 1, +m[3], hasTime ? +m[4] : 12, hasTime ? +m[5] : 0);
+    const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], hasTime ? +m[4] : 12, hasTime ? +m[5] : 0));
     if (!isNaN(d.getTime())) return d;
   }
   m = raw.match(/(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})(?:[ T](\d{1,2}):(\d{2}))?/);
@@ -440,14 +448,46 @@ function parseDateText(v) {
     let day, mon;
     if (a > 12) { day = a; mon = b; } else if (b > 12) { day = b; mon = a; } else { day = a; mon = b; }
     const hasTime = m[4] !== undefined;
-    const d = new Date(+m[3], mon - 1, day, hasTime ? +m[4] : 12, hasTime ? +m[5] : 0);
+    const d = new Date(Date.UTC(+m[3], mon - 1, day, hasTime ? +m[4] : 12, hasTime ? +m[5] : 0));
     if (!isNaN(d.getTime())) return d;
   }
   const ar = parseArabicDate(raw);
   if (ar) return ar;
   if (/(\d{1,2}[\s\-/.]?[A-Za-z]{3,9}[\s\-/.,]+\d{2,4})|([A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4})|GMT|UTC|[+-]\d{4}\b/i.test(raw)) {
-    const d = new Date(raw);
+    const hasZone = /(?:GMT|UTC|[-+]\d{4})\s*$/i.test(raw);
+    const d = new Date(hasZone ? raw : raw + " UTC");
     if (!isNaN(d.getTime())) return d;
+  }
+  const only = parseTimeOnly(raw);
+  if (only) return only;
+  return null;
+}
+
+/* v14: مواقع كثيرة تكتب وقت الخبر وحده بلا تاريخ («11:37 AM») لأن الخبر من اليوم نفسه؛ وبدون هذا
+   كانت عناصر الصفحة الأولى تبقى بلا تاريخ فتُدفع إلى آخر الخلاصة. نعتبرها اليوم بذلك الوقت.
+   لو كان وقت الموقع متقدّمًا على ساعة التشغيل (فارق التوقيت) يعالج fixFutureDates الفارق لاحقًا. */
+function parseTimeOnly(src) {
+  const s = normalizeDigits(src).replace(/[\u200e\u200f\u061c\u00a0]/g, " ").replace(/\s+/g, " ").trim();
+  if (!s || s.length > 24) return null;
+  const now = new Date();
+  const atToday = (hh, mm) => new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), hh, mm, 0, 0));
+  let m = s.match(/^(\d{1,2}):(\d{2})(?::\d{2})?\s*(am|pm|a\.m\.|p\.m\.)$/i);
+  if (m) {
+    let hh = +m[1];
+    const mm = +m[2], ap = m[3].toLowerCase();
+    if (hh > 12 || mm > 59) return null;
+    if (/^p/.test(ap) && hh < 12) hh += 12;
+    if (/^a/.test(ap) && hh === 12) hh = 0;
+    return atToday(hh, mm);
+  }
+  m = s.match(/^(\d{1,2}):(\d{2})(?::\d{2})?\s*(ص|م|صباحا|صباحًا|صباحاً|مساء|مساءً|مساءا)$/);
+  if (m) {
+    let hh = +m[1];
+    const mm = +m[2], ap = m[3];
+    if (hh > 23 || mm > 59) return null;
+    if (/^(م|مساء)/.test(ap) && hh < 12) hh += 12;
+    if (/^(ص|صباحا)/.test(ap) && hh === 12) hh = 0;
+    return atToday(hh, mm);
   }
   return null;
 }
@@ -532,9 +572,9 @@ function articleScore(u) {
 
 function dateFromUrl(u) {
   let m = u.pathname.match(/\/(20\d{2})\/(\d{1,2})\/(\d{1,2})(?:\/|$)/);
-  if (m) { const d = new Date(+m[1], +m[2] - 1, +m[3]); if (!isNaN(d.getTime())) return d.toUTCString(); }
+  if (m) { const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])); if (!isNaN(d.getTime())) return d.toUTCString(); }
   m = u.pathname.match(/\/(20\d{2})\/(\d{1,2})\/?(?:\/|$)/);
-  if (m) { const d = new Date(+m[1], +m[2] - 1, 1); if (!isNaN(d.getTime())) return d.toUTCString(); }
+  if (m) { const d = new Date(Date.UTC(+m[1], +m[2] - 1, 1)); if (!isNaN(d.getTime())) return d.toUTCString(); }
   return null;
 }
 
@@ -954,12 +994,28 @@ const PERCHANCE_ORIGIN = "https://aeb47c27fa872c122527f995305d6c1c.perchance.org
 const PERCHANCE_GENERATOR = "qsswnafa2z";
 
 const PROXY_BUILDERS = [
-  [(u) => "https://r.jina.ai/" + u, { "x-respond-with": "html" }],
-  [(u) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u), {}],
-  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}],
   [(u) => "https://fetch-plugin.perchance.org/proxy1/" + encodeURIComponent(u) +
-    "?origin=" + encodeURIComponent(PERCHANCE_ORIGIN) + "&generator=" + PERCHANCE_GENERATOR, {}]
+    "?origin=" + encodeURIComponent(PERCHANCE_ORIGIN) + "&generator=" + PERCHANCE_GENERATOR, {}],
+  [(u) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u), {}],
+  [(u) => "https://r.jina.ai/" + u, { "x-respond-with": "html" }],
+  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}]
 ];
+
+/* الوسيط الذي نجح مع نطاق معيّن يُتذكَّر لبقية الدورة: المواقع المحجوبة تُطلب عدة مرات في الدورة
+   نفسها (الصفحة + صفحات الأخبار لقراءة التواريخ)، فلا معنى لإعادة تجربة الجلب المباشر الفاشل
+   وكل الوسائط في كل مرة. */
+const HOST_PROXY = new Map();
+
+function hostOf(url) {
+  try { return new URL(url).host; } catch (e) { return ""; }
+}
+
+function proxyResult(pr, url, built) {
+  if (!pr || !pr.ok || !pr.text || pr.text.length < 400) return null;
+  if (looksLikeProxyError(pr.text) || looksLikeBlockPage(pr.text)) return null;
+  console.log("   مصدر احتياطي نجح: " + (hostOf(built) || "proxy") + " → " + url);
+  return { ok: true, status: 200, url: url, contentType: pr.contentType || "text/html", text: pr.text, viaProxy: true };
+}
 
 function looksLikeProxyError(text) {
   const head = String(text || "").slice(0, 400);
@@ -986,6 +1042,18 @@ const ALT_UAS = [
 let FETCH_DEADLINE = 0;
 
 async function fetchWithFallback(url, timeout) {
+  const host = hostOf(url);
+  /* نطاق عرفنا أنه محجوب: نستعمل الوسيط الذي نجح معه سابقًا مباشرة، بلا إهدار الوقت على جلب مباشر
+     فاشل مسبقًا. إن فشل هذا الوسيط نكمل الطريق العادي كأن شيئًا لم يكن. */
+  const known = host && HOST_PROXY.has(host) ? HOST_PROXY.get(host) : -1;
+  if (known >= 0) {
+    const pair = PROXY_BUILDERS[known];
+    let pr = null;
+    try { pr = await fetchText(pair[0](url), Math.max(20000, Math.min(timeout || 15000, 30000)), pair[1]); } catch (e) {}
+    const hit = proxyResult(pr, url, pair[0](url));
+    if (hit) return hit;
+    HOST_PROXY.delete(host);
+  }
   const direct = await fetchText(url, timeout);
   const blocked = looksLikeBlockPage(direct.text || "");
   if (direct.ok && direct.text && direct.text.length > 250 && !blocked) return direct;
@@ -994,41 +1062,57 @@ async function fetchWithFallback(url, timeout) {
     direct.status === 406 || direct.status === 429 || direct.status >= 500 || blocked;
   if (!worthProxy) return direct;
   if (direct.status === 401 || direct.status === 403 || direct.status === 406) {
-    for (const ua of ALT_UAS) {
-      try {
-        const alt = await fetchText(url, timeout, { "user-agent": ua });
-        if (alt.ok && alt.text && alt.text.length > 250) return alt;
-      } catch (e) {}
-    }
+    try {
+      const alt = await fetchText(url, Math.max(8000, Math.min(timeout || 15000, 9000)), { "user-agent": ALT_UAS[0] });
+      if (alt.ok && alt.text && alt.text.length > 250 && !looksLikeBlockPage(alt.text)) return alt;
+    } catch (e) {}
   }
-  if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) return direct;
-  for (const pair of PROXY_BUILDERS) {
-    if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) break;
+  if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE - 5000) return direct;
+  /* كل الوسائط في وقت واحد: الأسرع يفوز، وترتيب PROXY_BUILDERS هو الأولوية عند تساوي السرعة،
+     فلا تنتهي المهلة قبل الوصول إلى الوسيط الذي ينجح فعلًا. */
+  const budget = FETCH_DEADLINE ? Math.min(45000, Math.max(15000, FETCH_DEADLINE - Date.now())) : 45000;
+  const race = PROXY_BUILDERS.map((pair, idx) => {
     const built = pair[0](url);
-    let pr;
-    try { pr = await fetchText(built, Math.max(timeout || 15000, 25000), pair[1]); } catch (e) { continue; }
-    if (pr.ok && pr.text && pr.text.length > 400 && !looksLikeProxyError(pr.text)) {
-      console.log("   مصدر احتياطي نجح: " + new URL(built).host + " → " + url);
-      return { ok: true, status: 200, url: url, contentType: pr.contentType || "text/html", text: pr.text, viaProxy: true };
+    return fetchText(built, Math.max(budget, 20000), pair[1])
+      .then((pr) => ({ idx, pr, built }))
+      .catch(() => ({ idx, pr: null, built }));
+  });
+  const settled = await Promise.all(race);
+  settled.sort((a, b) => a.idx - b.idx);
+  for (const r of settled) {
+    const hit = proxyResult(r.pr, url, r.built);
+    if (hit) {
+      if (host) HOST_PROXY.set(host, r.idx);
+      return hit;
     }
   }
   return direct;
 }
 
 async function fetchJson(url, timeout) {
+  const host = hostOf(url);
+  const known = host && HOST_PROXY.has(host) ? HOST_PROXY.get(host) : -1;
+  const direct = [{ fn: () => fetchText(url, timeout), idx: -1 }];
+  const viaProxies = PROXY_BUILDERS.map((pair, idx) => ({ fn: () => fetchText(pair[0](url), Math.max(timeout || 15000, 20000), pair[1]), idx }));
   const attempts = [
-    () => fetchText(url, timeout),
-    () => fetchText("https://r.jina.ai/" + url, Math.max(timeout || 15000, 20000), { "x-respond-with": "text" }),
-    () => fetchText("https://api.allorigins.win/raw?url=" + encodeURIComponent(url), Math.max(timeout || 15000, 20000)),
-    () => fetchText("https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(url), Math.max(timeout || 15000, 20000))
+    ...(known >= 0 ? [viaProxies[known]] : []),
+    ...direct,
+    ...viaProxies
   ];
   const list = (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) ? attempts.slice(0, 1) : attempts;
   for (const attempt of list) {
+    if (FETCH_DEADLINE && Date.now() > FETCH_DEADLINE) break;
     let r;
-    try { r = await attempt(); } catch (e) { continue; }
+    try { r = await attempt.fn(); } catch (e) { continue; }
     if (!r || !r.text) continue;
     if (r.ok) {
-      try { const j = JSON.parse(r.text); if (j && typeof j === "object") return j; } catch (e) {}
+      try {
+        const j = JSON.parse(r.text);
+        if (j && typeof j === "object") {
+          if (attempt.idx >= 0 && host) HOST_PROXY.set(host, attempt.idx);
+          return j;
+        }
+      } catch (e) {}
       if (/just a moment|cf-browser-verification|attention required|checking your browser|enable javascript/i.test(r.text.slice(0, 3000))) continue;
       /* v10: ردّ سليم لكن ليس JSON (مثلاً نسخة r.jina.ai النصّية) كان يُنهي كل المحاولات فورًا،
          فيسقط مسار WordPress REST إلى الاستخراج من الصفحة رغم أن وسيطًا آخر كان سينجح. الآن نُجرّب الباقي. */
