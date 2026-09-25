@@ -3,17 +3,13 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20260925150218id_/https://www.mobizil.com/",
-  "snapTs": 1790359822906
+  "via": "direct"
  },
  "riadynews.com": {
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20251222193748id_/https://almarkazia.com/",
-  "snapTs": 1790359912313
+  "via": "proxy:2"
  },
  "newslb.org": {
   "via": "gnews"
