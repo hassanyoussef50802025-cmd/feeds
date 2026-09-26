@@ -3,9 +3,7 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20260926194413/https://www.mobizil.com/",
-  "snapTs": 1790451858403
+  "via": "proxy:2"
  },
  "riadynews.com": {
   "via": "direct"
