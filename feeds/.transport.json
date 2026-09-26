@@ -1,6 +1,8 @@
 {
  "mugtama.com": {
-  "via": "direct"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20260926222140id_/https://mugtama.com/",
+  "snapTs": 1790461316467
  },
  "www.mobizil.com": {
   "via": "proxy:2"
