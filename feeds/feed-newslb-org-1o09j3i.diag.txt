@@ -2,71 +2,71 @@
 مباشر newslb.org: حالة 200 / 82933 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
   - وسيط#0: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6328 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 520 / 7362 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5819 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 503 / 7107 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
   - وسيط#0: حالة 403 / 6470 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6385 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 520 / 7362 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5871 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 503 / 7107 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
   - وسيط#0: حالة 403 / 6461 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6376 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5868 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 503 / 7107 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 200 / 33347 حرفًا / «<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" conte»
 مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
   - وسيط#0: حالة 403 / 6470 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6385 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 200 / 0 حرفًا
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5877 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
   - وسيط#0: حالة 403 / 6458 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6373 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5865 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 503 / 7107 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
   - وسيط#0: حالة 403 / 6473 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6388 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 200 / 0 حرفًا
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5880 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 الصفحة غير متاحة (200) — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.
   - JSON مباشر: حالة 404 / 0 حرفًا
-مباشر web.archive.org: حالة 200 / 93408 حرفًا / «<!DOCTYPE html> <html> <head><script src="https://web-static.archive.org/_static/js/athena»
+  - JSON وسيط#0: حالة 403 / 6886 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#1: حالة 403 / 6801 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - JSON وسيط#3: حالة 403 / 6229 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر web.archive.org: حالة 0 / 0 حرفًا / خطأ: fetch failed
 تجاوزنا مهلة الدورة قبل الوسائط
-أرشيف الإنترنت (التقاط): 200 / 93408 حرفًا / 20260926093302
-مباشر web.archive.org: حالة 200 / 82935 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+أرشيف الإنترنت (التقاط): 0 / 0 حرفًا
+أقرب نسخة من واجهة الأرشيف: لا شيء
+مباشر web.archive.org: حالة 404 / 142343 حرفًا / «<!DOCTYPE html> <html lang="en"> <head> <title>Wayback Machine</title> <script> /* @licsta»
 تجاوزنا مهلة الدورة قبل الوسائط
-نسخة الأرشيف (التقاط جديد 20260926093302): 200 / 82935 حرفًا (غير صالحة)
-مباشر web.archive.org: حالة 200 / 93408 حرفًا / «<!DOCTYPE html> <html> <head><script src="https://web-static.archive.org/_static/js/athena»
-تجاوزنا مهلة الدورة قبل الوسائط
-نسخة الأرشيف (معروضة): 200 / 93408 حرفًا / التقاط 20260926093302 (غير صالحة أو قديمة)
+نسخة الأرشيف (معروضة): 404 / 142343 حرفًا (غير صالحة أو قديمة)
 مباشر newslb.org: حالة 200 / 82933 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
   - وسيط#0: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6328 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5819 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
   - وسيط#0: حالة 403 / 6470 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6385 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 200 / 0 حرفًا
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5871 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
   - وسيط#0: حالة 403 / 6461 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6376 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
   - وسيط#3: حالة 403 / 5868 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر recaptcha.cloud: حالة 200 / 33347 حرفًا / «<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" conte»
-مباشر recaptcha.cloud: حالة 404 / 0 حرفًا
-  - وسيط#0: حالة 403 / 6470 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#1: حالة 403 / 6385 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-(وأُسقط 21 سطرًا زائدًا)
+(وأُسقط 24 سطرًا زائدًا)
