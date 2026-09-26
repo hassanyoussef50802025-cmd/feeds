@@ -1,13 +1,13 @@
 الخطأ: تعذّر جلب الصفحة (الحالة 403).
-  - وسيط#2 متذكَّر: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
 مباشر almarkazia.com: حالة 403 / 5618 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5533 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#0: حالة 403 / 6425 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#1: حالة 403 / 6340 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7256 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#0: حالة 403 / 6446 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6361 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
   - وسيط#3: حالة 403 / 5831 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
 مباشر almarkazia.com: حالة 403 / 5655 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5548 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6467 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -16,37 +16,31 @@
   - وسيط#3: حالة 403 / 5868 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-مباشر almarkazia.com: حالة 403 / 5630 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+مباشر almarkazia.com: حالة 403 / 5652 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5545 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6458 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6373 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
   - وسيط#3: حالة 403 / 5865 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - وسيط#2 متذكَّر: حالة 522 / 7256 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر almarkazia.com: حالة 403 / 5706 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - هوية Googlebot: حالة 403 / 5578 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - هوية Googlebot: حالة 403 / 5599 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6488 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6403 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5898 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - وسيط#2 متذكَّر: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+  - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر almarkazia.com: حالة 403 / 5661 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5554 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
 تجاوزنا مهلة الدورة قبل الوسائط
-  - وسيط#2 متذكَّر: حالة 522 / 7256 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-مباشر almarkazia.com: حالة 403 / 5627 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - هوية Googlebot: حالة 403 / 5542 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-تجاوزنا مهلة الدورة قبل الوسائط
-  - وسيط#2 متذكَّر: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
-مباشر almarkazia.com: حالة 403 / 5664 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - هوية Googlebot: حالة 403 / 5557 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 200 / 53056 حرفًا / «<!DOCTYPE html> <html> <head> <meta http-equiv="Content-type" content="text/html; charset=»
+  - وسيط#2 متذكَّر: حالة 200 / 53056 حرفًا / «<!DOCTYPE html> <html> <head> <meta http-equiv="Content-type" content="text/html; charset=»
 الصفحة غير متاحة (403) — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.
-مباشر web.archive.org: حالة 429 / 141522 حرفًا / «<!DOCTYPE html> <html lang="en"> <head> <title>Wayback Machine</title> <script> /* @licsta»
+مباشر web.archive.org: حالة 429 / 141523 حرفًا / «<!DOCTYPE html> <html lang="en"> <head> <title>Wayback Machine</title> <script> /* @licsta»
 تجاوزنا مهلة الدورة قبل الوسائط
-أرشيف الإنترنت (التقاط): 429 / 141522 حرفًا
+أرشيف الإنترنت (التقاط): 429 / 141523 حرفًا
 أقرب نسخة من واجهة الأرشيف: لا شيء
 مباشر web.archive.org: حالة 200 / 141280 حرفًا / «<!DOCTYPE html> <html lang="en"> <head> <title></title> <script> /* @licstart The followin»
 نسخة الأرشيف (معروضة): 200 / 141280 حرفًا (غير صالحة أو قديمة)
@@ -54,19 +48,25 @@
   - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر almarkazia.com: حالة 403 / 5618 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5533 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#0: حالة 403 / 6425 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#1: حالة 403 / 6340 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#0: حالة 403 / 6446 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6361 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5831 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
-مباشر almarkazia.com: حالة 403 / 5655 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 503 / 7107 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر almarkazia.com: حالة 403 / 5676 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5548 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6467 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6382 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5868 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
-مباشر almarkazia.com: حالة 403 / 5630 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-(وأُسقط 21 سطرًا زائدًا)
+  - وسيط#4: حالة 503 / 7107 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر almarkazia.com: حالة 403 / 5652 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - هوية Googlebot: حالة 403 / 5545 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر almarkazia.com: حالة 403 / 5685 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - هوية Googlebot: حالة 403 / 5599 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+تجاوزنا مهلة الدورة قبل الوسائط
+(وأُسقط 20 سطرًا زائدًا)
