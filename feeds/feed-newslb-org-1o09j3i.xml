@@ -5,7 +5,7 @@
 <link>https://newslb.org/</link>
 <description>خلاصة تُحدَّث تلقائيًا من newslb.org</description>
 <language>ar</language>
-<lastBuildDate>Sat, 26 Sep 2026 00:38:55 GMT</lastBuildDate>
+<lastBuildDate>Sat, 26 Sep 2026 00:50:56 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: rest -->
 <atom:link href="https://newslb.org/" rel="self" type="application/rss+xml"/>
