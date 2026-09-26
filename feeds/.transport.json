@@ -1,8 +1,6 @@
 {
  "mugtama.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20260926222140id_/https://mugtama.com/",
-  "snapTs": 1790461316467
+  "via": "direct"
  },
  "www.mobizil.com": {
   "via": "proxy:2"
@@ -14,7 +12,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "proxy:2"
+  "via": "direct"
  },
  "saharazoom.com": {
   "via": "direct"
