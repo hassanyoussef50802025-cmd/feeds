@@ -43,6 +43,14 @@
  *   (جرّبناه: newslb.org صفحته محجوبة و/feed/ تعمل)؛ (٣) إن فشل كل شيء نُعيد خطأً فتبقى النسخة
  *   السابقة كما هي بلا تقلّب، وإن كانت تحمل روابط جوجل من نسخة قديمة تُنقّى منها.
  *
+ *
+ * نسخة 22 (إصلاح ما كشفته التجربة على المنشور فعليًا): (١) المواقع التي تحجب خوادم الجلب وتُحوّل
+ *   الرابط إلى نطاق خدمة الحماية (جرّبناه: newslb.org ⇒ recaptcha.cloud) كانت تُجرَّب خلاصتها على
+ *   النطاق الخطأ فتفشل كلها رغم أن خلاصة الموقع نفسها تعمل؛ الآن نُثبّت النطاق الأصلي. (٢) تنقية
+ *   روابط جوجل تُصلح الآن رابط القناة ووصفها أيضًا (كان النداء ينسى خياراته فتبقى الخلاصة الفارغة
+ *   معلَنة على news.google.com). (٣) تاريخ قياسي بمنطقة صريحة (2026-09-26T12:23:17+03:00) كان
+ *   يُقرأ كأنه UTC فتتقدّم تواريخ المواقع التي ساعتها متقدّمة، فيصير أحدث الخبر «في المستقبل»
+ *   وتحجبه بعض القارئات؛ الآن يُحوَّل بالمنطقة المعلنة.
  * نسخة 18 (تكملة 17): الخلاصة السابقة التي بُنيت من «بحث أخبار جوجل» كانت تُعامل كمصدر مساوٍ
  *   للاستخراج من الموقع (كلتاهما "dom")، فترفض حماية «لا نُفسد الخلاصة» قائمة الموقع الأصلية لأن
  *   روابطها لا تتقاطع مع روابط جوجل — وتبقى الخلاصة رهينة نتائج جوجل القديمة. الآن: (١) الاستخراج
@@ -535,9 +543,19 @@ function parseDateText(v) {
   if (/^\d{13}$/.test(raw)) { const d = new Date(Number(raw)); return isNaN(d.getTime()) ? null : d; }
   const rel = parseRelative(raw);
   if (rel) return rel;
-  let m = raw.match(/(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?:[ T](\d{1,2}):(\d{2})(?::\d{2})?)?/);
+  let m = raw.match(/(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?(?:\s*(Z|GMT|UTC|[+-]\d{2}:?\d{2}))?)?/i);
   if (m) {
     const hasTime = m[4] !== undefined;
+    /* v22: تاريخ قياسي فيه منطقة صريحة (2026-09-26T12:23:17+03:00) كان يُقرأ كأنه UTC فتتقدّم
+       تواريخ المواقع التي ساعتها متقدّمة على جرينتش، فيصير أحدث الخبر «في المستقبل» وتحجبه بعض
+       القارئات. الآن نحوّله بالمنطقة المعلنة. */
+    if (hasTime && m[7]) {
+      const zone = /^(z|gmt|utc)$/i.test(m[7]) ? "Z" : m[7].replace(/^([+-]\d{2})(\d{2})$/, "$1:$2");
+      const iso = m[1] + "-" + ("0" + (+m[2])).slice(-2) + "-" + ("0" + (+m[3])).slice(-2) +
+        "T" + ("0" + (+m[4])).slice(-2) + ":" + m[5] + ":" + ("0" + (m[6] ? +m[6] : 0)).slice(-2) + zone;
+      const dz = new Date(iso);
+      if (!isNaN(dz.getTime())) return dz;
+    }
     const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], hasTime ? +m[4] : 12, hasTime ? +m[5] : 0));
     if (!isNaN(d.getTime())) return d;
   }
@@ -1603,16 +1621,26 @@ async function buildFeed(targetUrl, selfUrl, params) {
     if (common) return common;
   } else {
     /* ---------- (٢) الصفحة محجوبة/غير متاحة ---------- */
+    /* v22: بعض المواقع لا تكتفي بالحجب بل تُحوّل الرابط إلى نطاق خدمة الحماية (جرّبناه: newslb.org
+       ⇒ recaptcha.cloud)، فيصير finalUrl نطاقًا آخر — وكنا نجرّب خلاصة الموقع وواجهته على ذلك
+       النطاق الخطأ فتفشل كلها رغم أن خلاصة الموقع الأصلية تعمل. الآن نُثبّت النطاق الأصلي حين يكون
+       التحويل خارج الموقع. */
+    const targetHost = hostOf(targetUrl);
+    const finalHost = hostOf(finalUrl || targetUrl);
+    const offsite = !!(targetHost && finalHost && !sameSite(targetHost, finalHost));
+    const siteHost = offsite ? targetHost : finalHost;
+    const siteUrl = offsite ? targetUrl : (finalUrl || targetUrl);
+    if (offsite) diag("الرابط يُحوّل خارج الموقع (" + finalHost + ") — نعود إلى " + siteHost + ".");
     /* v21: خلاصة الموقع الأصلية كثيرًا ما تبقى مفتوحة حتى عندما تُحجب الصفحة الرئيسية (كلاودفلير
        يصدّ الصفحة ولا يصدّ /feed/ — جرّبناه على newslb.org). روابطها أصلية وتواريخها من الموقع
-       نفسه، فلا نحتاج وسيطًا خارجيًا ولا بحث جوجل. */
-    const own = await probeCommonFeeds(base, 10000, BLOCKED_FEED_PATHS);
+       نفسه. */
+    const own = await probeCommonFeeds({ origin: "https://" + siteHost }, 10000, BLOCKED_FEED_PATHS);
     if (own) return own;
     diag("الصفحة غير متاحة (" + (first.status || "؟") + ") — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.");
     /* واجهة WordPress تعمل غالبًا حتى مع حجب الصفحة، وتُعطي تواريخ دقيقة وروابط أصلية. */
-    const wp = await tryWordPress(finalUrl, 9000);
-    if (wp && wp.items.length >= 3) return wpFeed(wp, limit, title, finalUrl);
-    const arch = await archiveItems(finalUrl || targetUrl, host, limit, title);
+    const wp = await tryWordPress(siteUrl, 9000);
+    if (wp && wp.items.length >= 3) return wpFeed(wp, limit, title, siteUrl);
+    const arch = await archiveItems(siteUrl, host, limit, title);
     if (arch) return arch;
   }
 
@@ -1907,7 +1935,7 @@ async function run() {
         /* v21: لم نجد مصدرًا من الموقع نفسه، ولا نسقط إلى جوجل. تبقى النسخة السابقة كما هي، وإن
            كانت تحمل روابط جوجل من نسخة قديمة تُنقّى منها فلا يبقى في القارئ خبرٌ من جوجل. */
         if (PREV_XML && /news\.google\.com/.test(PREV_XML)) {
-          const cleaned = stripGoogleItems(PREV_XML);
+          const cleaned = stripGoogleItems(PREV_XML, { pageUrl: f.url, title: f.title || hostOf(f.url) });
           await writeFile(new URL(f.name + ".xml", root), cleaned.xml, "utf8");
           written.add(f.name + ".xml");
           console.log("   حُذف " + cleaned.removed + " عنصرًا كان مصدره بحث أخبار جوجل من النسخة المنشورة.");
