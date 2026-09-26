@@ -1,0 +1,72 @@
+الخطأ: لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار).
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6328 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+  - وسيط#3: حالة 403 / 5819 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+الصفحة غير متاحة (200) — المسار: WordPress ثم أرشيف الإنترنت.
+  - JSON مباشر: حالة 404 / 0 حرفًا
+  - JSON وسيط#0: حالة 403 / 6886 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#1: حالة 403 / 6801 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#2: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
+  - JSON وسيط#3: حالة 403 / 6229 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر web.archive.org: حالة 200 / 93429 حرفًا / «<!DOCTYPE html> <html> <head><script src="https://web-static.archive.org/_static/js/athena»
+  - وسيط#0: حالة 403 / 7275 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 7190 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+  - وسيط#3: حالة 403 / 6606 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+أرشيف الإنترنت (التقاط): 200 / 93429 حرفًا / 20260926032802
+مباشر web.archive.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 7353 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 7268 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#3: حالة 403 / 6678 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+نسخة الأرشيف (التقاط جديد 20260926032802): 200 / 82937 حرفًا (غير صالحة)
+مباشر web.archive.org: حالة 200 / 93429 حرفًا / «<!DOCTYPE html> <html> <head><script src="https://web-static.archive.org/_static/js/athena»
+  - وسيط#0: حالة 403 / 7344 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 7259 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+  - وسيط#3: حالة 403 / 6669 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+نسخة الأرشيف (معروضة): 200 / 93429 حرفًا / التقاط 20260926032802 (غير صالحة أو قديمة)
+مباشر news.google.com: حالة 503 / 1103 حرفًا / «<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>Sor»
+تجاوزنا مهلة الدورة قبل الوسائط
+بحث أخبار جوجل (LB 2d): 503 / 0 عنصرًا (مرفوض: قديم)
+مباشر news.google.com: حالة 503 / 1103 حرفًا / «<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>Sor»
+تجاوزنا مهلة الدورة قبل الوسائط
+بحث أخبار جوجل (EG 2d): 503 / 0 عنصرًا (مرفوض: قديم)
+مباشر news.google.com: حالة 503 / 1103 حرفًا / «<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>Sor»
+تجاوزنا مهلة الدورة قبل الوسائط
+بحث أخبار جوجل (LB 7d): 503 / 0 عنصرًا (مرفوض: قديم)
+مباشر news.google.com: حالة 503 / 1103 حرفًا / «<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>Sor»
+تجاوزنا مهلة الدورة قبل الوسائط
+بحث أخبار جوجل (US 7d): 503 / 0 عنصرًا (مرفوض: قديم)
+مباشر news.google.com: حالة 503 / 1103 حرفًا / «<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>Sor»
+تجاوزنا مهلة الدورة قبل الوسائط
+بحث أخبار جوجل (LB): 503 / 0 عنصرًا (مرفوض: قديم)
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6328 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#3: حالة 403 / 5819 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+الصفحة غير متاحة (200) — المسار: WordPress ثم أرشيف الإنترنت.
+  - JSON مباشر: حالة 404 / 0 حرفًا
+  - JSON وسيط#0: حالة 403 / 6886 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#1: حالة 403 / 6801 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#2: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
+  - JSON وسيط#3: حالة 403 / 6229 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - JSON وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر web.archive.org: حالة 0 / 0 حرفًا / خطأ: fetch failed
+  - وسيط#0: حالة 403 / 7275 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 7190 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#3: حالة 403 / 6606 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7250 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+أرشيف الإنترنت (التقاط): 0 / 0 حرفًا
+  - JSON مباشر: حالة 200 / 483 حرفًا / «{"url": "https://recaptcha.cloud/?template=cpg&server=198.251.89.161&ip=172.212.165.64&htt»
+(وأُسقط 26 سطرًا زائدًا)
