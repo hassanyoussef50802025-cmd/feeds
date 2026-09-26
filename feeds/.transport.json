@@ -1,11 +1,9 @@
 {
  "mugtama.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20260926043441id_/https://mugtama.com/",
-  "snapTs": 1790400130837
+  "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "direct"
+  "via": "proxy:2"
  },
  "riadynews.com": {
   "via": "direct"
