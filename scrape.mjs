@@ -34,6 +34,15 @@
  *   الروابط تتجاهل البروتوكول وwww والشرطة النهائية (كانت ترفض قوائم طازجة لاختلاف الشرطة)؛
  *   (٤) بحث أخبار جوجل يجرّب كل النوافذ ويختار أطول قائمة طازجة.
  *
+ * نسخة 21 (بطلب من حسن — لا جوجل نيوز أبدًا): كانت الخلاصة تسقط إلى «بحث أخبار جوجل» كلما عجزت
+ *   خوادمنا عن جلب الموقع. وروابط جوجل تختلف عن روابط الموقع، فيظهر الخبر نفسه مرّتين في القارئ
+ *   (مرّة برابط الموقع ومرّة برابط جوجل) ولكلٍّ معرّف مختلف — وهذا بالضبط ما رآه حسن في «الحياة
+ *   اليوم»: أُرسلت أخبار الخميس نفسها بتواريخ الخميس يوم السبت. الآن: (١) حُذف مسار «بحث أخبار
+ *   جوجل» كليًّا فلم يبق في الأداة أي مصدر من جوجل؛ (٢) عند حجب الصفحة الرئيسية نجرّب أولًا خلاصة
+ *   الموقع الأصلية (/feed/ وما شابهها) لأن كلاودفلير كثيرًا ما يتركها مفتوحة وهو يحجب الصفحة
+ *   (جرّبناه: newslb.org صفحته محجوبة و/feed/ تعمل)؛ (٣) إن فشل كل شيء نُعيد خطأً فتبقى النسخة
+ *   السابقة كما هي بلا تقلّب، وإن كانت تحمل روابط جوجل من نسخة قديمة تُنقّى منها.
+ *
  * نسخة 18 (تكملة 17): الخلاصة السابقة التي بُنيت من «بحث أخبار جوجل» كانت تُعامل كمصدر مساوٍ
  *   للاستخراج من الموقع (كلتاهما "dom")، فترفض حماية «لا نُفسد الخلاصة» قائمة الموقع الأصلية لأن
  *   روابطها لا تتقاطع مع روابط جوجل — وتبقى الخلاصة رهينة نتائج جوجل القديمة. الآن: (١) الاستخراج
@@ -190,9 +199,24 @@ async function loadPrevDates(fileUrl, readFile) {
 /* v10: ترتيب جودة المصادر. الخلاصة الأصلية للموقع أفضل شيء، ثم واجهة WordPress (تواريخ دقيقة
    وثابتة)، ثم الاستخراج من الصفحة (يتغيّر بتغيّر نسخة الصفحة). نستخدمه فقط للسماح بالترقية إلى
    مصدر أفضل، ولا يمنع الرجوع لمصدر أردأ. */
+/* v21: حذف كل عنصر رابطُه من بحث أخبار جوجل (تنظيف خلاصات النسخ ≤ 20 الملوّثة). */
+function stripGoogleItems(xml, opts) {
+  let out = String(xml || ""), removed = 0;
+  const blocks = out.match(/<item>[\s\S]*?<\/item>/g) || [];
+  for (const b of blocks) {
+    if (/news\.google\.com/.test(b)) { out = out.replace(b, ""); removed++; }
+  }
+  if (removed && opts) {
+    out = out.replace(/<link>https:\/\/news\.google\.com\/<\/link>/, "<link>" + xmlEsc(opts.pageUrl || "") + "</link>");
+    out = out.replace(/<description>[\s\S]*?<\/description>/, "<description>" + xmlEsc("خلاصة تُحدَّث تلقائيًا من " + (opts.title || "") + " — تعذّر جلب الموقع الآن، ولا نستعمل أخبار جوجل.") + "</description>");
+  }
+  return { xml: out, removed };
+}
+
 /* v17: نسخة الأرشيف مصدر حقيقي من الموقع (روابط أصلية + قوائم الصفحة كاملة)، فهي أعلى رتبة من
    «بحث أخبار جوجل» (روابط جوجل). الرتبة الأعلى تسمح بالترقية دائمًا: خلاصة بُنيت من بحث جوجل
    يُسمح باستبدالها بقائمة الموقع الأصلية. */
+/* v21: بقي «gnews» في أدنى رتبة لقراءة الخلاصات القديمة الملوّثة بروابط جوجل فقط؛ لم يعد يُنتَج. */
 const SRC_RANK = { gnews: 1, dom: 2, native: 2, rest: 3, wayback: 3 };
 
 /* v10: هل القائمة التي استخرجناها هذه الدورة تختلف جذريًا عمّا نشرناه سابقًا من نفس المصدر؟
@@ -1579,7 +1603,12 @@ async function buildFeed(targetUrl, selfUrl, params) {
     if (common) return common;
   } else {
     /* ---------- (٢) الصفحة محجوبة/غير متاحة ---------- */
-    diag("الصفحة غير متاحة (" + (first.status || "؟") + ") — المسار: WordPress ثم أرشيف الإنترنت.");
+    /* v21: خلاصة الموقع الأصلية كثيرًا ما تبقى مفتوحة حتى عندما تُحجب الصفحة الرئيسية (كلاودفلير
+       يصدّ الصفحة ولا يصدّ /feed/ — جرّبناه على newslb.org). روابطها أصلية وتواريخها من الموقع
+       نفسه، فلا نحتاج وسيطًا خارجيًا ولا بحث جوجل. */
+    const own = await probeCommonFeeds(base, 10000, BLOCKED_FEED_PATHS);
+    if (own) return own;
+    diag("الصفحة غير متاحة (" + (first.status || "؟") + ") — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.");
     /* واجهة WordPress تعمل غالبًا حتى مع حجب الصفحة، وتُعطي تواريخ دقيقة وروابط أصلية. */
     const wp = await tryWordPress(finalUrl, 9000);
     if (wp && wp.items.length >= 3) return wpFeed(wp, limit, title, finalUrl);
@@ -1587,13 +1616,13 @@ async function buildFeed(targetUrl, selfUrl, params) {
     if (arch) return arch;
   }
 
-  /* (٣) الصفحة وصلت لكن بلا قوائم، أو حُجبت وكل ما سبق فشل: نجرب الأرشيف ثم بحث أخبار جوجل. */
+  /* (٣) الصفحة وصلت لكن بلا قوائم، أو حُجبت وكل ما سبق فشل: نجرب الأرشيف ثم نتوقف.
+     v21: لا مسار «بحث أخبار جوجل» — لا ننشر خبرًا من جوجل أبدًا، لأن روابط جوجل تختلف عن روابط
+     الموقع فيظهر الخبر نفسه مرّتين في القارئ. وإن فشل كل شيء نُعيد خطأً فتبقى النسخة السابقة. */
   if (pageOk) {
     const arch = await archiveItems(finalUrl || targetUrl, host, limit, title);
     if (arch) return arch;
   }
-  const gnews = await googleNewsFallback(host, limit);
-  if (gnews) return gnews;
 
   if (!pageText) {
     return { error: "تعذّر جلب الصفحة (الحالة " + first.status + ")." + (first.error ? " " + first.error : "") };
@@ -1709,55 +1738,6 @@ async function archiveItems(pageUrl, host, limit, title) {
   return { items, via: "نسخة أرشيف الإنترنت", title, pageUrl, approx };
 }
 
-/* v15: آخر ملاذ للمواقع التي تحجب خوادمنا: خلاصة بحث «أخبار جوجل» عن الموقع نفسه. جوجل تزحف كل
-   المواقع الإخبارية وتحفظ العناوين والتواريخ، فالخلاصة تبقى حيّة حتى لو حجب الموقع كل وسائطنا.
-   الروابط في هذه الحالة روابط جوجل (تُفتح عادة إلى الخبر الأصلي)، ولهذا لا نستعملها إلا إذا فشل
-   كل شيء آخر، ونُثبّتها في .transport.json حتى لا تتقلّب الخلاصة بين مجموعتين من الروابط. */
-function googleNewsItems(xml, limit) {
-  const out = [];
-  const seen = new Set();
-  for (const m of String(xml || "").matchAll(/<item>([\s\S]*?)<\/item>/g)) {
-    const b = m[1];
-    const link = ((b.match(/<link>([^<]*)<\/link>/) || [])[1] || "").trim();
-    let title = (b.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || "";
-    title = xmlUnesc(title.replace(/<!\[CDATA\[|\]\]>/g, "")).replace(/\s+-\s+[^-]{2,50}$/, "").replace(/\s+/g, " ").trim();
-    const date = toRfc822((b.match(/<pubDate>([^<]*)<\/pubDate>/) || [])[1]);
-    if (!link || !title || seen.has(link)) continue;
-    seen.add(link);
-    out.push({ url: link, title: title.slice(0, 220), date, relDate: false, img: null, desc: "" });
-    if (out.length >= (limit || 30)) break;
-  }
-  return out;
-}
-
-async function googleNewsFallback(host, limit) {
-  if (!host) return null;
-  /* نطلب نافذة زمنية (when:) وإلّا أعادت جوجل نتائج «الأكثر صلة» وقد تكون قديمة جدًا (جرّبناه: عادت
-     بأخبار سنة 2025 في المقدمة). ثم نرتّب نحن تنازليًا بالتاريخ ولا نقبل ما هو أقدم من ٣ أيام. */
-  const tries = [["LB", "LB", "2d"], ["EG", "EG", "2d"], ["LB", "LB", "7d"], ["US", "US", "7d"], ["LB", "LB", ""]];
-  /* v19: نجمع كل النوافذ الطازجة ونختار أطولها (الخلاصة تبقى ممتلئة وحديثة معًا). */
-  let best = null, bestWhen = "";
-  for (const [gl, ceid, when] of tries) {
-    let q = "site:" + host;
-    if (when) q += " when:" + when;
-    const u = "https://news.google.com/rss/search?q=" + encodeURIComponent(q) +
-      "&hl=ar&gl=" + gl + "&ceid=" + ceid + ":ar";
-    const f = await fetchWithFallback(u, 20000);
-    let items = f && f.ok ? googleNewsItems(f.text, limit) : [];
-    items = sortByDate(items);
-    const fresh = freshEnough(items, 3 * 86400000);
-    diag("بحث أخبار جوجل (" + gl + (when ? " " + when : "") + "): " + (f ? f.status + " / " + items.length + " عنصرًا" : "لا رد") + (items.length ? " / أحدثها " + (items[0].date || "بلا تاريخ") : "") + (fresh ? "" : " (مرفوض: قديم)"));
-    if (fresh && (!best || items.length > best.length)) { best = items; bestWhen = gl + (when ? " " + when : ""); }
-    if (items.length >= (limit || 30) && fresh) break;
-  }
-  if (best) {
-    LAST_VIA = "gnews";
-    diag("اخترنا نافذة أخبار جوجل: " + bestWhen + " / " + best.length + " عنصرًا");
-    return { items: best, via: "بحث أخبار جوجل", note: "المصدر: بحث أخبار جوجل عن هذا الموقع (رفض الموقع خوادم الجلب)", pageUrl: "https://news.google.com/" };
-  }
-  return null;
-}
-
 /* عناصر مقبولة: ثلاثة على الأقل، وأحدثها لم يتجاوز عمره الحد المسموح (خلاصة الأرشيف/جوجل ليست أقدم
    من الوضع الراهن، فلا نستبدل خلاصة طازجة بأخرى قديمة). */
 function freshEnough(items, maxAgeMs) {
@@ -1778,8 +1758,11 @@ function newestTime(items) {
   return t;
 }
 
-async function probeCommonFeeds(base, timeout) {
-  const paths = ["/feed/", "/feed", "/rss", "/rss.xml", "/atom.xml", "/feed.xml", "/index.xml", "/?feed=rss2"];
+/* v21: مسارات خلاصة مختصرة تُجرَّب عند حجب الصفحة الرئيسية (أسرع وأرجح من القائمة الكاملة). */
+const BLOCKED_FEED_PATHS = ["/feed/", "/feed", "/?feed=rss2", "/rss.xml", "/rss", "/atom.xml"];
+
+async function probeCommonFeeds(base, timeout, pathsOverride) {
+  const paths = pathsOverride || ["/feed/", "/feed", "/rss", "/rss.xml", "/atom.xml", "/feed.xml", "/index.xml", "/?feed=rss2"];
   const tmo = timeout || 12000;
   for (const p of paths) {
     let u;
@@ -1921,6 +1904,14 @@ async function run() {
         await writeFile(new URL(f.name + ".diag.txt", root), txt, "utf8");
         written.add(f.name + ".diag.txt");
         console.log(txt);
+        /* v21: لم نجد مصدرًا من الموقع نفسه، ولا نسقط إلى جوجل. تبقى النسخة السابقة كما هي، وإن
+           كانت تحمل روابط جوجل من نسخة قديمة تُنقّى منها فلا يبقى في القارئ خبرٌ من جوجل. */
+        if (PREV_XML && /news\.google\.com/.test(PREV_XML)) {
+          const cleaned = stripGoogleItems(PREV_XML);
+          await writeFile(new URL(f.name + ".xml", root), cleaned.xml, "utf8");
+          written.add(f.name + ".xml");
+          console.log("   حُذف " + cleaned.removed + " عنصرًا كان مصدره بحث أخبار جوجل من النسخة المنشورة.");
+        }
         summary = "خطأ: " + out.error;
         fail++;
       } else {
@@ -1937,8 +1928,7 @@ async function run() {
              v17: الرتبة تسمح بالترقية من خلاصة «بحث أخبار جوجل» إلى قائمة الموقع الأصلية، والتقاطع
              يُقاس بالعناوين أيضًا لا بالروابط وحدها. */
           const src = out.via === "WordPress REST" ? "rest"
-            : out.via === "نسخة أرشيف الإنترنت" ? "wayback"
-            : out.via === "بحث أخبار جوجل" ? "gnews" : "dom";
+            : out.via === "نسخة أرشيف الإنترنت" ? "wayback" : "dom";
           const chk = checkInconsistent(items, src);
           /* v17: حماية من التدهور الزمني: لا نستبدل خلاصة حديثة بقائمة أقدم منها بفارق كبير. */
           const newest = newestTime(items);
