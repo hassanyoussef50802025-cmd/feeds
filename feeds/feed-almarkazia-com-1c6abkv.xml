@@ -2,214 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
 <title>almarkazia.com</title>
-<link>https://news.google.com/</link>
-<description>خلاصة تُحدَّث تلقائيًا من almarkazia.com — المصدر: بحث أخبار جوجل عن هذا الموقع (رفض الموقع خوادم الجلب)</description>
+<link>https://almarkazia.com/</link>
+<description>خلاصة تُحدَّث تلقائيًا من almarkazia.com</description>
 <language>ar</language>
-<lastBuildDate>Sat, 26 Sep 2026 04:19:23 GMT</lastBuildDate>
+<lastBuildDate>Sat, 26 Sep 2026 04:36:13 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
-<!-- rss-src: gnews -->
+<!-- rss-src: dom -->
 <atom:link href="https://almarkazia.com/" rel="self" type="application/rss+xml"/>
 <item>
-<title>المركزية | سلام في الأمم المتحدة: ثقة تُبنى وقرار يُستعاد وأرض تُحرّر ولا أحد يفاوض باسم لبنان سوى الدولة</title>
-<link>https://news.google.com/rss/articles/CBMiwgJBVV95cUxNdlNtc0hTenhISUpKYkZpX1VWb25HUTVncWlsbGIydXlYQXYxRjgtdWVtY05GMm5NNjJ2Q3o0bkxiNXc1Mmp6ellDWXFqV3AyWFh3UUtubW90UEdoYWVlUkZoZmYzYmRSYkEtaW9tUXd3UlhzMzlwaEVrajlNVGNVV1ZVNzlYeVVTUGVSb2hUVmFLeGhrSjNTTmp3ZHZXM3U3aV9yczRtU0tVTFRaZkZUMTA3X3hLYm9uTmp1dGc2Qnp0TDlQWDdaOUdPU2JNWVJaejNsN0xtQWluUmlMSUZOSXpMd2JrWTZDS1RsaGs4VU15akFWUVptVi1ZRW5KRmltYWhyZkpBbXR6SzdSSm5uTkFNSmYwUXpuRGhpbDlYbkFVeHJGR0t1SERWMTBOcWFQQ1RwNXdYLU9JUDItcDZzLU5R?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMiwgJBVV95cUxNdlNtc0hTenhISUpKYkZpX1VWb25HUTVncWlsbGIydXlYQXYxRjgtdWVtY05GMm5NNjJ2Q3o0bkxiNXc1Mmp6ellDWXFqV3AyWFh3UUtubW90UEdoYWVlUkZoZmYzYmRSYkEtaW9tUXd3UlhzMzlwaEVrajlNVGNVV1ZVNzlYeVVTUGVSb2hUVmFLeGhrSjNTTmp3ZHZXM3U3aV9yczRtU0tVTFRaZkZUMTA3X3hLYm9uTmp1dGc2Qnp0TDlQWDdaOUdPU2JNWVJaejNsN0xtQWluUmlMSUZOSXpMd2JrWTZDS1RsaGs4VU15akFWUVptVi1ZRW5KRmltYWhyZkpBbXR6SzdSSm5uTkFNSmYwUXpuRGhpbDlYbkFVeHJGR0t1SERWMTBOcWFQQ1RwNXdYLU9JUDItcDZzLU5R?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 20:35:58 GMT</pubDate>
-<description>المركزية | سلام في الأمم المتحدة: ثقة تُبنى وقرار يُستعاد وأرض تُحرّر ولا أحد يفاوض باسم لبنان سوى الدولة</description>
+<title>قصف إسرائيلي للمنصوري ومجدل زون ووادي حسن وتفجيرات في برعشيت وحداثا</title>
+<link>https://almarkazia.com/ar/%D9%82%D8%B5%D9%81-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%84%D9%84%D9%85%D9%86%D8%B5%D9%88%D8%B1%D9%8A-%D9%88%D9%85%D8%AC%D8%AF%D9%84-%D8%B2%D9%88%D9%86-%D9%88%D9%88%D8%A7%D8%AF%D9%8A-%D8%AD%D8%B3%D9%86-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D9%82%D8%B5%D9%81-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%84%D9%84%D9%85%D9%86%D8%B5%D9%88%D8%B1%D9%8A-%D9%88%D9%85%D8%AC%D8%AF%D9%84-%D8%B2%D9%88%D9%86-%D9%88%D9%88%D8%A7%D8%AF%D9%8A-%D8%AD%D8%B3%D9%86-1</guid>
+<pubDate>Sat, 26 Sep 2026 04:31:00 GMT</pubDate>
+<description>قصف إسرائيلي للمنصوري ومجدل زون ووادي حسن وتفجيرات في برعشيت وحداثا</description>
 </item>
 <item>
-<title>المركزية | نتنياهو: أسعى للقضاء بشكل كامل على &quot;حماس&quot; وللتخلّص من قادتها ولا حصانة لأحد</title>
-<link>https://news.google.com/rss/articles/CBMiygJBVV95cUxOTnR5X1RKY2hMRUp0U29zVFJIN2JtbEhlenBVbG90ZTZuV0FENVFMS0JQc3dxbklBbi1DOUR0ek04TnhwUmFfVnMtVzNLZGR4Y3MyZ1d1WHJXYlh2TnJVM1ZPcmlwZG9RSk9SR1VseUdHeU9PMXBRUzZlU3B0Z0l4TldETG9SOV9DQzRRcDk5ZXVGeDg3R0VtZERaV1NmaGUzbm1TamRISUQzTVpsczRpaXhOSjlWekhzT184QkdxWFFEOTY3Z0kybHl1aWN4Ym02SE5xcEIyYmJoWnpVaWxBdmplOUhKNU9LY0o4ckFtYVdjb19YSlJDeTRMT21faWEyNFpzT195VHdOazY5SUQxaTRMOHMwcThPZHQ2NzZLMXZZdnBvRUpPa1N1NWszc2FCTnNUbFYtQVlXZklKSHg0RHpXWkl2dUJvRHc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMiygJBVV95cUxOTnR5X1RKY2hMRUp0U29zVFJIN2JtbEhlenBVbG90ZTZuV0FENVFMS0JQc3dxbklBbi1DOUR0ek04TnhwUmFfVnMtVzNLZGR4Y3MyZ1d1WHJXYlh2TnJVM1ZPcmlwZG9RSk9SR1VseUdHeU9PMXBRUzZlU3B0Z0l4TldETG9SOV9DQzRRcDk5ZXVGeDg3R0VtZERaV1NmaGUzbm1TamRISUQzTVpsczRpaXhOSjlWekhzT184QkdxWFFEOTY3Z0kybHl1aWN4Ym02SE5xcEIyYmJoWnpVaWxBdmplOUhKNU9LY0o4ckFtYVdjb19YSlJDeTRMT21faWEyNFpzT195VHdOazY5SUQxaTRMOHMwcThPZHQ2NzZLMXZZdnBvRUpPa1N1NWszc2FCTnNUbFYtQVlXZklKSHg0RHpXWkl2dUJvRHc?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 15:09:23 GMT</pubDate>
-<description>المركزية | نتنياهو: أسعى للقضاء بشكل كامل على &quot;حماس&quot; وللتخلّص من قادتها ولا حصانة لأحد</description>
+<title>الرئيس الإيرانيّ: صعوبة عقد لقاء مباشر مع ترامب في ظل أجواء انعدام الثقة</title>
+<link>https://almarkazia.com/ar/%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A%D9%91-%D8%B5%D8%B9%D9%88%D8%A8%D8%A9-%D8%B9%D9%82%D8%AF-%D9%84%D9%82%D8%A7%D8%A1-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D9%85%D8%B9-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A%D9%91-%D8%B5%D8%B9%D9%88%D8%A8%D8%A9-%D8%B9%D9%82%D8%AF-%D9%84%D9%82%D8%A7%D8%A1-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D9%85%D8%B9-1</guid>
+<pubDate>Sat, 26 Sep 2026 04:31:00 GMT</pubDate>
+<description>الرئيس الإيرانيّ: صعوبة عقد لقاء مباشر مع ترامب في ظل أجواء انعدام الثقة</description>
 </item>
 <item>
-<title>المركزية | سلام: البعض يرى أن حكومتنا لم تفِ بعد بكل ما تعهدت به ونحن لا ندّعي أن المهمة أُنجزت لكن الإنصاف يقتضي بألا نغفل حجم التركة التي ورثناها</title>
-<link>https://news.google.com/rss/articles/CBMimgJBVV95cUxPVGNfRE1JZUJ1Q1lqNFQxVXhfYTdQUXJzeVF4MTZzVWZmRmtWTkxrbDA2WXU2YWhjT3BqaFYzUjgwMWl3dy10VmpVdWdBMXdqWkpNZVlXZWgwNy1LcWN6d3ZFTGJrTU9NVDdlYlk4N2d4T3FoUk9rOEx6eWlILTBQYWV4WVloNlFjZUJOTE9oSkFtdHg4UnJJUDJzOEZEWUZhQlVUSC12NFh1SU1Ga05CY0cxSFNZOG9naWRhaldkVzV6NTlPOEpfR2ZYRkRLT0ktQUNfcXg3bndjXzUxNzJuXzI0WmpMcm5Ucms5NHJoVHBVZ0lIX2ZwV2ZYejY3SHA0dGx6S1hXbURtZGtsekx2LWM2TkxCVmw5bnc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMimgJBVV95cUxPVGNfRE1JZUJ1Q1lqNFQxVXhfYTdQUXJzeVF4MTZzVWZmRmtWTkxrbDA2WXU2YWhjT3BqaFYzUjgwMWl3dy10VmpVdWdBMXdqWkpNZVlXZWgwNy1LcWN6d3ZFTGJrTU9NVDdlYlk4N2d4T3FoUk9rOEx6eWlILTBQYWV4WVloNlFjZUJOTE9oSkFtdHg4UnJJUDJzOEZEWUZhQlVUSC12NFh1SU1Ga05CY0cxSFNZOG9naWRhaldkVzV6NTlPOEpfR2ZYRkRLT0ktQUNfcXg3bndjXzUxNzJuXzI0WmpMcm5Ucms5NHJoVHBVZ0lIX2ZwV2ZYejY3SHA0dGx6S1hXbURtZGtsekx2LWM2TkxCVmw5bnc?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 14:33:46 GMT</pubDate>
-<description>المركزية | سلام: البعض يرى أن حكومتنا لم تفِ بعد بكل ما تعهدت به ونحن لا ندّعي أن المهمة أُنجزت لكن الإنصاف يقتضي بألا نغفل حجم التركة التي ورثناها</description>
+<title>سلام: لبنان يريد استعادة كامل أرضه من الاحتلال وألا يكون ساحة لصراعات الآخرين</title>
+<link>https://almarkazia.com/ar/%D8%B3%D9%84%D8%A7%D9%85-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%B1%D9%8A%D8%AF-%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF%D8%A9-%D9%83%D8%A7%D9%85%D9%84-%D8%A3%D8%B1%D8%B6%D9%87-%D9%85%D9%86-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%B3%D9%84%D8%A7%D9%85-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%B1%D9%8A%D8%AF-%D8%A7%D8%B3%D8%AA%D8%B9%D8%A7%D8%AF%D8%A9-%D9%83%D8%A7%D9%85%D9%84-%D8%A3%D8%B1%D8%B6%D9%87-%D9%85%D9%86-1</guid>
+<pubDate>Sat, 26 Sep 2026 04:20:00 GMT</pubDate>
+<description>سلام: لبنان يريد استعادة كامل أرضه من الاحتلال وألا يكون ساحة لصراعات الآخرين</description>
 </item>
 <item>
-<title>المركزية | سلام: لضرورة العمل على تجنب الفراغ الذي قد يحدثه انسحاب قوات اليونيفيل لو تم دون الاتفاق على قوةٍ دولية جديدة تحل مكانها وتضمن استمرار مهام المراقبة والإبلاغ</title>
-<link>https://news.google.com/rss/articles/CBMiygJBVV95cUxQbzg5dlUySHJUUDJDdk9QNjdfVmVYUl9UVDhQS09XV0FIbnhwTGdQTEVwdDhuRTlMNUJGbXE2SGxLbVV6VzVLTGcwMi1mZkVlTGFlSFlnYV9TWHdTZWN6dTVQYmoybE9QaUtPUXlSdlRHQ1pFZGl5NDN0UmFHU0l3OUdZV3JGY1JVaWlEaWVON0VHZUpYT2lVMVZuZUswR3dCWnV3clVvZVRKTE84VDg4UnF0bEFiVW83VTlqLTR2eEZjNVlfRDI2Znc5cWU2RFphWXRKN2ttaUdHVktKaFFPRmU5eUo0aFd5SlZTVEY3bXFTb0w3TGhPMzJwanE2b1JuUEdwcDVSa3dwYnIwZDlFcF9nc1k4X0VHMkpMSzlqLUJSTzdDWVlGbmlXU0tKMUpuTU1vc3pXYV9DR1dqa2JFS0d2MmYyTk9mOHc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMiygJBVV95cUxQbzg5dlUySHJUUDJDdk9QNjdfVmVYUl9UVDhQS09XV0FIbnhwTGdQTEVwdDhuRTlMNUJGbXE2SGxLbVV6VzVLTGcwMi1mZkVlTGFlSFlnYV9TWHdTZWN6dTVQYmoybE9QaUtPUXlSdlRHQ1pFZGl5NDN0UmFHU0l3OUdZV3JGY1JVaWlEaWVON0VHZUpYT2lVMVZuZUswR3dCWnV3clVvZVRKTE84VDg4UnF0bEFiVW83VTlqLTR2eEZjNVlfRDI2Znc5cWU2RFphWXRKN2ttaUdHVktKaFFPRmU5eUo0aFd5SlZTVEY3bXFTb0w3TGhPMzJwanE2b1JuUEdwcDVSa3dwYnIwZDlFcF9nc1k4X0VHMkpMSzlqLUJSTzdDWVlGbmlXU0tKMUpuTU1vc3pXYV9DR1dqa2JFS0d2MmYyTk9mOHc?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 14:33:44 GMT</pubDate>
-<description>المركزية | سلام: لضرورة العمل على تجنب الفراغ الذي قد يحدثه انسحاب قوات اليونيفيل لو تم دون الاتفاق على قوةٍ دولية جديدة تحل مكانها وتضمن استمرار مهام المراقبة والإبلاغ</description>
+<title>إحصاءات غرفة التحكم المروري للحوادث التي تم التحقيق فيها خلال الأربع وعشرين ساعة الماضية: ٨ حوادث، قتيلان و٧ جرحى</title>
+<link>https://almarkazia.com/ar/%D8%A5%D8%AD%D8%B5%D8%A7%D8%A1%D8%A7%D8%AA-%D8%BA%D8%B1%D9%81%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1%D9%8A-%D9%84%D9%84%D8%AD%D9%88%D8%A7%D8%AF%D8%AB-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D9%85-12</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%A5%D8%AD%D8%B5%D8%A7%D8%A1%D8%A7%D8%AA-%D8%BA%D8%B1%D9%81%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1%D9%8A-%D9%84%D9%84%D8%AD%D9%88%D8%A7%D8%AF%D8%AB-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D9%85-12</guid>
+<pubDate>Sat, 26 Sep 2026 04:18:00 GMT</pubDate>
+<description>إحصاءات غرفة التحكم المروري للحوادث التي تم التحقيق فيها خلال الأربع وعشرين ساعة الماضية: ٨ حوادث، قتيلان و٧ جرحى</description>
 </item>
 <item>
-<title>المركزية | سلام: نحن نتحمّل مسؤوليتنا في الإصلاح وبسط سلطة الدولة على كامل أراضينا لكن من حقنا ان نطلب من المجتمع الدولي أن يتحمّل بدوره مسؤولياته في ضمان احترام سيادة لبنان وتنفيذ قرارات الشرعية الدولية</title>
-<link>https://news.google.com/rss/articles/CBMi4gJBVV95cUxQTUwyYTY3cHhKNU5qTHJKOVVGMTJaOG9kaTJqM2ZPU1F5YTQ0eHIzcW1NdVZyWjdwVV80c3hGMlo3REMtOGdvOUdka25sLVF4eXptTWN4TmJseVBsZ0hJRklXbzF5Sm9wMHBCUDdneU5NdU93NzdRMW1FODdlOGR0c2VseXNxdEtoc3g5c2ZhRkFmNlVJVTRXbnF5RXNaSlE1c1N3VW1pMFFvUUtUa1BEMVBfLUIxSHFSc0xjaDFoTmlBcWhfWWJ3S0lLM0lQT1VOZzJUSk9CNjNGcXJtWkRlTjNSeHhDRHFoemM1NFJndWtQUVl2OWprQ20wWGR5V2VWNUVVcm1ZMEM5X2wyaWMtNlhhU2c1ZDkzb2s5MGpaNlJIUDRWSHY4WGlUaFVqSklvRTMtM19QclZXVnhScHNVQ29ZeEJOU3loc3Zpc0JVYU1WdmJBaHJlc2F0ay1ULUxRN0E?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi4gJBVV95cUxQTUwyYTY3cHhKNU5qTHJKOVVGMTJaOG9kaTJqM2ZPU1F5YTQ0eHIzcW1NdVZyWjdwVV80c3hGMlo3REMtOGdvOUdka25sLVF4eXptTWN4TmJseVBsZ0hJRklXbzF5Sm9wMHBCUDdneU5NdU93NzdRMW1FODdlOGR0c2VseXNxdEtoc3g5c2ZhRkFmNlVJVTRXbnF5RXNaSlE1c1N3VW1pMFFvUUtUa1BEMVBfLUIxSHFSc0xjaDFoTmlBcWhfWWJ3S0lLM0lQT1VOZzJUSk9CNjNGcXJtWkRlTjNSeHhDRHFoemM1NFJndWtQUVl2OWprQ20wWGR5V2VWNUVVcm1ZMEM5X2wyaWMtNlhhU2c1ZDkzb2s5MGpaNlJIUDRWSHY4WGlUaFVqSklvRTMtM19QclZXVnhScHNVQ29ZeEJOU3loc3Zpc0JVYU1WdmJBaHJlc2F0ay1ULUxRN0E?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 14:28:45 GMT</pubDate>
-<description>المركزية | سلام: نحن نتحمّل مسؤوليتنا في الإصلاح وبسط سلطة الدولة على كامل أراضينا لكن من حقنا ان نطلب من المجتمع الدولي أن يتحمّل بدوره مسؤولياته في ضمان احترام سيادة لبنان وتنفيذ قرارات الشرعية الدولية</description>
+<title>البيت الأبيض: استحداث &quot;قناة اتصال&quot; بين واشنطن وبكين مخصصة لحوادث الذكاء الاصطناعي</title>
+<link>https://almarkazia.com/ar/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D8%A7%D8%B3%D8%AA%D8%AD%D8%AF%D8%A7%D8%AB-%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B6-%D8%A7%D8%B3%D8%AA%D8%AD%D8%AF%D8%A7%D8%AB-%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D8%AA%D8%B5%D8%A7%D9%84-%D8%A8%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-1</guid>
+<pubDate>Sat, 26 Sep 2026 04:16:00 GMT</pubDate>
+<description>البيت الأبيض: استحداث &quot;قناة اتصال&quot; بين واشنطن وبكين مخصصة لحوادث الذكاء الاصطناعي</description>
 </item>
 <item>
-<title>المركزية | سلام: موقفنا من الحرب كان واضحًا منذ البداية نريد وقفها ونريد تثبيت وقف إطلاق النار وانسحاب إسرائيل من كامل الأراضي اللبنانية حتى حدودنا الدولية المعترف به والسيادة التي نتمسّك بها لا تتجزأ فهي تقتضي انسحاب إس</title>
-<link>https://news.google.com/rss/articles/CBMisgJBVV95cUxQMDdGSWt4aTRwSVMwRWR0N1BENHNHNlVVcHRwT3JTTl9yclZHV0xfbGxvRXNtcV9Pdi1LX1pfZUJJOVFtWmlfSVBYc0RRZWotVV9IUGlYWklFYmlVTzlpdW9fbkNlSmsxSmpOMjV3bkE5cURMLWptXzV5ZzJ3b3pXMFFSY2tOYS1VMjM0RW14Y2pYY1VQOXR0c1Qza0tJNTdfVkFhMzJVRnV3aTBCelhXaGRYSFZmdGR3c08xaWIzREh1QUFLdGRVdTQxOVV1WVpqMUhreDFnNTc5d0tYT21feWw3NGFYbGRxMkpsdkNrM25WdFd5dWJTMzE5eDhWYWhxazFoMmo0TDBhelRjTUc4dkduZWZ5SUZMUE1NWVF6cEVLTW0yRWVsSHZOSnBDeG9TSmc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMisgJBVV95cUxQMDdGSWt4aTRwSVMwRWR0N1BENHNHNlVVcHRwT3JTTl9yclZHV0xfbGxvRXNtcV9Pdi1LX1pfZUJJOVFtWmlfSVBYc0RRZWotVV9IUGlYWklFYmlVTzlpdW9fbkNlSmsxSmpOMjV3bkE5cURMLWptXzV5ZzJ3b3pXMFFSY2tOYS1VMjM0RW14Y2pYY1VQOXR0c1Qza0tJNTdfVkFhMzJVRnV3aTBCelhXaGRYSFZmdGR3c08xaWIzREh1QUFLdGRVdTQxOVV1WVpqMUhreDFnNTc5d0tYT21feWw3NGFYbGRxMkpsdkNrM25WdFd5dWJTMzE5eDhWYWhxazFoMmo0TDBhelRjTUc4dkduZWZ5SUZMUE1NWVF6cEVLTW0yRWVsSHZOSnBDeG9TSmc?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 14:23:30 GMT</pubDate>
-<description>المركزية | سلام: موقفنا من الحرب كان واضحًا منذ البداية نريد وقفها ونريد تثبيت وقف إطلاق النار وانسحاب إسرائيل من كامل الأراضي اللبنانية حتى حدودنا الدولية المعترف به والسيادة التي نتمسّك بها لا تتجزأ فهي تقتضي انسحاب إس</description>
+<title>عون يؤكّد حماية الجيش لجميع اللبنانيين وسلام: لقوة دولية... الانتخابات تضغط على نتنياهو</title>
+<link>https://almarkazia.com/ar/%D8%B9%D9%88%D9%86-%D9%8A%D8%A4%D9%83%D9%91%D8%AF-%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D8%A7%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A%D9%8A%D9%86-%D9%88%D8%B3%D9%84%D8%A7%D9%85-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%B9%D9%88%D9%86-%D9%8A%D8%A4%D9%83%D9%91%D8%AF-%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D8%A7%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A%D9%8A%D9%86-%D9%88%D8%B3%D9%84%D8%A7%D9%85-1</guid>
+<pubDate>Sat, 26 Sep 2026 04:11:00 GMT</pubDate>
+<description>عون يؤكّد حماية الجيش لجميع اللبنانيين وسلام: لقوة دولية... الانتخابات تضغط على نتنياهو</description>
 </item>
 <item>
-<title>المركزية | سلام: تمسكنا بمبدأ أنّ لا أحد يتحدّث باسم لبنان ولا أحد يُفاوض عنه سوى الدولة اللبنانيّة ومؤسساتها الدستوريّة وصحيح أن لبنان يتأثر بما يجري في محيطه لكن ذلك لا يعني اننا نقبل بأن يعود ساحة لصراعات الآخرين أو و</title>
-<link>https://news.google.com/rss/articles/CBMisgJBVV95cUxNTVNZWmxZMnVreENEVW83NWJENVFkREJZc2ZlX0xGZGdYX19WWE1RQkR0RGNUQVgwNjd3d2dPWlY4VEQ2TWNueG0zNVF4Y2R5d2dEbjJXMWJ4WHVvdC1HQWE0LTJ1c19hNTg2Y0ZpTTVUZ0s2d1FBWVVnQWN2Yk85WXFvMktoTTNybmNTMGhkMmdxMXl3d293eUV6VlpXTGdOcU9HVjZvSkRlMGpXVEpmQ1BCakdHbExaSW5BeWxhdFZNZWNkTHlZQWI1aDl6YUdWSXJhZmNzRDZSbm0zODJHMDNuVEx1NTE1OVlVRVRqa21fZHZKcWx4OHVIMWlNQ0k3ajFvMS13TG1DeTJseThMbGVmbDZNNGstc05yQ05fTnNFSExqQXh4a0ZKTzBvZlJZQXc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMisgJBVV95cUxNTVNZWmxZMnVreENEVW83NWJENVFkREJZc2ZlX0xGZGdYX19WWE1RQkR0RGNUQVgwNjd3d2dPWlY4VEQ2TWNueG0zNVF4Y2R5d2dEbjJXMWJ4WHVvdC1HQWE0LTJ1c19hNTg2Y0ZpTTVUZ0s2d1FBWVVnQWN2Yk85WXFvMktoTTNybmNTMGhkMmdxMXl3d293eUV6VlpXTGdOcU9HVjZvSkRlMGpXVEpmQ1BCakdHbExaSW5BeWxhdFZNZWNkTHlZQWI1aDl6YUdWSXJhZmNzRDZSbm0zODJHMDNuVEx1NTE1OVlVRVRqa21fZHZKcWx4OHVIMWlNQ0k3ajFvMS13TG1DeTJseThMbGVmbDZNNGstc05yQ05fTnNFSExqQXh4a0ZKTzBvZlJZQXc?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 14:23:27 GMT</pubDate>
-<description>المركزية | سلام: تمسكنا بمبدأ أنّ لا أحد يتحدّث باسم لبنان ولا أحد يُفاوض عنه سوى الدولة اللبنانيّة ومؤسساتها الدستوريّة وصحيح أن لبنان يتأثر بما يجري في محيطه لكن ذلك لا يعني اننا نقبل بأن يعود ساحة لصراعات الآخرين أو و</description>
+<title>انفجارات عنيفة تهزّ الجنوب وأصداؤها تصل إلى صيدا</title>
+<link>https://almarkazia.com/ar/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B9%D9%86%D9%8A%D9%81%D8%A9-%D8%AA%D9%87%D8%B2%D9%91-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%88%D8%A3%D8%B5%D8%AF%D8%A7%D8%A4%D9%87%D8%A7-%D8%AA%D8%B5%D9%84-%D8%A5%D9%84%D9%89-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B9%D9%86%D9%8A%D9%81%D8%A9-%D8%AA%D9%87%D8%B2%D9%91-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D9%88%D8%A3%D8%B5%D8%AF%D8%A7%D8%A4%D9%87%D8%A7-%D8%AA%D8%B5%D9%84-%D8%A5%D9%84%D9%89-1</guid>
+<pubDate>Sat, 26 Sep 2026 04:07:00 GMT</pubDate>
+<description>انفجارات عنيفة تهزّ الجنوب وأصداؤها تصل إلى صيدا</description>
 </item>
 <item>
-<title>المركزية | سلام: : تولّينا المسؤولية وبلدنا يواجه ثلاثة تحديات: استعادة ثقة شعبه بعد الانهيار الماليّ وانفجار المرفأ واستعادة قراره الوطنيّ فلا سلاح خارج قواتها ولا قرار بالحرب والسلم خارج مؤسساتها</title>
-<link>https://news.google.com/rss/articles/CBMimgNBVV95cUxObFJEOW4xbFdKa09rZVVuSVg0VzVMNlZLMnlJaTVnY3lLQnQtT3pTNlg1ZDYzcGxiUWs3dmhpMm1nbl9Fa1J1ZEpxNTJFR2MtLW93WXZyeTlWNFBROFJoT08yQWdMaFZwUHlTcC1BNkg2Rmg2SzMtX05HaFQtbGxKV2k0N0tUd3daVHFLS0NOZ1pSalhtRkFiX2hfMF9PMXIwUnNLaEVYQ1VsVW5JczctaXZCSGs1VUJ6cVA3R29FbVBfS0xpaVFQazFWUjY1OUhxQzBScHFhS1JHaFNUckRmSkZtYTBUR3d1T1VMMGc4bWdxM05VaS1DV1F0Rk9lWHFYWmI0NF9RN0podVhFSW5WeHR5MjAtMzFKSFV5cWRSRU01WU5XUUMyNjRrQ1JhaEU5RXgzeW9TelBvVEU1NTZzNXpkdGZmWGtYNHRrOTlyRUxsVXRkb1B4MEk0TE1WdUlIdk1COGpBTlhjVGJJTFJsdWZxTXJMdDZfeGllOW5pREcxQkxjT2lTQk4zMFI1dlNfS1ZoMG15ZE9sdw?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMimgNBVV95cUxObFJEOW4xbFdKa09rZVVuSVg0VzVMNlZLMnlJaTVnY3lLQnQtT3pTNlg1ZDYzcGxiUWs3dmhpMm1nbl9Fa1J1ZEpxNTJFR2MtLW93WXZyeTlWNFBROFJoT08yQWdMaFZwUHlTcC1BNkg2Rmg2SzMtX05HaFQtbGxKV2k0N0tUd3daVHFLS0NOZ1pSalhtRkFiX2hfMF9PMXIwUnNLaEVYQ1VsVW5JczctaXZCSGs1VUJ6cVA3R29FbVBfS0xpaVFQazFWUjY1OUhxQzBScHFhS1JHaFNUckRmSkZtYTBUR3d1T1VMMGc4bWdxM05VaS1DV1F0Rk9lWHFYWmI0NF9RN0podVhFSW5WeHR5MjAtMzFKSFV5cWRSRU01WU5XUUMyNjRrQ1JhaEU5RXgzeW9TelBvVEU1NTZzNXpkdGZmWGtYNHRrOTlyRUxsVXRkb1B4MEk0TE1WdUlIdk1COGpBTlhjVGJJTFJsdWZxTXJMdDZfeGllOW5pREcxQkxjT2lTQk4zMFI1dlNfS1ZoMG15ZE9sdw?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 14:18:48 GMT</pubDate>
-<description>المركزية | سلام: : تولّينا المسؤولية وبلدنا يواجه ثلاثة تحديات: استعادة ثقة شعبه بعد الانهيار الماليّ وانفجار المرفأ واستعادة قراره الوطنيّ فلا سلاح خارج قواتها ولا قرار بالحرب والسلم خارج مؤسساتها</description>
+<title>شبكات تهريب الأشخاص تستأنف نشاطها على الحدود السورية - اللبنانية</title>
+<link>https://almarkazia.com/ar/%D8%B4%D8%A8%D9%83%D8%A7%D8%AA-%D8%AA%D9%87%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D8%AA%D8%B3%D8%AA%D8%A3%D9%86%D9%81-%D9%86%D8%B4%D8%A7%D8%B7%D9%87%D8%A7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%B4%D8%A8%D9%83%D8%A7%D8%AA-%D8%AA%D9%87%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D8%AA%D8%B3%D8%AA%D8%A3%D9%86%D9%81-%D9%86%D8%B4%D8%A7%D8%B7%D9%87%D8%A7-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF-1</guid>
+<pubDate>Sat, 26 Sep 2026 04:03:00 GMT</pubDate>
+<description>شبكات تهريب الأشخاص تستأنف نشاطها على الحدود السورية - اللبنانية</description>
 </item>
 <item>
-<title>المركزية | الحصيلة التراكمية للاعتداءات الإسرائيلية: 4386 ضحية و12413 جريحًا</title>
-<link>https://news.google.com/rss/articles/CBMipgNBVV95cUxNR09ULTdhejE1blBiU2JDQzZSd1lwU3dFRkpKREk1dnBGOS0zZDJ4TG4xWWpHVmpRSGJhSUp0Y1lFYU43Ym5RaVNfODFwWTROU09XRkkzQjg3T0V3SXVBVGt5TmtqNVVyaXdLOTUxSUVEYkpDQ2F2SkViamtoZkstMTNzaUVlUlhHOThDamZaa1ZZa1JrQmNnb19DemxTekNwM05JWGcwVFhfRGdVVC1HdkFTanNyZWxqamZFemZPMXBRMU5QcDVOTUFNN1pVeEFVYXhvZE0wSWNiZU5mZU9jeTVSbURwelZUaG40Qld4MTRWYW5oVmpsWGxVR1JiMk8zcnpNbXF4SHZGakRWR0FJVkVVQUlXNEhfY0c2d3ZMNTJKZnEyTWdPbFJoWHFLZ2xoTUNMYXpaVW84MS1fV2YxZzFDWUlpcGNkbTNKMjYxdDI2RXVyYTM5NkRLak9sOHBBdGpYeUpodGkzaGdHZWlEaDlQWTdQa29GREpHOVhlZUJxR1pjbndpd18ybDdxY0QyNzUydG5zck04eUtlMXpUcV9rbkFwZw?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMipgNBVV95cUxNR09ULTdhejE1blBiU2JDQzZSd1lwU3dFRkpKREk1dnBGOS0zZDJ4TG4xWWpHVmpRSGJhSUp0Y1lFYU43Ym5RaVNfODFwWTROU09XRkkzQjg3T0V3SXVBVGt5TmtqNVVyaXdLOTUxSUVEYkpDQ2F2SkViamtoZkstMTNzaUVlUlhHOThDamZaa1ZZa1JrQmNnb19DemxTekNwM05JWGcwVFhfRGdVVC1HdkFTanNyZWxqamZFemZPMXBRMU5QcDVOTUFNN1pVeEFVYXhvZE0wSWNiZU5mZU9jeTVSbURwelZUaG40Qld4MTRWYW5oVmpsWGxVR1JiMk8zcnpNbXF4SHZGakRWR0FJVkVVQUlXNEhfY0c2d3ZMNTJKZnEyTWdPbFJoWHFLZ2xoTUNMYXpaVW84MS1fV2YxZzFDWUlpcGNkbTNKMjYxdDI2RXVyYTM5NkRLak9sOHBBdGpYeUpodGkzaGdHZWlEaDlQWTdQa29GREpHOVhlZUJxR1pjbndpd18ybDdxY0QyNzUydG5zck04eUtlMXpUcV9rbkFwZw?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 13:58:52 GMT</pubDate>
-<description>المركزية | الحصيلة التراكمية للاعتداءات الإسرائيلية: 4386 ضحية و12413 جريحًا</description>
+<title>لبنان أمام شهرين من الجمود وربما أكثر</title>
+<link>https://almarkazia.com/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A3%D9%85%D8%A7%D9%85-%D8%B4%D9%87%D8%B1%D9%8A%D9%86-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D9%85%D9%88%D8%AF-%D9%88%D8%B1%D8%A8%D9%85%D8%A7-%D8%A3%D9%83%D8%AB%D8%B1-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A3%D9%85%D8%A7%D9%85-%D8%B4%D9%87%D8%B1%D9%8A%D9%86-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D9%85%D9%88%D8%AF-%D9%88%D8%B1%D8%A8%D9%85%D8%A7-%D8%A3%D9%83%D8%AB%D8%B1-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:59:00 GMT</pubDate>
+<description>لبنان أمام شهرين من الجمود وربما أكثر</description>
 </item>
 <item>
-<title>المركزية | من نيويورك إلى واشنطن سلام يتحرك لدعم لبنان وترسيخ دور الدولة طهران مصرة على تعيين شيباني...وعون للجيش:تضحون لاجل من يقفون ضدكم اقتراحات ايرانية لوقف القتال...والعراق يعلق الرحلات الجوية منها واليها</title>
-<link>https://news.google.com/rss/articles/CBMiwgJBVV95cUxNTlJMT3FWLVlET1Jzc1o5NVZZQ3BoUldqTTVObmJDTS04bmJrY2lhWE5ocXlaT0xZb2pBM2xXSnlVSEdFTGlxVjBtQ0FWVzlBN19lWFB3TW42ZXRnN2duMENwRGJoaXdHa2lrT09VdWtJeGhpcUd2eS1jUVBUYVd4VkJMYmdtRTlJU1RKUTBlR3AtQzVjUDBRbDNXX2xxRGNpWHdsWWhvZ0xWQTNrajJaaTEtTlRuUF9ENWVPY21HbWNCdkxFRUxDTTZKeTM0ejg0VTQxYjdSMjVVWGY0ei1xOEo3UWM2Z1NUWVA3NHptZHFEUUxoSEJkNl9OTzdaNTZ6Tkktdi1xWEE4MlpwTFEwaGtTeUx0dFZlTTdEU1RVb21XcEtXWjhuY2Nra3FaLUVTT19xMGJfVHBCYXRFVE5HaGRn?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMiwgJBVV95cUxNTlJMT3FWLVlET1Jzc1o5NVZZQ3BoUldqTTVObmJDTS04bmJrY2lhWE5ocXlaT0xZb2pBM2xXSnlVSEdFTGlxVjBtQ0FWVzlBN19lWFB3TW42ZXRnN2duMENwRGJoaXdHa2lrT09VdWtJeGhpcUd2eS1jUVBUYVd4VkJMYmdtRTlJU1RKUTBlR3AtQzVjUDBRbDNXX2xxRGNpWHdsWWhvZ0xWQTNrajJaaTEtTlRuUF9ENWVPY21HbWNCdkxFRUxDTTZKeTM0ejg0VTQxYjdSMjVVWGY0ei1xOEo3UWM2Z1NUWVA3NHptZHFEUUxoSEJkNl9OTzdaNTZ6Tkktdi1xWEE4MlpwTFEwaGtTeUx0dFZlTTdEU1RVb21XcEtXWjhuY2Nra3FaLUVTT19xMGJfVHBCYXRFVE5HaGRn?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 13:32:59 GMT</pubDate>
-<description>المركزية | من نيويورك إلى واشنطن سلام يتحرك لدعم لبنان وترسيخ دور الدولة طهران مصرة على تعيين شيباني...وعون للجيش:تضحون لاجل من يقفون ضدكم اقتراحات ايرانية لوقف القتال...والعراق يعلق الرحلات الجوية منها واليها</description>
+<title>إسرائيل تعيد تشكيل انتشارها في الجنوب</title>
+<link>https://almarkazia.com/ar/%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%B9%D9%8A%D8%AF-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D9%87%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%B9%D9%8A%D8%AF-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D9%87%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:56:00 GMT</pubDate>
+<description>إسرائيل تعيد تشكيل انتشارها في الجنوب</description>
 </item>
 <item>
-<title>المركزية | كلمة مرتقبة لسلام في الجمعيّة العامّة للأمم المتّحدة بعد نحو ساعة</title>
-<link>https://news.google.com/rss/articles/CBMi8gJBVV95cUxPcVhqU0hSV0ltV3pqVEpqdnpyYldCcmdHbkpTVTQxX2EwTmRtQ1hsNlJuSVpYYk5ybkFKWlJaME4zVkdpclhSNk9rM0ZKR0s5WnZ3SEpWMExoVlVBR0R4bm93WS1FenRYVXNwdlB2XzZzamhLMHFZd3BLRzkzeFlzakZwcTVDSEJuaFdWa0ZKelhNdTRhdUxCeW9BVEE1bGFaQjlncTVSSEczVGtYbTFYcUhKY3dQTUZVR3ZuVzhQZXVfbmVZOVUtSFMyd1o5NE4yRlppOTBhOWNCdHdtRmtMa1o3LWdaOEZhMnROcWdLS3l3MUE2WHQzUC1Ic2VLQ04wREs1aVN3bk94dUMzcC1MWXlrRjdvdkQ4dWFEQUd5NGhObXdoY1JpeC1uZ2R2NVE1cnVqUFd3c3BZUk9DNDBRbWtFZTgwbXZ5NFNIZUlCR0xsaXV6M1lEbXlJdzZ1aU1zSlpkYm9COWZoRVBBbmNEZWtB?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi8gJBVV95cUxPcVhqU0hSV0ltV3pqVEpqdnpyYldCcmdHbkpTVTQxX2EwTmRtQ1hsNlJuSVpYYk5ybkFKWlJaME4zVkdpclhSNk9rM0ZKR0s5WnZ3SEpWMExoVlVBR0R4bm93WS1FenRYVXNwdlB2XzZzamhLMHFZd3BLRzkzeFlzakZwcTVDSEJuaFdWa0ZKelhNdTRhdUxCeW9BVEE1bGFaQjlncTVSSEczVGtYbTFYcUhKY3dQTUZVR3ZuVzhQZXVfbmVZOVUtSFMyd1o5NE4yRlppOTBhOWNCdHdtRmtMa1o3LWdaOEZhMnROcWdLS3l3MUE2WHQzUC1Ic2VLQ04wREs1aVN3bk94dUMzcC1MWXlrRjdvdkQ4dWFEQUd5NGhObXdoY1JpeC1uZ2R2NVE1cnVqUFd3c3BZUk9DNDBRbWtFZTgwbXZ5NFNIZUlCR0xsaXV6M1lEbXlJdzZ1aU1zSlpkYm9COWZoRVBBbmNEZWtB?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 13:12:47 GMT</pubDate>
-<description>المركزية | كلمة مرتقبة لسلام في الجمعيّة العامّة للأمم المتّحدة بعد نحو ساعة</description>
+<title>واشنطن تضغط ليتولى الجيش اللبناني وحيداً أ...</title>
+<link>https://almarkazia.com/ar/%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B6%D8%BA%D8%B7-%D9%84%D9%8A%D8%AA%D9%88%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A-%D9%88%D8%AD%D9%8A%D8%AF%D8%A7%D9%8B-%D8%A3%D9%85%D9%86-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B6%D8%BA%D8%B7-%D9%84%D9%8A%D8%AA%D9%88%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A-%D9%88%D8%AD%D9%8A%D8%AF%D8%A7%D9%8B-%D8%A3%D9%85%D9%86-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:46:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442812/algysh-allbnany-fy-gnob-lbnan.webp"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442812/algysh-allbnany-fy-gnob-lbnan.webp" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442812/algysh-allbnany-fy-gnob-lbnan.webp" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية- لا تقدم في ملف مرحلة ما بعد اليونيفيل في اجتماعات نيويورك وواشنطن تريد ان تكون اي قوة بديلة من ضمن اتفاق الاطار</title>
-<link>https://news.google.com/rss/articles/CBMimwJBVV95cUxOMnZha0tqQUNXdXBaMURaS3lMOEdOX1l6eEtXdlJzUXcwdWxycU8yU19fLTN6RFlNZ2RaWTF6MDVJSHJYUFVzSzBBd1ZDV2hkV3JCMzFGNXVRQjB1cVVLdk9XX0s3Z1VBMkYzSXh5aGpCWmhNM1pySENzUmNUaUpVQ0FiSERLZUU5QWVwVXBXcWU4OXAyTWZrYS1uV1hxUXRXWWdzN2tTUVN4a1RVbmROcDduaFdQQ1BUUURuRzlvOG1WMUg4YjZjMW0yb012cWVvVzJWOUVoSjc5dzd0elhid3FwakdVektmeUZ1TnBXcWFjZ3BhaWs0QlBDVjVfc1BUaGpwWTQwLWQxUC1QREhLN2NJaDV6SVZ1Wndv?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMimwJBVV95cUxOMnZha0tqQUNXdXBaMURaS3lMOEdOX1l6eEtXdlJzUXcwdWxycU8yU19fLTN6RFlNZ2RaWTF6MDVJSHJYUFVzSzBBd1ZDV2hkV3JCMzFGNXVRQjB1cVVLdk9XX0s3Z1VBMkYzSXh5aGpCWmhNM1pySENzUmNUaUpVQ0FiSERLZUU5QWVwVXBXcWU4OXAyTWZrYS1uV1hxUXRXWWdzN2tTUVN4a1RVbmROcDduaFdQQ1BUUURuRzlvOG1WMUg4YjZjMW0yb012cWVvVzJWOUVoSjc5dzd0elhid3FwakdVektmeUZ1TnBXcWFjZ3BhaWs0QlBDVjVfc1BUaGpwWTQwLWQxUC1QREhLN2NJaDV6SVZ1Wndv?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 12:22:02 GMT</pubDate>
-<description>المركزية- لا تقدم في ملف مرحلة ما بعد اليونيفيل في اجتماعات نيويورك وواشنطن تريد ان تكون اي قوة بديلة من ضمن اتفاق الاطار</description>
+<title>ترامب يرفض مقترح إيران لوقف إطلاق النار</title>
+<link>https://almarkazia.com/ar/%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D8%B1%D9%81%D8%B6-%D9%85%D9%82%D8%AA%D8%B1%D8%AD-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%84%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D8%B1%D9%81%D8%B6-%D9%85%D9%82%D8%AA%D8%B1%D8%AD-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%84%D9%88%D9%82%D9%81-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:42:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442811/donald-tramb-8.jpg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442811/donald-tramb-8.jpg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442811/donald-tramb-8.jpg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | لقاء سيء بين سلام وبزشكيان: إيران تصر على تعيين شيباني</title>
-<link>https://news.google.com/rss/articles/CBMiugJBVV95cUxQMUlDeWRBWm5IZ0dzZnlNR2t4ZC1jeVc0RHFOSlB4LUg1VGRVQmNYcUwwTjJYOTRjT0VPa1d2QW0xQ3lEY1FzNzBMYkxQWTJEX0JNc3hiQnhKRFZwZjZfdkNlY2JtWDRBeHFuR1NUUTI3WlVoZzJKMmlueXNFWktrM3hIeEx4VGV2WlZjYUVNVXAzbzhYLUpaY2VEU0h6WV9pSVM1dFNPRTZMUUoybGNKXzd1TU1tR0VEYVFWUmpEMFJxMmFEMW40dmlOZ2NUNUpUellNaUkwNjF4ejNHdXhpNjgzamJYb0pjT2NlMlR2ODU1czFuNlZmZGxuYTBRSEpDaWt1VXhVUklFVzE1UGFVdTluS21FSHlBZm95R2JzelFIOU04cHJyeGtxdFgydnMyaEFOTF9FMEtTQQ?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMiugJBVV95cUxQMUlDeWRBWm5IZ0dzZnlNR2t4ZC1jeVc0RHFOSlB4LUg1VGRVQmNYcUwwTjJYOTRjT0VPa1d2QW0xQ3lEY1FzNzBMYkxQWTJEX0JNc3hiQnhKRFZwZjZfdkNlY2JtWDRBeHFuR1NUUTI3WlVoZzJKMmlueXNFWktrM3hIeEx4VGV2WlZjYUVNVXAzbzhYLUpaY2VEU0h6WV9pSVM1dFNPRTZMUUoybGNKXzd1TU1tR0VEYVFWUmpEMFJxMmFEMW40dmlOZ2NUNUpUellNaUkwNjF4ejNHdXhpNjgzamJYb0pjT2NlMlR2ODU1czFuNlZmZGxuYTBRSEpDaWt1VXhVUklFVzE1UGFVdTluS21FSHlBZm95R2JzelFIOU04cHJyeGtxdFgydnMyaEFOTF9FMEtTQQ?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 12:16:36 GMT</pubDate>
-<description>المركزية | لقاء سيء بين سلام وبزشكيان: إيران تصر على تعيين شيباني</description>
+<title>السعودية... اعتراض مسيّرات حوثية باتجاه ال...</title>
+<link>https://almarkazia.com/ar/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A7%D8%AA-%D8%AD%D9%88%D8%AB%D9%8A%D8%A9-%D8%A8%D8%A7%D8%AA%D8%AC%D8%A7%D9%87-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A7%D8%AA-%D8%AD%D9%88%D8%AB%D9%8A%D8%A9-%D8%A8%D8%A7%D8%AA%D8%AC%D8%A7%D9%87-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:40:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442810/trky-almalky.webp"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442810/trky-almalky.webp" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442810/trky-almalky.webp" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | بما فيها لبنان... إيران تقترح خطة من 7 أيام لوقف جميع الأعمال القتالية</title>
-<link>https://news.google.com/rss/articles/CBMisgJBVV95cUxNLXgzUThfOENvYy1TQ2NwbUZ2OUtwcUN2Z0VVNEhWUGR2MFlGU2R5STJsY205VExSeTlmMlNvQlhQMFZIdGZOSXg3SVZTVThaNmhKaG5XQTNEQlVPN0ZmRGk0MVBsRGxHa1VSdmZFcEJHSDJtME9nUFNqZzAzczFfcy1yNDRhWTBEckRqVWtYZFVEclNyeVN1OXB3eXRWNlZQWFl5VE9lV1BrcDVoOFdZTWpvaW5oLVBsQUt1Y2RxTWktcWxpN2dHYUNucFNUcHUtNEx4MmVMbFlES1NIZUpNa3ZpZ2gyR3lHSTNibGhuMzBXeW9obS1KYUdnd0hwUm9tclE0NTRGNDI1UTNJRUlqYnJUZFlMNGpUckxHY1dtLUhMWnVXSDhRbnZGMGxqLUhNOXc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMisgJBVV95cUxNLXgzUThfOENvYy1TQ2NwbUZ2OUtwcUN2Z0VVNEhWUGR2MFlGU2R5STJsY205VExSeTlmMlNvQlhQMFZIdGZOSXg3SVZTVThaNmhKaG5XQTNEQlVPN0ZmRGk0MVBsRGxHa1VSdmZFcEJHSDJtME9nUFNqZzAzczFfcy1yNDRhWTBEckRqVWtYZFVEclNyeVN1OXB3eXRWNlZQWFl5VE9lV1BrcDVoOFdZTWpvaW5oLVBsQUt1Y2RxTWktcWxpN2dHYUNucFNUcHUtNEx4MmVMbFlES1NIZUpNa3ZpZ2gyR3lHSTNibGhuMzBXeW9obS1KYUdnd0hwUm9tclE0NTRGNDI1UTNJRUlqYnJUZFlMNGpUckxHY1dtLUhMWnVXSDhRbnZGMGxqLUhNOXc?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 11:56:29 GMT</pubDate>
-<description>المركزية | بما فيها لبنان... إيران تقترح خطة من 7 أيام لوقف جميع الأعمال القتالية</description>
+<title>لبنان على المنبر الأممي: لسنا ساحة لأحد</title>
+<link>https://almarkazia.com/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D9%86%D8%A8%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D9%85%D9%8A-%D9%84%D8%B3%D9%86%D8%A7-%D8%B3%D8%A7%D8%AD%D8%A9-%D9%84%D8%A3%D8%AD%D8%AF-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D9%86%D8%A8%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D9%85%D9%8A-%D9%84%D8%B3%D9%86%D8%A7-%D8%B3%D8%A7%D8%AD%D8%A9-%D9%84%D8%A3%D8%AD%D8%AF-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:25:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442808/noaf-slam-alamm-almthd-1.webp"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442808/noaf-slam-alamm-almthd-1.webp" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442808/noaf-slam-alamm-almthd-1.webp" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | المواجهة مجددا مع ايران...انفجارات في الإقليم</title>
-<link>https://news.google.com/rss/articles/CBMi8AJBVV95cUxQUVJHZTBpUDJGQV9qWUkzN2xrNDB5MlR0Y1c2RldpN05zTzZBLUNYRHU0Rk4yNHFOS05zUXI0OF9RbkI0azdMS2d1bG9NcThIaUpiNmFvaTB0Sy1wZ1h1Y1U4OXB0cy16UDRZaXpKczNRNWlqSEJZR19PYjVuTEpoblg4RFhGbGhzRnR1VDRDbFRyNW9MekJqUlpOWmJQWTZ2RERueF9hcFZsZmt5Ml9GcGJSa1FKdWltOGJNSDZoanpwQno4cHJNNTNmYlF4ZjUwUnhxb2tkREo0dVBMTDdKUm9CWnBwQlpELUg5Q1pFaEdkbGx6UGd0emtlNXJRcUI5RVRRMkgtRzh1NDNKQ3RmbFBmSEx0Zml1cXNkLUZ4QWJURi02RThWd1NxalVWRWR5RG9sNGhMNWdDS1JRN3JDaWhmYzlvSmVaTlIyYmlEcktzSnJkNmdsWFZpaWJfNHFkV1VEUFNJZGtZT3ROMWVyRg?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi8AJBVV95cUxQUVJHZTBpUDJGQV9qWUkzN2xrNDB5MlR0Y1c2RldpN05zTzZBLUNYRHU0Rk4yNHFOS05zUXI0OF9RbkI0azdMS2d1bG9NcThIaUpiNmFvaTB0Sy1wZ1h1Y1U4OXB0cy16UDRZaXpKczNRNWlqSEJZR19PYjVuTEpoblg4RFhGbGhzRnR1VDRDbFRyNW9MekJqUlpOWmJQWTZ2RERueF9hcFZsZmt5Ml9GcGJSa1FKdWltOGJNSDZoanpwQno4cHJNNTNmYlF4ZjUwUnhxb2tkREo0dVBMTDdKUm9CWnBwQlpELUg5Q1pFaEdkbGx6UGd0emtlNXJRcUI5RVRRMkgtRzh1NDNKQ3RmbFBmSEx0Zml1cXNkLUZ4QWJURi02RThWd1NxalVWRWR5RG9sNGhMNWdDS1JRN3JDaWhmYzlvSmVaTlIyYmlEcktzSnJkNmdsWFZpaWJfNHFkV1VEUFNJZGtZT3ROMWVyRg?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 11:11:46 GMT</pubDate>
-<description>المركزية | المواجهة مجددا مع ايران...انفجارات في الإقليم</description>
+<title>سلام في الأمم المتحدة: لبنان يتمسك بالانسح...</title>
+<link>https://almarkazia.com/ar/%D8%B3%D9%84%D8%A7%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%AA%D9%85%D8%B3%D9%83-%D8%A8%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%B3%D9%84%D8%A7%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%AA%D9%85%D8%B3%D9%83-%D8%A8%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:17:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442806/noaf-slam-nyoyork.webp"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442806/noaf-slam-nyoyork.webp" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442806/noaf-slam-nyoyork.webp" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | وكالة نقلا عن مستشار للزعيم الأعلى الإيراني: إذا تعذر على طهران تسيير رحلات جوية والحصول على خدمات المطارات فلن يتمكن أحد في المنطقة من ذلك أيضا</title>
-<link>https://news.google.com/rss/articles/CBMi8gJBVV95cUxPQXZPY2tHOUxiYk5CcGhKMFE5UUJ6VTN4VWZkamdPdUlFRVN5TGlTc0Q1cEk2R053b21DTTEwY19FZ0hlQ1lzR1FYX25zZFZpQUtkS0g3TGRtQlQ2T3B2YlpqeWRJblRvQ3ZidC1SQ25YV1ZrdWV2b0xSSVByZUJkVTZQWVI0bTdLLWRZQ1FpdjZPcjRfcUlQX0NYUUhYbTVwUjgwbjBYb2gwbmZMQnBSNzI2bWtGcVNzNUVzWHhKT25nVE90YUM3bWJtdEZoZVJYRXdacnVuOWFZRWF0QTd3STBvcnh1SVlTTHA0eVFLbndTVjlZWnNjSXRKRWJtWWwxX2RMalROeTB6UUNqbHV4VXV1VG03MGhEM2tKY1BEczZRdUxEdzhrXzhVSnY4TFNxb1hYSmxGdEpUWVJCbTEzZTFGaU9QdElEX2RiUm4xS3BqVGk5S0w5Mjl1OXpsVUg2MTgxZWYwZjNkdUlkREhCLUZR?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi8gJBVV95cUxPQXZPY2tHOUxiYk5CcGhKMFE5UUJ6VTN4VWZkamdPdUlFRVN5TGlTc0Q1cEk2R053b21DTTEwY19FZ0hlQ1lzR1FYX25zZFZpQUtkS0g3TGRtQlQ2T3B2YlpqeWRJblRvQ3ZidC1SQ25YV1ZrdWV2b0xSSVByZUJkVTZQWVI0bTdLLWRZQ1FpdjZPcjRfcUlQX0NYUUhYbTVwUjgwbjBYb2gwbmZMQnBSNzI2bWtGcVNzNUVzWHhKT25nVE90YUM3bWJtdEZoZVJYRXdacnVuOWFZRWF0QTd3STBvcnh1SVlTTHA0eVFLbndTVjlZWnNjSXRKRWJtWWwxX2RMalROeTB6UUNqbHV4VXV1VG03MGhEM2tKY1BEczZRdUxEdzhrXzhVSnY4TFNxb1hYSmxGdEpUWVJCbTEzZTFGaU9QdElEX2RiUm4xS3BqVGk5S0w5Mjl1OXpsVUg2MTgxZWYwZjNkdUlkREhCLUZR?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 11:04:50 GMT</pubDate>
-<description>المركزية | وكالة نقلا عن مستشار للزعيم الأعلى الإيراني: إذا تعذر على طهران تسيير رحلات جوية والحصول على خدمات المطارات فلن يتمكن أحد في المنطقة من ذلك أيضا</description>
+<title>سلام يلتقي بن فرحان في نيويورك</title>
+<link>https://almarkazia.com/ar/%D8%B3%D9%84%D8%A7%D9%85-%D9%8A%D9%84%D8%AA%D9%82%D9%8A-%D8%A8%D9%86-%D9%81%D8%B1%D8%AD%D8%A7%D9%86-%D9%81%D9%8A-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%B3%D9%84%D8%A7%D9%85-%D9%8A%D9%84%D8%AA%D9%82%D9%8A-%D8%A8%D9%86-%D9%81%D8%B1%D8%AD%D8%A7%D9%86-%D9%81%D9%8A-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-1</guid>
+<pubDate>Sat, 26 Sep 2026 03:11:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442804/noaf-slam-obn-frhan.jpg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442804/noaf-slam-obn-frhan.jpg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442804/noaf-slam-obn-frhan.jpg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | تسوية ربع الساعة الأخيرة تفرمل تحرك الشارع النقابي...30 أيلول إلى العمل در!</title>
-<link>https://news.google.com/rss/articles/CBMi6gJBVV95cUxPTXpXZUE5czUyTGdtYl91Q2tZZ09Vb3dxNTJ5UC1nMDlVUmpRR3lQNFNEOUdhLUxhTDZYeHBraUVMSnVMN3kxWE9HNjFBWDlyVG1tQW1rYUU2am1HTEZBMVQxQzBXMThONXhIZXcybk9wUjVjTXR0dkhfdEhqU05VS0RobXpIVzdWTVlaQldTNlhRTnFvTUliSkprX20wNmNTUEtUanNfYXZmUzAzWWxNQURNRHpEQ3lMZlRwc094UU4xdjZrSU5TRmM4X1NPSFdsUGExWUl1OXV1NWpOejBYR0p0bHV3bjF3a212QUhMNzF2elZINlVVRTNaYnZhanNsX3dLVU8ycTNQU3RlZFJMODRiNnJiTjltVmhrNlMyN3U5V1NOTXphY2xLYURhYlFaV0h5S3oxRFdsc2ZzT2gyUWlvOWdfTGF0NklqWkJ1VUk1RHlxRVloNC1WTmhCQVcyMGZqdWlfRDNnZw?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi6gJBVV95cUxPTXpXZUE5czUyTGdtYl91Q2tZZ09Vb3dxNTJ5UC1nMDlVUmpRR3lQNFNEOUdhLUxhTDZYeHBraUVMSnVMN3kxWE9HNjFBWDlyVG1tQW1rYUU2am1HTEZBMVQxQzBXMThONXhIZXcybk9wUjVjTXR0dkhfdEhqU05VS0RobXpIVzdWTVlaQldTNlhRTnFvTUliSkprX20wNmNTUEtUanNfYXZmUzAzWWxNQURNRHpEQ3lMZlRwc094UU4xdjZrSU5TRmM4X1NPSFdsUGExWUl1OXV1NWpOejBYR0p0bHV3bjF3a212QUhMNzF2elZINlVVRTNaYnZhanNsX3dLVU8ycTNQU3RlZFJMODRiNnJiTjltVmhrNlMyN3U5V1NOTXphY2xLYURhYlFaV0h5S3oxRFdsc2ZzT2gyUWlvOWdfTGF0NklqWkJ1VUk1RHlxRVloNC1WTmhCQVcyMGZqdWlfRDNnZw?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 09:51:57 GMT</pubDate>
-<description>المركزية | تسوية ربع الساعة الأخيرة تفرمل تحرك الشارع النقابي...30 أيلول إلى العمل در!</description>
+<title>يُسمع منذ صباح اليوم دويّ انفجارات عنيفة في الجنوب تصل أصداؤها إلى مدينة صيدا وشرقها</title>
+<link>https://almarkazia.com/ar/%D9%8A%D9%8F%D8%B3%D9%85%D8%B9-%D9%85%D9%86%D8%B0-%D8%B5%D8%A8%D8%A7%D8%AD-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%AF%D9%88%D9%8A%D9%91-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B9%D9%86%D9%8A%D9%81%D8%A9-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D9%8A%D9%8F%D8%B3%D9%85%D8%B9-%D9%85%D9%86%D8%B0-%D8%B5%D8%A8%D8%A7%D8%AD-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%AF%D9%88%D9%8A%D9%91-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B9%D9%86%D9%8A%D9%81%D8%A9-1</guid>
+<pubDate>Sat, 26 Sep 2026 00:36:13 GMT</pubDate>
+<description>يُسمع منذ صباح اليوم دويّ انفجارات عنيفة في الجنوب تصل أصداؤها إلى مدينة صيدا وشرقها</description>
 </item>
 <item>
-<title>المركزية | أول ظهور لزيدان الليلة ومانشيني يعود الى إيطاليا..</title>
-<link>https://news.google.com/rss/articles/CBMi2gJBVV95cUxPZHJ4aXdYTDNWTDNTNi1fVThUc0tOQzhuNjA0SXpZR0Q1eUpUQVhZZF9EeU5ONHBTYmxhQnFieVlQb3BEQjJZeG84TXppSGhvMlRaNjF0YnBrTW9UVGhrcmk2S0tZOC0wT3VZN2diWmVISnEyeHAyOW9US3Z0YmNtanh3ZzlsbTFWUnN1eERMVklhc1FQMndBRWY1czlQY0JVc2Z5aW5KTEF6TGlzejNfczQ2Yl9XbzgzSWxvRHFtNjc1RURqajVBcFRpOGNSd3laRHJnYU5sd2c5V0VUYVhudUNza1hnbmhiNFZqYXZ3RWpua29BMGFHdDdKVUtJUks0VlJkTlZIalF6UDVaMEIzQWlYNm53M1BIcGY4eWoxU1BZVVBrb0g4MjRlWUV0ZzZaZzdfeWRvdzdqQjNVNy1ySWhoMjI3T2lsTHZlU05YREhpUUw4bS1zWnV3?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi2gJBVV95cUxPZHJ4aXdYTDNWTDNTNi1fVThUc0tOQzhuNjA0SXpZR0Q1eUpUQVhZZF9EeU5ONHBTYmxhQnFieVlQb3BEQjJZeG84TXppSGhvMlRaNjF0YnBrTW9UVGhrcmk2S0tZOC0wT3VZN2diWmVISnEyeHAyOW9US3Z0YmNtanh3ZzlsbTFWUnN1eERMVklhc1FQMndBRWY1czlQY0JVc2Z5aW5KTEF6TGlzejNfczQ2Yl9XbzgzSWxvRHFtNjc1RURqajVBcFRpOGNSd3laRHJnYU5sd2c5V0VUYVhudUNza1hnbmhiNFZqYXZ3RWpua29BMGFHdDdKVUtJUks0VlJkTlZIalF6UDVaMEIzQWlYNm53M1BIcGY4eWoxU1BZVVBrb0g4MjRlWUV0ZzZaZzdfeWRvdzdqQjNVNy1ySWhoMjI3T2lsTHZlU05YREhpUUw4bS1zWnV3?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 09:25:56 GMT</pubDate>
-<description>المركزية | أول ظهور لزيدان الليلة ومانشيني يعود الى إيطاليا..</description>
+<title>الاقتصاد تشدد الرقابة على المولدات.. 51 محضراً في الجنوب منذ بداية ...</title>
+<link>https://almarkazia.com/ar/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%AA%D8%B4%D8%AF%D8%AF-%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%D8%A7%D8%AA-51-%D9%85%D8%AD%D8%B6%D8%B1%D8%A7%D9%8B-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%AA%D8%B4%D8%AF%D8%AF-%D8%A7%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%D8%A7%D8%AA-51-%D9%85%D8%AD%D8%B6%D8%B1%D8%A7%D9%8B-1</guid>
+<pubDate>Fri, 25 Sep 2026 15:59:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442779/prgeevelfy.jpg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442779/prgeevelfy.jpg" alt=""/><p>تواصل وزارة الاقتصاد والتجارة عبر مصالحها في المناطق، تنفيذ جولات رقابة ميدانية في مختلف المناطق اللبنانية، في إطار متابعة شكاوى المواطنين وحماية حقوق المستهلكين والتأكد من الالتزام بالتسعيرات الرس...</p>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442779/prgeevelfy.jpg" alt=""/><p>تواصل وزارة الاقتصاد والتجارة عبر مصالحها في المناطق، تنفيذ جولات رقابة ميدانية في مختلف المناطق اللبنانية، في إطار متابعة شكاوى المواطنين وحماية حقوق المستهلكين والتأكد من الالتزام بالتسعيرات الرس...</p>]]></content:encoded>
 </item>
 <item>
-<title>الدوسري في العيد الوطني السعودي: المملكة تؤكد مساندتها لبنان من أجل استعادة سيادته على أراضيه كافة</title>
-<link>https://news.google.com/rss/articles/CBMi-gJBVV95cUxOa1diMUxBR2lHSE5ucWFGYlM0Y1lYQi13ODhDLUd2WmtCclRhZzBWY0hUYzFrTVlxMzB2Qmp2MFJfSi1fc3J0c0FxVFBMcGVmTE1CcTVjUjJCSEtPb05ycWdxZkFrTk93dFFkd3BseGpiUk9vREFLLUEyX0xBeDFybHEwV2RGbXF6YWkySVpIZzY4VXlzdGhSZHpBT0ZtVmtkNmFLTVA1QVk3NDBsbmlGaE5hMlU5RkNLLXNaVkVHZnBDSlluX2RtWFp6dDA5UHVjdDdzNFFkc3ppdFpYUHAzRlpaOXFweFRNbHJpSWhaUi1ZamxnRkFDYWNudGNSSGpqQTcybUxCYnE1VWNfNWJ3SmNkUmpiTnhnVGFZeExIQUhKZ0hSZWpHdmF0UUE4SVNIdHM3NENjVDEtZWhVXzhfYTJrOXZxTWZ6anpad21tR1otb0ZNMllsekF2UTRDdkV6cjNOVUFhUWRCUUpoSnhQb21CVVlUSEhZOXc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi-gJBVV95cUxOa1diMUxBR2lHSE5ucWFGYlM0Y1lYQi13ODhDLUd2WmtCclRhZzBWY0hUYzFrTVlxMzB2Qmp2MFJfSi1fc3J0c0FxVFBMcGVmTE1CcTVjUjJCSEtPb05ycWdxZkFrTk93dFFkd3BseGpiUk9vREFLLUEyX0xBeDFybHEwV2RGbXF6YWkySVpIZzY4VXlzdGhSZHpBT0ZtVmtkNmFLTVA1QVk3NDBsbmlGaE5hMlU5RkNLLXNaVkVHZnBDSlluX2RtWFp6dDA5UHVjdDdzNFFkc3ppdFpYUHAzRlpaOXFweFRNbHJpSWhaUi1ZamxnRkFDYWNudGNSSGpqQTcybUxCYnE1VWNfNWJ3SmNkUmpiTnhnVGFZeExIQUhKZ0hSZWpHdmF0UUE4SVNIdHM3NENjVDEtZWhVXzhfYTJrOXZxTWZ6anpad21tR1otb0ZNMllsekF2UTRDdkV6cjNOVUFhUWRCUUpoSnhQb21CVVlUSEhZOXc?oc=5</guid>
-<pubDate>Fri, 25 Sep 2026 05:09:07 GMT</pubDate>
-<description>الدوسري في العيد الوطني السعودي: المملكة تؤكد مساندتها لبنان من أجل استعادة سيادته على أراضيه كافة</description>
+<title>جود بيلينغهام أفضل لاعب في إنكلترا للمرة الثانية على التوالي</title>
+<link>https://almarkazia.com/ar/%D9%83%D8%A3%D8%B3-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%84%D9%84%D8%A8%D8%A7%D8%AF%D9%85%D9%86%D8%AA%D9%88%D9%86-2026-%D9%8A%D8%AC%D9%85%D8%B9-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D9%83%D8%A3%D8%B3-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%84%D9%84%D8%A8%D8%A7%D8%AF%D9%85%D9%86%D8%AA%D9%88%D9%86-2026-%D9%8A%D8%AC%D9%85%D8%B9-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-1</guid>
+<pubDate>Fri, 25 Sep 2026 15:20:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442776/images.jfif"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442776/images.jfif" alt=""/><p>أعلن الاتحاد الإنكليزي لكرة القدم، اليوم الجمعة، أنّ جود بيلينغهام اختير أفضل لاعب في المنتخب الوطني للرجال للموسم الثاني توالياً، بعد موسم متميز سجل خلاله رقماً قياسياً بلغ سبعة أهداف في كأس العال...</p>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442776/images.jfif" alt=""/><p>أعلن الاتحاد الإنكليزي لكرة القدم، اليوم الجمعة، أنّ جود بيلينغهام اختير أفضل لاعب في المنتخب الوطني للرجال للموسم الثاني توالياً، بعد موسم متميز سجل خلاله رقماً قياسياً بلغ سبعة أهداف في كأس العال...</p>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | سلسلة لقاءات لرجي في نيويوك: لسوء الحظ لم نستطع تمديد ولاية اليونيفيل</title>
-<link>https://news.google.com/rss/articles/CBMi6gJBVV95cUxQNUtyNWF0YWU3QjNYRFFmSU1XOFAwUnd1QzZacDk3eE1lX1NtV0Y3NmMxaEVRemMtUFVVa2tKRWJ0NFpJVVlvNGtBY0xpVnJnRjRoenNWZ0VPajd3UFA5eUdRdzhOWFpVR1FRanNzUXJuNnVXSXVyaE5lYkpYYkx4Z3hvb2F6NGl1c1dvR3lUUHNuSXV4OWh4Uzdjc01oN1ZmemtMeU5hb1VYdWg1ZndwdGVtX0x1UGRrVkpTMzdVN1pxU1VaUlJXanR5VDM0ajVnUGxZR21RVjJyamFlbFZwUnhLYnJQYVl4MV93Z0xUdWFnU3lDZTBHbVphQ3QxMHZuYUhybENJT1Y1UFZwbjJ2ZC0xRzM1Nl9WcmtuMzZPLXdncllBbGJPYkJoOEItZHRrQ2wzd2JQUUJpUmM3dmFacW5oMXZkbWRGVS1iLWdKQ3lRN1VDejlXOVJTanY4YVV4elljRFN2QTRHdw?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi6gJBVV95cUxQNUtyNWF0YWU3QjNYRFFmSU1XOFAwUnd1QzZacDk3eE1lX1NtV0Y3NmMxaEVRemMtUFVVa2tKRWJ0NFpJVVlvNGtBY0xpVnJnRjRoenNWZ0VPajd3UFA5eUdRdzhOWFpVR1FRanNzUXJuNnVXSXVyaE5lYkpYYkx4Z3hvb2F6NGl1c1dvR3lUUHNuSXV4OWh4Uzdjc01oN1ZmemtMeU5hb1VYdWg1ZndwdGVtX0x1UGRrVkpTMzdVN1pxU1VaUlJXanR5VDM0ajVnUGxZR21RVjJyamFlbFZwUnhLYnJQYVl4MV93Z0xUdWFnU3lDZTBHbVphQ3QxMHZuYUhybENJT1Y1UFZwbjJ2ZC0xRzM1Nl9WcmtuMzZPLXdncllBbGJPYkJoOEItZHRrQ2wzd2JQUUJpUmM3dmFacW5oMXZkbWRGVS1iLWdKQ3lRN1VDejlXOVJTanY4YVV4elljRFN2QTRHdw?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 15:08:35 GMT</pubDate>
-<description>المركزية | سلسلة لقاءات لرجي في نيويوك: لسوء الحظ لم نستطع تمديد ولاية اليونيفيل</description>
+<title>مشاركة رئيس حزب القوات اللبنانية الدكتور سمير جعجع في العيد الوطني ...</title>
+<link>https://almarkazia.com/ar/gallery/mshark-ryys-hzb-alkoat-allbnany-aldktor-smyr-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/mshark-ryys-hzb-alkoat-allbnany-aldktor-smyr-1</guid>
+<pubDate>Fri, 25 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442740/825661685-1122126860343487-8786397596806227019-n.jpg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442740/825661685-1122126860343487-8786397596806227019-n.jpg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442740/825661685-1122126860343487-8786397596806227019-n.jpg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | الجيش الإسرائيلي يعيد انتشار قواته ويقلص ألويته من 8 إلى 6</title>
-<link>https://news.google.com/rss/articles/CBMikgNBVV95cUxPanhRN3VSYjVldlpqN0lSMGdWU1NyMUlHUWxzdkhNOUt2U0Jyd0NxaXVMQnNyMjVndGhPeGVVS1JzUHlRekNxSk5qZldfcGc4NkU0YzlPTnVVRGxGWlRhX05zZFdfbGItN2swUG55Snk4czZrSVl3X1hHT3VmcTBMXzMtNk0xVVRQZVIxVjlqN3d1aWc1QWZ3VjRYc25NeWttOG5RRFdSMTBtN3JqYzhhUDFsMHE5V056bDBtQm5Rd2wzMk9IZG5ET3JqbW9KTHM4ZlN4bEJteC02QmRBajVDWElEVFhLTEhJNkt1dG80TkpuRHQ3a3NwcFg0OWJwMmU5eTNUei1kNy1tOFVVX2JVMWg3eWFid1BXNHhHV1h1OERDcTg1N2MwZGZFRGJ5S2RiM1hzSG5DNFBOZm1oMlRQZGxVdkFGX3psS2RpcTZNQXZjaUhhWjIwREZCb3UxbVM0YWxSS3RnSUxHbXJHRk15blo3OFdnMTV3STdVSlZobDBDc3RJZGxKcW10VlNfbUdidmc?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMikgNBVV95cUxPanhRN3VSYjVldlpqN0lSMGdWU1NyMUlHUWxzdkhNOUt2U0Jyd0NxaXVMQnNyMjVndGhPeGVVS1JzUHlRekNxSk5qZldfcGc4NkU0YzlPTnVVRGxGWlRhX05zZFdfbGItN2swUG55Snk4czZrSVl3X1hHT3VmcTBMXzMtNk0xVVRQZVIxVjlqN3d1aWc1QWZ3VjRYc25NeWttOG5RRFdSMTBtN3JqYzhhUDFsMHE5V056bDBtQm5Rd2wzMk9IZG5ET3JqbW9KTHM4ZlN4bEJteC02QmRBajVDWElEVFhLTEhJNkt1dG80TkpuRHQ3a3NwcFg0OWJwMmU5eTNUei1kNy1tOFVVX2JVMWg3eWFid1BXNHhHV1h1OERDcTg1N2MwZGZFRGJ5S2RiM1hzSG5DNFBOZm1oMlRQZGxVdkFGX3psS2RpcTZNQXZjaUhhWjIwREZCb3UxbVM0YWxSS3RnSUxHbXJHRk15blo3OFdnMTV3STdVSlZobDBDc3RJZGxKcW10VlNfbUdidmc?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 14:49:11 GMT</pubDate>
-<description>المركزية | الجيش الإسرائيلي يعيد انتشار قواته ويقلص ألويته من 8 إلى 6</description>
+<title>لقاءات رئيس الحكومة الدكتور نواف سلام في نيويورك</title>
+<link>https://almarkazia.com/ar/gallery/lkaaaat-ryys-alhkom-aldktor-noaf-slam-fy-2</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/lkaaaat-ryys-alhkom-aldktor-noaf-slam-fy-2</guid>
+<pubDate>Fri, 25 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442722/820181010-1080943784910032-4068504030458291289-n.jpg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442722/820181010-1080943784910032-4068504030458291289-n.jpg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442722/820181010-1080943784910032-4068504030458291289-n.jpg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | بلدية بيروت تنظّم رمي النفايات وتحميل البضائع وحركة المرور</title>
-<link>https://news.google.com/rss/articles/CBMiggNBVV95cUxQR2l2SDM4TVBFMDYwMEhpUU1FZHllR0xsMGxwVHVOcmR2eTZNc1MtOXdOcEZRdjZHaURPM2tMUkdWdFhJQjRBTVhYYlZhOTFKY3VjNVFsbi1UdTE3M3MwR2dLZFhadVNxaF91OEE1Rk5lTUNtWkVsMEVrY1YxQWVtTHBKVmh1T1c2WS1mQXhfdS1nOFhRVExtbFlfT3pVOHpVOFNjdTczQ3ZFQnY1WEU1N0dTa2cwUlk0T2NUUE1vNjlMZkRoVWJqU3daLWxGNVluLUx0bklXcHR4NzRfM19qUzRzbXkxUzZYb3c4cXRDM3Zhd3BXOFFURDRMeFpCaU1adnAxd0ttemNCTzFhZzZqTEJrdDJJZkYtWEx5MzU0SkFrckRraXhkQUI5OHZMTjdtdkhyUDl6VEdHTGxsSmRJdmw5dndwUnUyaUg2NVY3RWtoRWNPVHRYX09UN3gwR1R6Ujd3S1VPYU1ua2NRWlJVS2dXaDUwVThweVNYRk9pa2FpUQ?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMiggNBVV95cUxQR2l2SDM4TVBFMDYwMEhpUU1FZHllR0xsMGxwVHVOcmR2eTZNc1MtOXdOcEZRdjZHaURPM2tMUkdWdFhJQjRBTVhYYlZhOTFKY3VjNVFsbi1UdTE3M3MwR2dLZFhadVNxaF91OEE1Rk5lTUNtWkVsMEVrY1YxQWVtTHBKVmh1T1c2WS1mQXhfdS1nOFhRVExtbFlfT3pVOHpVOFNjdTczQ3ZFQnY1WEU1N0dTa2cwUlk0T2NUUE1vNjlMZkRoVWJqU3daLWxGNVluLUx0bklXcHR4NzRfM19qUzRzbXkxUzZYb3c4cXRDM3Zhd3BXOFFURDRMeFpCaU1adnAxd0ttemNCTzFhZzZqTEJrdDJJZkYtWEx5MzU0SkFrckRraXhkQUI5OHZMTjdtdkhyUDl6VEdHTGxsSmRJdmw5dndwUnUyaUg2NVY3RWtoRWNPVHRYX09UN3gwR1R6Ujd3S1VPYU1ua2NRWlJVS2dXaDUwVThweVNYRk9pa2FpUQ?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 14:10:32 GMT</pubDate>
-<description>المركزية | بلدية بيروت تنظّم رمي النفايات وتحميل البضائع وحركة المرور</description>
+<title>مؤتمر الصليب الأحمر والهلال الأحمر برعاية وحضور رئيس الجمهورية العم...</title>
+<link>https://almarkazia.com/ar/gallery/motmr-alslyb-alahmr-oalhlal-alahmr-braaay-ohdor-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/motmr-alslyb-alahmr-oalhlal-alahmr-braaay-ohdor-1</guid>
+<pubDate>Fri, 25 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442708/red-cross-10jpg.jpeg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442708/red-cross-10jpg.jpeg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442708/red-cross-10jpg.jpeg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | الثنائي الشيعي... حين يكشف الميدان والتصويت ما تخفيه السياسة</title>
-<link>https://news.google.com/rss/articles/CBMi8gJBVV95cUxOMmpKbjQyVndOZkhpWDZITkhEZ01qcTVoYVgxNHd5Qi1YMkFERXFBY2x1VDRpSk4tOVp4RVFhRjNiVEJuMU5mQWthVnNtVlE1X0l5T3E2WDZVeW5iNTlMMVdBVHpTSk0wQ0Uyanh5WkpyYm9Fd1FpWFkxUjlXdkktN1FXZUl3RkRhckZzMWVGRnhTR1E0aUlMVzNXWXAxVFlsOEZDSWt6TmUyNTVZLWI2NjY4TGNPZGRkaXl3VjRHbTZUYWpBenRaS0g1V1pZVGhqd18yU3VOekx3Q0k4SUlYUU1mOTAxSWY5aDE1cC0ycUk1SUJLdnVFSEs3T2dlUXZqQkN2Vjg2LVY2STJ1NFF3cDcwM3F0eUZkUVczYkhoWDdVbnZ5VGozZU9iMGN1T3FhY3E2VUMwTmV4VGZITXVTVUNqUjFpUDdWbU9NU0NSUVctRU9vWTBVSTBDbFhQVEZydjhJQU1idUhsRVZEbTlZdzRB?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi8gJBVV95cUxOMmpKbjQyVndOZkhpWDZITkhEZ01qcTVoYVgxNHd5Qi1YMkFERXFBY2x1VDRpSk4tOVp4RVFhRjNiVEJuMU5mQWthVnNtVlE1X0l5T3E2WDZVeW5iNTlMMVdBVHpTSk0wQ0Uyanh5WkpyYm9Fd1FpWFkxUjlXdkktN1FXZUl3RkRhckZzMWVGRnhTR1E0aUlMVzNXWXAxVFlsOEZDSWt6TmUyNTVZLWI2NjY4TGNPZGRkaXl3VjRHbTZUYWpBenRaS0g1V1pZVGhqd18yU3VOekx3Q0k4SUlYUU1mOTAxSWY5aDE1cC0ycUk1SUJLdnVFSEs3T2dlUXZqQkN2Vjg2LVY2STJ1NFF3cDcwM3F0eUZkUVczYkhoWDdVbnZ5VGozZU9iMGN1T3FhY3E2VUMwTmV4VGZITXVTVUNqUjFpUDdWbU9NU0NSUVctRU9vWTBVSTBDbFhQVEZydjhJQU1idUhsRVZEbTlZdzRB?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 12:22:01 GMT</pubDate>
-<description>المركزية | الثنائي الشيعي... حين يكشف الميدان والتصويت ما تخفيه السياسة</description>
+<title>وضع حجر الأساس لمساكن تعاضد الرتباء والأفراد برعاية وحضور رئيس الج...</title>
+<link>https://almarkazia.com/ar/gallery/odaa-hgr-alasas-lmsakn-taaadd-alrtbaaa-oalafrad-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/odaa-hgr-alasas-lmsakn-taaadd-alrtbaaa-oalafrad-1</guid>
+<pubDate>Fri, 25 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442690/02-laying-of-the-foundation-stone-8jpg.jpeg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442690/02-laying-of-the-foundation-stone-8jpg.jpeg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442690/02-laying-of-the-foundation-stone-8jpg.jpeg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | معلومات: اللقاء سيأخذ طابعاً سياسياً وأمنياً بالدرجة الأولى ولن يقتصر على الجانب البروتوكولي، خاصةً أن سلام أعلن في نيويورك أن محادثاته تركز على خفض التصعيد وبسط سيادة الدولة على أراضيها</title>
-<link>https://news.google.com/rss/articles/CBMisgNBVV95cUxQUkRWNUhKc05DeUdGbWZFSUtRbE8tdUpPNFY5bkxtSzNSU3dwdVZ6UFNtLUJFcDA2alplc2xXMGs1R3EyMmJCdVlwMThSNWc5dU8zYWRDTVhQNUJ6R2F6OWNxeVhERzhVYURXZ0ZHOHZFb1VLWFlvMmRvbGRXbDluXzhEc2pnNWNfVWZ1bS1vNWdFMmZyc042S3R3ajhrOXZzczR1RktIQnZtM19GSFdsSGJZRC1XWW5Walo1OXFGZzJCRlpwYUVjSWJwaE11N3B4ZFlNaW1pdTB2WnM5bGJPVDlqSTk1Z2FIdlhUanl6RDk2WnpfblREanJHdnpKRTlSN09VUjJnUlNSdUVvSnNYSEl6ZW5wc2tnRkc5WTdOT21nRzZPZ3REMGFtQ21NSno1VFVXUmM4eVp1cEJEMzBMMzJNejB4dmxSYi1HWFFBdWx1TzduRzhyODJQSUtvYi1iSW9FQkxseWdQOEE1RE55RWtuQVNoS241b2xleWlnc1dyUzUtVzlLckEta203djl2OV9zV3o2NkVYeThHdGdHUEk4Z1lrcmZQdGxpektIUlV4Zw?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMisgNBVV95cUxQUkRWNUhKc05DeUdGbWZFSUtRbE8tdUpPNFY5bkxtSzNSU3dwdVZ6UFNtLUJFcDA2alplc2xXMGs1R3EyMmJCdVlwMThSNWc5dU8zYWRDTVhQNUJ6R2F6OWNxeVhERzhVYURXZ0ZHOHZFb1VLWFlvMmRvbGRXbDluXzhEc2pnNWNfVWZ1bS1vNWdFMmZyc042S3R3ajhrOXZzczR1RktIQnZtM19GSFdsSGJZRC1XWW5Walo1OXFGZzJCRlpwYUVjSWJwaE11N3B4ZFlNaW1pdTB2WnM5bGJPVDlqSTk1Z2FIdlhUanl6RDk2WnpfblREanJHdnpKRTlSN09VUjJnUlNSdUVvSnNYSEl6ZW5wc2tnRkc5WTdOT21nRzZPZ3REMGFtQ21NSno1VFVXUmM4eVp1cEJEMzBMMzJNejB4dmxSYi1HWFFBdWx1TzduRzhyODJQSUtvYi1iSW9FQkxseWdQOEE1RE55RWtuQVNoS241b2xleWlnc1dyUzUtVzlLckEta203djl2OV9zV3o2NkVYeThHdGdHUEk4Z1lrcmZQdGxpektIUlV4Zw?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 11:41:14 GMT</pubDate>
-<description>المركزية | معلومات: اللقاء سيأخذ طابعاً سياسياً وأمنياً بالدرجة الأولى ولن يقتصر على الجانب البروتوكولي، خاصةً أن سلام أعلن في نيويورك أن محادثاته تركز على خفض التصعيد وبسط سيادة الدولة على أراضيها</description>
+<title>لقاءات رئيس الحكومة القاضي نوافق سلام في نيويورك</title>
+<link>https://almarkazia.com/ar/gallery/lkaaaat-ryys-alhkom-alkady-noafk-slam-fy-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/lkaaaat-ryys-alhkom-alkady-noafk-slam-fy-1</guid>
+<pubDate>Thu, 24 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442515/823730057-1150169080692890-1112460628323621879-n.jpg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442515/823730057-1150169080692890-1112460628323621879-n.jpg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442515/823730057-1150169080692890-1112460628323621879-n.jpg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | لقاء نيويورك تطور ايجابي ولكن.. الحسم بيد الحرس لا البراغماتيين!</title>
-<link>https://news.google.com/rss/articles/CBMi0gJBVV95cUxQbHVsZ3RWWWlrTjQtTUZQc09GMl9sQzFNdDhhVDBEWjI2SUlYaFNXVm4tYU9BbkpocDA0WTIyV0lJMXhnc1VXNkFuU1Z2Rmk0alJxb1JTWXowUDFIZzFxSVlHZ3RTc2dzNXFWVUlMUFZpR29QZDdZQnJQUHVMU09JZGlVOV9LSzFzaVdrcHdaallNZmlZcE1mRElqbk5hU1FMb3JsNUV2ZWJVa1RMbHIyUmhjSFFYUXVYdlN6RUlzSGNVUl9CSV92V0RPMHVaM2ViaXFxMXh6RFVZSEdWcFRzdVdYRkJmckN4d1FoOVdGQkZjeGxuUk1EaTNiMDFrdG05OFlkQWc4T29SM1hWNWhyMTR4RUN2UTdIck9TM2M5VUhlZ1E5QzZ2aGhyUkNfbENpcmV2eHdMaV9oSkxaYTFUX3JLVk1RX3FVUVFVUTFrZE1FZw?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi0gJBVV95cUxQbHVsZ3RWWWlrTjQtTUZQc09GMl9sQzFNdDhhVDBEWjI2SUlYaFNXVm4tYU9BbkpocDA0WTIyV0lJMXhnc1VXNkFuU1Z2Rmk0alJxb1JTWXowUDFIZzFxSVlHZ3RTc2dzNXFWVUlMUFZpR29QZDdZQnJQUHVMU09JZGlVOV9LSzFzaVdrcHdaallNZmlZcE1mRElqbk5hU1FMb3JsNUV2ZWJVa1RMbHIyUmhjSFFYUXVYdlN6RUlzSGNVUl9CSV92V0RPMHVaM2ViaXFxMXh6RFVZSEdWcFRzdVdYRkJmckN4d1FoOVdGQkZjeGxuUk1EaTNiMDFrdG05OFlkQWc4T29SM1hWNWhyMTR4RUN2UTdIck9TM2M5VUhlZ1E5QzZ2aGhyUkNfbENpcmV2eHdMaV9oSkxaYTFUX3JLVk1RX3FVUVFVUTFrZE1FZw?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 09:40:36 GMT</pubDate>
-<description>المركزية | لقاء نيويورك تطور ايجابي ولكن.. الحسم بيد الحرس لا البراغماتيين!</description>
+<title>نشاط رئيس الجمهورية العماد جوزيف عون</title>
+<link>https://almarkazia.com/ar/gallery/nshat-ryys-algmhory-alaamad-gozyf-aaon-343</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/nshat-ryys-algmhory-alaamad-gozyf-aaon-343</guid>
+<pubDate>Thu, 24 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442508/1-archimandrite-nicola-hakim-vicar-melkite-greek-catholic-bishopjpg.jpeg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442508/1-archimandrite-nicola-hakim-vicar-melkite-greek-catholic-bishopjpg.jpeg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442508/1-archimandrite-nicola-hakim-vicar-melkite-greek-catholic-bishopjpg.jpeg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | اتساع موجة &quot;السل&quot; في رومية والإضراب يدخل يومه الثاني عشر</title>
-<link>https://news.google.com/rss/articles/CBMiygJBVV95cUxNcmwwNUNLeDEtVXZRcUpJQV9oNTJQbm1YUnRFeEVKM01mWlg1ZzZvWk1tQ3dVeWdlc1dYd25PNW9CWDNWVFM1MTJuTFcxcXM3Ylhra3NnSzJvaUFMZ0ZLZzdpRzVNVkQ2NE9rb19aQzcxOTVfU2xtNV9iU0VvelJWRmZ5d0gxdkx6QnBqV0hYVG5DN3NTZHRQZG5RajROZ1M2VTV6TE1zbXY1cjlVQndBQU5HZkhyMU8tZmZYWEN2YlhJUnlCaGo0SHJ5NzdQTnluNnlwZENwN1oxazNYRGU4SWVKaTNud1JWSy0wYjNiV3FSQlNQd25uVWlwaGQya1lYVzNKNEVSWkhXclVxMkxRaVVidVVzNWYyb1VySUZTVjJfalBpZ3Ytc1Q5OUZBeVM1aUFQSEV4TkItdWhTY2pVRllFQmJ6ci1HWVE?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMiygJBVV95cUxNcmwwNUNLeDEtVXZRcUpJQV9oNTJQbm1YUnRFeEVKM01mWlg1ZzZvWk1tQ3dVeWdlc1dYd25PNW9CWDNWVFM1MTJuTFcxcXM3Ylhra3NnSzJvaUFMZ0ZLZzdpRzVNVkQ2NE9rb19aQzcxOTVfU2xtNV9iU0VvelJWRmZ5d0gxdkx6QnBqV0hYVG5DN3NTZHRQZG5RajROZ1M2VTV6TE1zbXY1cjlVQndBQU5HZkhyMU8tZmZYWEN2YlhJUnlCaGo0SHJ5NzdQTnluNnlwZENwN1oxazNYRGU4SWVKaTNud1JWSy0wYjNiV3FSQlNQd25uVWlwaGQya1lYVzNKNEVSWkhXclVxMkxRaVVidVVzNWYyb1VySUZTVjJfalBpZ3Ytc1Q5OUZBeVM1aUFQSEV4TkItdWhTY2pVRllFQmJ6ci1HWVE?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 09:29:02 GMT</pubDate>
-<description>المركزية | اتساع موجة &quot;السل&quot; في رومية والإضراب يدخل يومه الثاني عشر</description>
+<title>لقاءات رئيس الحكومة الدكتور نواف سلام في نيويورك</title>
+<link>https://almarkazia.com/ar/gallery/lkaaaat-ryys-alhkom-aldktor-noaf-slam-fy-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/lkaaaat-ryys-alhkom-aldktor-noaf-slam-fy-1</guid>
+<pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442337/809026803-1812030376484042-4410870557809331952-n.jpg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442337/809026803-1812030376484042-4410870557809331952-n.jpg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442337/809026803-1812030376484042-4410870557809331952-n.jpg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | إملأوا قوارير الغاز في منازلكم... تحسّباً لأي طارئ</title>
-<link>https://news.google.com/rss/articles/CBMi6gJBVV95cUxNQXQyWkhKdXR1NUFNYlBmdVBYX1Y3RkRBYVN4YnJfbFhwM05pM180MnJKNEVzMXM4ZmRIQkk5Rl9VSWxSa3FZTmUtMFNqMGJ6MzQyRkVMeGNEbWFXVGRoNEptZFRTcThxX3dRNThhdFRXR1FEUmt2aTZZczU1OWdhcWZnQnN3d1FxUXBlOEd4VWRqN2hEUnZVZWVKdy1CaFFlZndhUzlQYUQ3OGR6Tnd0UklJYmJtWFJKZjZCVHkxNGVKOTRZd2RsQXJ3U1UzQXBMNnJQUHJtU094Wk5kNWJrdTFkU3dSb1V5SFRQZ3FhalJVamZnSFRRMmgwQ0pFRER5UnFIU0VXRTRQNVZ0bXBJSXRKSXpnSHZQdElIWklheFRxYjlNc0NwYVdxNmpPbU52WVNzVDRLXzVVVUMyVTBvTGFZWUtBb3NiMEl5bEJjeVJmNmxhRG01R0xyVGtDTDVDRFhmcjlEYXpXdw?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMi6gJBVV95cUxNQXQyWkhKdXR1NUFNYlBmdVBYX1Y3RkRBYVN4YnJfbFhwM05pM180MnJKNEVzMXM4ZmRIQkk5Rl9VSWxSa3FZTmUtMFNqMGJ6MzQyRkVMeGNEbWFXVGRoNEptZFRTcThxX3dRNThhdFRXR1FEUmt2aTZZczU1OWdhcWZnQnN3d1FxUXBlOEd4VWRqN2hEUnZVZWVKdy1CaFFlZndhUzlQYUQ3OGR6Tnd0UklJYmJtWFJKZjZCVHkxNGVKOTRZd2RsQXJ3U1UzQXBMNnJQUHJtU094Wk5kNWJrdTFkU3dSb1V5SFRQZ3FhalJVamZnSFRRMmgwQ0pFRER5UnFIU0VXRTRQNVZ0bXBJSXRKSXpnSHZQdElIWklheFRxYjlNc0NwYVdxNmpPbU52WVNzVDRLXzVVVUMyVTBvTGFZWUtBb3NiMEl5bEJjeVJmNmxhRG01R0xyVGtDTDVDRFhmcjlEYXpXdw?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 08:48:29 GMT</pubDate>
-<description>المركزية | إملأوا قوارير الغاز في منازلكم... تحسّباً لأي طارئ</description>
+<title>نشاط رئيس الجمهورية العماد جوزيف عون</title>
+<link>https://almarkazia.com/ar/gallery/nshat-ryys-algmhory-alaamad-gozyf-aaon-342</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/nshat-ryys-algmhory-alaamad-gozyf-aaon-342</guid>
+<pubDate>Wed, 23 Sep 2026 09:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442296/1-mohammad-nidal-al-shaar-minof-economy-industry-in-syria-5jpg.jpeg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442296/1-mohammad-nidal-al-shaar-minof-economy-industry-in-syria-5jpg.jpeg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442296/1-mohammad-nidal-al-shaar-minof-economy-industry-in-syria-5jpg.jpeg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>(2) المركزية | رويترز: زلزال بقوة 5.1 درجة يضرب شرق تركيا</title>
-<link>https://news.google.com/rss/articles/CBMinAJBVV95cUxQVmN0T252Y1VfRVRPUkVaZGVVZm1FY1lFTG03YmwyY0xxN0Nsa25NVWQ3Zi1oWGtBVUZCdGpLb3BTS3J2NXJ3YnlNNXE1U2xGSWxnek9FR2U2LTRVTnVfNWg0QWRjNTA1WTZiUzYxd08yOE9LOUVXVzZ2N0VwbkI4REQwZmpwSXVBeldhQ0k4T1VETGt1WkRCODJydzJqWUktNzN5Vl91YktUanhnTXFHLUQ4SlQ1cnZDcTJjMExjRDVUTThFZkRocm9hdXNoSGRXSkh2bDQyZElvNk9ZTDZpVzRvV0NzdXF3N0ZGbnhvalpSbjh5NG1ueFpjZl9PS0hpUjNIYk1zblU5MmdldDlxV3JBSk5odTVvNWNxQg?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMinAJBVV95cUxQVmN0T252Y1VfRVRPUkVaZGVVZm1FY1lFTG03YmwyY0xxN0Nsa25NVWQ3Zi1oWGtBVUZCdGpLb3BTS3J2NXJ3YnlNNXE1U2xGSWxnek9FR2U2LTRVTnVfNWg0QWRjNTA1WTZiUzYxd08yOE9LOUVXVzZ2N0VwbkI4REQwZmpwSXVBeldhQ0k4T1VETGt1WkRCODJydzJqWUktNzN5Vl91YktUanhnTXFHLUQ4SlQ1cnZDcTJjMExjRDVUTThFZkRocm9hdXNoSGRXSkh2bDQyZElvNk9ZTDZpVzRvV0NzdXF3N0ZGbnhvalpSbjh5NG1ueFpjZl9PS0hpUjNIYk1zblU5MmdldDlxV3JBSk5odTVvNWNxQg?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 07:57:56 GMT</pubDate>
-<description>(2) المركزية | رويترز: زلزال بقوة 5.1 درجة يضرب شرق تركيا</description>
+<title>نشاط رئيس الجمهورية العماد جوزيف عون</title>
+<link>https://almarkazia.com/ar/gallery/nshat-ryys-algmhory-alaamad-gozyf-aaon-341</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/gallery/nshat-ryys-algmhory-alaamad-gozyf-aaon-341</guid>
+<pubDate>Tue, 22 Sep 2026 12:00:00 GMT</pubDate>
+<media:thumbnail url="https://almarkazia.com/uploads/442143/01-mr-bechara-el-asmar-jpg.jpeg"/>
+<description><![CDATA[<img src="https://almarkazia.com/uploads/442143/01-mr-bechara-el-asmar-jpg.jpeg" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://almarkazia.com/uploads/442143/01-mr-bechara-el-asmar-jpg.jpeg" alt=""/>]]></content:encoded>
 </item>
 <item>
-<title>المركزية | الطيران المسيّر الاسرائيلي يحلّق فوق الضاحية</title>
-<link>https://news.google.com/rss/articles/CBMigANBVV95cUxQWTBQOWNrcFZndHN2VjZ5UnlpaHdpUFZva3ZSZUhVWFAyMmNJMjFEZDNpX0Vqb083Y3hueVFKczNyMVdYcnZiR2k2QmZmZVhOWUJMNDBvRzJRODdUYk00TUhrYWlWRkVQbk84LS0tdTBuWG90MzJEQ09MY1pTTmxXSXJZWlZXampwRHY5WDlKTlNOT1ZPZE41SUlHYkVraUtfMjNQMlVHa05zOHlPWEpwbkRHN3Nwbzd4QVBGSU10dExNRFg2RmI4THFpODhUNVNXVkluSlN1c1Y4UFRDUXVGRGJrQzZhc2lMOUhqRW9wM3ZwYWdKWXBpVGs2WmlKQ0Zma3A5dmZid1pld2wzYnNjOThNRGVINWVqZkh1SXI5T2Uyb0tpS2c2T3I5a09aT2ZaMFJWR0tLNEdtUWt0ZXpUbFE1QzZOeV9ocGhGWjFHbXdNTlNWUVNPVVlMM2NrZk5BQVNSWUNSam9MN1RGYmx6TzFjMWp3YmtaNVZhRW1uSHk?oc=5</link>
-<guid isPermaLink="true">https://news.google.com/rss/articles/CBMigANBVV95cUxQWTBQOWNrcFZndHN2VjZ5UnlpaHdpUFZva3ZSZUhVWFAyMmNJMjFEZDNpX0Vqb083Y3hueVFKczNyMVdYcnZiR2k2QmZmZVhOWUJMNDBvRzJRODdUYk00TUhrYWlWRkVQbk84LS0tdTBuWG90MzJEQ09MY1pTTmxXSXJZWlZXampwRHY5WDlKTlNOT1ZPZE41SUlHYkVraUtfMjNQMlVHa05zOHlPWEpwbkRHN3Nwbzd4QVBGSU10dExNRFg2RmI4THFpODhUNVNXVkluSlN1c1Y4UFRDUXVGRGJrQzZhc2lMOUhqRW9wM3ZwYWdKWXBpVGs2WmlKQ0Zma3A5dmZid1pld2wzYnNjOThNRGVINWVqZkh1SXI5T2Uyb0tpS2c2T3I5a09aT2ZaMFJWR0tLNEdtUWt0ZXpUbFE1QzZOeV9ocGhGWjFHbXdNTlNWUVNPVVlMM2NrZk5BQVNSWUNSam9MN1RGYmx6TzFjMWp3YmtaNVZhRW1uSHk?oc=5</guid>
-<pubDate>Thu, 24 Sep 2026 07:17:32 GMT</pubDate>
-<description>المركزية | الطيران المسيّر الاسرائيلي يحلّق فوق الضاحية</description>
+<title>لبنان بانتظار مصير الملف الإيراني؟</title>
+<link>https://almarkazia.com/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A8%D8%A7%D9%86%D8%AA%D8%B8%D8%A7%D8%B1-%D9%85%D8%B5%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%84%D9%81-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A%D8%9F-1</link>
+<guid isPermaLink="true">https://almarkazia.com/ar/%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A8%D8%A7%D9%86%D8%AA%D8%B8%D8%A7%D8%B1-%D9%85%D8%B5%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%84%D9%81-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A%D8%9F-1</guid>
+<pubDate>Tue, 22 Sep 2026 11:52:00 GMT</pubDate>
+<description>لبنان بانتظار مصير الملف الإيراني؟</description>
 </item>
 </channel></rss>

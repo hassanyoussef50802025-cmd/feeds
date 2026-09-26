@@ -1,6 +1,8 @@
 {
  "mugtama.com": {
-  "via": "direct"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20260926043441id_/https://mugtama.com/",
+  "snapTs": 1790397297781
  },
  "www.mobizil.com": {
   "via": "proxy:2"
@@ -9,7 +11,7 @@
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "gnews"
+  "via": "proxy:2"
  },
  "newslb.org": {
   "via": "gnews"
@@ -21,6 +23,6 @@
   "via": "direct"
  },
  "alhayapress.com": {
-  "via": "gnews"
+  "via": "direct"
  }
 }
