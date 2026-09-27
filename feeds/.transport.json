@@ -1,11 +1,13 @@
 {
  "mugtama.com": {
-  "via": "direct"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20260927162109id_/https://mugtama.com/",
+  "snapTs": 1790526085289
  },
  "www.mobizil.com": {
   "via": "wayback",
-  "snap": "https://web.archive.org/web/20260927153336/https://www.mobizil.com/",
-  "snapTs": 1790523218893
+  "snap": "https://web.archive.org/web/20260927162413/https://www.mobizil.com/",
+  "snapTs": 1790526255477
  },
  "riadynews.com": {
   "via": "direct"
