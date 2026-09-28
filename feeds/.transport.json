@@ -4,8 +4,8 @@
  },
  "www.mobizil.com": {
   "via": "wayback",
-  "snap": "https://web.archive.org/web/20260928130012/https://www.mobizil.com/",
-  "snapTs": 1790600413754
+  "snap": "https://web.archive.org/web/20260928135256/https://www.mobizil.com/",
+  "snapTs": 1790603578118
  },
  "riadynews.com": {
   "via": "direct"
@@ -14,7 +14,9 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "direct"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20260928140231/https://newslb.org/",
+  "snapTs": 1790604153331
  },
  "saharazoom.com": {
   "via": "direct"
