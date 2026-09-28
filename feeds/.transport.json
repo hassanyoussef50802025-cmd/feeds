@@ -3,7 +3,9 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20260928012608id_/https://www.mobizil.com/",
+  "snapTs": 1790558784895
  },
  "riadynews.com": {
   "via": "direct"
@@ -12,7 +14,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "proxy:2"
+  "via": "direct"
  },
  "saharazoom.com": {
   "via": "direct"
