@@ -1,4 +1,4 @@
-دورة 2026-09-28T00:39:07.137Z
+دورة 2026-09-28T00:51:29.866Z
 mugtama | https://mugtama.com/ | 21s | via=direct | نُشرت 17 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-09-27 00:00
     مباشر mugtama.com: حالة 200 / 137872 حرفًا / «<html dir="rtl" lang="ar"> <head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].pus»
       - JSON مباشر: حالة 410 / 94939 حرفًا / «<html dir="rtl" lang="ar"> <head> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i)»
@@ -6,7 +6,7 @@ mugtama | https://mugtama.com/ | 21s | via=direct | نُشرت 17 عنصرًا (
       - JSON وسيط#1: حالة 403 / 6789 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 200 / 94578 حرفًا / «<html dir="rtl" lang="ar"> <head> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i)»
       - JSON وسيط#3: حالة 403 / 6196 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - JSON وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 feed-www-mobizil-com-shp3i3 | https://www.mobizil.com/ | 17s | via=proxy:2 | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-09-27 14:33
       - وسيط#2 متذكَّر: حالة 200 / 160643 حرفًا / «<!DOCTYPE html><html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charse»
       - JSON مباشر: حالة 403 / 5993 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -14,7 +14,7 @@ feed-www-mobizil-com-shp3i3 | https://www.mobizil.com/ | 17s | via=proxy:2 | ن�
       - JSON وسيط#1: حالة 403 / 6801 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 200 / 77148 حرفًا / «[{"date":"2026-09-27T17:33:07","date_gmt":"2026-09-27T14:33:07","link":"https:\/\/mobizil.»
       - JSON وسيط#2: حالة 200 / 2769 حرفًا / «[{"id":88788,"source_url":"https:\/\/mobizil.com\/wp-content\/uploads\/2026\/09\/HONOR-X9e»
-feed-riadynews-com-1nw2k | https://riadynews.com/ | 3s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-09-27 15:39
+feed-riadynews-com-1nw2k | https://riadynews.com/ | 2s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-09-27 15:39
     مباشر riadynews.com: حالة 200 / 279101 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="rtl" lang=»
     مباشر riadynews.com: حالة 200 / 79115 حرفًا / «<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rs»
       - JSON مباشر: حالة 200 / 91274 حرفًا / «[{"date":"2026-09-27T18:39:43","date_gmt":"2026-09-27T15:39:43","link":"https:\/\/riadynew»
@@ -25,33 +25,33 @@ feed-almarkazia-com-1c6abkv | https://almarkazia.com/ | 25s | via=proxy:2 | نُ
       - JSON وسيط#0: حالة 403 / 6883 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6798 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 200 / 52376 حرفًا / «<!DOCTYPE html> <html> <head> <meta http-equiv="Content-type" content="text/html; charset=»
-      - JSON وسيط#3: حالة 403 / 6226 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-feed-newslb-org-1o09j3i | https://newslb.org/ | 8s | via=proxy:2 | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-09-26 10:42
+      - JSON وسيط#3: حالة 403 / 6205 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - JSON وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+feed-newslb-org-1o09j3i | https://newslb.org/ | 11s | via=proxy:2 | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-09-26 10:42
       - وسيط#2 متذكَّر: حالة 200 / 189350 حرفًا / «<!DOCTYPE html> <html dir="rtl" lang="ar" class="s-light site-s-light"> <head> <meta chars»
       - وسيط#2 متذكَّر: حالة 200 / 31055 حرفًا / «<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rs»
-      - JSON مباشر: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+      - JSON مباشر: حالة 200 / 82933 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
       - JSON وسيط#0: حالة 403 / 6871 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6786 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 200 / 83161 حرفًا / «[{"date":"2026-09-26T13:42:48","date_gmt":"2026-09-26T10:42:48","link":"https:\/\/newslb.o»
       - JSON وسيط#2: حالة 200 / 2513 حرفًا / «[{"id":93650,"source_url":"https:\/\/newslb.org\/wp-content\/uploads\/2026\/09\/FB_IMG_176»
-feed-saharazoom-com-m-19k9u7d | https://saharazoom.com/m/ | 22s | via=direct | نُشرت 21 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-09-24 15:05 / أُسقط 9 قديمًا
-    مباشر saharazoom.com: حالة 200 / 18677 حرفًا / « <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD»
+feed-saharazoom-com-m-19k9u7d | https://saharazoom.com/m/ | 21s | via=direct | نُشرت 21 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-09-24 15:05 / أُسقط 9 قديمًا
+    مباشر saharazoom.com: حالة 200 / 18611 حرفًا / « <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD»
       - JSON مباشر: حالة 404 / 435 حرفًا / «<meta http-equiv=refresh content=0;url=http://www.saharazoom.com>"; <script type="module" »
       - JSON وسيط#0: حالة 403 / 6883 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6798 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 200 / 68 حرفًا / «<meta http-equiv=refresh content=0;url=http://www.saharazoom.com>"; »
-      - JSON وسيط#3: حالة 403 / 6226 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - JSON وسيط#3: حالة 403 / 6205 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - JSON وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 feed-www-saharaexpo-com-470yyv | https://www.saharaexpo.com/ | 24s | via=direct | نُشرت 5 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-09-24 12:08
-    مباشر www.saharaexpo.com: حالة 200 / 478879 حرفًا / «<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8"/><meta name="viewport»
-      - JSON مباشر: حالة 404 / 204621 حرفًا / «<!DOCTYPE html><html id="__next_error__"><head><meta charSet="utf-8"/><meta name="viewport»
+    مباشر www.saharaexpo.com: حالة 200 / 479118 حرفًا / «<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8"/><meta name="viewport»
+      - JSON مباشر: حالة 404 / 204620 حرفًا / «<!DOCTYPE html><html id="__next_error__"><head><meta charSet="utf-8"/><meta name="viewport»
       - JSON وسيط#0: حالة 403 / 6895 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6810 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 200 / 204621 حرفًا / «<!DOCTYPE html><html id="__next_error__"><head><meta charSet="utf-8"/><meta name="viewport»
       - JSON وسيط#3: حالة 403 / 6238 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-feed-alhayapress-com-1kpivin | https://alhayapress.com/ | 3s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-09-27 18:29
+      - JSON وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+feed-alhayapress-com-1kpivin | https://alhayapress.com/ | 2s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-09-27 18:29
     مباشر alhayapress.com: حالة 200 / 130739 حرفًا / «<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=c»
     مباشر alhayapress.com: حالة 200 / 18804 حرفًا / «<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rs»
       - JSON مباشر: حالة 200 / 88559 حرفًا / «[{"date":"2026-09-27T20:29:46","date_gmt":"2026-09-27T18:29:46","link":"https:\/\/alhayapr»
