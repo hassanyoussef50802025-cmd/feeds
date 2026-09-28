@@ -1,11 +1,11 @@
 {
  "mugtama.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20260927233322id_/https://mugtama.com/",
-  "snapTs": 1790552019189
+  "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20260927235635/https://www.mobizil.com/",
+  "snapTs": 1790553395957
  },
  "riadynews.com": {
   "via": "direct"
@@ -14,7 +14,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "direct"
+  "via": "proxy:2"
  },
  "saharazoom.com": {
   "via": "direct"
