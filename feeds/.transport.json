@@ -1,13 +1,11 @@
 {
  "mugtama.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20260928230234id_/https://mugtama.com/",
-  "snapTs": 1790636571552
+  "via": "direct"
  },
  "www.mobizil.com": {
   "via": "wayback",
-  "snap": "https://web.archive.org/web/20260928223856/https://www.mobizil.com/",
-  "snapTs": 1790635136840
+  "snap": "https://web.archive.org/web/20260928233345/https://www.mobizil.com/",
+  "snapTs": 1790638426192
  },
  "riadynews.com": {
   "via": "direct"
@@ -17,8 +15,8 @@
  },
  "newslb.org": {
   "via": "wayback",
-  "snap": "https://web.archive.org/web/20260928231858/https://newslb.org/",
-  "snapTs": 1790637538844
+  "snap": "https://web.archive.org/web/20260928234150/https://newslb.org/",
+  "snapTs": 1790638912347
  },
  "saharazoom.com": {
   "via": "direct"
