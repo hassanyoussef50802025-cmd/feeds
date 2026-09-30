@@ -3,11 +3,12 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20260930160623/https://www.mobizil.com/",
-  "snapTs": 1790784387490
+  "via": "proxy:2"
  },
  "riadynews.com": {
+  "via": "direct"
+ },
+ "newslb.org": {
   "via": "direct"
  },
  "saharazoom.com": {
