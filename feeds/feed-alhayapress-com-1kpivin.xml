@@ -1,237 +1,203 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
 <channel>
-<title>alhayapress.com</title>
-<link>https://alhayapress.com/</link>
-<description>خلاصة تُحدَّث تلقائيًا من alhayapress.com</description>
-<language>ar</language>
-<lastBuildDate>Wed, 30 Sep 2026 08:00:41 GMT</lastBuildDate>
-<generator>RSS Worker</generator>
-<!-- rss-src: rest -->
-<atom:link href="https://alhayapress.com/" rel="self" type="application/rss+xml"/>
-<item>
-<title>*في ختام زيارته لولاية الجزيرة: وزير الصحة يعقد اجتماع رفيع المستوي لوضع ترتيبات مركز الجزيرة للاورام*</title>
-<link>https://alhayapress.com/71590/</link>
-<guid isPermaLink="true">https://alhayapress.com/71590/</guid>
-<pubDate>Tue, 29 Sep 2026 20:18:43 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg" alt=""/><p>الجزيرة – ود مدني انعقد مساء اليوم الثلاثاء بقاعة قصر الضيافة بولاية الجزيرة اجتماع تنسيقي رفيع المستوي لوضع الترتيبات و المعالجات المستدامة لمركز علاج الأورام بالجزيرة ، و ذلك برئاسة وزير الصحة الاتحادي ووالي ولاية الجزيرة وبحضور مدير جامعة الجزيرة و عميد كلية الطب ووزير الصحة بالولاية وعدد من قيادات الصحة وجامعة الجزيرة. أمن الاجتماع [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg" alt=""/><p>الجزيرة – ود مدني انعقد مساء اليوم الثلاثاء بقاعة قصر الضيافة بولاية الجزيرة اجتماع تنسيقي رفيع المستوي لوضع الترتيبات و المعالجات المستدامة لمركز علاج الأورام بالجزيرة ، و ذلك برئاسة وزير الصحة الاتحادي ووالي ولاية الجزيرة وبحضور مدير جامعة الجزيرة و عميد كلية الطب ووزير الصحة بالولاية وعدد من قيادات الصحة وجامعة الجزيرة. أمن الاجتماع [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*فريني: حماية حقوق العاملات أولوية اجتماعية*</title>
-<link>https://alhayapress.com/71587/</link>
-<guid isPermaLink="true">https://alhayapress.com/71587/</guid>
-<pubDate>Tue, 29 Sep 2026 19:29:25 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg" alt=""/><p>أكد وزير التنمية الاجتماعية بولاية الخرطوم، صديق حسن فريني، التزام وزارته برعاية حقوق العاملات وتعزيز حمايتهن وتهيئة بيئة عمل تحفظ كرامتهن وتصون حقوقهن بما يعزز دورهن في الإنتاج والمجتمع. جاء ذلك لدى مشاركته صباح اليوم الإثنين 29 سبتمبر 2026م، في برنامج المائدة المستديرة التي نظمتها جمعية كل المهن التعاونية متعددة الأغراض بالتعاون مع جمعية بيت [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg" alt=""/><p>أكد وزير التنمية الاجتماعية بولاية الخرطوم، صديق حسن فريني، التزام وزارته برعاية حقوق العاملات وتعزيز حمايتهن وتهيئة بيئة عمل تحفظ كرامتهن وتصون حقوقهن بما يعزز دورهن في الإنتاج والمجتمع. جاء ذلك لدى مشاركته صباح اليوم الإثنين 29 سبتمبر 2026م، في برنامج المائدة المستديرة التي نظمتها جمعية كل المهن التعاونية متعددة الأغراض بالتعاون مع جمعية بيت [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*لقاء سوداني روسي بموسكو لتعزيز التعاون الشرطي ومكافحة الجريمة المنظمة*</title>
-<link>https://alhayapress.com/71583/</link>
-<guid isPermaLink="true">https://alhayapress.com/71583/</guid>
-<pubDate>Tue, 29 Sep 2026 18:44:43 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0827_edit_167965977154360.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0827_edit_167965977154360.jpg" alt=""/><p>التقى وزير الداخلية الروسي الجنرال فلاديمير كولوكولتسيف، بنظيره السوداني بابكر سمرة مصطفى، على هامش مشاركته في المؤتمر الدولي السادس لمكافحة التطرف المنعقد بموسكو. وبحث الجانبان القضايا الراهنة للتعاون الثنائي في مجالات العمل الشرطي وإنفاذ القانون، حيث أكد الوزير الروسي أن الحوار المنتظم بين الوزارتين يمثل دفعة قوية لتطوير العلاقات بين البلدين. وتطرق اللقاء إلى تنامي [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0827_edit_167965977154360.jpg" alt=""/><p>التقى وزير الداخلية الروسي الجنرال فلاديمير كولوكولتسيف، بنظيره السوداني بابكر سمرة مصطفى، على هامش مشاركته في المؤتمر الدولي السادس لمكافحة التطرف المنعقد بموسكو. وبحث الجانبان القضايا الراهنة للتعاون الثنائي في مجالات العمل الشرطي وإنفاذ القانون، حيث أكد الوزير الروسي أن الحوار المنتظم بين الوزارتين يمثل دفعة قوية لتطوير العلاقات بين البلدين. وتطرق اللقاء إلى تنامي [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>حزب الشعب الثوري الإثيوبي: حكومة أديس أبابا تستضيف معسكرات للدعم السريع وتسمح بهجمات ضد السودان*</title>
-<link>https://alhayapress.com/71581/</link>
-<guid isPermaLink="true">https://alhayapress.com/71581/</guid>
-<pubDate>Tue, 29 Sep 2026 18:36:58 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png" alt=""/><p>اتهم حزب الشعب الثوري الإثيوبي، في بيان، الحكومة الفيدرالية بانتهاك القانون الدولي ومبدأ احترام سيادة الدول، متهماً إياها باستضافة وفتح معسكرات لمليشيا الدعم السريع التي تحارب الجيش السوداني عبر إقليم بني شنقول قمز. واتهم الحزب الحكومة الإثيوبية باستقبال مسلحين ومرتزقة من جنوب السودان عبر قامبيلا وجنوب إثيوبيا، دون رد فعل منها، مشيراً إلى أن مكونات [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png" alt=""/><p>اتهم حزب الشعب الثوري الإثيوبي، في بيان، الحكومة الفيدرالية بانتهاك القانون الدولي ومبدأ احترام سيادة الدول، متهماً إياها باستضافة وفتح معسكرات لمليشيا الدعم السريع التي تحارب الجيش السوداني عبر إقليم بني شنقول قمز. واتهم الحزب الحكومة الإثيوبية باستقبال مسلحين ومرتزقة من جنوب السودان عبر قامبيلا وجنوب إثيوبيا، دون رد فعل منها، مشيراً إلى أن مكونات [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>أهل القصيم وصلناكم .. تاركو للطيران تعلن إطلاق دوري رياضي للفرق السودانية بمنطقة القصيم*</title>
-<link>https://alhayapress.com/71578/</link>
-<guid isPermaLink="true">https://alhayapress.com/71578/</guid>
-<pubDate>Tue, 29 Sep 2026 16:50:16 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg" alt=""/><p>السعودية : الحياة أعلنت شركة تاركو للطيران عن إطلاق «دوري تاركو للطيران للفرق السودانية بمنطقة القصيم»، بالتعاون مع الرابطة الرياضية السودانية بمنطقة القصيم في مبادرة رياضية تستهدف تعزيز التواصل والتلاقي بين أبناء الجالية السودانية بالمملكة العربية السعودية. وأوضحت الشركة أن منافسات الدوري ستقام خلال الفترة من 8 أكتوبر وحتى 20 نوفمبر 2026، بواقع مباريات أسبوعية [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg" alt=""/><p>السعودية : الحياة أعلنت شركة تاركو للطيران عن إطلاق «دوري تاركو للطيران للفرق السودانية بمنطقة القصيم»، بالتعاون مع الرابطة الرياضية السودانية بمنطقة القصيم في مبادرة رياضية تستهدف تعزيز التواصل والتلاقي بين أبناء الجالية السودانية بالمملكة العربية السعودية. وأوضحت الشركة أن منافسات الدوري ستقام خلال الفترة من 8 أكتوبر وحتى 20 نوفمبر 2026، بواقع مباريات أسبوعية [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>وزيرا المالية السوداني والسعودي يبحثان تعزيز الشراكة الاقتصادية ودعم جهود التعافي في السودان</title>
-<link>https://alhayapress.com/71574/</link>
-<guid isPermaLink="true">https://alhayapress.com/71574/</guid>
-<pubDate>Tue, 29 Sep 2026 15:49:58 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg" alt=""/><p>التقى وزير المالية ، معالي د. جبريل إبراهيم، ، نظيره وزير المالية بالمملكة العربية السعودية، معالي الأستاذ محمد بن عبدالله الجدعان، وذلك على هامش الاجتماعات السنوية للبنك الآسيوي للاستثمار في البنية التحتية (AIIB) المنعقدة في الدوحة، بحضور نائب محافظ بنك السودان المركزي، د. سامي عبد الحفيظ. وبحث الجانبان سبل تعزيز العلاقات الاقتصادية والمالية بين السودان [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg" alt=""/><p>التقى وزير المالية ، معالي د. جبريل إبراهيم، ، نظيره وزير المالية بالمملكة العربية السعودية، معالي الأستاذ محمد بن عبدالله الجدعان، وذلك على هامش الاجتماعات السنوية للبنك الآسيوي للاستثمار في البنية التحتية (AIIB) المنعقدة في الدوحة، بحضور نائب محافظ بنك السودان المركزي، د. سامي عبد الحفيظ. وبحث الجانبان سبل تعزيز العلاقات الاقتصادية والمالية بين السودان [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*بدء دورة تدريب المدربين على إعداد التقارير التغذوية بالتكامل مع نظام المعلومات الصحية*</title>
-<link>https://alhayapress.com/71569/</link>
-<guid isPermaLink="true">https://alhayapress.com/71569/</guid>
-<pubDate>Tue, 29 Sep 2026 14:24:05 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg" alt=""/><p>. برنامج التغذية : التدريب ياتي لتجويد البيانات والتأكد من وصولها في الوقت المناسب. في إطار جهود برنامج التغذية القومي بوزارة الصحة الاتحادية،لتجويد التقارير،بدأت اليوم السبت بالوزارة، دورة تدريب المدربين على إعداد التقارير بالتكامل مع نظام المعلومات الصحية على مستوى المحليات(DHIS2) ، مستهدفة الكوادر بالبرنامج وإدارة المعلومات الصحية،بالتعاون مع منظمة اليونسيف. وقالت مديرة البرنامج بالإنابة، [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg" alt=""/><p>. برنامج التغذية : التدريب ياتي لتجويد البيانات والتأكد من وصولها في الوقت المناسب. في إطار جهود برنامج التغذية القومي بوزارة الصحة الاتحادية،لتجويد التقارير،بدأت اليوم السبت بالوزارة، دورة تدريب المدربين على إعداد التقارير بالتكامل مع نظام المعلومات الصحية على مستوى المحليات(DHIS2) ، مستهدفة الكوادر بالبرنامج وإدارة المعلومات الصحية،بالتعاون مع منظمة اليونسيف. وقالت مديرة البرنامج بالإنابة، [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*ضربة أمنية كبرى تطيح بمخازن الأغذية المنتهية في الخرطوم*</title>
-<link>https://alhayapress.com/71568/</link>
-<guid isPermaLink="true">https://alhayapress.com/71568/</guid>
-<pubDate>Tue, 29 Sep 2026 14:23:38 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA04421_edit_160324080767223.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA04421_edit_160324080767223.jpg" alt=""/><p>في عملية أمنية نوعية وصفّت بأنها الأكبر من نوعها، تمكن فريق ميداني مشترك يضم جهاز الأمن الاقتصادي، والخلية الأمنية المشتركة بولاية الخرطوم، والهيئة السودانية للمواصفات والمقاييس بمكتب أم درمان، من الإطاحة بشبكة إجرامية متخصصة في تزوير وترويج المواد الغذائية منتهية الصلاحية. وجاءت العملية بعد ضبط شاحنة نقل (دفار) محملة بكميات كبيرة من السلع الفاسدة في [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA04421_edit_160324080767223.jpg" alt=""/><p>في عملية أمنية نوعية وصفّت بأنها الأكبر من نوعها، تمكن فريق ميداني مشترك يضم جهاز الأمن الاقتصادي، والخلية الأمنية المشتركة بولاية الخرطوم، والهيئة السودانية للمواصفات والمقاييس بمكتب أم درمان، من الإطاحة بشبكة إجرامية متخصصة في تزوير وترويج المواد الغذائية منتهية الصلاحية. وجاءت العملية بعد ضبط شاحنة نقل (دفار) محملة بكميات كبيرة من السلع الفاسدة في [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>​ورشة الأرصاد الجوية تُوصي بتوظيف الذكاء الاصطناعي وترجمة التنبيهات للغات المحلية لبناء نظام إنذار مبكر شامل</title>
-<link>https://alhayapress.com/71565/</link>
-<guid isPermaLink="true">https://alhayapress.com/71565/</guid>
-<pubDate>Tue, 29 Sep 2026 13:34:35 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg" alt=""/><p>​دعت ورشة عمل متخصصة عقدتها الهيئة العامة للأرصاد الجوية السودانية إلى ضرورة تطوير الخطاب الإعلامي المناخي وتوسيع نطاق وصول التنبيهات والإنذارات المبكرة لكافة أطياف المجتمع، مستعرضةً حزمة من المخرجات والتوصيات الإستراتيجية للنهوض بالإعلام الأرصادي. ​أبرز التوصيات والمخرجات: ​توسيع وسائل النشر والتغطية الشاملة: التأكيد على توظيف المنصات الرقمية، الإذاعات الولائية، والإعلام المرئي لضمان وصول التنبيهات للمناطق [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg" alt=""/><p>​دعت ورشة عمل متخصصة عقدتها الهيئة العامة للأرصاد الجوية السودانية إلى ضرورة تطوير الخطاب الإعلامي المناخي وتوسيع نطاق وصول التنبيهات والإنذارات المبكرة لكافة أطياف المجتمع، مستعرضةً حزمة من المخرجات والتوصيات الإستراتيجية للنهوض بالإعلام الأرصادي. ​أبرز التوصيات والمخرجات: ​توسيع وسائل النشر والتغطية الشاملة: التأكيد على توظيف المنصات الرقمية، الإذاعات الولائية، والإعلام المرئي لضمان وصول التنبيهات للمناطق [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*وزير الموارد البشرية يقف على أوضاع النازحين بمعسكر النهضة ويوجه بمعالجة الاحتياجات العاجلة*</title>
-<link>https://alhayapress.com/71562/</link>
-<guid isPermaLink="true">https://alhayapress.com/71562/</guid>
-<pubDate>Tue, 29 Sep 2026 13:14:13 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg" alt=""/><p>وقف وزير الموارد البشرية والرعاية الاجتماعية معتصم أحمد صالح خلال زيارته لولاية نهر النيل التي تشمل عدداً من المؤسسات والمرافق والخدمات الاجتماعية والصحية ومشروعات ديوان الزكاة والتأمين الصحي بالولاية وقف على أوضاع النازحين بمعسكر النهضة بمحلية عطبرة واستمع إلى احتياجاتهم ومطالبهم واطلع ميدانياً على الخدمات المقدمة لهم والتحديات التي تواجه المعسكر ورافق الوزير خلال الزيارة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg" alt=""/><p>وقف وزير الموارد البشرية والرعاية الاجتماعية معتصم أحمد صالح خلال زيارته لولاية نهر النيل التي تشمل عدداً من المؤسسات والمرافق والخدمات الاجتماعية والصحية ومشروعات ديوان الزكاة والتأمين الصحي بالولاية وقف على أوضاع النازحين بمعسكر النهضة بمحلية عطبرة واستمع إلى احتياجاتهم ومطالبهم واطلع ميدانياً على الخدمات المقدمة لهم والتحديات التي تواجه المعسكر ورافق الوزير خلال الزيارة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*مركز الملك سلمان يوسّع حضوره الإنساني في السودان بمشروعات صحية ومائية تشمل الجراحة والأكسجين ومياه الشرب*</title>
-<link>https://alhayapress.com/71559/</link>
-<guid isPermaLink="true">https://alhayapress.com/71559/</guid>
-<pubDate>Tue, 29 Sep 2026 10:04:02 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0021.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0021.jpg" alt=""/><p>الخرطوم – بورتسودان.. الحياة تتواصل في السودان حزمة من المشروعات الإنسانية والطبية والمائية التي ينفذها مركز الملك سلمان للإغاثة والأعمال الإنسانية، في إطار دعم الخدمات الأساسية وتعزيز قدرة المرافق الصحية وشبكات المياه على الاستجابة للاحتياجات المتزايدة، بالتزامن مع تنفيذ مشروع طبي تطوعي سعودي للجراحات العامة. ودشن المركز في السودان المشروع الطبي التطوعي السعودي للجراحات المتخصصة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0021.jpg" alt=""/><p>الخرطوم – بورتسودان.. الحياة تتواصل في السودان حزمة من المشروعات الإنسانية والطبية والمائية التي ينفذها مركز الملك سلمان للإغاثة والأعمال الإنسانية، في إطار دعم الخدمات الأساسية وتعزيز قدرة المرافق الصحية وشبكات المياه على الاستجابة للاحتياجات المتزايدة، بالتزامن مع تنفيذ مشروع طبي تطوعي سعودي للجراحات العامة. ودشن المركز في السودان المشروع الطبي التطوعي السعودي للجراحات المتخصصة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*صرير القلم *: د. معاوية عبيد* *نفس الدواء لكن من شركة ثانية*</title>
-<link>https://alhayapress.com/71557/</link>
-<guid isPermaLink="true">https://alhayapress.com/71557/</guid>
-<pubDate>Tue, 29 Sep 2026 09:31:55 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/07/IMG-20260704-WA0006_edit_302725218330663.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/07/IMG-20260704-WA0006_edit_302725218330663.jpg" alt=""/><p>( نفس الدواء لكن من شركة ثانية) عبارةٌ تبدو للوهلة الأولى ساخرة لكنها في الشارع السوداني تختصر كثيراً من المعاني و الدلالات وتستدعي مشاهد قديمة تعود اليوم في ثوب جديد عند الشعب السوداني ذلك الشعب الذي يأبى الضيم والانكسار والخنوع والذي ظل و عبر تاريخه ينظر إلى الكرامة بوصفها جزءاً من معنى الوطن لا [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/07/IMG-20260704-WA0006_edit_302725218330663.jpg" alt=""/><p>( نفس الدواء لكن من شركة ثانية) عبارةٌ تبدو للوهلة الأولى ساخرة لكنها في الشارع السوداني تختصر كثيراً من المعاني و الدلالات وتستدعي مشاهد قديمة تعود اليوم في ثوب جديد عند الشعب السوداني ذلك الشعب الذي يأبى الضيم والانكسار والخنوع والذي ظل و عبر تاريخه ينظر إلى الكرامة بوصفها جزءاً من معنى الوطن لا [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*حد القول * *بقلم :حسن السر * * التأمين الصحي… بطاقة العدالة الاجتماعية لكل مواطن *</title>
-<link>https://alhayapress.com/71555/</link>
-<guid isPermaLink="true">https://alhayapress.com/71555/</guid>
-<pubDate>Tue, 29 Sep 2026 09:23:15 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg" alt=""/><p>يمثل مشروع التأمين الصحي الشامل بطاقة لكل مواطن، حجر الزاوية في بناء منظومة صحية عادلة ترفع العبء عن كاهل المواطن السوداني وتعيد الثقة في حقه الأصيل في العلاج. فالصحة ليست امتيازاً، بل حق إنساني يجب أن تكفله الدولة لمواطنيها دون تمييز، خاصة للفقراء والمساكين الذين يواجهون أعباء الحياة اليومية بلا سند. إن بطاقة التأمين الصحي [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg" alt=""/><p>يمثل مشروع التأمين الصحي الشامل بطاقة لكل مواطن، حجر الزاوية في بناء منظومة صحية عادلة ترفع العبء عن كاهل المواطن السوداني وتعيد الثقة في حقه الأصيل في العلاج. فالصحة ليست امتيازاً، بل حق إنساني يجب أن تكفله الدولة لمواطنيها دون تمييز، خاصة للفقراء والمساكين الذين يواجهون أعباء الحياة اليومية بلا سند. إن بطاقة التأمين الصحي [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>وزير الداخلية يصل إلى موسكو للمشاركة في مؤتمر مكافحة الفكر المتطرف*</title>
-<link>https://alhayapress.com/71551/</link>
-<guid isPermaLink="true">https://alhayapress.com/71551/</guid>
-<pubDate>Tue, 29 Sep 2026 09:04:50 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0294_edit_148747703534556.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0294_edit_148747703534556.jpg" alt=""/><p>وصل مساء أمس *الاثنين 28 سبتمبر* إلى العاصمة الروسية *موسكو* وزير الداخلية السوداني *الفريق أول شرطة حقوقي بابكر سمرة مصطفى* على رأس وفد السودان. الزيارة للمشاركة في *مؤتمر مكافحة الفكر المتطرف* في نسخته السادسة، والذي يُعقد خلال يومي *28 و 29 سبتمبر الجاري* بمشاركة وفود من آسيا وأوروبا وأفريقيا والشرق الأوسط وأمريكا اللاتينية. وحسب متابعات [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0294_edit_148747703534556.jpg" alt=""/><p>وصل مساء أمس *الاثنين 28 سبتمبر* إلى العاصمة الروسية *موسكو* وزير الداخلية السوداني *الفريق أول شرطة حقوقي بابكر سمرة مصطفى* على رأس وفد السودان. الزيارة للمشاركة في *مؤتمر مكافحة الفكر المتطرف* في نسخته السادسة، والذي يُعقد خلال يومي *28 و 29 سبتمبر الجاري* بمشاركة وفود من آسيا وأوروبا وأفريقيا والشرق الأوسط وأمريكا اللاتينية. وحسب متابعات [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*جامعة السودان وهيئة الصناعات والأعمال الصغيرة بالخرطوم توقعان مذكرة تفاهم*</title>
-<link>https://alhayapress.com/71548/</link>
-<guid isPermaLink="true">https://alhayapress.com/71548/</guid>
-<pubDate>Mon, 28 Sep 2026 21:05:01 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA00281.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA00281.jpg" alt=""/><p>وقّعت جامعة السودان للعلوم والتكنولوجيا، ممثلة في كلية هندسة وتكنولوجيا الصناعات، ظهر اليوم الإثنين 28 سبتمبر، مذكرة تفاهم مع هيئة الصناعات والأعمال الصغيرة بولاية الخرطوم، وذلك في إطار تعزيز التعاون وتبادل الخبرات في المجالات ذات الصلة بالصناعات والأعمال الصغيرة. وجرت مراسم التوقيع بتشريف والي ولاية الخرطوم الأستاذ أحمد حمزة، وبرعاية مدير جامعة السودان للعلوم والتكنولوجيا [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA00281.jpg" alt=""/><p>وقّعت جامعة السودان للعلوم والتكنولوجيا، ممثلة في كلية هندسة وتكنولوجيا الصناعات، ظهر اليوم الإثنين 28 سبتمبر، مذكرة تفاهم مع هيئة الصناعات والأعمال الصغيرة بولاية الخرطوم، وذلك في إطار تعزيز التعاون وتبادل الخبرات في المجالات ذات الصلة بالصناعات والأعمال الصغيرة. وجرت مراسم التوقيع بتشريف والي ولاية الخرطوم الأستاذ أحمد حمزة، وبرعاية مدير جامعة السودان للعلوم والتكنولوجيا [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*زين تطلق حملتها السنوية للتوعية بسرطان الثدي وتدشن أجهزة حديثة للكشف المبكر*</title>
-<link>https://alhayapress.com/71544/</link>
-<guid isPermaLink="true">https://alhayapress.com/71544/</guid>
-<pubDate>Mon, 28 Sep 2026 20:58:56 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA00261.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA00261.jpg" alt=""/><p>الخرطوم – 28 سبتمبر 2026 تطلق الشركة السودانية للهاتف السيار «زين» مطلع شهر اكتوبر القادم حملتها السنوية للتوعية بسرطان الثدي، تحت شعار «افحصي اليوم واطمئني بكرة»، امتداداً لجهودها المستمرة منذ عام 2007 في دعم صحة المرأة السودانية. وتستهدف الحملة هذا العام النساء في ولايات الخرطوم والجزيرة والشمالية بالتركيز على معسكرات النازحين بالولاية الشمالية، عبر عيادات [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA00261.jpg" alt=""/><p>الخرطوم – 28 سبتمبر 2026 تطلق الشركة السودانية للهاتف السيار «زين» مطلع شهر اكتوبر القادم حملتها السنوية للتوعية بسرطان الثدي، تحت شعار «افحصي اليوم واطمئني بكرة»، امتداداً لجهودها المستمرة منذ عام 2007 في دعم صحة المرأة السودانية. وتستهدف الحملة هذا العام النساء في ولايات الخرطوم والجزيرة والشمالية بالتركيز على معسكرات النازحين بالولاية الشمالية، عبر عيادات [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*مكافحة التهريب تضبط 200 رهينة من ضحايا الاتجار بالبشر وأسلحة وممنوعات غرب أم درمان*</title>
-<link>https://alhayapress.com/71541/</link>
-<guid isPermaLink="true">https://alhayapress.com/71541/</guid>
-<pubDate>Mon, 28 Sep 2026 19:34:25 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0917.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0917.jpg" alt=""/><p>تمكنت قوات مكافحة التهريب بقوات الجمارك، في عملية نوعية نفذتها الإدارة العامة لمكافحة التهريب بولاية الخرطوم بالتعاون مع الشرطة العسكرية، وبالتنسيق المعلوماتي مع جهاز المخابرات العامة، من تحرير 200 رهينة من ضحايا الاتجار بالبشر، من جنسيات مختلفة، والقبض على عدد من المتهمين، وذلك عقب عمليات رصد ومتابعة غرب أم درمان. وأسفرت العملية عن ضبط ثلاثة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0917.jpg" alt=""/><p>تمكنت قوات مكافحة التهريب بقوات الجمارك، في عملية نوعية نفذتها الإدارة العامة لمكافحة التهريب بولاية الخرطوم بالتعاون مع الشرطة العسكرية، وبالتنسيق المعلوماتي مع جهاز المخابرات العامة، من تحرير 200 رهينة من ضحايا الاتجار بالبشر، من جنسيات مختلفة، والقبض على عدد من المتهمين، وذلك عقب عمليات رصد ومتابعة غرب أم درمان. وأسفرت العملية عن ضبط ثلاثة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*والي الخرطوم يدشن عودة البرامج المجتمعية والتنموية بهيئة تنمية الصناعات والأعمال الصغيرة .*</title>
-<link>https://alhayapress.com/71538/</link>
-<guid isPermaLink="true">https://alhayapress.com/71538/</guid>
-<pubDate>Mon, 28 Sep 2026 19:11:44 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0887.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0887.jpg" alt=""/><p>دشّن والي ولاية الخرطوم الاستاذ/ أحمد عثمان حمزة ظهر اليوم عودة الانشطة المجتمعية والتنموية لهيئة تنمية الصناعات والأعمال الصغيرة وافتتح قاعة التدريب المجتمعي التابعة للهيئة بحضور وزير التنمية الاجتماعية بولاية الخرطوم ووزيرة المالية وممثلين لحكومة الولاية، في خطوة تستهدف لاستعادة الدور الإنتاجي والريادي للهيئة وتعزيز إسهامها في دعم المشروعات والصناعات الصغيرة.وأعلن الوالي خلال مخاطبته المناسبة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0887.jpg" alt=""/><p>دشّن والي ولاية الخرطوم الاستاذ/ أحمد عثمان حمزة ظهر اليوم عودة الانشطة المجتمعية والتنموية لهيئة تنمية الصناعات والأعمال الصغيرة وافتتح قاعة التدريب المجتمعي التابعة للهيئة بحضور وزير التنمية الاجتماعية بولاية الخرطوم ووزيرة المالية وممثلين لحكومة الولاية، في خطوة تستهدف لاستعادة الدور الإنتاجي والريادي للهيئة وتعزيز إسهامها في دعم المشروعات والصناعات الصغيرة.وأعلن الوالي خلال مخاطبته المناسبة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*البنك المركزي يلغي ترخيص شركة سودان باي ديجيتال للدفع عبر الموبايل*</title>
-<link>https://alhayapress.com/71536/</link>
-<guid isPermaLink="true">https://alhayapress.com/71536/</guid>
-<pubDate>Mon, 28 Sep 2026 19:07:03 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2023/02/بنك-السودان-المركزي-.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2023/02/بنك-السودان-المركزي-.jpg" alt=""/><p>استناداً إلى سلطات محافظ بنك السودان المركزى بموجب المادة 16 (1/ب) من قانون تنظيم العمل المصرفي لسنة 2026م، والمادة 11 (1/و) من لائحة ترخيص وتنظيم أعمال المؤسسات المالية للدفع عبر الموبايل لسنة 2020م، والمادة 7 (1/أ) من لائحة تنظيم أعمال نظم الدفع لسنة 2013م ، أصدرت محافظ بنك السودان المركزي، السيدة/ آمنة ميرغني حسن التوم، [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2023/02/بنك-السودان-المركزي-.jpg" alt=""/><p>استناداً إلى سلطات محافظ بنك السودان المركزى بموجب المادة 16 (1/ب) من قانون تنظيم العمل المصرفي لسنة 2026م، والمادة 11 (1/و) من لائحة ترخيص وتنظيم أعمال المؤسسات المالية للدفع عبر الموبايل لسنة 2020م، والمادة 7 (1/أ) من لائحة تنظيم أعمال نظم الدفع لسنة 2013م ، أصدرت محافظ بنك السودان المركزي، السيدة/ آمنة ميرغني حسن التوم، [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*وزير الموارد البشرية يقف على مشروعات الزكاة والتأمين الصحي والأمان الاجتماعي بنهر النيل*</title>
-<link>https://alhayapress.com/71533/</link>
-<guid isPermaLink="true">https://alhayapress.com/71533/</guid>
-<pubDate>Mon, 28 Sep 2026 19:03:42 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0747.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0747.jpg" alt=""/><p>أكد وزير الموارد البشرية والرعاية الاجتماعية الأستاذ معتصم أحمد صالح اهتمام الدولة بتحسين بيئة الخلاوي وتوفير المقومات الأساسية التي تجعل منها بيئة جاذبة لتعليم وتحفيظ القرآن الكريم إلى جانب تعزيز مظلة الحماية الاجتماعية وتطوير خدمات التأمين الصحي ودعم الشرائح الفقيرة جاء ذلك خلال زيارة الوزير إلى ولاية نهر النيل التي شملت خلاوي الشروق بمحلية الدامر [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260928-WA0747.jpg" alt=""/><p>أكد وزير الموارد البشرية والرعاية الاجتماعية الأستاذ معتصم أحمد صالح اهتمام الدولة بتحسين بيئة الخلاوي وتوفير المقومات الأساسية التي تجعل منها بيئة جاذبة لتعليم وتحفيظ القرآن الكريم إلى جانب تعزيز مظلة الحماية الاجتماعية وتطوير خدمات التأمين الصحي ودعم الشرائح الفقيرة جاء ذلك خلال زيارة الوزير إلى ولاية نهر النيل التي شملت خلاوي الشروق بمحلية الدامر [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*بدعوة من رئيس الاتحاد الأفريقي.. وفد تنسيقية القوى الوطنية يصل بوجمبورا لبحث السلام ورفع تعليق عضوية السودان*</title>
-<link>https://alhayapress.com/71530/</link>
-<guid isPermaLink="true">https://alhayapress.com/71530/</guid>
-<pubDate>Mon, 28 Sep 2026 17:07:26 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/511280_P32CYbKFvF0PWeSEl_6umItEi9dHCvhe.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/511280_P32CYbKFvF0PWeSEl_6umItEi9dHCvhe.jpg" alt=""/><p>وصل وفد تنسيقية القوى الوطنية السودانية، اليوم، إلى العاصمة البورندية بوجمبورا، بدعوة من رئيس الاتحاد الأفريقي، في إطار تحركات التنسيقية الرامية إلى دعم جهود وقف الحرب وإحلال السلام في السودان، إلى جانب بحث ملف تعليق عضوية السودان في الاتحاد الأفريقي. ومن المقرر أن يلتقي الوفد الرئيس البورندي إيفاريست نداييشيمي، لبحث تطورات الأوضاع في السودان، وطرح [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/511280_P32CYbKFvF0PWeSEl_6umItEi9dHCvhe.jpg" alt=""/><p>وصل وفد تنسيقية القوى الوطنية السودانية، اليوم، إلى العاصمة البورندية بوجمبورا، بدعوة من رئيس الاتحاد الأفريقي، في إطار تحركات التنسيقية الرامية إلى دعم جهود وقف الحرب وإحلال السلام في السودان، إلى جانب بحث ملف تعليق عضوية السودان في الاتحاد الأفريقي. ومن المقرر أن يلتقي الوفد الرئيس البورندي إيفاريست نداييشيمي، لبحث تطورات الأوضاع في السودان، وطرح [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*باكثر من (٢٨) مليار جنية وزير الموارد البشرية والرعاية الاجتماعية يدشين نفرة (ينابيع العطاء) بنهر النيل*</title>
-<link>https://alhayapress.com/71524/</link>
-<guid isPermaLink="true">https://alhayapress.com/71524/</guid>
-<pubDate>Mon, 28 Sep 2026 10:26:06 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260927-WA0609.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260927-WA0609.jpg" alt=""/><p>دشّن وزير الموارد البشرية والرعاية الاجتماعية معتصم أحمد صالح ووالي ولاية نهر النيل د. محمد البدوي عبد الماجد نفرة ( ينابيع العطاء ) بحاضرة ولاية نهر النيل الدامر التي نظمها ديوان الزكاة بولاية نهر النيل بحضور الأمين العام لديوان الزكاة د. يحيى أحمد عبد الله القمراوي وقيادات حكومة الولاية والعاملين بديوان الزكاة ولجان الزكاة القاعدية [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260927-WA0609.jpg" alt=""/><p>دشّن وزير الموارد البشرية والرعاية الاجتماعية معتصم أحمد صالح ووالي ولاية نهر النيل د. محمد البدوي عبد الماجد نفرة ( ينابيع العطاء ) بحاضرة ولاية نهر النيل الدامر التي نظمها ديوان الزكاة بولاية نهر النيل بحضور الأمين العام لديوان الزكاة د. يحيى أحمد عبد الله القمراوي وقيادات حكومة الولاية والعاملين بديوان الزكاة ولجان الزكاة القاعدية [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*صرير القلم : د. معاوية عبيد يا ضابط السجن أتزود بنظرة وأرجع أنسجن*</title>
-<link>https://alhayapress.com/71522/</link>
-<guid isPermaLink="true">https://alhayapress.com/71522/</guid>
-<pubDate>Mon, 28 Sep 2026 10:23:56 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/07/IMG-20260704-WA0006_edit_302725218330663.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/07/IMG-20260704-WA0006_edit_302725218330663.jpg" alt=""/><p>كثير من الأغنيات تظل تمشي بين الناس تبحث عن حكاية جديدة تسكنها وعن وجع آخر يمنح كلماتها معنى لم يكن في بال شاعرها يوم كتبها ولعل أغنية ( يا ضابط السجن ) التي كتب كلماتها الإذاعي والشاعر المرهف محمد حامد آدم واحدة من تلك الأغنيات فقد ارتبطت بحسب الرواية المتداولة بتجربة الشاعر في سجن الأبيض [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/07/IMG-20260704-WA0006_edit_302725218330663.jpg" alt=""/><p>كثير من الأغنيات تظل تمشي بين الناس تبحث عن حكاية جديدة تسكنها وعن وجع آخر يمنح كلماتها معنى لم يكن في بال شاعرها يوم كتبها ولعل أغنية ( يا ضابط السجن ) التي كتب كلماتها الإذاعي والشاعر المرهف محمد حامد آدم واحدة من تلك الأغنيات فقد ارتبطت بحسب الرواية المتداولة بتجربة الشاعر في سجن الأبيض [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*القوات المسلحة ترفض اتهامات إثيوبيا بدعم المعارضة*</title>
-<link>https://alhayapress.com/71520/</link>
-<guid isPermaLink="true">https://alhayapress.com/71520/</guid>
-<pubDate>Mon, 28 Sep 2026 10:19:48 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png" alt=""/><p>رفضت القوات المسلحة السودانية اتهامات رئيس أركان قوات الدفاع الوطني الإثيوبية للسودان بدعم المعارضة الإثيوبية، ووصفتها بأنها «مزاعم لا أساس لها من الصحة». وقالت القوات المسلحة، في بيان الأحد، إنها تملك معلومات ووقائع بشأن استمرار دعم وإسناد مليشيا آل دقلو من الأراضي الإثيوبية، مشيرة إلى التدريب والإمداد واستخدام الأراضي الإثيوبية في أنشطة عسكرية، بينها تشغيل [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png" alt=""/><p>رفضت القوات المسلحة السودانية اتهامات رئيس أركان قوات الدفاع الوطني الإثيوبية للسودان بدعم المعارضة الإثيوبية، ووصفتها بأنها «مزاعم لا أساس لها من الصحة». وقالت القوات المسلحة، في بيان الأحد، إنها تملك معلومات ووقائع بشأن استمرار دعم وإسناد مليشيا آل دقلو من الأراضي الإثيوبية، مشيرة إلى التدريب والإمداد واستخدام الأراضي الإثيوبية في أنشطة عسكرية، بينها تشغيل [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*القوات المسلحة تحذر إثيوبيا: اتهاماتكم باطلة ولن نتردد في حماية سيادتنا*</title>
-<link>https://alhayapress.com/71517/</link>
-<guid isPermaLink="true">https://alhayapress.com/71517/</guid>
-<pubDate>Mon, 28 Sep 2026 08:24:43 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/09/IMG_٢٠٢٦٠٩٢٨_٠٠٣٢١٣-1.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG_٢٠٢٦٠٩٢٨_٠٠٣٢١٣-1.jpg" alt=""/><p>الخرطوم – الحياة حذرت القوات المسلحة السودانية رئيس أركان قوات الدفاع الوطني الإثيوبية من الزج باسم السودان في اتهامات باطلة، مؤكدة رفضها القاطع لأي مزاعم تدعي دعم السودان للمعارضة الإثيوبية. وقالت القوات المسلحة إنها تابعت التصريحات الأخيرة لرئيس الأركان الإثيوبي، وما تضمنته من اتهامات للسودان، معتبرة إياها اتهامات لا أساس لها من الصحة. وأضافت أن [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/09/IMG_٢٠٢٦٠٩٢٨_٠٠٣٢١٣-1.jpg" alt=""/><p>الخرطوم – الحياة حذرت القوات المسلحة السودانية رئيس أركان قوات الدفاع الوطني الإثيوبية من الزج باسم السودان في اتهامات باطلة، مؤكدة رفضها القاطع لأي مزاعم تدعي دعم السودان للمعارضة الإثيوبية. وقالت القوات المسلحة إنها تابعت التصريحات الأخيرة لرئيس الأركان الإثيوبي، وما تضمنته من اتهامات للسودان، معتبرة إياها اتهامات لا أساس لها من الصحة. وأضافت أن [&amp;hellip;]</p>]]></content:encoded>
-</item>
-</channel></rss>
+	<title>الحياة اليوم</title>
+	<atom:link href="https://alhayapress.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://alhayapress.com</link>
+	<description>وجه الحقيقة</description>
+	<lastBuildDate>Tue, 29 Sep 2026 20:18:43 +0000</lastBuildDate>
+	<language>ar</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.2</generator>
+
+<image>
+	<url>https://i0.wp.com/alhayapress.com/wp-content/uploads/2022/03/v-icom-1.png?fit=32%2C32&#038;ssl=1</url>
+	<title>الحياة اليوم</title>
+	<link>https://alhayapress.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">203721719</site>	<item>
+		<title>*في ختام زيارته لولاية الجزيرة: وزير الصحة يعقد اجتماع رفيع المستوي لوضع ترتيبات مركز الجزيرة للاورام*</title>
+		<link>https://alhayapress.com/71590/</link>
+					<comments>https://alhayapress.com/71590/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 20:18:43 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71590</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="2560" height="1440" src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg?w=2560&amp;ssl=1 2560w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg?resize=2048%2C1152&amp;ssl=1 2048w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0012.jpg?w=2340&amp;ssl=1 2340w" sizes="(max-width: 2560px) 100vw, 2560px" /></div>الجزيرة – ود مدني انعقد مساء اليوم الثلاثاء بقاعة قصر الضيافة بولاية الجزيرة اجتماع تنسيقي رفيع المستوي لوضع الترتيبات و المعالجات المستدامة لمركز علاج الأورام بالجزيرة ، و ذلك برئاسة وزير الصحة الاتحادي ووالي ولاية الجزيرة وبحضور مدير جامعة الجزيرة و عميد كلية الطب ووزير الصحة بالولاية وعدد من قيادات الصحة وجامعة الجزيرة. أمن الاجتماع [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71590/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71590</post-id>	</item>
+		<item>
+		<title>*فريني: حماية حقوق العاملات أولوية اجتماعية*</title>
+		<link>https://alhayapress.com/71587/</link>
+					<comments>https://alhayapress.com/71587/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 19:29:25 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71587</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="2560" height="1438" src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg?w=2560&amp;ssl=1 2560w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg?resize=1024%2C575&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg?resize=768%2C431&amp;ssl=1 768w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg?resize=1536%2C863&amp;ssl=1 1536w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg?resize=2048%2C1150&amp;ssl=1 2048w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0893.jpg?w=2340&amp;ssl=1 2340w" sizes="(max-width: 2560px) 100vw, 2560px" /></div>أكد وزير التنمية الاجتماعية بولاية الخرطوم، صديق حسن فريني، التزام وزارته برعاية حقوق العاملات وتعزيز حمايتهن وتهيئة بيئة عمل تحفظ كرامتهن وتصون حقوقهن بما يعزز دورهن في الإنتاج والمجتمع. جاء ذلك لدى مشاركته صباح اليوم الإثنين 29 سبتمبر 2026م، في برنامج المائدة المستديرة التي نظمتها جمعية كل المهن التعاونية متعددة الأغراض بالتعاون مع جمعية بيت [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71587/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71587</post-id>	</item>
+		<item>
+		<title>*لقاء سوداني &#8211; روسي بموسكو لتعزيز التعاون الشرطي ومكافحة الجريمة المنظمة*</title>
+		<link>https://alhayapress.com/71583/</link>
+					<comments>https://alhayapress.com/71583/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 18:44:43 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<category><![CDATA[أخبار العالم]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71583</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="883" height="636" src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0827_edit_167965977154360.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0827_edit_167965977154360.jpg?w=883&amp;ssl=1 883w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0827_edit_167965977154360.jpg?resize=300%2C216&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0827_edit_167965977154360.jpg?resize=768%2C553&amp;ssl=1 768w" sizes="(max-width: 883px) 100vw, 883px" /></div>التقى وزير الداخلية الروسي الجنرال فلاديمير كولوكولتسيف، بنظيره السوداني بابكر سمرة مصطفى، على هامش مشاركته في المؤتمر الدولي السادس لمكافحة التطرف المنعقد بموسكو. وبحث الجانبان القضايا الراهنة للتعاون الثنائي في مجالات العمل الشرطي وإنفاذ القانون، حيث أكد الوزير الروسي أن الحوار المنتظم بين الوزارتين يمثل دفعة قوية لتطوير العلاقات بين البلدين. وتطرق اللقاء إلى تنامي [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71583/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71583</post-id>	</item>
+		<item>
+		<title>حزب الشعب الثوري الإثيوبي: حكومة أديس أبابا تستضيف معسكرات للدعم السريع وتسمح بهجمات ضد السودان*</title>
+		<link>https://alhayapress.com/71581/</link>
+					<comments>https://alhayapress.com/71581/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 18:36:58 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71581</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="433" height="192" src="https://alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="الحياة اليوم | وجه الحقيقة" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png?w=433&amp;ssl=1 433w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2022/03/last-logo-1-e1655331525978.png?resize=300%2C133&amp;ssl=1 300w" sizes="auto, (max-width: 433px) 100vw, 433px" /></div>اتهم حزب الشعب الثوري الإثيوبي، في بيان، الحكومة الفيدرالية بانتهاك القانون الدولي ومبدأ احترام سيادة الدول، متهماً إياها باستضافة وفتح معسكرات لمليشيا الدعم السريع التي تحارب الجيش السوداني عبر إقليم بني شنقول قمز. واتهم الحزب الحكومة الإثيوبية باستقبال مسلحين ومرتزقة من جنوب السودان عبر قامبيلا وجنوب إثيوبيا، دون رد فعل منها، مشيراً إلى أن مكونات [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71581/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71581</post-id>	</item>
+		<item>
+		<title>&#8220;أهل القصيم وصلناكم .. تاركو للطيران تعلن إطلاق دوري رياضي للفرق السودانية بمنطقة القصيم*</title>
+		<link>https://alhayapress.com/71578/</link>
+					<comments>https://alhayapress.com/71578/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 16:50:16 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71578</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1280" height="630" src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg?resize=300%2C148&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg?resize=1024%2C504&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0059.jpg?resize=768%2C378&amp;ssl=1 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></div>السعودية : الحياة أعلنت شركة تاركو للطيران عن إطلاق «دوري تاركو للطيران للفرق السودانية بمنطقة القصيم»، بالتعاون مع الرابطة الرياضية السودانية بمنطقة القصيم في مبادرة رياضية تستهدف تعزيز التواصل والتلاقي بين أبناء الجالية السودانية بالمملكة العربية السعودية. وأوضحت الشركة أن منافسات الدوري ستقام خلال الفترة من 8 أكتوبر وحتى 20 نوفمبر 2026، بواقع مباريات أسبوعية [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71578/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71578</post-id>	</item>
+		<item>
+		<title>وزيرا المالية السوداني والسعودي يبحثان تعزيز الشراكة الاقتصادية ودعم جهود التعافي في السودان</title>
+		<link>https://alhayapress.com/71574/</link>
+					<comments>https://alhayapress.com/71574/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 15:49:58 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71574</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1217" height="642" src="https://alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg?w=1217&amp;ssl=1 1217w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg?resize=300%2C158&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg?resize=1024%2C540&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/FB_IMG_1790696764037_edit_163119420713292.jpg?resize=768%2C405&amp;ssl=1 768w" sizes="auto, (max-width: 1217px) 100vw, 1217px" /></div>التقى وزير المالية ، معالي د. جبريل إبراهيم، ، نظيره وزير المالية بالمملكة العربية السعودية، معالي الأستاذ محمد بن عبدالله الجدعان، وذلك على هامش الاجتماعات السنوية للبنك الآسيوي للاستثمار في البنية التحتية (AIIB) المنعقدة في الدوحة، بحضور نائب محافظ بنك السودان المركزي، د. سامي عبد الحفيظ. وبحث الجانبان سبل تعزيز العلاقات الاقتصادية والمالية بين السودان [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71574/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71574</post-id>	</item>
+		<item>
+		<title>*بدء دورة تدريب المدربين على إعداد التقارير التغذوية بالتكامل مع نظام المعلومات الصحية*</title>
+		<link>https://alhayapress.com/71569/</link>
+					<comments>https://alhayapress.com/71569/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 14:24:05 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71569</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="2560" height="1703" src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg?w=2560&amp;ssl=1 2560w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg?resize=1024%2C681&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg?resize=768%2C511&amp;ssl=1 768w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg?resize=1536%2C1022&amp;ssl=1 1536w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg?resize=2048%2C1362&amp;ssl=1 2048w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0053.jpg?w=2340&amp;ssl=1 2340w" sizes="auto, (max-width: 2560px) 100vw, 2560px" /></div>. برنامج التغذية : التدريب ياتي لتجويد البيانات والتأكد من وصولها في الوقت المناسب. في إطار جهود برنامج التغذية القومي بوزارة الصحة الاتحادية،لتجويد التقارير،بدأت اليوم السبت بالوزارة، دورة تدريب المدربين على إعداد التقارير بالتكامل مع نظام المعلومات الصحية على مستوى المحليات(DHIS2) ، مستهدفة الكوادر بالبرنامج وإدارة المعلومات الصحية،بالتعاون مع منظمة اليونسيف. وقالت مديرة البرنامج بالإنابة، [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71569/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71569</post-id>	</item>
+		<item>
+		<title>*ضربة أمنية كبرى تطيح بمخازن الأغذية المنتهية في الخرطوم*</title>
+		<link>https://alhayapress.com/71568/</link>
+					<comments>https://alhayapress.com/71568/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 14:23:38 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<category><![CDATA[جريمة]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71568</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="660" height="320" src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA04421_edit_160324080767223.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA04421_edit_160324080767223.jpg?w=660&amp;ssl=1 660w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA04421_edit_160324080767223.jpg?resize=300%2C145&amp;ssl=1 300w" sizes="auto, (max-width: 660px) 100vw, 660px" /></div>في عملية أمنية نوعية وصفّت بأنها الأكبر من نوعها، تمكن فريق ميداني مشترك يضم جهاز الأمن الاقتصادي، والخلية الأمنية المشتركة بولاية الخرطوم، والهيئة السودانية للمواصفات والمقاييس بمكتب أم درمان، من الإطاحة بشبكة إجرامية متخصصة في تزوير وترويج المواد الغذائية منتهية الصلاحية. وجاءت العملية بعد ضبط شاحنة نقل (دفار) محملة بكميات كبيرة من السلع الفاسدة في [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71568/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71568</post-id>	</item>
+		<item>
+		<title>​ورشة &#8220;الأرصاد الجوية&#8221; تُوصي بتوظيف الذكاء الاصطناعي وترجمة التنبيهات للغات المحلية لبناء نظام إنذار مبكر شامل</title>
+		<link>https://alhayapress.com/71565/</link>
+					<comments>https://alhayapress.com/71565/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 13:34:35 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71565</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1224" height="736" src="https://alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg?w=1224&amp;ssl=1 1224w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg?resize=300%2C180&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg?resize=1024%2C616&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/Screenshot_20260929_163402_com_facebook_katana_ImmersivePortraitActivity.jpg?resize=768%2C462&amp;ssl=1 768w" sizes="auto, (max-width: 1224px) 100vw, 1224px" /></div>​دعت ورشة عمل متخصصة عقدتها الهيئة العامة للأرصاد الجوية السودانية إلى ضرورة تطوير الخطاب الإعلامي المناخي وتوسيع نطاق وصول التنبيهات والإنذارات المبكرة لكافة أطياف المجتمع، مستعرضةً حزمة من المخرجات والتوصيات الإستراتيجية للنهوض بالإعلام الأرصادي. ​أبرز التوصيات والمخرجات: ​توسيع وسائل النشر والتغطية الشاملة: التأكيد على توظيف المنصات الرقمية، الإذاعات الولائية، والإعلام المرئي لضمان وصول التنبيهات للمناطق [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71565/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71565</post-id>	</item>
+		<item>
+		<title>*وزير الموارد البشرية يقف على أوضاع النازحين بمعسكر النهضة ويوجه بمعالجة الاحتياجات العاجلة*</title>
+		<link>https://alhayapress.com/71562/</link>
+					<comments>https://alhayapress.com/71562/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Tue, 29 Sep 2026 13:14:13 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71562</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="2560" height="1437" src="https://alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg?w=2560&amp;ssl=1 2560w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg?resize=300%2C168&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg?resize=1024%2C575&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg?resize=768%2C431&amp;ssl=1 768w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg?resize=1536%2C862&amp;ssl=1 1536w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg?resize=2048%2C1150&amp;ssl=1 2048w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/09/IMG-20260929-WA0575.jpg?w=2340&amp;ssl=1 2340w" sizes="auto, (max-width: 2560px) 100vw, 2560px" /></div>وقف وزير الموارد البشرية والرعاية الاجتماعية معتصم أحمد صالح خلال زيارته لولاية نهر النيل التي تشمل عدداً من المؤسسات والمرافق والخدمات الاجتماعية والصحية ومشروعات ديوان الزكاة والتأمين الصحي بالولاية وقف على أوضاع النازحين بمعسكر النهضة بمحلية عطبرة واستمع إلى احتياجاتهم ومطالبهم واطلع ميدانياً على الخدمات المقدمة لهم والتحديات التي تواجه المعسكر ورافق الوزير خلال الزيارة [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71562/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71562</post-id>	</item>
+	</channel>
+</rss>
