@@ -7,20 +7,5 @@
  },
  "riadynews.com": {
   "via": "direct"
- },
- "almarkazia.com": {
-  "via": "proxy:2"
- },
- "newslb.org": {
-  "via": "direct"
- },
- "saharazoom.com": {
-  "via": "direct"
- },
- "www.saharaexpo.com": {
-  "via": "direct"
- },
- "alhayapress.com": {
-  "via": "direct"
  }
 }
