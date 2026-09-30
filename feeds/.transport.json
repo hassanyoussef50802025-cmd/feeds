@@ -10,6 +10,9 @@
  "riadynews.com": {
   "via": "direct"
  },
+ "almarkazia.com": {
+  "via": "proxy:2"
+ },
  "newslb.org": {
   "via": "direct"
  },
