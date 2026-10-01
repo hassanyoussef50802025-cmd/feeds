@@ -5,7 +5,7 @@
 <link>https://mugtama.com/</link>
 <description>خلاصة تُحدَّث تلقائيًا من مجتمع</description>
 <language>ar</language>
-<lastBuildDate>Thu, 01 Oct 2026 08:37:53 GMT</lastBuildDate>
+<lastBuildDate>Thu, 01 Oct 2026 09:00:59 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: dom -->
 <atom:link href="https://mugtama.com/" rel="self" type="application/rss+xml"/>
@@ -76,6 +76,15 @@
 <description>القوة الحقيقية.. حين يصبح امتلاك النفس بطولة</description>
 </item>
 <item>
+<title>الطبيبة سيتي حسبمة شراكة في صناعة الحضارة</title>
+<link>https://mugtama.com/articles/%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A8%D8%A9_%D8%B3%D9%8A%D8%AA%D9%8A_%D8%AD%D8%B3%D8%A8%D9%85%D8%A9_%D8%B4%D8%B1%D8%A7%D9%83%D8%A9_%D9%81%D9%8A_%D8%B5%D9%86%D8%A7%D8%B9%D8%A9_%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9</link>
+<guid isPermaLink="true">https://mugtama.com/articles/%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A8%D8%A9_%D8%B3%D9%8A%D8%AA%D9%8A_%D8%AD%D8%B3%D8%A8%D9%85%D8%A9_%D8%B4%D8%B1%D8%A7%D9%83%D8%A9_%D9%81%D9%8A_%D8%B5%D9%86%D8%A7%D8%B9%D8%A9_%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9</guid>
+<pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
+<media:thumbnail url="https://mugtama.com/storage/uploads/hoceima.webp"/>
+<description><![CDATA[<img src="https://mugtama.com/storage/uploads/hoceima.webp" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/hoceima.webp" alt=""/>]]></content:encoded>
+</item>
+<item>
 <title>هل ينتقض الوضوء بالرعاف</title>
 <link>https://mugtama.com/articles/%D9%87%D9%84_%D9%8A%D9%86%D8%AA%D9%82%D8%B6_%D8%A7%D9%84%D9%88%D8%B6%D9%88%D8%A1_%D8%A8%D8%A7%D9%84%D8%B1%D8%B9%D8%A7%D9%81</link>
 <guid isPermaLink="true">https://mugtama.com/articles/%D9%87%D9%84_%D9%8A%D9%86%D8%AA%D9%82%D8%B6_%D8%A7%D9%84%D9%88%D8%B6%D9%88%D8%A1_%D8%A8%D8%A7%D9%84%D8%B1%D8%B9%D8%A7%D9%81</guid>
@@ -128,14 +137,5 @@
 <media:thumbnail url="https://mugtama.com/storage/uploads/azerbaijan-reimposes-ban-on-wearing-the-hijab-in-schools.webp"/>
 <description><![CDATA[<img src="https://mugtama.com/storage/uploads/azerbaijan-reimposes-ban-on-wearing-the-hijab-in-schools.webp" alt=""/>]]></description>
 <content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/azerbaijan-reimposes-ban-on-wearing-the-hijab-in-schools.webp" alt=""/>]]></content:encoded>
-</item>
-<item>
-<title>حقائب الأبناء مثقلة بأحلام الآباء</title>
-<link>https://mugtama.com/articles/%D8%AD%D9%82%D8%A7%D8%A6%D8%A8_%D8%A7%D9%84%D8%A3%D8%A8%D9%86%D8%A7%D8%A1_%D9%85%D8%AB%D9%82%D9%84%D8%A9_%D8%A8%D8%A3%D8%AD%D9%84%D8%A7%D9%85_%D8%A7%D9%84%D8%A2%D8%A8%D8%A7%D8%A1_</link>
-<guid isPermaLink="true">https://mugtama.com/articles/%D8%AD%D9%82%D8%A7%D8%A6%D8%A8_%D8%A7%D9%84%D8%A3%D8%A8%D9%86%D8%A7%D8%A1_%D9%85%D8%AB%D9%82%D9%84%D8%A9_%D8%A8%D8%A3%D8%AD%D9%84%D8%A7%D9%85_%D8%A7%D9%84%D8%A2%D8%A8%D8%A7%D8%A1_</guid>
-<pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
-<media:thumbnail url="https://mugtama.com/storage/uploads/childrens-schoolbags-and-parents-dreams.webp"/>
-<description><![CDATA[<img src="https://mugtama.com/storage/uploads/childrens-schoolbags-and-parents-dreams.webp" alt=""/>]]></description>
-<content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/childrens-schoolbags-and-parents-dreams.webp" alt=""/>]]></content:encoded>
 </item>
 </channel></rss>
