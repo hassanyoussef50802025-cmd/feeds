@@ -1,100 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
 <channel>
-<title>newslb.org</title>
-<link>https://newslb.org/</link>
-<description>خلاصة تُحدَّث تلقائيًا من newslb.org</description>
-<language>ar</language>
-<lastBuildDate>Sun, 04 Oct 2026 05:35:28 GMT</lastBuildDate>
-<generator>RSS Worker</generator>
-<!-- rss-src: dom -->
-<atom:link href="https://newslb.org/" rel="self" type="application/rss+xml"/>
-<item>
-<title>النائب ايهاب مطر من المؤسف أن نرى يومياً مشاهد النفايات المكدّسة في شوارع مدينتنا. فما يحصل في طرابلس لا يليق بها ولا بأهلها، ومن حق أهلنا أن يعيشوا في مدينة نظيفة وبيئة سليمة</title>
-<link>https://newslb.org/93849/</link>
-<guid isPermaLink="true">https://newslb.org/93849/</guid>
-<pubDate>Sat, 03 Oct 2026 12:22:36 +0000</pubDate>
-<description>النائب ايهاب مطر من المؤسف أن نرى يومياً مشاهد النفايات المكدّسة في شوارع مدينتنا. فما يحصل في طرابلس لا يليق بها ولا بأهلها، ومن حق أهلنا أن يعيشوا في مدينة نظيفة وبيئة سليمة</description>
-</item>
-<item>
-<title>نداء عاجل وسريع إلى بلدية طرابلس نطالب البلدية والجهات المعنية بالكشف الفوري على مبنى سنتر عزمي مقابل مقهى توب صح صح، بعد ملاحظة تساقط بلاط من واجهة المبنى، ما يشكّل خطرًا مباشرًا على سلامة المواطنين والمارة الذين يعبرون…</title>
-<link>https://newslb.org/93837/</link>
-<guid isPermaLink="true">https://newslb.org/93837/</guid>
-<pubDate>Sat, 03 Oct 2026 05:57:28 +0000</pubDate>
-<description>نداء عاجل وسريع إلى بلدية طرابلس نطالب البلدية والجهات المعنية بالكشف الفوري على مبنى سنتر عزمي مقابل مقهى توب صح صح، بعد ملاحظة تساقط بلاط من واجهة المبنى، ما يشكّل خطرًا مباشرًا على سلامة المواطنين والمارة الذين يعبرون…</description>
-</item>
-<item>
-<title>طرابلس تختنق بالدخان الأسود.. حرق الإطارات يتكرر يومياً يشهد سقي التبانة في طرابلس فجر اليوم حرقًا متكررًا للإطارات بهدف استخراج النحاس،</title>
-<link>https://newslb.org/93829/</link>
-<guid isPermaLink="true">https://newslb.org/93829/</guid>
-<pubDate>Sat, 03 Oct 2026 05:38:03 +0000</pubDate>
-<description>طرابلس تختنق بالدخان الأسود.. حرق الإطارات يتكرر يومياً يشهد سقي التبانة في طرابلس فجر اليوم حرقًا متكررًا للإطارات بهدف استخراج النحاس،</description>
-</item>
-<item>
-<title>زومبي يغزون ساحة النور.. والحقيقة صادمة!</title>
-<link>https://newslb.org/93811/</link>
-<guid isPermaLink="true">https://newslb.org/93811/</guid>
-<pubDate>Fri, 02 Oct 2026 07:41:09 GMT</pubDate>
-<description>زومبي يغزون ساحة النور.. والحقيقة صادمة!</description>
-</item>
-<item>
-<title>قد تظن للوهلة الأولى أن هذه امرأة مسلمة محجبة تجلس بجوار ابنتها الشابة بكل حنان وبراءة! لكن ستكتشف عكس هذا تماماً وستصدم عندما تعرف أنك أمام أخطر وأخبث امرأة …</title>
-<link>https://newslb.org/93762/</link>
-<guid isPermaLink="true">https://newslb.org/93762/</guid>
-<pubDate>Wed, 30 Sep 2026 07:44:43 GMT</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية قد تظن للوهلة الأولى أن هذه امرأة مسلمة محجبة تجلس بجوار ابنتها الشابة بكل حنان وبراءة! لكن ستكتشف عكس هذا تماماً وستصدم عندما تعرف أنك أمام أخطر وأخبث امرأة …سبتمبر 30, 2026312 زيارة1 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية قد تظن للوهلة الأولى أن هذه امرأة مسلمة محجبة تجلس بجوار ابنتها الشابة بكل حنان وبراءة! لكن ستكتشف عكس هذا تماماً وستصدم عندما تعرف أنك أمام أخطر وأخبث امرأة …سبتمبر 30, 2026312 زيارة1 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>غالانت يكشف: المخطط الرئيسي استهدف أجهزة الاتصال لدى “حزب الله” والبيجر فجرت بعد خطر انكشافها</title>
-<link>https://newslb.org/93733/</link>
-<guid isPermaLink="true">https://newslb.org/93733/</guid>
-<pubDate>Wed, 30 Sep 2026 04:11:35 GMT</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية غالانت يكشف: المخطط الرئيسي استهدف أجهزة الاتصال لدى “حزب الله” والبيجر فجرت بعد خطر انكشافهاسبتمبر 30, 202615 زيارة1 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية غالانت يكشف: المخطط الرئيسي استهدف أجهزة الاتصال لدى “حزب الله” والبيجر فجرت بعد خطر انكشافهاسبتمبر 30, 202615 زيارة1 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>النائب أديب عبد المسيح: «هناك معلومات وبوادر تشير إلى جهوزية لدى الحـ.zب للنزول إلى الشارع في أي وقت، في مشهد يشبه أحداث 7 أيار. وعلى الدولة أن تحتاط وتستبق الأمور، لأن البلد لن يتحمّل 7 أيار جديدًا».</title>
-<link>https://newslb.org/93730/</link>
-<guid isPermaLink="true">https://newslb.org/93730/</guid>
-<pubDate>Tue, 29 Sep 2026 19:38:37 GMT</pubDate>
-<description>النائب أديب عبد المسيح: «هناك معلومات وبوادر تشير إلى جهوزية لدى الحـ.zب للنزول إلى الشارع في أي وقت، في مشهد يشبه أحداث 7 أيار. وعلى الدولة أن تحتاط وتستبق الأمور، لأن البلد لن يتحمّل 7 أيار جديدًا».</description>
-</item>
-<item>
-<title>كتب النائب السابق مصباح الأحدب في سلسلة تغريدات عبر منصة إكس: الأحدب: انتبهوا ممن يحاول استغلال وجعكم ومطالبكم ليعيد إلى السلطة تحالف قوى الفساد والسلاح غير الشرعي.</title>
-<link>https://newslb.org/93722/</link>
-<guid isPermaLink="true">https://newslb.org/93722/</guid>
-<pubDate>Tue, 29 Sep 2026 16:33:34 GMT</pubDate>
-<description>كتب النائب السابق مصباح الأحدب في سلسلة تغريدات عبر منصة إكس: الأحدب: انتبهوا ممن يحاول استغلال وجعكم ومطالبكم ليعيد إلى السلطة تحالف قوى الفساد والسلاح غير الشرعي.</description>
-</item>
-<item>
-<title>مورغان اورتاغوس: الحـ ..ـzب هو سرطان لبنان واستئصال السرطان يحتاج إلى وقت وعلاج. وهذا بالضبط ما يتعيّن على الحكومة اللبنانية القيام به”.</title>
-<link>https://newslb.org/93688/</link>
-<guid isPermaLink="true">https://newslb.org/93688/</guid>
-<pubDate>Tue, 29 Sep 2026 07:34:55 GMT</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية مورغان اورتاغوس: الحـ ..ـzب هو سرطان لبنان واستئصال السرطان يحتاج إلى وقت وعلاج. وهذا بالضبط ما يتعيّن على الحكومة اللبنانية القيام به”.سبتمبر 29, 20268 زيارة1 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية مورغان اورتاغوس: الحـ ..ـzب هو سرطان لبنان واستئصال السرطان يحتاج إلى وقت وعلاج. وهذا بالضبط ما يتعيّن على الحكومة اللبنانية القيام به”.سبتمبر 29, 20268 زيارة1 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>جـولـة عـلـى أبـــرز مـسـتـجـدات حول العالم مع أخـبــار اليوم*</title>
-<link>https://newslb.org/93661/</link>
-<guid isPermaLink="true">https://newslb.org/93661/</guid>
-<pubDate>Mon, 28 Sep 2026 06:22:30 GMT</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية *جـولـة عـلـى أبـــرز مـسـتـجـدات حول العالم مع أخـبــار اليوم*سبتمبر 28, 20269 زيارة1 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية *جـولـة عـلـى أبـــرز مـسـتـجـدات حول العالم مع أخـبــار اليوم*سبتمبر 28, 20269 زيارة1 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>لقاءات سياسية ونيابية وديبلوماسية للرئيس عون ورياشي موفدا من جعجع مخزومي :مصلحة البلد يجب أن تكون المرجعية الوحيدة لقراراتنا الوطنية</title>
-<link>https://newslb.org/93496/</link>
-<guid isPermaLink="true">https://newslb.org/93496/</guid>
-<pubDate>Thu, 03 Sep 2026 11:41:18 GMT</pubDate>
-<description>لقاءات سياسية ونيابية وديبلوماسية للرئيس عون ورياشي موفدا من جعجع مخزومي :مصلحة البلد يجب أن تكون المرجعية الوحيدة لقراراتنا الوطنية</description>
-</item>
-<item>
-<title>أوقاف عكار تشكر المعزّين بوالدة المفتي زكريا وتنفي حصول خلاف خلال التعازي وتؤكد رفض الفتنة</title>
-<link>https://newslb.org/93493/</link>
-<guid isPermaLink="true">https://newslb.org/93493/</guid>
-<pubDate>Thu, 03 Sep 2026 11:31:28 GMT</pubDate>
-<description>أوقاف عكار تشكر المعزّين بوالدة المفتي زكريا وتنفي حصول خلاف خلال التعازي وتؤكد رفض الفتنة</description>
-</item>
-</channel></rss>
+	<title>
+	تعليقات لموقع موقع لبنان الاخباري	</title>
+	<atom:link href="https://newslb.org/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://newslb.org/</link>
+	<description>منصّة إعلاميّة لبنانيّة عربيّة</description>
+	<lastBuildDate>Sat, 03 Oct 2026 15:48:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.2</generator>
+</channel>
+</rss>
