@@ -641,7 +641,17 @@ function pickDate(el) {
     const d = take(attrOf(e, "title") || "");
     if (d) return d;
   }
-  return take(textOf(el) || "");
+  /* v23: كان يقرأ تاريخًا من نص العنصر كله، وعنوان الخبر كثيرًا ما يحمل تاريخًا داخل نصّه (مثل
+     «مسيرة في 22 أكتوبر» أو «4.55% في سبتمبر») فيُلتقط خطأً كتاريخ نشر ويظهر الخبر قديمًا. الآن
+     نفحص فقط العناصر الصغيرة (≤ 48 حرفًا) التي لا تحتوي رابطًا ولا عناصر بداخلها. */
+  for (const e of qsa(el, "span,em,i,b,strong,small,div,p,li,time,label")) {
+    if (q1(e, "a,span,em,i,b,strong,small,div,p,li,time,label")) continue;
+    const txt = normText(textOf(e) || "");
+    if (!txt || txt.length > 48) continue;
+    const d = take(txt);
+    if (d) return d;
+  }
+  return null;
 }
 
 function normText(s) { return String(s == null ? "" : s).replace(/\s+/g, " ").replace(/^[•·▪◦*\-–—|]+/, "").trim(); }
@@ -1893,7 +1903,44 @@ async function loadFeedList() {
   return { list: [...byUrl.values()], fromTool };
 }
 
+/* ---------- v23: جسور تويتر (Nitter) ----------
+   خلاصات تويتر تأتي عبر جسور Nitter المجانية، وهي تتبدّل وتسقط باستمرار. الزاحف يعرف الآن أن الرابط
+   جسر تويتر، فيجرّب عدة جسور كل دورة ويأخذ أول جسر يعطي خلاصة صحيحة، وإن سقطت كلها يُبقي آخر تغريدات
+   منشورة كما هي (مسار الخطأ المعتاد) بدل أن يفقدها. */
+const NITTER_HOST_RE = /(^|\.)((nitter|twiiit|xcancel|lightbrd)\.[a-z0-9.-]+|bird\.trom\.tf)$/i;
+const NITTER_MIRRORS = ["https://twiiit.com", "https://nitter.cz", "https://nitter.poast.org", "https://nitter.privacyredirect.com"];
+function isNitterUrl(u) {
+  try { return NITTER_HOST_RE.test(new URL(u).hostname); } catch (e) { return false; }
+}
+function nitterVariants(u) {
+  const out = [];
+  let path = "";
+  try { path = new URL(u).pathname; } catch (e) { return out; }
+  if (!/\/rss\/?$/.test(path)) return out;
+  const seen = new Set();
+  for (const cand of [u, ...NITTER_MIRRORS.map((b) => b.replace(/\/+$/, "") + path)]) {
+    try {
+      const host = new URL(cand).hostname.toLowerCase();
+      if (seen.has(host)) continue;
+      seen.add(host);
+      out.push(cand);
+    } catch (e) {}
+  }
+  return out;
+}
+
 async function scrapeWithRetry(url) {
+  if (isNitterUrl(url)) {
+    const variants = nitterVariants(url);
+    let lastErr = "لا مسار /rss";
+    for (const v of variants) {
+      const out = await buildFeed(v, v, new URLSearchParams()).catch((e) => ({ error: "استثناء: " + (e && e.message ? e.message : String(e)) }));
+      if (out && out.passthrough) { console.log("   تويتر: نجح الجسر " + new URL(v).hostname); return out; }
+      lastErr = (out && out.error) || "لم يصل كخلاصة";
+      console.log("   تويتر: فشل الجسر " + new URL(v).hostname + " (" + lastErr + ")");
+    }
+    return { error: "كل جسور تويتر فشلت (" + lastErr + ")" };
+  }
   FETCH_DEADLINE = Date.now() + 150000;
   let out = await buildFeed(url, url, new URLSearchParams()).catch((e) => ({ error: "استثناء: " + (e && e.message ? e.message : String(e)) }));
   if (out && out.error) {
