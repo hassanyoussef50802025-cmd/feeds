@@ -8,11 +8,14 @@
  "riadynews.com": {
   "via": "direct"
  },
+ "www.latinamericanewsagency.com": {
+  "via": "direct"
+ },
  "almarkazia.com": {
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "proxy:2"
+  "via": "direct"
  },
  "saharazoom.com": {
   "via": "direct"
