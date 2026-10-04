@@ -5,7 +5,7 @@
 <link>https://mugtama.com/</link>
 <description>خلاصة تُحدَّث تلقائيًا من مجتمع</description>
 <language>ar</language>
-<lastBuildDate>Sun, 04 Oct 2026 09:56:29 GMT</lastBuildDate>
+<lastBuildDate>Sun, 04 Oct 2026 10:25:48 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: dom -->
 <atom:link href="https://mugtama.com/" rel="self" type="application/rss+xml"/>
@@ -55,6 +55,13 @@
 <content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/salim-ibn-abd-allah-the-jurist-who-carried-knowledge-with-a-working-hand.webp" alt=""/>]]></content:encoded>
 </item>
 <item>
+<title>التمذهب والاجتهاد عند الإمام القرضاوي.. هل كان لامذهبياً؟</title>
+<link>https://mugtama.com/articles/%D8%A7%D9%84%D8%AA%D9%85%D8%B0%D9%87%D8%A8_%D9%88%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%87%D8%A7%D8%AF_%D8%B9%D9%86%D8%AF_%D8%A7%D9%84_%D9%85%D8%A7%D9%85_%D8%A7%D9%84%D9%82%D8%B1%D8%B6%D8%A7%D9%88%D9%8A_%D9%87%D9%84_%D9%83%D8%A7%D9%86_%D9%84%D8%A7%D9%85%D8%B0%D9%87%D8%A8%D9%8A_%D8%A7_</link>
+<guid isPermaLink="true">https://mugtama.com/articles/%D8%A7%D9%84%D8%AA%D9%85%D8%B0%D9%87%D8%A8_%D9%88%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%87%D8%A7%D8%AF_%D8%B9%D9%86%D8%AF_%D8%A7%D9%84_%D9%85%D8%A7%D9%85_%D8%A7%D9%84%D9%82%D8%B1%D8%B6%D8%A7%D9%88%D9%8A_%D9%87%D9%84_%D9%83%D8%A7%D9%86_%D9%84%D8%A7%D9%85%D8%B0%D9%87%D8%A8%D9%8A_%D8%A7_</guid>
+<pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+<description>التمذهب والاجتهاد عند الإمام القرضاوي.. هل كان لامذهبياً؟</description>
+</item>
+<item>
 <title>المسجد الأقصى.. المقدَّس الذي يوقظ الإرادة</title>
 <link>https://mugtama.com/articles/%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89_%D8%A7%D9%84%D9%85%D9%82%D8%AF_%D8%B3_%D8%A7%D9%84%D8%B0%D9%8A_%D9%8A%D9%88%D9%82%D8%B8_%D8%A7%D9%84%D8%A5_%D8%B1%D8%A7%D8%AF%D8%A9</link>
 <guid isPermaLink="true">https://mugtama.com/articles/%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D9%89_%D8%A7%D9%84%D9%85%D9%82%D8%AF_%D8%B3_%D8%A7%D9%84%D8%B0%D9%8A_%D9%8A%D9%88%D9%82%D8%B8_%D8%A7%D9%84%D8%A5_%D8%B1%D8%A7%D8%AF%D8%A9</guid>
@@ -87,15 +94,6 @@
 <media:thumbnail url="https://mugtama.com/storage/uploads/between-human-dignity-and-the-sanctity-of-monotheism.webp"/>
 <description><![CDATA[<img src="https://mugtama.com/storage/uploads/between-human-dignity-and-the-sanctity-of-monotheism.webp" alt=""/>]]></description>
 <content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/between-human-dignity-and-the-sanctity-of-monotheism.webp" alt=""/>]]></content:encoded>
-</item>
-<item>
-<title>يوميات متقاعد 70</title>
-<link>https://mugtama.com/articles/%D9%8A%D9%88%D9%85%D9%8A%D8%A7%D8%AA_%D9%85%D8%AA%D9%82%D8%A7%D8%B9%D8%AF_70_</link>
-<guid isPermaLink="true">https://mugtama.com/articles/%D9%8A%D9%88%D9%85%D9%8A%D8%A7%D8%AA_%D9%85%D8%AA%D9%82%D8%A7%D8%B9%D8%AF_70_</guid>
-<pubDate>Fri, 02 Oct 2026 22:45:44 GMT</pubDate>
-<media:thumbnail url="https://mugtama.com/storage/uploads/diary-of-a-retiree.webp"/>
-<description><![CDATA[<img src="https://mugtama.com/storage/uploads/diary-of-a-retiree.webp" alt=""/>]]></description>
-<content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/diary-of-a-retiree.webp" alt=""/>]]></content:encoded>
 </item>
 <item>
 <title>سطوة الاستشراق على العقل الأدبي العربي 16</title>
@@ -132,5 +130,14 @@
 <media:thumbnail url="https://mugtama.com/storage/uploads/al-hoceima.webp"/>
 <description><![CDATA[<img src="https://mugtama.com/storage/uploads/al-hoceima.webp" alt=""/>]]></description>
 <content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/al-hoceima.webp" alt=""/>]]></content:encoded>
+</item>
+<item>
+<title>هل ينتقض الوضوء بالرعاف</title>
+<link>https://mugtama.com/articles/%D9%87%D9%84_%D9%8A%D9%86%D8%AA%D9%82%D8%B6_%D8%A7%D9%84%D9%88%D8%B6%D9%88%D8%A1_%D8%A8%D8%A7%D9%84%D8%B1%D8%B9%D8%A7%D9%81</link>
+<guid isPermaLink="true">https://mugtama.com/articles/%D9%87%D9%84_%D9%8A%D9%86%D8%AA%D9%82%D8%B6_%D8%A7%D9%84%D9%88%D8%B6%D9%88%D8%A1_%D8%A8%D8%A7%D9%84%D8%B1%D8%B9%D8%A7%D9%81</guid>
+<pubDate>Mon, 28 Sep 2026 21:00:00 GMT</pubDate>
+<media:thumbnail url="https://mugtama.com/storage/uploads/does-a-nosebleed-invalidate-wudu.webp"/>
+<description><![CDATA[<img src="https://mugtama.com/storage/uploads/does-a-nosebleed-invalidate-wudu.webp" alt=""/>]]></description>
+<content:encoded><![CDATA[<img src="https://mugtama.com/storage/uploads/does-a-nosebleed-invalidate-wudu.webp" alt=""/>]]></content:encoded>
 </item>
 </channel></rss>
