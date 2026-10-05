@@ -45,6 +45,12 @@
  *
  *
  * نسخة 22 (إصلاح ما كشفته التجربة على المنشور فعليًا): (١) المواقع التي تحجب خوادم الجلب وتُحوّل
+ * نسخة 24 (الشعب أونلاين متجمدة منذ 4 أكتوبر): ملف .diag.txt أظهر أن الموقع خلف كلاودفلير
+ * يحجب كل مراكز البيانات، وأن أرشيف الإنترنت — مصدرنا الاحتياطي الوحيد — بدأ يردّ 429
+ * «suspected abusive bot» لأن مسارين مكررين يطرقانه كل ~15 دقيقة. (١) تهدئة 3 ساعات لمسار
+ * الأرشيف عند أي 429 بدل زيادة الطرق؛ (٢) أقرب نسخة طازجة (<6 ساعات) تُؤخذ مباشرة بلا طلب
+ * التقاط جديد المكلف؛ (٣) وسيط إضافي أخير corsproxy.io؛ (٤) أُزيل الجدول المكرر من feeds.yml
+ * (زر يدوي فقط) فتوقفت التعارضات والعلامات الحمراء وتضاعف الضغط.
  *   الرابط إلى نطاق خدمة الحماية (جرّبناه: newslb.org ⇒ recaptcha.cloud) كانت تُجرَّب خلاصتها على
  *   النطاق الخطأ فتفشل كلها رغم أن خلاصة الموقع نفسها تعمل؛ الآن نُثبّت النطاق الأصلي. (٢) تنقية
  *   روابط جوجل تُصلح الآن رابط القناة ووصفها أيضًا (كان النداء ينسى خياراته فتبقى الخلاصة الفارغة
@@ -1195,7 +1201,9 @@ const PROXY_BUILDERS = [
     "?origin=" + encodeURIComponent(PERCHANCE_ORIGIN) + "&generator=" + PERCHANCE_GENERATOR, {}],
   [(u) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u), {}],
   [(u) => "https://r.jina.ai/" + u, { "x-respond-with": "html" }],
-  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}]
+  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}],
+  /* v24: وسيط إضافي أخير لمواقع كلاودفلير. */
+  [(u) => "https://corsproxy.io/?url=" + encodeURIComponent(u), {}]
 ];
 
 /* الوسيط الذي نجح مع نطاق معيّن يُتذكَّر لبقية الدورة: المواقع المحجوبة تُطلب عدة مرات في الدورة
@@ -1674,6 +1682,25 @@ async function buildFeed(targetUrl, selfUrl, params) {
    التقاط جديد. وإن لم نجد طابع زمني في ردّ الحفظ نسأل واجهة الأرشيف عن أقرب نسخة، وإن لم تُقرأ
    النسخة الخام نقرأ النسخة المعروضة ونُزيل لفّتها (/web/<ts>/) عن الروابط. */
 const WB_REUSE_MS = 30 * 60000;
+/* v24: أرشيف الإنترنت بدأ يردّ 429 «suspected abusive bot» على الدورات (نطرقه كل ~15 دقيقة من
+   مسارين مكررين)، فقطع مصدرنا الاحتياطي الوحيد لمواقع كلاودفلير. فإن ردّ بأي 429 دخلنا تهدئة
+   3 ساعات نتخطى فيها مسار الأرشيف تمامًا بدل أن نزيده طرقًا، ونسأل عن أقرب نسخة أولًا فإن
+   كانت أحدث من 6 ساعات أخذناها مباشرة بلا طلب التقاط جديد (المكلف). */
+const WB_FRESH_ENOUGH_MS = 6 * 3600000;
+let ARCHIVE_COOLDOWN_UNTIL = 0;
+function archiveBlocked(f) {
+  if (!f) return false;
+  if (f.status === 429) return true;
+  return /abusive bot|temporarily blocked|has been blocked/i.test(String((f.text || "").slice(0, 600)));
+}
+function noteArchive429(where, f) {
+  if (archiveBlocked(f)) {
+    ARCHIVE_COOLDOWN_UNTIL = Date.now() + 3 * 3600000;
+    diag("أرشيف الإنترنت حدّ من الوصول (429) عند " + where + " — تهدئة 3 ساعات.");
+    return true;
+  }
+  return false;
+}
 /* v19: عمر أقصى للالتقاط الذي نقبله. هذا أهم ضابط في النسخة: أرشيف الإنترنت قد لا يزحف موقعًا
    محجوبًا لشهور، فيكون «أقرب نسخة» له من سنة 2025 — ولو نشرنا تلك الصفحة لظهرت أخبارها القديمة
    بتواريخ «اليوم» (لأن بطاقاتها تكتب الساعة بلا تاريخ) وهذا أسوأ من ألّا ننشر شيئًا. */
@@ -1707,15 +1734,35 @@ function unwrapWayback(html) {
 
 async function waybackPage(pageUrl, host) {
   if (!pageUrl) return null;
+  if (Date.now() < ARCHIVE_COOLDOWN_UNTIL) { diag("مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه."); return null; }
   const rec = transportRec(host);
   if (rec.snap && rec.snapTs && (Date.now() - rec.snapTs < WB_REUSE_MS)) {
     const f = await fetchWithFallback(rec.snap, 20000);
+    if (noteArchive429("إعادة الاستخدام", f)) return null;
     const good = f && f.ok && f.text && f.text.length > 2000 && !looksLikeBlockPage(f.text);
     diag("نسخة أرشيف حديثة أُعيد استخدامها: " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
     if (good) return { text: f.text, snap: rec.snap, ts: rec.snapTs };
   }
+  /* v24: قبل طلب التقاط جديد (المكلف والذي يعرّضنا لحدّ 429) نسأل عن أقرب نسخة: إن كانت أحدث
+     من 6 ساعات أخذناها مباشرة. */
+  try {
+    const av0 = await fetchJson("https://archive.org/wayback/available?url=" + encodeURIComponent(pageUrl) + "&timestamp=" + ts14Now(), 15000);
+    const snap0 = av0 && av0.archived_snapshots && av0.archived_snapshots.closest;
+    const ts0 = snap0 && snap0.available ? String(snap0.timestamp || "") : "";
+    if (ts0 && (Date.now() - ts14ToMs(ts0)) < WB_FRESH_ENOUGH_MS) {
+      diag("أقرب نسخة طازجة (<6 ساعات): " + ts0 + " — نأخذها بلا التقاط جديد.");
+      const url0 = "https://web.archive.org/web/" + ts0 + "id_/" + pageUrl;
+      const f0 = await fetchWithFallback(url0, 25000);
+      if (noteArchive429("نسخة طازجة", f0)) return null;
+      const good0 = f0 && f0.ok && f0.text && f0.text.length > 2000 && !looksLikeBlockPage(f0.text);
+      diag("نسخة الأرشيف (طازجة " + ts0 + "): " + (f0 ? f0.status + " / " + (f0.text ? f0.text.length : 0) + " حرفًا" : "لا رد") + (good0 ? "" : " (غير صالحة)"));
+      if (good0) return { text: f0.text, snap: url0, ts: Date.now() };
+    } else diag("أقرب نسخة ليست طازجة (" + (ts0 || "لا شيء") + ") — نطلب التقاطًا جديدًا.");
+  } catch (e) {}
   /* Save Page Now: نأخذ **أحدث** طابع زمني في الردّ — الردّ يذكر أيضًا تقاطعات قديمة للموقع. */
+  await new Promise((r) => setTimeout(r, 2500));
   const save = await fetchWithFallback("https://web.archive.org/save/" + pageUrl, 30000);
+  if (noteArchive429("التقاط", save)) return null;
   let ts = "";
   if (save && save.text) {
     for (const m of save.text.matchAll(/\/web\/(\d{14})[a-z_]*\//g)) if (m[1] > ts) ts = m[1];
@@ -1735,6 +1782,7 @@ async function waybackPage(pageUrl, host) {
   for (const c of cands) {
     const url = "https://web.archive.org/web/" + c.ts + "id_/" + pageUrl;
     const f = await fetchWithFallback(url, 25000);
+    if (noteArchive429("نسخة " + c.how, f)) return null;
     const good = f && f.ok && f.text && f.text.length > 2000 && !looksLikeBlockPage(f.text);
     diag("نسخة الأرشيف (" + c.how + " " + c.ts + "): " + (f ? f.status + " / " + (f.text ? f.text.length : 0) + " حرفًا" : "لا رد") + (good ? "" : " (غير صالحة)"));
     if (good) return { text: f.text, snap: url, ts: Date.now() };
@@ -1742,6 +1790,7 @@ async function waybackPage(pageUrl, host) {
   /* لا طابع زمني موثوق: نقرأ النسخة المعروضة (تظهر فيها ساعة الالتقاط في ترويستها) ونتحقّق من عمرها. */
   const plainUrl = "https://web.archive.org/web/" + ts14Now() + "/" + pageUrl;
   const p = await fetchWithFallback(plainUrl, 25000);
+  if (noteArchive429("نسخة معروضة", p)) return null;
   let tsPlain = "";
   if (p && p.text) { const m = p.text.match(/\/web\/(\d{14})[a-z_]*\//); if (m) tsPlain = m[1]; }
   const pGood = p && p.ok && p.text && p.text.length > 2000 && !looksLikeBlockPage(p.text);
