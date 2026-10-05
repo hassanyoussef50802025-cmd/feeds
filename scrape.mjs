@@ -45,6 +45,9 @@
  *
  *
  * نسخة 22 (إصلاح ما كشفته التجربة على المنشور فعليًا): (١) المواقع التي تحجب خوادم الجلب وتُحوّل
+ * نسخة 25: المسار المجدول المكرر feeds.yml كان يجب إيقافه يدويًا، وحسن لا يستطيع التحرير اليدوي،
+ * فصار الإيقاف ذاتيًا: scrape.mjs نفسه يقرأ GITHUB_WORKFLOW وينهي فورًا أي دورة ليست من
+ * السلسلة feeds-refresh — بلا جلب ولا دفع ولا فشل. يُرفع بنفس تدفق scrape.mjs المعتاد.
  * نسخة 24 (الشعب أونلاين متجمدة منذ 4 أكتوبر): ملف .diag.txt أظهر أن الموقع خلف كلاودفلير
  * يحجب كل مراكز البيانات، وأن أرشيف الإنترنت — مصدرنا الاحتياطي الوحيد — بدأ يردّ 429
  * «suspected abusive bot» لأن مسارين مكررين يطرقانه كل ~15 دقيقة. (١) تهدئة 3 ساعات لمسار
@@ -2002,6 +2005,14 @@ async function scrapeWithRetry(url) {
 }
 
 async function run() {
+  /* v25: المسار المجدول المكرر (تحديث الخلاصات) يُنهي نفسه فورًا بلا أي جلب: السلسلة feeds-refresh
+     هي العاملة الوحيدة، وهذا يوقف التعارض على الدفع والعلامات الحمراء وتضاعف الضغط على المواقع
+     والأرشيف — وحسن لا يحتاج أن يحرر أي ملف بيده. */
+  const WF = (typeof process !== "undefined" && process.env && process.env.GITHUB_WORKFLOW) || "";
+  if (WF && WF !== "feeds-refresh") {
+    console.log("تجاهل: هذه الدورة من مسار مكرر (" + WF + ") — السلسلة feeds-refresh هي العاملة. لا عمل.");
+    return;
+  }
   const { mkdir, writeFile, rm, readdir, readFile } = await import("node:fs/promises");
   const root = new URL("./feeds/", import.meta.url);
   await mkdir(root, { recursive: true });
