@@ -45,6 +45,13 @@
  *
  *
  * نسخة 22 (إصلاح ما كشفته التجربة على المنشور فعليًا): (١) المواقع التي تحجب خوادم الجلب وتُحوّل
+ * نسخة 27 (mobizil متجمدة عند 3 أكتوبر): التشخيص أظهر لقطة أرشيف طازجة (اليوم 13:49، 162KB عربية)
+ * رُفضت لأن عناصرها بلا تواريخ — والفحص كان يخلط قدم اللقطة بقدم العناصر. الآن اللقطة الطازجة
+ * (<24 ساعة) تُقبل دائمًا والتواريخ المجهولة تُقدَّر (صحيح تقريبًا لأن اللقطة طازجة).
+ * نسخة 26 (الشعب ما زالت مجمدة): تهدئة v24 كانت في الذاكرة فقط فتتبخر مع كل دورة، وبقي الطرق
+ * كل ~15 دقيقة فبقي الحظر 429. الآن التهدئة 6 ساعات محفوظة في .transport.json فلا يُطرق الأرشيف
+ * إلا ~4 مرات يوميًا حتى يرفع الحظر وتعود النسخ. وحُذف وسيط corsproxy.io (صار يطلب مفتاحًا مدفوعًا).
+ * البديل الفوري للشعب: حساباه @EchaabOnline (تويتر) وقناة يوتيوب — بلا أي جدار.
  * نسخة 25: المسار المجدول المكرر feeds.yml كان يجب إيقافه يدويًا، وحسن لا يستطيع التحرير اليدوي،
  * فصار الإيقاف ذاتيًا: scrape.mjs نفسه يقرأ GITHUB_WORKFLOW وينهي فورًا أي دورة ليست من
  * السلسلة feeds-refresh — بلا جلب ولا دفع ولا فشل. يُرفع بنفس تدفق scrape.mjs المعتاد.
@@ -1204,9 +1211,7 @@ const PROXY_BUILDERS = [
     "?origin=" + encodeURIComponent(PERCHANCE_ORIGIN) + "&generator=" + PERCHANCE_GENERATOR, {}],
   [(u) => "https://api.allorigins.win/raw?url=" + encodeURIComponent(u), {}],
   [(u) => "https://r.jina.ai/" + u, { "x-respond-with": "html" }],
-  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}],
-  /* v24: وسيط إضافي أخير لمواقع كلاودفلير. */
-  [(u) => "https://corsproxy.io/?url=" + encodeURIComponent(u), {}]
+  [(u) => "https://api.codetabs.com/v1/proxy?quest=" + encodeURIComponent(u), {}]
 ];
 
 /* الوسيط الذي نجح مع نطاق معيّن يُتذكَّر لبقية الدورة: المواقع المحجوبة تُطلب عدة مرات في الدورة
@@ -1691,6 +1696,8 @@ const WB_REUSE_MS = 30 * 60000;
    كانت أحدث من 6 ساعات أخذناها مباشرة بلا طلب التقاط جديد (المكلف). */
 const WB_FRESH_ENOUGH_MS = 6 * 3600000;
 let ARCHIVE_COOLDOWN_UNTIL = 0;
+const ARCHIVE_COOLDOWN_MS = 6 * 3600000;
+const TRANSPORT_COOLDOWN_KEY = "_archiveCooldownUntil";
 function archiveBlocked(f) {
   if (!f) return false;
   if (f.status === 429) return true;
@@ -1698,8 +1705,9 @@ function archiveBlocked(f) {
 }
 function noteArchive429(where, f) {
   if (archiveBlocked(f)) {
-    ARCHIVE_COOLDOWN_UNTIL = Date.now() + 3 * 3600000;
-    diag("أرشيف الإنترنت حدّ من الوصول (429) عند " + where + " — تهدئة 3 ساعات.");
+    ARCHIVE_COOLDOWN_UNTIL = Date.now() + ARCHIVE_COOLDOWN_MS;
+    TRANSPORT.set(TRANSPORT_COOLDOWN_KEY, { until: ARCHIVE_COOLDOWN_UNTIL });
+    diag("أرشيف الإنترنت حدّ من الوصول (429) عند " + where + " — تهدئة 6 ساعات محفوظة.");
     return true;
   }
   return false;
@@ -1816,10 +1824,20 @@ async function archiveItems(pageUrl, host, limit, title) {
   }
   if (!ex || ex.items.length < 3) { diag("نسخة الأرشيف لم تُنتج قوائم أخبار كافية (" + (ex && ex.items ? ex.items.length : 0) + " عنصرًا)"); return null; }
   const items = ex.items.slice(0, limit);
-  if (!freshEnough(items, ARCHIVE_MAX_AGE)) {
+  /* v27: كانت النسخة الطازجة نفسها تُرفض حين تخلو عناصرها من تواريخ (mobizil: لقطة اليوم 13:49
+     رُفضت لأن «أحدث عنصر بلا تاريخ» رغم أن اللقطة عمرها ساعات). نفرّق بين قدم اللقطة وقدم
+     العناصر: لقطة أحدث من 24 ساعة تُقبل عناصرها دائمًا، وfillMissingDates يمنح مجهول التاريخ
+     تاريخًا تقديريًا صحيحًا تقريبًا لأن اللقطة نفسها طازجة، والعناصر القديمة ذات التواريخ الحقيقية
+     تبقى بتواريخها. */
+  let snapMs = 0;
+  const snapM = String((wb && wb.snap) || "").match(/\/web\/(\d{14})/);
+  if (snapM) snapMs = ts14ToMs(snapM[1]);
+  const snapFresh = !!snapMs && (Date.now() - snapMs) < 24 * 3600000;
+  if (!snapFresh && !freshEnough(items, ARCHIVE_MAX_AGE)) {
     diag("نسخة الأرشيف قديمة — رُفضت (أحدث عنصر: " + (newestTime(items) ? new Date(newestTime(items)).toISOString() : "بلا تاريخ") + ")");
     return null;
   }
+  if (snapFresh) diag("نسخة الأرشيف طازجة (<24 ساعة) — نقبل عناصرها وإن غابت تواريخها.");
   applyPrevDates(items);
   const approx = fillMissingDates(items);
   LAST_VIA = "wayback";
@@ -2019,6 +2037,9 @@ async function run() {
   const { list: feeds, fromTool } = await loadFeedList();
   const transport = await loadTransport(root, readFile);
   TRANSPORT = new Map(Object.entries(transport));
+  ARCHIVE_COOLDOWN_UNTIL = Number((transport[TRANSPORT_COOLDOWN_KEY] || {}).until) || 0;
+  TRANSPORT.delete(TRANSPORT_COOLDOWN_KEY);
+  if (ARCHIVE_COOLDOWN_UNTIL && Date.now() > ARCHIVE_COOLDOWN_UNTIL) ARCHIVE_COOLDOWN_UNTIL = 0;
   TRANSPORT_START = JSON.stringify(transport);
   const written = new Set();
   const runLog = [];
@@ -2133,6 +2154,7 @@ async function run() {
       const r = transportRec(h);
       if (r && r.via) obj[h] = r;
     }
+    if (ARCHIVE_COOLDOWN_UNTIL) obj[TRANSPORT_COOLDOWN_KEY] = { until: ARCHIVE_COOLDOWN_UNTIL };
     const txt = JSON.stringify(obj, null, 1);
     if (txt !== TRANSPORT_START) {
       await writeFile(new URL(".transport.json", root), txt, "utf8");
