@@ -14,6 +14,9 @@
  "almarkazia.com": {
   "via": "proxy:2"
  },
+ "newslb.org": {
+  "via": "direct"
+ },
  "saharazoom.com": {
   "via": "direct"
  },
