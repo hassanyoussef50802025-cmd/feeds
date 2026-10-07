@@ -17,12 +17,10 @@
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20261007021351id_/https://almarkazia.com/",
-  "snapTs": 1791366648761
+  "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "direct"
+  "via": "proxy:2"
  },
  "saharazoom.com": {
   "via": "direct"
