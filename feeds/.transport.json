@@ -22,7 +22,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "direct"
+  "via": "proxy:2"
  },
  "saharazoom.com": {
   "via": "direct"
