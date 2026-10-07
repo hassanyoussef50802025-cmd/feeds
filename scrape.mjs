@@ -45,6 +45,10 @@
  *
  *
  * نسخة 22 (إصلاح ما كشفته التجربة على المنشور فعليًا): (١) المواقع التي تحجب خوادم الجلب وتُحوّل
+ * نسخة 28 (تواريخ الصحراء زوم المجمدة): (١) الترتيب كان معكوسًا — التقدير قبل قراءة المقالات
+ * فعملت backfill فارغة دائمًا؛ الآن التثبيت فالفك فالقراءة (12) فالتقدير. (٢) التقدير المستعار
+ * المكرر حرفيًا يُكتشف ويُحرَّر ليفحص مقاله (32361 وامثاله). (٣) عنوان التاريخ في نفس الـh2
+ * (أضيف في...) يُقرأ ببوابة صارمة. مسار الأرشيف يقرأ المقالات أيضًا.
  * نسخة 27 (mobizil متجمدة عند 3 أكتوبر): التشخيص أظهر لقطة أرشيف طازجة (اليوم 13:49، 162KB عربية)
  * رُفضت لأن عناصرها بلا تواريخ — والفحص كان يخلط قدم اللقطة بقدم العناصر. الآن اللقطة الطازجة
  * (<24 ساعة) تُقبل دائمًا والتواريخ المجهولة تُقدَّر (صحيح تقريبًا لأن اللقطة طازجة).
@@ -164,6 +168,7 @@ function applyPrevDates(items) {
   let n = 0, frozen = 0;
   for (const it of items) {
     if (!it || !it.url) continue;
+    if (it.hadDate === undefined) it.hadDate = !!it.date;
     const prev = PREV_DATES.get(urlKey(it.url));
     if (!prev) continue;
     const t = it.date ? Date.parse(it.date) : NaN;
@@ -177,6 +182,23 @@ function applyPrevDates(items) {
   if (n) console.log("   ثبّتنا تواريخ " + n + " عنصرًا من التحديث السابق.");
   if (frozen) console.log("   حافظنا على تاريخ " + frozen + " عنصرًا من التحديث السابق (فرق المصدر أقل من 4 ساعات).");
   return n + frozen;
+}
+
+/* v28: تواريخ مستعارة متجمدة. fillMissingDates يمنح مجهول التاريخ تاريخ جاره حرفيًا، ثم تحمله
+   الدورات التالية للأبد فيبدو حقيقيًا (الصحراء زوم: 3 عناصر تشارك 24 سبتمبر 00:49:34 بينما الحقيقي
+   5 و6 أكتوبر). التوقيع: عنصر بلا تاريخ مستخرج (hadDate=false) يحمل تاريخًا يطابق حرفيًا تاريخ
+   عنصر آخر في نفس القائمة — التواريخ الحقيقية بالثواني نادرًا ما تتطابق. نحرره ليفحص المقال. */
+function unfreezeBorrowedDates(items) {
+  const counts = new Map();
+  for (const it of items) if (it && it.date) counts.set(it.date, (counts.get(it.date) || 0) + 1);
+  let n = 0;
+  for (const it of items) {
+    if (!it || !it.date || it.hadDate || !it.carried) continue;
+    if ((counts.get(it.date) || 0) < 2) continue;
+    it.date = null; it.carried = false; it.recheck = true; n++;
+  }
+  if (n) console.log("   أُعيد فحص " + n + " عنصرًا (تاريخ مستعار مكرر).");
+  return n;
 }
 
 function xmlUnesc(s) {
@@ -1037,6 +1059,23 @@ function extractFromDom(root, pageUrl, limit) {
 function dateNearTitle(root) {
   const h1 = q1(root, "h1") || q1(root, "h2");
   if (!h1) return null;
+  /* v28: صفحات بلا h1 عنوان تاريخها في نفس الـh2 (الصحراء زوم: <h2>أضيف في 6 أكتوبر 2026
+     الساعة 21:49</h2>) — والمحلل أدناه كان يتجاهل نص العنوان نفسه فيفشل. نجرّبه ببوابة صارمة
+     (كلمات نشر فقط) حتى لا يلتقط عناوين المناسبات. */
+  try {
+    const ownTxt = (textOf(h1) || "").replace(/\s+/g, " ").trim();
+    if (ownTxt && /(أضيف|نشر|نشرت|بتاريخ|تاريخ النشر)/.test(ownTxt)) {
+      const od = parseDateText(ownTxt);
+      if (od) {
+        const d = new Date(od.getTime ? od.getTime() : od);
+        /* parseDateText يلتقط «الساعة HH:MM» بنفسه غالبًا؛ لا نلمس الوقت إلا حين أعاد منتصف الليل
+           تمامًا (تاريخ بلا وقت) وإلا أفسدنا ساعة صحيحة. */
+        const tm = ownTxt.match(/(\d{1,2}):(\d{2})/);
+        if (tm && isFinite(d.getTime()) && d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0) d.setHours(+tm[1], +tm[2], 0, 0);
+        if (isFinite(d.getTime())) return d;
+      }
+    }
+  } catch (e) {}
   const nodes = qsa(root, "time[datetime],[class*=date],[class*=published],[class*=posted],[class*=history],[itemprop*=date]");
   let seen = 0;
   for (const e of nodes) {
@@ -1416,7 +1455,7 @@ async function fetchArticleMeta(url) {
 }
 
 async function backfillItemDates(items, limit) {
-  const undated = items.filter((i) => !i.date && !PREV_DATES.get(i.url)).slice(0, limit);
+  const undated = items.filter((i) => !i.date && (!PREV_DATES.get(i.url) || i.recheck)).slice(0, limit);
   if (!undated.length) return 0;
   let filled = 0;
   const CONC = 4;
@@ -1587,8 +1626,8 @@ function domFeed(text, pageUrl, limit, title) {
   if (!ex || ex.items.length < 3) return null;
   const items = ex.items.slice(0, limit);
   applyPrevDates(items);
-  const approx = fillMissingDates(items);
-  return { items, via: "استخراج مباشر من الصفحة", title, pageUrl, approx };
+  unfreezeBorrowedDates(items);
+  return { items, via: "استخراج مباشر من الصفحة", title, pageUrl, approx: 0 };
 }
 
 async function buildFeed(targetUrl, selfUrl, params) {
@@ -1639,7 +1678,11 @@ async function buildFeed(targetUrl, selfUrl, params) {
 
     const dom = domFeed(pageText, finalUrl, limit, title);
     if (dom) {
-      dom.backfilled = await backfillItemDates(dom.items, 8);
+      /* v28: الترتيب كان معكوسًا — fillMissingDates يمنح كل مجهول تاريخًا تقديريًا أولًا فلا يبقى
+         لbackfill (الذي يقرأ المقالات) أي عنصر بلا تاريخ فيعمل فارغًا. الآن: تثبيت، فك المستعار،
+         قراءة المقالات (12)، ثم التقدير لمن بقي. */
+      dom.backfilled = await backfillItemDates(dom.items, 12);
+      dom.approx = fillMissingDates(dom.items);
       return dom;
     }
 
@@ -1839,6 +1882,8 @@ async function archiveItems(pageUrl, host, limit, title) {
   }
   if (snapFresh) diag("نسخة الأرشيف طازجة (<24 ساعة) — نقبل عناصرها وإن غابت تواريخها.");
   applyPrevDates(items);
+  unfreezeBorrowedDates(items);
+  await backfillItemDates(items, 8);
   const approx = fillMissingDates(items);
   LAST_VIA = "wayback";
   LAST_SNAP = { url: wb.snap, ts: wb.ts };
