@@ -8,6 +8,21 @@
  "riadynews.com": {
   "via": "direct"
  },
+ "www.latinamericanewsagency.com": {
+  "via": "direct"
+ },
+ "almarkazia.com": {
+  "via": "proxy:2"
+ },
+ "saharazoom.com": {
+  "via": "direct"
+ },
+ "www.saharaexpo.com": {
+  "via": "direct"
+ },
+ "alhayapress.com": {
+  "via": "direct"
+ },
  "_archiveCooldownUntil": {
   "until": 1791411967424
  }
