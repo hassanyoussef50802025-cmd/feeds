@@ -8,29 +8,6 @@
  "riadynews.com": {
   "via": "direct"
  },
- "www.echaab.dz": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20261007162244/https://www.echaab.dz/",
-  "snapTs": 1791390165387
- },
- "www.latinamericanewsagency.com": {
-  "via": "direct"
- },
- "almarkazia.com": {
-  "via": "proxy:2"
- },
- "newslb.org": {
-  "via": "direct"
- },
- "saharazoom.com": {
-  "via": "direct"
- },
- "www.saharaexpo.com": {
-  "via": "direct"
- },
- "alhayapress.com": {
-  "via": "direct"
- },
  "_archiveCooldownUntil": {
   "until": 1791411967424
  }
