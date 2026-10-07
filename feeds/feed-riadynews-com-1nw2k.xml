@@ -1,237 +1,784 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
 <channel>
-<title>ريادي</title>
-<link>https://riadynews.com/</link>
-<description>خلاصة تُحدَّث تلقائيًا من ريادي</description>
-<language>ar</language>
-<lastBuildDate>Wed, 07 Oct 2026 10:40:55 GMT</lastBuildDate>
-<generator>RSS Worker</generator>
-<!-- rss-src: rest -->
-<atom:link href="https://riadynews.com/" rel="self" type="application/rss+xml"/>
-<item>
-<title>إي فاينانس تفتح بوابة Alibaba Cloud إلى مصر عبر بنية سحابية محلية</title>
-<link>https://riadynews.com/%d8%a5%d9%8a-%d9%81%d8%a7%d9%8a%d9%86%d8%a7%d9%86%d8%b3-%d8%aa%d9%81%d8%aa%d8%ad-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-alibaba-cloud-%d8%a5%d9%84%d9%89-%d9%85%d8%b5%d8%b1-%d8%b9%d8%a8%d8%b1-%d8%a8%d9%86/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a5%d9%8a-%d9%81%d8%a7%d9%8a%d9%86%d8%a7%d9%86%d8%b3-%d8%aa%d9%81%d8%aa%d8%ad-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-alibaba-cloud-%d8%a5%d9%84%d9%89-%d9%85%d8%b5%d8%b1-%d8%b9%d8%a8%d8%b1-%d8%a8%d9%86/</guid>
-<pubDate>Wed, 07 Oct 2026 08:35:57 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/315051579927220261006034509459.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/315051579927220261006034509459.jpg" alt=""/><p>وقعت إي فاينانس للاستثمارات المالية والرقمية وAlibaba Cloud وNuvexa مذكرة تفاهم ثلاثية لاستكشاف إتاحة خدمات الحوسبة السحابية والذكاء الاصطناعي التابعة لعملاق التكنولوجيا الصيني للشركات في مصر، بالاعتماد على بنية تحتية مستضافة محليًا تابعة لإي فاينانس. ويستهدف التعاون المقترح الجمع بين القدرات العالمية لـAlibaba Cloud والبنية التحتية المحلية لإي فاينانس، مع استضافة البيانات والتطبيقات ومعالجتها [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/315051579927220261006034509459.jpg" alt=""/><p>وقعت إي فاينانس للاستثمارات المالية والرقمية وAlibaba Cloud وNuvexa مذكرة تفاهم ثلاثية لاستكشاف إتاحة خدمات الحوسبة السحابية والذكاء الاصطناعي التابعة لعملاق التكنولوجيا الصيني للشركات في مصر، بالاعتماد على بنية تحتية مستضافة محليًا تابعة لإي فاينانس. ويستهدف التعاون المقترح الجمع بين القدرات العالمية لـAlibaba Cloud والبنية التحتية المحلية لإي فاينانس، مع استضافة البيانات والتطبيقات ومعالجتها [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>مصر توسع أدوات التمويل طويلة الأجل لدعم الشركات الناشئة والقطاع الخاص</title>
-<link>https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d9%88%d8%b3%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a3%d8%ac%d9%84-%d9%84%d8%af%d8%b9/</link>
-<guid isPermaLink="true">https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d9%88%d8%b3%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a3%d8%ac%d9%84-%d9%84%d8%af%d8%b9/</guid>
-<pubDate>Wed, 07 Oct 2026 08:26:58 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/355.jpeg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/355.jpeg" alt=""/><p>أعلن الدكتور أحمد رستم، وزير التخطيط والتنمية الاقتصادية، أن «البرنامج الوطني للتحول الاقتصادي» يتضمن محورًا مخصصًا لدعم الشركات الناشئة وريادة الأعمال والمشروعات سريعة النمو، بالتوازي مع التوسع في أدوات التمويل المبتكرة طويلة الأجل للقطاع الخاص. جاءت تصريحات الوزير خلال اجتماع موسع مع ممثلي المؤسسات المالية ومؤسسات التصنيف الكبرى في مصر، لمناقشة التطورات الاقتصادية الكلية [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/355.jpeg" alt=""/><p>أعلن الدكتور أحمد رستم، وزير التخطيط والتنمية الاقتصادية، أن «البرنامج الوطني للتحول الاقتصادي» يتضمن محورًا مخصصًا لدعم الشركات الناشئة وريادة الأعمال والمشروعات سريعة النمو، بالتوازي مع التوسع في أدوات التمويل المبتكرة طويلة الأجل للقطاع الخاص. جاءت تصريحات الوزير خلال اجتماع موسع مع ممثلي المؤسسات المالية ومؤسسات التصنيف الكبرى في مصر، لمناقشة التطورات الاقتصادية الكلية [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>سبيس إكس تسعى لاقتراض 40 مليار دولار لشراء رقائق إنفيديا</title>
-<link>https://riadynews.com/%d8%b3%d8%a8%d9%8a%d8%b3-%d8%a5%d9%83%d8%b3-%d8%aa%d8%b3%d8%b9%d9%89-%d9%84%d8%a7%d9%82%d8%aa%d8%b1%d8%a7%d8%b6-40-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d8%b4%d8%b1/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%b3%d8%a8%d9%8a%d8%b3-%d8%a5%d9%83%d8%b3-%d8%aa%d8%b3%d8%b9%d9%89-%d9%84%d8%a7%d9%82%d8%aa%d8%b1%d8%a7%d8%b6-40-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d8%b4%d8%b1/</guid>
-<pubDate>Wed, 07 Oct 2026 08:20:43 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/1-1313627.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/1-1313627.jpg" alt=""/><p>تجري شركة سبيس إكس، التابعة للملياردير إيلون ماسك، محادثات مع بنوك ومستثمرين لجمع نحو 40 مليار دولار في صورة قروض، بهدف تمويل شراء رقائق إلكترونية من شركة إنفيديا، في صفقة تعكس حجم الإنفاق المتزايد على البنية التحتية اللازمة لتطوير وتشغيل أنظمة الذكاء الاصطناعي. وبحسب مصادر مطلعة نقلت عنها وكالة «بلومبيرج»، لا تزال المفاوضات في [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/1-1313627.jpg" alt=""/><p>تجري شركة سبيس إكس، التابعة للملياردير إيلون ماسك، محادثات مع بنوك ومستثمرين لجمع نحو 40 مليار دولار في صورة قروض، بهدف تمويل شراء رقائق إلكترونية من شركة إنفيديا، في صفقة تعكس حجم الإنفاق المتزايد على البنية التحتية اللازمة لتطوير وتشغيل أنظمة الذكاء الاصطناعي. وبحسب مصادر مطلعة نقلت عنها وكالة «بلومبيرج»، لا تزال المفاوضات في [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>ڤاليو تتعاون مع مجموعة الشايع لتوسيع حلول الدفع المرنة في مصر</title>
-<link>https://riadynews.com/%da%a4%d8%a7%d9%84%d9%8a%d9%88-%d8%aa%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d9%85%d8%b9-%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d9%8a%d8%b9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%ad/</link>
-<guid isPermaLink="true">https://riadynews.com/%da%a4%d8%a7%d9%84%d9%8a%d9%88-%d8%aa%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d9%85%d8%b9-%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d9%8a%d8%b9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%ad/</guid>
-<pubDate>Wed, 07 Oct 2026 08:12:33 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0002.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0002.jpg" alt=""/><p>أعلنت شركة ڤاليو إبرام شراكة استراتيجية مع مجموعة الشايع لتوسيع نطاق إتاحة حلول الدفع المرنة عبر عدد من أبرز العلامات التجارية العالمية التي تديرها المجموعة في السوق المصرية، من بينها «اتش آند إم» و«باث آند بودي وركس» و«أمريكان إيجل» و«فيكتوريا سيكريت». حلول ڤاليو تصل إلى علامات تجارية تابعة لمجموعة الشايع وبموجب الشراكة، سيتمكن عملاء [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0002.jpg" alt=""/><p>أعلنت شركة ڤاليو إبرام شراكة استراتيجية مع مجموعة الشايع لتوسيع نطاق إتاحة حلول الدفع المرنة عبر عدد من أبرز العلامات التجارية العالمية التي تديرها المجموعة في السوق المصرية، من بينها «اتش آند إم» و«باث آند بودي وركس» و«أمريكان إيجل» و«فيكتوريا سيكريت». حلول ڤاليو تصل إلى علامات تجارية تابعة لمجموعة الشايع وبموجب الشراكة، سيتمكن عملاء [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>GIGABYTE تستعرض حلول الذكاء الاصطناعي المدعومة من NVIDIA في أبوظبي</title>
-<link>https://riadynews.com/gigabyte-%d8%aa%d8%b3%d8%aa%d8%b9%d8%b1%d8%b6-%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88/</link>
-<guid isPermaLink="true">https://riadynews.com/gigabyte-%d8%aa%d8%b3%d8%aa%d8%b9%d8%b1%d8%b6-%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88/</guid>
-<pubDate>Wed, 07 Oct 2026 07:57:45 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0003.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0003.jpg" alt=""/><p>تستعرض شركة GIGABYTE Technology أحدث حلول الحوسبة والذكاء الاصطناعي المدعومة بتقنيات NVIDIA، خلال مشاركتها في معرض ومؤتمر AI Everything Abu Dhabi 2026، الذي تستضيفه أبوظبي يومي 6 و7 أكتوبر، مع التركيز على حلول تمتد من أجهزة الذكاء الاصطناعي المكتبية إلى محطات العمل وحلول المؤسسات. AI TOP ATOM.. حاسوب مدمج للذكاء الاصطناعي وتتصدر حلول الشركة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0003.jpg" alt=""/><p>تستعرض شركة GIGABYTE Technology أحدث حلول الحوسبة والذكاء الاصطناعي المدعومة بتقنيات NVIDIA، خلال مشاركتها في معرض ومؤتمر AI Everything Abu Dhabi 2026، الذي تستضيفه أبوظبي يومي 6 و7 أكتوبر، مع التركيز على حلول تمتد من أجهزة الذكاء الاصطناعي المكتبية إلى محطات العمل وحلول المؤسسات. AI TOP ATOM.. حاسوب مدمج للذكاء الاصطناعي وتتصدر حلول الشركة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>بنيان توافق على شراء أسهم خزينة بحد أقصى 4% من رأس المال.. والسهم يتداول بخصم 50% من قيمة الأصول</title>
-<link>https://riadynews.com/%d8%a8%d9%86%d9%8a%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%b9%d9%84%d9%89-%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a3%d8%b3%d9%87%d9%85-%d8%ae%d8%b2%d9%8a%d9%86%d8%a9-%d8%a8%d8%ad%d8%af-%d8%a3%d9%82%d8%b5/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a8%d9%86%d9%8a%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%b9%d9%84%d9%89-%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a3%d8%b3%d9%87%d9%85-%d8%ae%d8%b2%d9%8a%d9%86%d8%a9-%d8%a8%d8%ad%d8%af-%d8%a3%d9%82%d8%b5/</guid>
-<pubDate>Wed, 07 Oct 2026 06:59:10 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0000.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0000.jpg" alt=""/><p>وافق مجلس إدارة شركة بنيان للتنمية والتجارة (BONY.CA) على برنامج لشراء أسهم خزينة بحد أقصى 4% من رأس المال المصدر، في وقت تشير الشركة إلى تداول سهمها عند مستويات تقل بنحو 50% عن القيمة الإجمالية لأصول محفظتها العقارية وفقًا لآخر تقييم مستقل معتمد من الهيئة العامة للرقابة المالية. بنيان تبدأ شراء أسهم الخزينة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261007-WA0000.jpg" alt=""/><p>وافق مجلس إدارة شركة بنيان للتنمية والتجارة (BONY.CA) على برنامج لشراء أسهم خزينة بحد أقصى 4% من رأس المال المصدر، في وقت تشير الشركة إلى تداول سهمها عند مستويات تقل بنحو 50% عن القيمة الإجمالية لأصول محفظتها العقارية وفقًا لآخر تقييم مستقل معتمد من الهيئة العامة للرقابة المالية. بنيان تبدأ شراء أسهم الخزينة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>ديب سيك تستهدف جمع 80 مليار يوان استعدادًا لطرح عام أولي في الصين</title>
-<link>https://riadynews.com/%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%ac%d9%85%d8%b9-80-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d9%8a%d9%88%d8%a7%d9%86-%d8%a7%d8%b3%d8%aa%d8%b9%d8%af%d8%a7%d8%af/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%ac%d9%85%d8%b9-80-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d9%8a%d9%88%d8%a7%d9%86-%d8%a7%d8%b3%d8%aa%d8%b9%d8%af%d8%a7%d8%af/</guid>
-<pubDate>Tue, 06 Oct 2026 18:15:03 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/ديب-سيك.webp"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/ديب-سيك.webp" alt=""/><p>تستعد شركة ديب سيك (DeepSeek) الصينية الناشئة في مجال الذكاء الاصطناعي لجمع أكثر من 80 مليار يوان (11.93 مليار دولار) في أحدث جولة تمويلية، في خطوة تستهدف تعزيز مواردها المالية قبل طرح عام أولي محتمل في السوق الصينية. وقال مصدر مطلع إن الجولة التمويلية الثانية حظيت باهتمام قوي من المستثمرين الحاليين والجدد، بعدما تجاوزت الالتزامات [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/ديب-سيك.webp" alt=""/><p>تستعد شركة ديب سيك (DeepSeek) الصينية الناشئة في مجال الذكاء الاصطناعي لجمع أكثر من 80 مليار يوان (11.93 مليار دولار) في أحدث جولة تمويلية، في خطوة تستهدف تعزيز مواردها المالية قبل طرح عام أولي محتمل في السوق الصينية. وقال مصدر مطلع إن الجولة التمويلية الثانية حظيت باهتمام قوي من المستثمرين الحاليين والجدد، بعدما تجاوزت الالتزامات [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>10 شركات ناشئة تتأهل لنهائي مسابقة كلية لندن لإدارة الأعمال في الشرق الأوسط</title>
-<link>https://riadynews.com/10-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%aa%d8%aa%d8%a3%d9%87%d9%84-%d9%84%d9%86%d9%87%d8%a7%d8%a6%d9%8a-%d9%85%d8%b3%d8%a7%d8%a8%d9%82%d8%a9-%d9%83%d9%84%d9%8a%d8%a9/</link>
-<guid isPermaLink="true">https://riadynews.com/10-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%aa%d8%aa%d8%a3%d9%87%d9%84-%d9%84%d9%86%d9%87%d8%a7%d8%a6%d9%8a-%d9%85%d8%b3%d8%a7%d8%a8%d9%82%d8%a9-%d9%83%d9%84%d9%8a%d8%a9/</guid>
-<pubDate>Tue, 06 Oct 2026 17:26:02 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/مسابقة-لندن.webp"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/مسابقة-لندن.webp" alt=""/><p>أعلنت مسابقة الشركات الناشئة في منطقة الشرق الأوسط وشمال أفريقيا لعام 2026، التي تنظمها كلية لندن لإدارة الأعمال، تأهل 10 شركات ناشئة إلى المرحلة النهائية، بعد منافسات نصف نهائية ضمت 20 شركة من مختلف أنحاء المنطقة. وتُقام المرحلة النهائية في دبي يوم 14 أكتوبر 2026، حيث تعرض الشركات المتأهلة مشاريعها أمام لجنة تضم مستثمرين ورواد [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/مسابقة-لندن.webp" alt=""/><p>أعلنت مسابقة الشركات الناشئة في منطقة الشرق الأوسط وشمال أفريقيا لعام 2026، التي تنظمها كلية لندن لإدارة الأعمال، تأهل 10 شركات ناشئة إلى المرحلة النهائية، بعد منافسات نصف نهائية ضمت 20 شركة من مختلف أنحاء المنطقة. وتُقام المرحلة النهائية في دبي يوم 14 أكتوبر 2026، حيث تعرض الشركات المتأهلة مشاريعها أمام لجنة تضم مستثمرين ورواد [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>بلتون لإدارة الأصول تطلق صندوقًا عقاريًا متعدد الإصدارات مستهدفًا 2 مليار جنيه</title>
-<link>https://riadynews.com/%d8%a8%d9%84%d8%aa%d9%88%d9%86-%d9%84%d8%a5%d8%af%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b5%d9%88%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%b5%d9%86%d8%af%d9%88%d9%82%d9%8b%d8%a7-%d8%b9%d9%82%d8%a7%d8%b1/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a8%d9%84%d8%aa%d9%88%d9%86-%d9%84%d8%a5%d8%af%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b5%d9%88%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%b5%d9%86%d8%af%d9%88%d9%82%d9%8b%d8%a7-%d8%b9%d9%82%d8%a7%d8%b1/</guid>
-<pubDate>Tue, 06 Oct 2026 16:54:56 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0002.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0002.jpg" alt=""/><p>أعلنت شركة بلتون لإدارة الأصول، التابعة لبلتون القابضة، تعاونها مع أمتار كابيتال لإطلاق صندوق استثمار عقاري متعدد الإصدارات، لا يزال قيد التأسيس، ويستهدف إجمالي إصدارات بقيمة 2 مليار جنيه، في نموذج يجمع بين إدارة الاستثمارات العقارية والمنصات الرقمية لإتاحة الاستثمار الجزئي أمام المستثمرين. 500 إلى 700 مليون جنيه قيمة الإصدار الأول وبحسب الشركتين، من المتوقع [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0002.jpg" alt=""/><p>أعلنت شركة بلتون لإدارة الأصول، التابعة لبلتون القابضة، تعاونها مع أمتار كابيتال لإطلاق صندوق استثمار عقاري متعدد الإصدارات، لا يزال قيد التأسيس، ويستهدف إجمالي إصدارات بقيمة 2 مليار جنيه، في نموذج يجمع بين إدارة الاستثمارات العقارية والمنصات الرقمية لإتاحة الاستثمار الجزئي أمام المستثمرين. 500 إلى 700 مليون جنيه قيمة الإصدار الأول وبحسب الشركتين، من المتوقع [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>اتصالات تحتفل بـ50 عامًا وتتجه نحو عصر الذكاء الاصطناعي.. واتصالات مصر تواصل مسيرة الريادة</title>
-<link>https://riadynews.com/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%ad%d8%aa%d9%81%d9%84-%d8%a8%d9%8050-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%88%d8%aa%d8%aa%d8%ac%d9%87-%d9%86%d8%ad%d9%88-%d8%b9%d8%b5%d8%b1-%d8%a7/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%ad%d8%aa%d9%81%d9%84-%d8%a8%d9%8050-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%88%d8%aa%d8%aa%d8%ac%d9%87-%d9%86%d8%ad%d9%88-%d8%b9%d8%b5%d8%b1-%d8%a7/</guid>
-<pubDate>Tue, 06 Oct 2026 16:51:25 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA00011.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA00011.jpg" alt=""/><p>احتفلت مجموعة «اتصالات» العالمية بمرور 50 عامًا على تأسيسها عام 1976، معلنةً بدء مرحلة جديدة من مسيرتها تركز على توسيع حضورها في قطاع الاتصالات والذكاء الاصطناعي، بالتزامن مع مواصلة «اتصالات مصر» العمل في السوق المصرية بالاسم الذي عُرفت به على مدار السنوات الماضية. 50 عامًا من الاتصالات إلى التكنولوجيا والذكاء الاصطناعي وأطلقت المجموعة احتفالات اليوبيل [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA00011.jpg" alt=""/><p>احتفلت مجموعة «اتصالات» العالمية بمرور 50 عامًا على تأسيسها عام 1976، معلنةً بدء مرحلة جديدة من مسيرتها تركز على توسيع حضورها في قطاع الاتصالات والذكاء الاصطناعي، بالتزامن مع مواصلة «اتصالات مصر» العمل في السوق المصرية بالاسم الذي عُرفت به على مدار السنوات الماضية. 50 عامًا من الاتصالات إلى التكنولوجيا والذكاء الاصطناعي وأطلقت المجموعة احتفالات اليوبيل [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>617 مليون طن نفايات إلكترونية.. فاتورة الذكاء الاصطناعي حتى 2050</title>
-<link>https://riadynews.com/21282-2/</link>
-<guid isPermaLink="true">https://riadynews.com/21282-2/</guid>
-<pubDate>Tue, 06 Oct 2026 13:11:43 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/المخلفات-الإلكترونية.png"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/المخلفات-الإلكترونية.png" alt=""/><p>ريادي- محمد الصاوي لم يعد النقاش حول التكلفة الاقتصادية للذكاء الاصطناعي يقتصر على حجم الاستثمارات المطلوبة لبناء النماذج ومراكز البيانات، أو الكميات المتزايدة من الكهرباء والمياه اللازمة لتشغيلها، إذ بدأت تظهر فاتورة أخرى مرتبطة بالبنية المادية التي تقف خلف الطفرة التكنولوجية، تتمثل في الأجهزة والمعدات التي ستخرج من الخدمة مع تسارع دورة تحديث البنية التحتية [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/المخلفات-الإلكترونية.png" alt=""/><p>ريادي- محمد الصاوي لم يعد النقاش حول التكلفة الاقتصادية للذكاء الاصطناعي يقتصر على حجم الاستثمارات المطلوبة لبناء النماذج ومراكز البيانات، أو الكميات المتزايدة من الكهرباء والمياه اللازمة لتشغيلها، إذ بدأت تظهر فاتورة أخرى مرتبطة بالبنية المادية التي تقف خلف الطفرة التكنولوجية، تتمثل في الأجهزة والمعدات التي ستخرج من الخدمة مع تسارع دورة تحديث البنية التحتية [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>فيزيتا تختتم مشاركتها في Techne Summit 2026 كراعٍ لمسار التكنولوجيا الصحية</title>
-<link>https://riadynews.com/%d9%81%d9%8a%d8%b2%d9%8a%d8%aa%d8%a7-%d8%aa%d8%ae%d8%aa%d8%aa%d9%85-%d9%85%d8%b4%d8%a7%d8%b1%d9%83%d8%aa%d9%87%d8%a7-%d9%81%d9%8a-techne-summit-2026-%d9%83%d8%b1%d8%a7%d8%b9%d9%8d-%d9%84%d9%85%d8%b3/</link>
-<guid isPermaLink="true">https://riadynews.com/%d9%81%d9%8a%d8%b2%d9%8a%d8%aa%d8%a7-%d8%aa%d8%ae%d8%aa%d8%aa%d9%85-%d9%85%d8%b4%d8%a7%d8%b1%d9%83%d8%aa%d9%87%d8%a7-%d9%81%d9%8a-techne-summit-2026-%d9%83%d8%b1%d8%a7%d8%b9%d9%8d-%d9%84%d9%85%d8%b3/</guid>
-<pubDate>Tue, 06 Oct 2026 12:41:46 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0026-scaled.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0026-scaled.jpg" alt=""/><p>اختتمت فيزيتا مشاركتها في قمة Techne Summit 2026 بصفتها راعيًا رسميًا ومنظمًا لمسار التكنولوجيا الصحية، بعد أن تولت تطوير وإدارة المحتوى المتخصص للمسار، ضمن فعاليات القمة التي استضافتها القاهرة خلال الفترة من 26 إلى 27 سبتمبر، واختتمت فعالياتها في الإسكندرية خلال الفترة من 3 إلى 5 أكتوبر الجاري. فيزيتا تدير مسار [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0026-scaled.jpg" alt=""/><p>اختتمت فيزيتا مشاركتها في قمة Techne Summit 2026 بصفتها راعيًا رسميًا ومنظمًا لمسار التكنولوجيا الصحية، بعد أن تولت تطوير وإدارة المحتوى المتخصص للمسار، ضمن فعاليات القمة التي استضافتها القاهرة خلال الفترة من 26 إلى 27 سبتمبر، واختتمت فعالياتها في الإسكندرية خلال الفترة من 3 إلى 5 أكتوبر الجاري. فيزيتا تدير مسار [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>رامسكو المصرية ضمن 11 نموذجًا عالميًا في تقرير الشمول المالي للمرأة لدول بريكس 2026</title>
-<link>https://riadynews.com/%d8%b1%d8%a7%d9%85%d8%b3%d9%83%d9%88-%d8%a7%d9%84%d9%85%d8%b5%d8%b1%d9%8a%d8%a9-%d8%b6%d9%85%d9%86-11-%d9%86%d9%85%d9%88%d8%b0%d8%ac%d9%8b%d8%a7-%d8%b9%d8%a7%d9%84%d9%85%d9%8a%d9%8b%d8%a7-%d9%81%d9%8a/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%b1%d8%a7%d9%85%d8%b3%d9%83%d9%88-%d8%a7%d9%84%d9%85%d8%b5%d8%b1%d9%8a%d8%a9-%d8%b6%d9%85%d9%86-11-%d9%86%d9%85%d9%88%d8%b0%d8%ac%d9%8b%d8%a7-%d8%b9%d8%a7%d9%84%d9%85%d9%8a%d9%8b%d8%a7-%d9%81%d9%8a/</guid>
-<pubDate>Tue, 06 Oct 2026 11:37:10 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0001.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0001.jpg" alt=""/><p>برزت شركة رامسكو مصر لتشييد وبناء القرى البيئية ضمن النماذج التي يستعرضها تقرير الشمول المالي للمرأة لعام 2026 الصادر عن تحالف سيدات الأعمال لدول بريكس (BRICS WBA)، من خلال مجموعة عمل الاقتصاد الشامل وبالشراكة مع مؤسسة Women s World Banking. وتُعد رامسكو الشركة المصرية الوحيدة ضمن 11 نموذجًا من 7 دول تناولها التقرير، [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261006-WA0001.jpg" alt=""/><p>برزت شركة رامسكو مصر لتشييد وبناء القرى البيئية ضمن النماذج التي يستعرضها تقرير الشمول المالي للمرأة لعام 2026 الصادر عن تحالف سيدات الأعمال لدول بريكس (BRICS WBA)، من خلال مجموعة عمل الاقتصاد الشامل وبالشراكة مع مؤسسة Women s World Banking. وتُعد رامسكو الشركة المصرية الوحيدة ضمن 11 نموذجًا من 7 دول تناولها التقرير، [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>راية لخدمات مراكز الاتصالات تدرس التوسع في بورسعيد أو المنصورة خلال 6 أشهر</title>
-<link>https://riadynews.com/%d8%b1%d8%a7%d9%8a%d8%a9-%d9%84%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%85%d8%b1%d8%a7%d9%83%d8%b2-%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%af%d8%b1%d8%b3-%d8%a7%d9%84%d8%aa%d9%88/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%b1%d8%a7%d9%8a%d8%a9-%d9%84%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%85%d8%b1%d8%a7%d9%83%d8%b2-%d8%a7%d9%84%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%af%d8%b1%d8%b3-%d8%a7%d9%84%d8%aa%d9%88/</guid>
-<pubDate>Tue, 06 Oct 2026 10:59:07 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/1024-14.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/1024-14.jpg" alt=""/><p>تدرس شركة راية لخدمات مراكز الاتصالات CX، إحدى شركات راية القابضة للاستثمارات المالية، التوسع في إحدى محافظتي بورسعيد أو المنصورة خلال الأشهر الستة المقبلة، في إطار خطتها لزيادة انتشارها داخل السوق المصرية وتعزيز قدرتها التشغيلية. راية تستهدف التوسع في محافظات جديدة وقال المهندس علاء الخشن، الرئيس التنفيذي لشركة راية لخدمات مراكز الاتصالات، خلال مائدة مستديرة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/1024-14.jpg" alt=""/><p>تدرس شركة راية لخدمات مراكز الاتصالات CX، إحدى شركات راية القابضة للاستثمارات المالية، التوسع في إحدى محافظتي بورسعيد أو المنصورة خلال الأشهر الستة المقبلة، في إطار خطتها لزيادة انتشارها داخل السوق المصرية وتعزيز قدرتها التشغيلية. راية تستهدف التوسع في محافظات جديدة وقال المهندس علاء الخشن، الرئيس التنفيذي لشركة راية لخدمات مراكز الاتصالات، خلال مائدة مستديرة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>الأهلي كابيتال تقترب من الاستحواذ على 40% من «القاهرة مصر للمنشآت التعليمية»</title>
-<link>https://riadynews.com/%d8%a7%d9%84%d8%a3%d9%87%d9%84%d9%8a-%d9%83%d8%a7%d8%a8%d9%8a%d8%aa%d8%a7%d9%84-%d8%aa%d9%82%d8%aa%d8%b1%d8%a8-%d9%85%d9%86-%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ad%d9%88%d8%a7%d8%b0-%d8%b9%d9%84%d9%89-40/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a7%d9%84%d8%a3%d9%87%d9%84%d9%8a-%d9%83%d8%a7%d8%a8%d9%8a%d8%aa%d8%a7%d9%84-%d8%aa%d9%82%d8%aa%d8%b1%d8%a8-%d9%85%d9%86-%d8%a7%d9%84%d8%a7%d8%b3%d8%aa%d8%ad%d9%88%d8%a7%d8%b0-%d8%b9%d9%84%d9%89-40/</guid>
-<pubDate>Tue, 06 Oct 2026 10:51:36 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/5-2.png"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/5-2.png" alt=""/><p>تقترب شركة الأهلي كابيتال، الذراع الاستثمارية للبنك الأهلي المصري، من إتمام صفقة للاستحواذ على كامل حصة السويدي كابيتال في شركة القاهرة مصر للمنشآت التعليمية، والبالغة 40%، بما يعادل نحو 30 مليون سهم، وذلك قبل نهاية العام الجاري. الأهلي كابيتال تدخل شريكًا مع سيرا للتعليم تأتي الصفقة بعد حصول الأهلي كابيتال على موافقة جهاز [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/5-2.png" alt=""/><p>تقترب شركة الأهلي كابيتال، الذراع الاستثمارية للبنك الأهلي المصري، من إتمام صفقة للاستحواذ على كامل حصة السويدي كابيتال في شركة القاهرة مصر للمنشآت التعليمية، والبالغة 40%، بما يعادل نحو 30 مليون سهم، وذلك قبل نهاية العام الجاري. الأهلي كابيتال تدخل شريكًا مع سيرا للتعليم تأتي الصفقة بعد حصول الأهلي كابيتال على موافقة جهاز [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>الرقابة المالية تعتمد طرح 20% من «إم إن تي تيك» بـ24.50 جنيه للسهم</title>
-<link>https://riadynews.com/%d8%a7%d9%84%d8%b1%d9%82%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d9%85%d8%a7%d9%84%d9%8a%d8%a9-%d8%aa%d8%b9%d8%aa%d9%85%d8%af-%d8%b7%d8%b1%d8%ad-20-%d9%85%d9%86-%d8%a5%d9%85-%d8%a5%d9%86-%d8%aa%d9%8a/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a7%d9%84%d8%b1%d9%82%d8%a7%d8%a8%d8%a9-%d8%a7%d9%84%d9%85%d8%a7%d9%84%d9%8a%d8%a9-%d8%aa%d8%b9%d8%aa%d9%85%d8%af-%d8%b7%d8%b1%d8%ad-20-%d9%85%d9%86-%d8%a5%d9%85-%d8%a5%d9%86-%d8%aa%d9%8a/</guid>
-<pubDate>Tue, 06 Oct 2026 08:36:28 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/09/شعار-مبني.gif"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/09/شعار-مبني.gif" alt=""/><p>خاص – ريادي وافقت الهيئة العامة للرقابة المالية على اعتماد نشرة الطرح العام والخاص لأسهم شركة إم إن تي تيك القابضة للاستثمارات المالية، تمهيدًا لاستكمال إجراءات طرح أسهم الشركة في البورصة المصرية وتحويل القيد المؤقت إلى قيد نهائي. وتتضمن نشرة الطرح بيع عدد أقصاه 320 مليون سهم تمثل 20% من إجمالي أسهم رأس مال [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/09/شعار-مبني.gif" alt=""/><p>خاص – ريادي وافقت الهيئة العامة للرقابة المالية على اعتماد نشرة الطرح العام والخاص لأسهم شركة إم إن تي تيك القابضة للاستثمارات المالية، تمهيدًا لاستكمال إجراءات طرح أسهم الشركة في البورصة المصرية وتحويل القيد المؤقت إلى قيد نهائي. وتتضمن نشرة الطرح بيع عدد أقصاه 320 مليون سهم تمثل 20% من إجمالي أسهم رأس مال [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>دعوى قضائية ضد OpenAI بسبب استخدام اسم «Astra» لنموذج ذكاء اصطناعي</title>
-<link>https://riadynews.com/%d8%af%d8%b9%d9%88%d9%89-%d9%82%d8%b6%d8%a7%d8%a6%d9%8a%d8%a9-%d8%b6%d8%af-openai-%d8%a8%d8%b3%d8%a8%d8%a8-%d8%a7%d8%b3%d8%aa%d8%ae%d8%af%d8%a7%d9%85-%d8%a7%d8%b3%d9%85-astra-%d9%84%d9%86/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%af%d8%b9%d9%88%d9%89-%d9%82%d8%b6%d8%a7%d8%a6%d9%8a%d8%a9-%d8%b6%d8%af-openai-%d8%a8%d8%b3%d8%a8%d8%a8-%d8%a7%d8%b3%d8%aa%d8%ae%d8%af%d8%a7%d9%85-%d8%a7%d8%b3%d9%85-astra-%d9%84%d9%86/</guid>
-<pubDate>Tue, 06 Oct 2026 08:26:55 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/openai-astra.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/openai-astra.jpg" alt=""/><p>تواجه شركة OpenAI دعوى قضائية أمام محكمة فيدرالية في سان فرانسيسكو، تتهمها بانتهاك علامة تجارية مسجلة بعد استخدام اسم «Astra» لنموذج ذكاء اصطناعي جديد. شركة «تريد صن» تطالب بوقف استخدام اسم Astra ورفعت شركة «تريد صن» الدعوى ضد OpenAI، قائلة إنها تستخدم اسم «Astra» في برمجياتها منذ عام 2021، كما سجلت الاسم كعلامة تجارية [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/openai-astra.jpg" alt=""/><p>تواجه شركة OpenAI دعوى قضائية أمام محكمة فيدرالية في سان فرانسيسكو، تتهمها بانتهاك علامة تجارية مسجلة بعد استخدام اسم «Astra» لنموذج ذكاء اصطناعي جديد. شركة «تريد صن» تطالب بوقف استخدام اسم Astra ورفعت شركة «تريد صن» الدعوى ضد OpenAI، قائلة إنها تستخدم اسم «Astra» في برمجياتها منذ عام 2021، كما سجلت الاسم كعلامة تجارية [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>جوجل تقترب من صفقة نووية بأكثر من مليار دولار لتلبية احتياجات الذكاء الاصطناعي</title>
-<link>https://riadynews.com/%d8%ac%d9%88%d8%ac%d9%84-%d8%aa%d9%82%d8%aa%d8%b1%d8%a8-%d9%85%d9%86-%d8%b5%d9%81%d9%82%d8%a9-%d9%86%d9%88%d9%88%d9%8a%d8%a9-%d8%a8%d8%a3%d9%83%d8%ab%d8%b1-%d9%85%d9%86-%d9%85%d9%84%d9%8a%d8%a7%d8%b1/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%ac%d9%88%d8%ac%d9%84-%d8%aa%d9%82%d8%aa%d8%b1%d8%a8-%d9%85%d9%86-%d8%b5%d9%81%d9%82%d8%a9-%d9%86%d9%88%d9%88%d9%8a%d8%a9-%d8%a8%d8%a3%d9%83%d8%ab%d8%b1-%d9%85%d9%86-%d9%85%d9%84%d9%8a%d8%a7%d8%b1/</guid>
-<pubDate>Tue, 06 Oct 2026 08:20:58 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/google.webp.webp"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/google.webp.webp" alt=""/><p>تقترب شركة ألفابت، المالكة لـ«جوجل»، من إبرام اتفاق مع شركة كونستيليشن إنرجي لشراء طاقة نووية بقيمة تتجاوز مليار دولار على مدى عدة سنوات، في تحرك يعكس تزايد اعتماد شركات التكنولوجيا على الطاقة النووية لتأمين احتياجات مراكز البيانات المتنامية مع توسع تطبيقات الذكاء الاصطناعي. اتفاق جوجل وكونستيليشن لم يُحسم بعد وبحسب أشخاص مطلعين على المفاوضات، [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/google.webp.webp" alt=""/><p>تقترب شركة ألفابت، المالكة لـ«جوجل»، من إبرام اتفاق مع شركة كونستيليشن إنرجي لشراء طاقة نووية بقيمة تتجاوز مليار دولار على مدى عدة سنوات، في تحرك يعكس تزايد اعتماد شركات التكنولوجيا على الطاقة النووية لتأمين احتياجات مراكز البيانات المتنامية مع توسع تطبيقات الذكاء الاصطناعي. اتفاق جوجل وكونستيليشن لم يُحسم بعد وبحسب أشخاص مطلعين على المفاوضات، [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>مصر تستعد لتوسيع أدوات التمويل طويلة الأجل لدعم الشركات الناشئة</title>
-<link>https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d8%b3%d8%aa%d8%b9%d8%af-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7/</link>
-<guid isPermaLink="true">https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d8%b3%d8%aa%d8%b9%d8%af-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7/</guid>
-<pubDate>Tue, 06 Oct 2026 07:39:36 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/07/82603be4-86de-43c6-83a8-ef802ef87855_16x9_1200x676.webp"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/07/82603be4-86de-43c6-83a8-ef802ef87855_16x9_1200x676.webp" alt=""/><p>تستهدف الحكومة المصرية التوسع في أدوات التمويل المبتكرة طويلة الأجل وتنويع مصادر التمويل وزيادة السيولة المتاحة للقطاع الخاص، مع تخصيص محور لدعم الشركات الناشئة والمشروعات سريعة النمو ضمن «البرنامج الوطني للتحول الاقتصادي». الاقتصاد المصري ينمو 5.1% وقال الدكتور أحمد رستم، وزير التخطيط والتنمية الاقتصادية، إن الاقتصاد المصري سجل نموًا بنسبة 5.1% بنهاية العام المالي [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/07/82603be4-86de-43c6-83a8-ef802ef87855_16x9_1200x676.webp" alt=""/><p>تستهدف الحكومة المصرية التوسع في أدوات التمويل المبتكرة طويلة الأجل وتنويع مصادر التمويل وزيادة السيولة المتاحة للقطاع الخاص، مع تخصيص محور لدعم الشركات الناشئة والمشروعات سريعة النمو ضمن «البرنامج الوطني للتحول الاقتصادي». الاقتصاد المصري ينمو 5.1% وقال الدكتور أحمد رستم، وزير التخطيط والتنمية الاقتصادية، إن الاقتصاد المصري سجل نموًا بنسبة 5.1% بنهاية العام المالي [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>شراكات مصرية أوروبية لتوسيع تصنيع السيارات ونقل التكنولوجيا</title>
-<link>https://riadynews.com/%d8%b4%d8%b1%d8%a7%d9%83%d8%a7%d8%aa-%d9%85%d8%b5%d8%b1%d9%8a%d8%a9-%d8%a3%d9%88%d8%b1%d9%88%d8%a8%d9%8a%d8%a9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%aa%d8%b5%d9%86%d9%8a%d8%b9-%d8%a7%d9%84%d8%b3/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%b4%d8%b1%d8%a7%d9%83%d8%a7%d8%aa-%d9%85%d8%b5%d8%b1%d9%8a%d8%a9-%d8%a3%d9%88%d8%b1%d9%88%d8%a8%d9%8a%d8%a9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%aa%d8%b5%d9%86%d9%8a%d8%b9-%d8%a7%d9%84%d8%b3/</guid>
-<pubDate>Mon, 05 Oct 2026 18:02:32 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0019.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0019.jpg" alt=""/><p>بحثت مجموعة Ezzeldin Group لتصنيع السيارات وشركة GMCE فرص التعاون مع قيادات وخبراء في قطاع السيارات بألمانيا، ضمن تحركات تستهدف توسيع الشراكات الصناعية مع الشركات الأوروبية ودعم خطط التصنيع والتوسع من مصر إلى أسواق الشرق الأوسط وأفريقيا. رئيس GMCE يبحث التعاون مع قيادات Volkswagen في ألمانيا وشارك المهندس محمد عز الدين، رئيس مجلس إدارة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0019.jpg" alt=""/><p>بحثت مجموعة Ezzeldin Group لتصنيع السيارات وشركة GMCE فرص التعاون مع قيادات وخبراء في قطاع السيارات بألمانيا، ضمن تحركات تستهدف توسيع الشراكات الصناعية مع الشركات الأوروبية ودعم خطط التصنيع والتوسع من مصر إلى أسواق الشرق الأوسط وأفريقيا. رئيس GMCE يبحث التعاون مع قيادات Volkswagen في ألمانيا وشارك المهندس محمد عز الدين، رئيس مجلس إدارة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>CIB يستثمر ملياري جنيه في الطرح المقترح لـMNT-Halan بالبورصة المصرية</title>
-<link>https://riadynews.com/cib-%d9%8a%d8%b3%d8%aa%d8%ab%d9%85%d8%b1-%d9%85%d9%84%d9%8a%d8%a7%d8%b1%d9%8a-%d8%ac%d9%86%d9%8a%d9%87-%d9%81%d9%8a-%d8%a7%d9%84%d8%b7%d8%b1%d8%ad-%d8%a7%d9%84%d9%85%d9%82%d8%aa%d8%b1%d8%ad-%d9%84/</link>
-<guid isPermaLink="true">https://riadynews.com/cib-%d9%8a%d8%b3%d8%aa%d8%ab%d9%85%d8%b1-%d9%85%d9%84%d9%8a%d8%a7%d8%b1%d9%8a-%d8%ac%d9%86%d9%8a%d9%87-%d9%81%d9%8a-%d8%a7%d9%84%d8%b7%d8%b1%d8%ad-%d8%a7%d9%84%d9%85%d9%82%d8%aa%d8%b1%d8%ad-%d9%84/</guid>
-<pubDate>Mon, 05 Oct 2026 13:53:56 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0010-scaled.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0010-scaled.jpg" alt=""/><p>وقع البنك التجاري الدولي – مصر (CIB) اتفاقية استثمار رئيسي مع شركة MNT Tech Holding for Financial Investments المعروفة باسم «MNT-Halan»، وشركة MNT Investments B.V، تتيح للبنك الاستثمار بما يصل إلى ملياري جنيه مصري في أسهم الشركة ضمن الطرح الدولي المقترح وقيد أسهمها في البورصة المصرية. استثمار CIB في طرح MNT-Halan وأعلن CIB إبرام [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0010-scaled.jpg" alt=""/><p>وقع البنك التجاري الدولي – مصر (CIB) اتفاقية استثمار رئيسي مع شركة MNT Tech Holding for Financial Investments المعروفة باسم «MNT-Halan»، وشركة MNT Investments B.V، تتيح للبنك الاستثمار بما يصل إلى ملياري جنيه مصري في أسهم الشركة ضمن الطرح الدولي المقترح وقيد أسهمها في البورصة المصرية. استثمار CIB في طرح MNT-Halan وأعلن CIB إبرام [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>البنك الأهلي المصري يحقق 175.5 مليار جنيه صافي أرباح خلال 2025</title>
-<link>https://riadynews.com/%d8%a7%d9%84%d8%a8%d9%86%d9%83-%d8%a7%d9%84%d8%a3%d9%87%d9%84%d9%8a-%d8%a7%d9%84%d9%85%d8%b5%d8%b1%d9%8a-%d9%8a%d8%ad%d9%82%d9%82-175-5-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%ac%d9%86%d9%8a%d9%87-%d8%b5/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a7%d9%84%d8%a8%d9%86%d9%83-%d8%a7%d9%84%d8%a3%d9%87%d9%84%d9%8a-%d8%a7%d9%84%d9%85%d8%b5%d8%b1%d9%8a-%d9%8a%d8%ad%d9%82%d9%82-175-5-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%ac%d9%86%d9%8a%d9%87-%d8%b5/</guid>
-<pubDate>Mon, 05 Oct 2026 12:43:13 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0009.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0009.jpg" alt=""/><p>أعلن البنك الأهلي المصري تحقيق صافي أرباح بعد الضرائب بقيمة 175.5 مليار جنيه خلال السنة المالية المنتهية في 31 ديسمبر 2025، مقابل 133.3 مليار جنيه في ديسمبر 2024، بزيادة قدرها 42.2 مليار جنيه، وفقًا لنتائج الأعمال التي اعتمدتها الجمعية العامة للبنك. 312.5 مليار جنيه أرباحًا قبل الضرائب عقدت الجمعية العامة للبنك الأهلي المصري اجتماعها [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0009.jpg" alt=""/><p>أعلن البنك الأهلي المصري تحقيق صافي أرباح بعد الضرائب بقيمة 175.5 مليار جنيه خلال السنة المالية المنتهية في 31 ديسمبر 2025، مقابل 133.3 مليار جنيه في ديسمبر 2024، بزيادة قدرها 42.2 مليار جنيه، وفقًا لنتائج الأعمال التي اعتمدتها الجمعية العامة للبنك. 312.5 مليار جنيه أرباحًا قبل الضرائب عقدت الجمعية العامة للبنك الأهلي المصري اجتماعها [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>ريفولوت تتصدر شركات أوروبا الناشئة بتقييم 115 مليار دولار.. و80 مليون عميل</title>
-<link>https://riadynews.com/%d8%b1%d9%8a%d9%81%d9%88%d9%84%d9%88%d8%aa-%d8%aa%d8%aa%d8%b5%d8%af%d8%b1-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d8%a3%d9%88%d8%b1%d9%88%d8%a8%d8%a7-%d8%a7%d9%84%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%a8%d8%aa/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%b1%d9%8a%d9%81%d9%88%d9%84%d9%88%d8%aa-%d8%aa%d8%aa%d8%b5%d8%af%d8%b1-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d8%a3%d9%88%d8%b1%d9%88%d8%a8%d8%a7-%d8%a7%d9%84%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%a8%d8%aa/</guid>
-<pubDate>Mon, 05 Oct 2026 10:56:05 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/1791131750-0.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/1791131750-0.jpg" alt=""/><p>خاص – ريادي صعدت شركة التكنولوجيا المالية البريطانية ريفولوت (Revolut) لتصبح الشركة الناشئة الأعلى قيمة في أوروبا، بعدما وصل تقييمها الخاص إلى نحو 115 مليار دولار، متجاوزًا القيمة السوقية لبنكي باركليز البريطاني وسوسيتيه جنرال الفرنسي. وتعكس القفزة الكبيرة في قيمة «ريفولوت» النمو السريع للشركة منذ تأسيسها، مع توسعها في الخدمات المالية الرقمية وسعيها لبناء [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/1791131750-0.jpg" alt=""/><p>خاص – ريادي صعدت شركة التكنولوجيا المالية البريطانية ريفولوت (Revolut) لتصبح الشركة الناشئة الأعلى قيمة في أوروبا، بعدما وصل تقييمها الخاص إلى نحو 115 مليار دولار، متجاوزًا القيمة السوقية لبنكي باركليز البريطاني وسوسيتيه جنرال الفرنسي. وتعكس القفزة الكبيرة في قيمة «ريفولوت» النمو السريع للشركة منذ تأسيسها، مع توسعها في الخدمات المالية الرقمية وسعيها لبناء [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>نادر خزام: تسريع إجراءات إنشاء المصانع يعزز نمو الصناعة والاقتصاد المصري</title>
-<link>https://riadynews.com/%d9%86%d8%a7%d8%af%d8%b1-%d8%ae%d8%b2%d8%a7%d9%85-%d8%aa%d8%b3%d8%b1%d9%8a%d8%b9-%d8%a5%d8%ac%d8%b1%d8%a7%d8%a1%d8%a7%d8%aa-%d8%a5%d9%86%d8%b4%d8%a7%d8%a1-%d8%a7%d9%84%d9%85%d8%b5%d8%a7%d9%86%d8%b9/</link>
-<guid isPermaLink="true">https://riadynews.com/%d9%86%d8%a7%d8%af%d8%b1-%d8%ae%d8%b2%d8%a7%d9%85-%d8%aa%d8%b3%d8%b1%d9%8a%d8%b9-%d8%a5%d8%ac%d8%b1%d8%a7%d8%a1%d8%a7%d8%aa-%d8%a5%d9%86%d8%b4%d8%a7%d8%a1-%d8%a7%d9%84%d9%85%d8%b5%d8%a7%d9%86%d8%b9/</guid>
-<pubDate>Mon, 05 Oct 2026 10:49:18 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0008.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0008.jpg" alt=""/><p>أكد النائب نادر خزام، عضو مجلس الشيوخ، أن تسريع تنفيذ توجيهات الرئيس عبد الفتاح السيسي بشأن تيسير إجراءات إنشاء المصانع، خاصة في القطاعات ذات الأولوية، يمثل خطوة مهمة لتحسين مناخ الاستثمار الصناعي ودعم نمو الاقتصاد المصري. تيسير إجراءات إنشاء المصانع لدعم الاستثمار الصناعي وقال خزام إن وضوح الإجراءات، وسرعة إصدار التراخيص، وتوافر [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0008.jpg" alt=""/><p>أكد النائب نادر خزام، عضو مجلس الشيوخ، أن تسريع تنفيذ توجيهات الرئيس عبد الفتاح السيسي بشأن تيسير إجراءات إنشاء المصانع، خاصة في القطاعات ذات الأولوية، يمثل خطوة مهمة لتحسين مناخ الاستثمار الصناعي ودعم نمو الاقتصاد المصري. تيسير إجراءات إنشاء المصانع لدعم الاستثمار الصناعي وقال خزام إن وضوح الإجراءات، وسرعة إصدار التراخيص، وتوافر [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>بوسطة تحصد 4 جوائز دولية وتستعد لموسم Black Friday ببنية لوجستية مدعومة بالتكنولوجيا</title>
-<link>https://riadynews.com/%d8%a8%d9%88%d8%b3%d8%b7%d8%a9-%d8%aa%d8%ad%d8%b5%d8%af-4-%d8%ac%d9%88%d8%a7%d8%a6%d8%b2-%d8%af%d9%88%d9%84%d9%8a%d8%a9-%d9%88%d8%aa%d8%b3%d8%aa%d8%b9%d8%af-%d9%84%d9%85%d9%88%d8%b3%d9%85-black-friday/</link>
-<guid isPermaLink="true">https://riadynews.com/%d8%a8%d9%88%d8%b3%d8%b7%d8%a9-%d8%aa%d8%ad%d8%b5%d8%af-4-%d8%ac%d9%88%d8%a7%d8%a6%d8%b2-%d8%af%d9%88%d9%84%d9%8a%d8%a9-%d9%88%d8%aa%d8%b3%d8%aa%d8%b9%d8%af-%d9%84%d9%85%d9%88%d8%b3%d9%85-black-friday/</guid>
-<pubDate>Mon, 05 Oct 2026 10:35:34 GMT</pubDate>
-<media:thumbnail url="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0007.jpg"/>
-<description><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0007.jpg" alt=""/><p>حصدت شركة بوسطة (Bosta) 4 جوائز ضمن International Business Magazine Awards 2026، تقديرًا لأدائها في قطاع الخدمات اللوجستية، وابتكارها في التكنولوجيا، وتركيزها على تطوير تجربة العملاء، بالتزامن مع استعدادها لموسم Black Friday 2026 وتعزيز جاهزية شبكتها التشغيلية والتكنولوجية لاستيعاب الزيادة المتوقعة في أحجام الطلبات والشحنات. 4 جوائز لبوسطة في الخدمات اللوجستية والتكنولوجيا شملت [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://riadynews.com/wp-content/uploads/2026/10/IMG-20261005-WA0007.jpg" alt=""/><p>حصدت شركة بوسطة (Bosta) 4 جوائز ضمن International Business Magazine Awards 2026، تقديرًا لأدائها في قطاع الخدمات اللوجستية، وابتكارها في التكنولوجيا، وتركيزها على تطوير تجربة العملاء، بالتزامن مع استعدادها لموسم Black Friday 2026 وتعزيز جاهزية شبكتها التشغيلية والتكنولوجية لاستيعاب الزيادة المتوقعة في أحجام الطلبات والشحنات. 4 جوائز لبوسطة في الخدمات اللوجستية والتكنولوجيا شملت [&amp;hellip;]</p>]]></content:encoded>
-</item>
-</channel></rss>
+	<title>ريادي</title>
+	<atom:link href="https://riadynews.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://riadynews.com</link>
+	<description>أول موقع ومجلة متخصصة فى ريادة الأعمال بمصر</description>
+	<lastBuildDate>Wed, 07 Oct 2026 08:35:57 +0000</lastBuildDate>
+	<language>ar</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://riadynews.com/wp-content/uploads/2024/05/cropped-Riady-Logo-512x512-Social-Media-1-32x32.png</url>
+	<title>ريادي</title>
+	<link>https://riadynews.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>إي فاينانس تفتح بوابة Alibaba Cloud إلى مصر عبر بنية سحابية محلية</title>
+		<link>https://riadynews.com/%d8%a5%d9%8a-%d9%81%d8%a7%d9%8a%d9%86%d8%a7%d9%86%d8%b3-%d8%aa%d9%81%d8%aa%d8%ad-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-alibaba-cloud-%d8%a5%d9%84%d9%89-%d9%85%d8%b5%d8%b1-%d8%b9%d8%a8%d8%b1-%d8%a8%d9%86/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25d8%25a5%25d9%258a-%25d9%2581%25d8%25a7%25d9%258a%25d9%2586%25d8%25a7%25d9%2586%25d8%25b3-%25d8%25aa%25d9%2581%25d8%25aa%25d8%25ad-%25d8%25a8%25d9%2588%25d8%25a7%25d8%25a8%25d8%25a9-alibaba-cloud-%25d8%25a5%25d9%2584%25d9%2589-%25d9%2585%25d8%25b5%25d8%25b1-%25d8%25b9%25d8%25a8%25d8%25b1-%25d8%25a8%25d9%2586</link>
+					<comments>https://riadynews.com/%d8%a5%d9%8a-%d9%81%d8%a7%d9%8a%d9%86%d8%a7%d9%86%d8%b3-%d8%aa%d9%81%d8%aa%d8%ad-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-alibaba-cloud-%d8%a5%d9%84%d9%89-%d9%85%d8%b5%d8%b1-%d8%b9%d8%a8%d8%b1-%d8%a8%d9%86/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 08:35:57 +0000</pubDate>
+				<category><![CDATA[تكنولوجيا]]></category>
+		<category><![CDATA[Alibaba Cloud في مصر]]></category>
+		<category><![CDATA[Nuvexa]]></category>
+		<category><![CDATA[إي فاينانس]]></category>
+		<category><![CDATA[البنية التحتية السحابية]]></category>
+		<category><![CDATA[التجارة الرقمية]]></category>
+		<category><![CDATA[الحوسبة السحابية في مصر]]></category>
+		<category><![CDATA[الذكاء الاصطناعي]]></category>
+		<category><![CDATA[الذكاء الاصطناعي في مصر]]></category>
+		<category><![CDATA[السحابة المحلية]]></category>
+		<category><![CDATA[الشركات الصغيرة والمتوسطة]]></category>
+		<category><![CDATA[الشركات المصرية]]></category>
+		<category><![CDATA[توطين البيانات]]></category>
+		<category><![CDATA[علي بابا]]></category>
+		<category><![CDATA[مراكز البيانات]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21321</guid>
+
+					<description><![CDATA[<p>&#160; وقعت إي فاينانس للاستثمارات المالية والرقمية وAlibaba Cloud وNuvexa مذكرة تفاهم ثلاثية لاستكشاف إتاحة خدمات الحوسبة السحابية والذكاء الاصطناعي التابعة لعملاق التكنولوجيا الصيني للشركات في مصر، بالاعتماد على بنية تحتية مستضافة محليًا تابعة لإي فاينانس. ويستهدف التعاون المقترح الجمع بين القدرات العالمية لـAlibaba Cloud والبنية التحتية المحلية لإي فاينانس، مع استضافة البيانات والتطبيقات ومعالجتها [&#8230;]</p>
+The post <a href="https://riadynews.com/%d8%a5%d9%8a-%d9%81%d8%a7%d9%8a%d9%86%d8%a7%d9%86%d8%b3-%d8%aa%d9%81%d8%aa%d8%ad-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-alibaba-cloud-%d8%a5%d9%84%d9%89-%d9%85%d8%b5%d8%b1-%d8%b9%d8%a8%d8%b1-%d8%a8%d9%86/">إي فاينانس تفتح بوابة Alibaba Cloud إلى مصر عبر بنية سحابية محلية</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>&nbsp;</p>
+<article>
+<header>وقعت إي فاينانس للاستثمارات المالية والرقمية وAlibaba Cloud وNuvexa مذكرة تفاهم ثلاثية لاستكشاف إتاحة خدمات الحوسبة السحابية والذكاء الاصطناعي التابعة لعملاق التكنولوجيا الصيني للشركات في مصر، بالاعتماد على بنية تحتية مستضافة محليًا تابعة لإي فاينانس.</p>
+<p>ويستهدف التعاون المقترح الجمع بين القدرات العالمية لـAlibaba Cloud والبنية التحتية المحلية لإي فاينانس، مع استضافة البيانات والتطبيقات ومعالجتها داخل مصر، وفقًا للقوانين والمتطلبات التنظيمية المعمول بها.</p>
+</header>
+<section>
+<h2>كيف تفتح إي فاينانس السوق المصرية أمام Alibaba Cloud؟</h2>
+<p>يقوم النموذج محل الاستكشاف على توسيع نطاق منصة إي فاينانس السحابية، بما يسمح للشركات المصرية بالوصول إلى خدمات Alibaba Cloud في الحوسبة السحابية والذكاء الاصطناعي من خلال البنية التحتية المحلية للشركة.</p><div id="riady-552430678" class="riady- riady-entity-placement"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4620366728342170"
+     crossorigin="anonymous"></script></div>
+<p>ويمنح هذا النموذج إي فاينانس دورًا يتجاوز تقديم الخدمات الرقمية التقليدية، لتصبح حلقة وصل محتملة بين الشركات المصرية ومزودي التكنولوجيا السحابية العالميين، بينما تحصل Alibaba Cloud على قناة محلية للوصول إلى قاعدة أوسع من المؤسسات والشركات في السوق المصرية.</p>
+<p>ولا تزال الشراكة في مرحلة مذكرة التفاهم واستكشاف النموذج الفني والتجاري والتشغيلي، ولم ينتقل الأطراف بعد إلى التنفيذ الكامل أو الإعلان عن تفاصيل تجارية نهائية.</p>
+</section>
+<section>
+<h2>منصة سحابية متعددة المزودين</h2>
+<p>يستهدف النموذج المقترح توفير بيئة سحابية متعددة المزودين، تتيح للشركات اختيار الخدمات التي تتناسب مع طبيعة أعمالها وأحمالها التكنولوجية، مع إمكانية نقل أحمال العمل بين بيئات سحابية مختلفة.</p>
+<p>كما يتضمن النموذج المقترح وجود جهة تعاقد محلية يمكنها تقديم خدمات الاستضافة والتشغيل والخدمات المدارة، بما قد يسهّل تعامل الشركات المصرية مع الخدمات السحابية العالمية ويقلل من التعقيدات التشغيلية المرتبطة بإدارة هذه الخدمات بصورة مباشرة.</p>
+</section>
+<section>
+<h2>الذكاء الاصطناعي في قلب التعاون</h2>
+<p>لا يقتصر التعاون على خدمات الحوسبة السحابية التقليدية، إذ يمثل الذكاء الاصطناعي أحد المحاور الرئيسية للشراكة، مع استهداف إتاحة قدرات حوسبية تساعد المؤسسات المصرية على تدريب نماذج الذكاء الاصطناعي ونشرها وتشغيل أحمالها داخل مصر.</p>
+<p>وتوفر Alibaba Cloud تقنيات الحوسبة السحابية والذكاء الاصطناعي، بينما توفر إي فاينانس البنية التحتية المحلية، في حين تشارك Nuvexa بخبراتها في تمكين العملاء وتقديم الدعم المحلي للحلول السحابية.</p>
+<p>ويعكس ذلك تحولًا في طبيعة الطلب على البنية التحتية الرقمية، مع توسع استخدام السحابة من تخزين البيانات وتشغيل التطبيقات إلى تحليل البيانات، وتطوير تطبيقات الذكاء الاصطناعي، وتدريب النماذج، وتشغيل أحمال حوسبية أكثر تعقيدًا.</p>
+</section>
+<section>
+<h2>توطين البيانات.. مفتاح الوصول إلى التكنولوجيا العالمية</h2>
+<p>يمثل توطين البيانات داخل مصر أحد العناصر الرئيسية في النموذج المقترح، إذ يستهدف الأطراف استضافة البيانات المرتبطة بالخدمات المقدمة من خلال الشراكة ومعالجتها داخل السوق المصرية، وفقًا للقوانين والاشتراطات التنظيمية المعمول بها.</p>
+<p>ويتيح ذلك للشركات المصرية إمكانية الوصول إلى تقنيات عالمية في الحوسبة السحابية والذكاء الاصطناعي، مع الاحتفاظ ببياناتها وتطبيقاتها داخل مصر، وهو عامل مهم خصوصًا للمؤسسات التي تتطلب مستويات مرتفعة من التحكم في البيانات والامتثال التنظيمي.</p>
+<p>وبذلك يطرح التعاون نموذجًا يجمع بين التكنولوجيا العالمية والبنية التحتية المحلية، بدلًا من الاعتماد على خدمات يتم تقديمها من خارج السوق دون وجود طبقة تشغيل واستضافة محلية.</p>
+</section>
+<section>
+<h2>الشركات الصغيرة والزراعة والتجارة الرقمية في مقدمة القطاعات المستهدفة</h2>
+<p>يعتزم أطراف مذكرة التفاهم استكشاف حلول تستهدف مجموعة من الأنشطة الاقتصادية، مع التركيز مبدئيًا على الشركات الصغيرة والمتوسطة، والقطاع الزراعي، والتجارة الرقمية.</p>
+<p>وبالنسبة للشركات الصغيرة والمتوسطة، يمكن للخدمات السحابية أن تساعد في تقليل الحاجة إلى الاستثمار المباشر في البنية التحتية التكنولوجية، إلى جانب توفير قدرات حوسبية أكثر مرونة.</p>
+<p>وفي القطاع الزراعي، تستهدف الشراكة استكشاف تطبيقات تعتمد على البيانات والذكاء الاصطناعي والأدوات الرقمية، بينما يركز النموذج في التجارة الرقمية على توفير بنية تحتية قابلة للتوسع واستضافة محلية لدعم الشركات ذات أحجام الطلب والمعاملات المتغيرة.</p>
+</section>
+<section>
+<h2>إبراهيم سرحان: الشركات المصرية لا ينبغي أن تختار بين التكنولوجيا العالمية وتوطين البيانات</h2>
+<p>قال إبراهيم سرحان، رئيس مجلس الإدارة والعضو المنتدب لمجموعة إي فاينانس للاستثمارات المالية والرقمية، إن الشركات المصرية لا ينبغي أن تضطر إلى الاختيار بين استخدام تقنيات سحابية عالمية المستوى والاحتفاظ ببياناتها داخل مصر.</p>
+<p>وأوضح أن هدف إي فاينانس يتمثل في تشغيل طبقة بنية تحتية محلية يمكن لعدد من المنصات العالمية العمل من خلالها، بما يمنح العملاء إمكانية اختيار التكنولوجيا التي تلبي احتياجاتهم، مع بقاء خدمات الاستضافة والتشغيل والخدمات المدارة داخل مصر.</p>
+</section>
+<section>
+<h2>Alibaba Cloud: مصر بوابة محتملة إلى السوق الأفريقية</h2>
+<p>من جانبها، ترى Alibaba Cloud أن التعاون يمثل خطوة لإتاحة قدراتها في الحوسبة السحابية والذكاء الاصطناعي في مصر، مع إمكانية دعم التوسع نحو السوق الأفريقية الأوسع.</p>
+<p>وقال دانيال تشاو، نائب رئيس Alibaba Cloud International، إن الشركة تستهدف من خلال التعاون تمكين الشركات المصرية من الاستفادة من تقنيات الحوسبة السحابية والذكاء الاصطناعي المستخدمة في دعم التحول الرقمي، مع بقاء البيانات داخل مصر والالتزام بالمتطلبات التنظيمية المحلية.</p>
+<p>وتمنح السوق المصرية، وفقًا للنموذج المقترح، Alibaba Cloud قناة للوصول إلى الشركات والمؤسسات المحلية، مع إمكانية النظر إلى مصر كنقطة انطلاق لخدمات تستهدف أسواقًا إقليمية وأفريقية في المستقبل، دون أن تتضمن مذكرة التفاهم الحالية إعلانًا عن توسع محدد أو جدول زمني في هذه الأسواق.</p>
+</section>
+<section>
+<h2>Nuvexa تربط التكنولوجيا العالمية باحتياجات المؤسسات المصرية</h2>
+<p>تشارك Nuvexa في التعاون من خلال تمكين العملاء وتقديم الدعم المحلي للحلول السحابية، بما يربط القدرات التكنولوجية لـAlibaba Cloud باحتياجات المؤسسات في السوق المصرية.</p>
+<p>وقال هيثم الموهين، المؤسس والرئيس التنفيذي لـNuvexa، إن المؤسسات المصرية تمتلك الكفاءات والبيانات اللازمة لتطوير تطبيقات الذكاء الاصطناعي، لكنها تحتاج إلى قدرات حوسبية مناسبة وبيئة محلية موثوقة لاستضافة أحمال العمل.</p>
+<p>وتستهدف الشركة في المرحلة الأولى التركيز على قطاعات تشمل التعليم، والمدن والمجتمعات الذكية، والزراعة، مع إتاحة تقنيات الذكاء الاصطناعي والحوسبة السحابية للمؤسسات داخل مصر.</p>
+</section>
+<section>
+<h2>ما الذي تعنيه الشراكة لسوق الحوسبة السحابية في مصر؟</h2>
+<p>تكمن أهمية مذكرة التفاهم في النموذج المقترح أكثر من كونها اتفاقًا تجاريًا نهائيًا؛ إذ تجمع للمرة الأولى ضمن هذا التعاون بين مزود عالمي لتقنيات السحابة والذكاء الاصطناعي، وبنية تحتية محلية، وشريك متخصص في تمكين المؤسسات ودعم الحلول السحابية.</p>
+<p>وإذا انتقل النموذج من مرحلة الاستكشاف إلى التنفيذ، فقد يتيح للشركات المصرية الجمع بين الوصول إلى تقنيات عالمية متقدمة ومتطلبات استضافة البيانات وتشغيل الخدمات داخل السوق المحلية.</p>
+<p>وبالنسبة لإي فاينانس، يمثل التعاون فرصة لتعزيز موقعها كحلقة وصل بين الشركات المصرية ومزودي التكنولوجيا العالميين، بينما يمنح Alibaba Cloud قناة للوصول إلى شريحة أوسع من المؤسسات في مصر.</p>
+<p>ومع ذلك، فإن تحديد النموذج النهائي للاستضافة والتشغيل والأطر التجارية والتنظيمية يظل مرتبطًا بما ستسفر عنه المرحلة المقبلة من المفاوضات، قبل الانتقال إلى التنفيذ الكامل  للشراكة.</p>
+</section>
+</article>The post <a href="https://riadynews.com/%d8%a5%d9%8a-%d9%81%d8%a7%d9%8a%d9%86%d8%a7%d9%86%d8%b3-%d8%aa%d9%81%d8%aa%d8%ad-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-alibaba-cloud-%d8%a5%d9%84%d9%89-%d9%85%d8%b5%d8%b1-%d8%b9%d8%a8%d8%b1-%d8%a8%d9%86/">إي فاينانس تفتح بوابة Alibaba Cloud إلى مصر عبر بنية سحابية محلية</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%d8%a5%d9%8a-%d9%81%d8%a7%d9%8a%d9%86%d8%a7%d9%86%d8%b3-%d8%aa%d9%81%d8%aa%d8%ad-%d8%a8%d9%88%d8%a7%d8%a8%d8%a9-alibaba-cloud-%d8%a5%d9%84%d9%89-%d9%85%d8%b5%d8%b1-%d8%b9%d8%a8%d8%b1-%d8%a8%d9%86/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21321</post-id>	</item>
+		<item>
+		<title>مصر توسع أدوات التمويل طويلة الأجل لدعم الشركات الناشئة والقطاع الخاص</title>
+		<link>https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d9%88%d8%b3%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a3%d8%ac%d9%84-%d9%84%d8%af%d8%b9/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25d9%2585%25d8%25b5%25d8%25b1-%25d8%25aa%25d9%2588%25d8%25b3%25d8%25b9-%25d8%25a3%25d8%25af%25d9%2588%25d8%25a7%25d8%25aa-%25d8%25a7%25d9%2584%25d8%25aa%25d9%2585%25d9%2588%25d9%258a%25d9%2584-%25d8%25b7%25d9%2588%25d9%258a%25d9%2584%25d8%25a9-%25d8%25a7%25d9%2584%25d8%25a3%25d8%25ac%25d9%2584-%25d9%2584%25d8%25af%25d8%25b9</link>
+					<comments>https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d9%88%d8%b3%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a3%d8%ac%d9%84-%d9%84%d8%af%d8%b9/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 08:26:58 +0000</pubDate>
+				<category><![CDATA[نبض السوق]]></category>
+		<category><![CDATA[أحمد رستم]]></category>
+		<category><![CDATA[الإصلاحات الهيكلية]]></category>
+		<category><![CDATA[الاستثمار في مصر]]></category>
+		<category><![CDATA[الاقتصاد المصري]]></category>
+		<category><![CDATA[البرنامج الوطني للتحول الاقتصادي]]></category>
+		<category><![CDATA[التحكيم التجاري]]></category>
+		<category><![CDATA[التمويل طويل الأجل]]></category>
+		<category><![CDATA[الشركات الناشئة في مصر]]></category>
+		<category><![CDATA[القطاع الخاص]]></category>
+		<category><![CDATA[برنامج الطروحات الحكومية]]></category>
+		<category><![CDATA[تمويل الشركات الناشئة]]></category>
+		<category><![CDATA[ريادة الأعمال]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21318</guid>
+
+					<description><![CDATA[<p>&#160; أعلن الدكتور أحمد رستم، وزير التخطيط والتنمية الاقتصادية، أن «البرنامج الوطني للتحول الاقتصادي» يتضمن محورًا مخصصًا لدعم الشركات الناشئة وريادة الأعمال والمشروعات سريعة النمو، بالتوازي مع التوسع في أدوات التمويل المبتكرة طويلة الأجل للقطاع الخاص. جاءت تصريحات الوزير خلال اجتماع موسع مع ممثلي المؤسسات المالية ومؤسسات التصنيف الكبرى في مصر، لمناقشة التطورات الاقتصادية الكلية [&#8230;]</p>
+The post <a href="https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d9%88%d8%b3%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a3%d8%ac%d9%84-%d9%84%d8%af%d8%b9/">مصر توسع أدوات التمويل طويلة الأجل لدعم الشركات الناشئة والقطاع الخاص</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>&nbsp;</p>
+<article>
+<header>أعلن الدكتور أحمد رستم، وزير التخطيط والتنمية الاقتصادية، أن «البرنامج الوطني للتحول الاقتصادي» يتضمن محورًا مخصصًا لدعم الشركات الناشئة وريادة الأعمال والمشروعات سريعة النمو، بالتوازي مع التوسع في أدوات التمويل المبتكرة طويلة الأجل للقطاع الخاص.</p>
+<p>جاءت تصريحات الوزير خلال اجتماع موسع مع ممثلي المؤسسات المالية ومؤسسات التصنيف الكبرى في مصر، لمناقشة التطورات الاقتصادية الكلية ومؤشرات الأداء الحالية، إلى جانب ملامح برنامج التحول الاقتصادي.</p>
+</header>
+<section>
+<h2>محور لدعم الشركات الناشئة وريادة الأعمال</h2>
+<p>يستهدف البرنامج الوطني للتحول الاقتصادي، وفقًا لما أعلنه وزير التخطيط، تعزيز قدرة الشركات الناشئة والمشروعات سريعة النمو على المنافسة، مع توسيع نطاق الدعم الموجه إلى ريادة الأعمال.</p><div id="riady-552430678" class="riady- riady-entity-placement"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4620366728342170"
+     crossorigin="anonymous"></script></div>
+<p>ويرتبط هذا التوجه كذلك بتوسيع أدوات التمويل طويلة الأجل والمبتكرة المتاحة للقطاع الخاص، بما يدعم قدرة الشركات والمشروعات على الحصول على مصادر تمويل تتناسب مع احتياجات النمو والاستثمار.</p>
+<p>ولم يحدد الوزير خلال الاجتماع حجم التمويل المستهدف للشركات الناشئة أو الأدوات التمويلية التي سيتم إطلاقها ضمن البرنامج، كما لم يعلن عن جدول زمني تفصيلي لتنفيذ هذا المحور.</p>
+</section>
+<section>
+<h2>الاقتصاد المصري يحقق نموًا بنسبة 5.1%</h2>
+<p>قال رستم إن الاقتصاد المصري أظهر مرونة رغم تباطؤ النمو العالمي والتوترات الجيوسياسية الإقليمية، مسجلًا معدل نمو بلغ 5.1% بنهاية العام المالي 2025/2026.</p>
+<p>وأشار إلى استمرار المؤشرات الإيجابية خلال العام المالي الحالي، مؤكدًا أهمية التواصل المستمر مع مؤسسات التمويل الدولية ومؤسسات التصنيف الائتماني والاستفادة من خبراتها في دعم مسار الإصلاح الاقتصادي.</p>
+</section>
+<section>
+<h2>التحول من الاستهلاك إلى الإنتاج والتصدير</h2>
+<p>أوضح وزير التخطيط أن «البرنامج الوطني للتحول الاقتصادي» يستند إلى الاستراتيجيات القطاعية القائمة، إلى جانب استراتيجية التنمية الصناعية والاستراتيجية الوطنية للتشغيل.</p>
+<p>ويستهدف البرنامج، بحسب الوزير، العمل كمسرّع للنمو وتحويل دفة الاقتصاد من الاعتماد على الاستهلاك إلى الإنتاج والتصدير والاستثمار.</p>
+<p>ويتزامن ذلك مع استمرار التنسيق بين وزارة التخطيط ووزارة المالية والبنك المركزي والوزارات المختلفة للتعامل مع المتغيرات الاقتصادية العالمية.</p>
+</section>
+<section>
+<h2>تطوير تشريعات التحكيم التجاري</h2>
+<p>وكشف رستم عن وجود تنسيق لتطوير الأطر القانونية والتشريعية الخاصة بالتحكيم التجاري، بهدف تحسين بيئة الاستثمار وتعزيز حماية حقوق المستثمرين.</p>
+<p>ويمثل تطوير آليات تسوية المنازعات التجارية أحد الملفات المرتبطة بتحسين مناخ الاستثمار، خصوصًا مع توجه الحكومة إلى زيادة دور القطاع الخاص في النشاط الاقتصادي.</p>
+</section>
+<section>
+<h2>القطاع الخاص في صدارة النمو</h2>
+<p>أكد وزير التخطيط استمرار الإصلاحات الهيكلية المرتبطة بـوثيقة سياسة ملكية الدولة وبرنامج الطروحات الحكومية، بهدف إفساح المجال أمام القطاع الخاص لقيادة جانب أكبر من النمو الاقتصادي.</p>
+<p>كما أشار إلى العمل على تنويع مصادر التمويل وتعزيز السيولة، بما يدعم التوسع في المشروعات القومية والخاصة، إلى جانب توسيع القاعدة الضريبية من خلال الأدوات الإلكترونية.</p>
+</section>
+<section>
+<h2>مشاركة مؤسسات التمويل الدولية</h2>
+<p>شهد الاجتماع مشاركة ممثلين عن عدد من المؤسسات الدولية، بالتنسيق مع وزارة الخارجية والتعاون الدولي والمصريين في الخارج، من بينها منظمة الأمم المتحدة، ومجموعة البنك الدولي، وصندوق النقد الدولي، والبنك الأوروبي لإعادة الإعمار والتنمية، والبنك الأفريقي للتنمية، ومؤسسة التمويل الدولية، والاتحاد الأوروبي، ومنظمة العمل الدولية، والوكالة اليابانية للتعاون الدولي، والوكالة السويسرية للتنمية والتعاون، ومجموعة البنك الإسلامي للتنمية، إلى جانب ممثلين عن مؤسسات التصنيف الدولية.</p>
+<p>ويعكس هذا الحضور تركيز الحكومة على الاستفادة من المؤسسات الدولية في دعم الإصلاحات الاقتصادية وتطوير أدوات التمويل وتحسين بيئة الاستثمار.</p>
+</section>
+<section>
+<h2>ماذا يعني البرنامج للشركات الناشئة؟</h2>
+<p>بالنسبة لمنظومة ريادة الأعمال في مصر، يضع البرنامج الوطني للتحول الاقتصادي الشركات الناشئة والمشروعات سريعة النمو ضمن مسار الإصلاح الاقتصادي، مع توجه معلن لتطوير أدوات تمويل طويلة الأجل للقطاع الخاص.</p>
+<p>وتظل التفاصيل التنفيذية الخاصة بآليات دعم الشركات الناشئة، وحجم التمويل المتاح، والجهات المنفذة، والجدول الزمني، بحاجة إلى إعلانات وتفاصيل إضافية من الحكومة قبل تقييم أثر البرنامج بصورة كاملة على منظومة الشركات الناشئة.</p>
+</section>
+<footer>&nbsp;</p>
+</footer>
+</article>The post <a href="https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d9%88%d8%b3%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a3%d8%ac%d9%84-%d9%84%d8%af%d8%b9/">مصر توسع أدوات التمويل طويلة الأجل لدعم الشركات الناشئة والقطاع الخاص</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%d9%85%d8%b5%d8%b1-%d8%aa%d9%88%d8%b3%d8%b9-%d8%a3%d8%af%d9%88%d8%a7%d8%aa-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b7%d9%88%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d8%a3%d8%ac%d9%84-%d9%84%d8%af%d8%b9/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21318</post-id>	</item>
+		<item>
+		<title>سبيس إكس تسعى لاقتراض 40 مليار دولار لشراء رقائق إنفيديا</title>
+		<link>https://riadynews.com/%d8%b3%d8%a8%d9%8a%d8%b3-%d8%a5%d9%83%d8%b3-%d8%aa%d8%b3%d8%b9%d9%89-%d9%84%d8%a7%d9%82%d8%aa%d8%b1%d8%a7%d8%b6-40-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d8%b4%d8%b1/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25d8%25b3%25d8%25a8%25d9%258a%25d8%25b3-%25d8%25a5%25d9%2583%25d8%25b3-%25d8%25aa%25d8%25b3%25d8%25b9%25d9%2589-%25d9%2584%25d8%25a7%25d9%2582%25d8%25aa%25d8%25b1%25d8%25a7%25d8%25b6-40-%25d9%2585%25d9%2584%25d9%258a%25d8%25a7%25d8%25b1-%25d8%25af%25d9%2588%25d9%2584%25d8%25a7%25d8%25b1-%25d9%2584%25d8%25b4%25d8%25b1</link>
+					<comments>https://riadynews.com/%d8%b3%d8%a8%d9%8a%d8%b3-%d8%a5%d9%83%d8%b3-%d8%aa%d8%b3%d8%b9%d9%89-%d9%84%d8%a7%d9%82%d8%aa%d8%b1%d8%a7%d8%b6-40-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d8%b4%d8%b1/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 08:20:43 +0000</pubDate>
+				<category><![CDATA[تكنولوجيا]]></category>
+		<category><![CDATA[40 مليار دولار]]></category>
+		<category><![CDATA[أبولو جلوبال مانجمنت]]></category>
+		<category><![CDATA[إنفيديا]]></category>
+		<category><![CDATA[إيجي إنتريبرينور]]></category>
+		<category><![CDATA[إيلون ماسك]]></category>
+		<category><![CDATA[البنية التحتية للذكاء الاصطناعي]]></category>
+		<category><![CDATA[الذكاء الاصطناعي]]></category>
+		<category><![CDATA[باسيفيك إنفستمنت مانجمنت]]></category>
+		<category><![CDATA[تمويل التكنولوجيا]]></category>
+		<category><![CDATA[تمويل سبيس إكس]]></category>
+		<category><![CDATA[رقائق إنفيديا]]></category>
+		<category><![CDATA[سبيس إكس]]></category>
+		<category><![CDATA[مراكز البيانات]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21314</guid>
+
+					<description><![CDATA[<p>&#160; تجري شركة سبيس إكس، التابعة للملياردير إيلون ماسك، محادثات مع بنوك ومستثمرين لجمع نحو 40 مليار دولار في صورة قروض، بهدف تمويل شراء رقائق إلكترونية من شركة إنفيديا، في صفقة تعكس حجم الإنفاق المتزايد على البنية التحتية اللازمة لتطوير وتشغيل أنظمة الذكاء الاصطناعي. وبحسب مصادر مطلعة نقلت عنها وكالة «بلومبيرج»، لا تزال المفاوضات في [&#8230;]</p>
+The post <a href="https://riadynews.com/%d8%b3%d8%a8%d9%8a%d8%b3-%d8%a5%d9%83%d8%b3-%d8%aa%d8%b3%d8%b9%d9%89-%d9%84%d8%a7%d9%82%d8%aa%d8%b1%d8%a7%d8%b6-40-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d8%b4%d8%b1/">سبيس إكس تسعى لاقتراض 40 مليار دولار لشراء رقائق إنفيديا</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>&nbsp;</p>
+<article>
+<header>تجري شركة سبيس إكس، التابعة للملياردير إيلون ماسك، محادثات مع بنوك ومستثمرين لجمع نحو 40 مليار دولار في صورة قروض، بهدف تمويل شراء رقائق إلكترونية من شركة إنفيديا، في صفقة تعكس حجم الإنفاق المتزايد على البنية التحتية اللازمة لتطوير وتشغيل أنظمة الذكاء الاصطناعي.</p>
+<p>وبحسب مصادر مطلعة نقلت عنها وكالة «بلومبيرج»، لا تزال المفاوضات في مراحلها الأولى، ما يعني أن التمويل المقترح قد لا يكتمل بصورته الحالية.</p>
+</header>
+<section>
+<h2>كيف تخطط سبيس إكس لجمع 40 مليار دولار؟</h2>
+<p>وفقًا للمصادر، تدرس شركة باسيفيك إنفستمنت مانجمنت المشاركة في الصفقة، ضمن مجموعة من شركات إدارة الاستثمار التي تبحث فرص المشاركة في التمويل.</p>
+<p>وفي تفاصيل نقلتها صحيفة «فايننشال تايمز» عن مصادر مطلعة، تستهدف مجموعة ماسك جمع نحو 10 مليارات دولار من القروض المصرفية، إلى جانب 30 مليار دولار من قروض ذات تصنيف استثماري.</p>
+<p>وأضافت الصحيفة أن أبولو جلوبال مانجمنت تقود عملية التمويل، مع توقع إتمام الصفقة خلال عام 2027، إذا نجحت المفاوضات وتم استكمال الترتيبات اللازمة.</p>
+</section>
+<section>
+<h2>الرقائق في قلب توسع البنية التحتية للذكاء الاصطناعي</h2>
+<p>يأتي التمويل المقترح في وقت تتوسع فيه شركات التكنولوجيا ومطورو نماذج الذكاء الاصطناعي في الإنفاق على البنية التحتية الحاسوبية، والتي تعتمد على أعداد كبيرة من الرقائق عالية الأداء لتشغيل وتدريب أنظمة الذكاء الاصطناعي.</p>
+<p>وتقترض شركات التكنولوجيا ومطورو نماذج الذكاء الاصطناعي مئات المليارات من الدولارات لتمويل بناء مراكز البيانات أو استئجار قدرات حوسبة ضخمة، في ظل ارتفاع الطلب على موارد الحوسبة المرتبطة بالذكاء الاصطناعي.</p>
+<p>ولا يقتصر ارتفاع تكلفة التوسع في قدرات الحوسبة على الرقائق، إذ يشمل أيضًا الأراضي ومعدات الطاقة وغيرها من مكونات البنية التحتية، وهو ما ساهم في ظهور صفقات تمويل واستثمار ضخمة مرتبطة باقتصاد الذكاء الاصطناعي.</p>
+</section>
+<section>
+<h2>سبيس إكس وتوسع أنشطة ماسك في الذكاء الاصطناعي</h2>
+<p>تعمل مجموعة شركات إيلون ماسك في مجالات تشمل الذكاء الاصطناعي والأقمار الصناعية والصواريخ، ما يجعل البنية التحتية الحاسوبية والرقائق المتقدمة عنصرًا مهمًا في خطط التوسع المرتبطة بالذكاء الاصطناعي.</p>
+<p>ويأتي التحرك للحصول على تمويل بهذا الحجم في سياق أوسع يشهد تنافس شركات التكنولوجيا ومطوري الذكاء الاصطناعي على تأمين الرقائق وقدرات مراكز البيانات والطاقة اللازمة للتوسع.</p>
+</section>
+<section>
+<h2>أسهم سبيس إكس تتراجع بعد تقرير التمويل</h2>
+<p>لم ترد شركات إنفيديا وسبيس إكس وأبولو جلوبال مانجمنت على طلبات التعليق على الفور، بحسب ما أوردته التقارير.</p>
+<p>وتراجعت أسهم سبيس إكس في التداولات التي أعقبت إغلاق السوق الأمريكية بعد نشر تقرير «فايننشال تايمز»، بعدما قلصت مكاسبها السابقة.</p>
+<p>وانخفض السهم بنسبة 1.2% إلى 169.79 دولار، بينما سجل سهم إنفيديا ارتفاعًا طفيفًا، مع استمرار متابعة المستثمرين لتطورات الإنفاق العالمي على البنية التحتية للذكاء الاصطناعي.</p>
+</section>
+<section>
+<h2>لماذا تحتاج شركات الذكاء الاصطناعي إلى تمويل ضخم؟</h2>
+<p>تكشف الصفقة المحتملة عن التحول في هيكل تمويل قطاع الذكاء الاصطناعي، إذ أصبحت البنية التحتية الحاسوبية تتطلب استثمارات رأسمالية ضخمة تشمل الرقائق ومراكز البيانات والطاقة والشبكات.</p>
+<p>ومع استمرار التوسع في استخدام نماذج الذكاء الاصطناعي، تتنافس الشركات على تأمين قدرات الحوسبة اللازمة قبل أن تتحول محدودية الرقائق والطاقة ومراكز البيانات إلى عائق أمام النمو.</p>
+<p>ومع ذلك، تظل صفقة تمويل سبيس إكس المقترحة في مرحلة المفاوضات، ولا تمثل حتى الآن تمويلًا مكتملًا أو صفقة نهائية.</p>
+</section>
+<footer></footer>
+</article>
+<p>&nbsp;</p>The post <a href="https://riadynews.com/%d8%b3%d8%a8%d9%8a%d8%b3-%d8%a5%d9%83%d8%b3-%d8%aa%d8%b3%d8%b9%d9%89-%d9%84%d8%a7%d9%82%d8%aa%d8%b1%d8%a7%d8%b6-40-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d8%b4%d8%b1/">سبيس إكس تسعى لاقتراض 40 مليار دولار لشراء رقائق إنفيديا</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%d8%b3%d8%a8%d9%8a%d8%b3-%d8%a5%d9%83%d8%b3-%d8%aa%d8%b3%d8%b9%d9%89-%d9%84%d8%a7%d9%82%d8%aa%d8%b1%d8%a7%d8%b6-40-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d8%af%d9%88%d9%84%d8%a7%d8%b1-%d9%84%d8%b4%d8%b1/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21314</post-id>	</item>
+		<item>
+		<title>ڤاليو تتعاون مع مجموعة الشايع لتوسيع حلول الدفع المرنة في مصر</title>
+		<link>https://riadynews.com/%da%a4%d8%a7%d9%84%d9%8a%d9%88-%d8%aa%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d9%85%d8%b9-%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d9%8a%d8%b9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%ad/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25da%25a4%25d8%25a7%25d9%2584%25d9%258a%25d9%2588-%25d8%25aa%25d8%25aa%25d8%25b9%25d8%25a7%25d9%2588%25d9%2586-%25d9%2585%25d8%25b9-%25d9%2585%25d8%25ac%25d9%2585%25d9%2588%25d8%25b9%25d8%25a9-%25d8%25a7%25d9%2584%25d8%25b4%25d8%25a7%25d9%258a%25d8%25b9-%25d9%2584%25d8%25aa%25d9%2588%25d8%25b3%25d9%258a%25d8%25b9-%25d8%25ad</link>
+					<comments>https://riadynews.com/%da%a4%d8%a7%d9%84%d9%8a%d9%88-%d8%aa%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d9%85%d8%b9-%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d9%8a%d8%b9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%ad/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 08:12:33 +0000</pubDate>
+				<category><![CDATA[تكنولوجيا]]></category>
+		<category><![CDATA[BNPL]]></category>
+		<category><![CDATA[H&M]]></category>
+		<category><![CDATA[أمريكان إيجل]]></category>
+		<category><![CDATA[التكنولوجيا المالية]]></category>
+		<category><![CDATA[التمويل الاستهلاكي]]></category>
+		<category><![CDATA[المدفوعات الرقمية]]></category>
+		<category><![CDATA[باث آند بودي وركس]]></category>
+		<category><![CDATA[حلول الدفع المرنة]]></category>
+		<category><![CDATA[فيكتوريا سيكريت]]></category>
+		<category><![CDATA[ڤاليو]]></category>
+		<category><![CDATA[قطاع التجزئة في مصر]]></category>
+		<category><![CDATA[مجموعة الشايع]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21311</guid>
+
+					<description><![CDATA[<p>&#160; أعلنت شركة ڤاليو إبرام شراكة استراتيجية مع مجموعة الشايع لتوسيع نطاق إتاحة حلول الدفع المرنة عبر عدد من أبرز العلامات التجارية العالمية التي تديرها المجموعة في السوق المصرية، من بينها «اتش آند إم» و«باث آند بودي وركس» و«أمريكان إيجل» و«فيكتوريا سيكريت». حلول ڤاليو تصل إلى علامات تجارية تابعة لمجموعة الشايع وبموجب الشراكة، سيتمكن عملاء [&#8230;]</p>
+The post <a href="https://riadynews.com/%da%a4%d8%a7%d9%84%d9%8a%d9%88-%d8%aa%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d9%85%d8%b9-%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d9%8a%d8%b9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%ad/">ڤاليو تتعاون مع مجموعة الشايع لتوسيع حلول الدفع المرنة في مصر</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>&nbsp;</p>
+<article>
+<header>أعلنت شركة ڤاليو إبرام شراكة استراتيجية مع مجموعة الشايع لتوسيع نطاق إتاحة حلول الدفع المرنة عبر عدد من أبرز العلامات التجارية العالمية التي تديرها المجموعة في السوق المصرية، من بينها «اتش آند إم» و«باث آند بودي وركس» و«أمريكان إيجل» و«فيكتوريا سيكريت».</p>
+</header>
+<section>
+<h2>حلول ڤاليو تصل إلى علامات تجارية تابعة لمجموعة الشايع</h2>
+<p>وبموجب الشراكة، سيتمكن عملاء العلامات التجارية المشاركة من استخدام حلول ڤاليو للدفع المرن عند التسوق، سواء عبر المتاجر أو قنوات التسوق الإلكترونية، مع إتاحة خطط سداد خاصة تشمل خيارات بدون فوائد، وفقًا للشروط والبرامج المتاحة.</p>
+<p>وتجمع الشراكة بين شبكة التجار المتنامية لدى ڤاليو وحضور مجموعة الشايع في قطاع التجزئة، بهدف إتاحة خيارات دفع أكثر مرونة للمستهلكين وإدارة مشترياتهم عبر نقاط اتصال متعددة.</p>
+</section>
+<section>
+<h2>دعم المدفوعات الرقمية في قطاع التجزئة</h2>
+<p>تأتي الشراكة في ظل تنامي الطلب على حلول الدفع الرقمية والمرنة، حيث تسعى الشركات العاملة في قطاع التجزئة إلى توفير تجارب شراء أكثر تكاملًا عبر القنوات الرقمية والمتاجر التقليدية.</p>
+<p>وقالت حبيبة نجيب، رئيس قطاع التوسعات السوقية والاستراتيجية في ڤاليو، إن التعاون مع مجموعة الشايع يوسع حضور ڤاليو عبر نقاط اتصال رئيسية في قطاع التجزئة، ويدعم نمو منظومة التجار التابعة للشركة.</p>
+<p>وأضافت أن دمج الحلول المالية المرنة في تجارب التسوق لدى العلامات التجارية العالمية يهدف إلى تعزيز تجربة العملاء والمساهمة في تطور منظومة المدفوعات الرقمية وقطاع التجزئة في مصر.</p>
+</section>
+<section>
+<h2>مجموعة الشايع: خيارات دفع أكثر مرونة للعملاء</h2>
+<p>من جانبه، قال فرانسوا أورهان، نائب رئيس إدارة الولاء والمدفوعات وتحليل البيانات في مجموعة الشايع، إن الشراكة مع ڤاليو تمنح العملاء في مصر مزيدًا من المرونة في طرق التسوق والدفع، سواء داخل المتاجر أو عبر الإنترنت.</p>
+<p>وأوضح أن الجمع بين محفظة العلامات التجارية التي تديرها مجموعة الشايع وحلول الدفع التي تقدمها ڤاليو يستهدف توفير تجربة تسوق أكثر سلاسة وتكاملًا، مع منح المستهلكين خيارات أوسع لإدارة مشترياتهم.</p>
+</section>
+<section>
+<h2>ما العلامات التجارية المشمولة بالشراكة؟</h2>
+<p>تشمل الشراكة المعلنة عددًا من العلامات التجارية التي تديرها مجموعة الشايع في مصر، وهي:</p>
+<ul>
+<li>اتش آند إم (H&amp;M)</li>
+<li>باث آند بودي وركس (Bath &amp; Body Works)</li>
+<li>أمريكان إيجل (American Eagle)</li>
+<li>فيكتوريا سيكريت (Victoria&#8217;s Secret)</li>
+</ul>
+<p>وتتيح الشراكة استخدام حلول الدفع المرنة عبر قنوات التسوق الإلكترونية والمتاجر التابعة للعلامات المشاركة، بما يوسع نطاق نقاط استخدام خدمات ڤاليو في قطاع التجزئة.</p>
+</section>
+<section>
+<h2>ڤاليو توسع منظومة خدماتها المالية</h2>
+<p>تُعد ڤاليو، التابعة لمجموعة إي إف جي القابضة والمدرجة في البورصة المصرية تحت كود VALU.CA، منصة للتكنولوجيا المالية تقدم خدمات التمويل الاستهلاكي وحلولًا مالية أخرى للأفراد والشركات.</p>
+<p>وتوفر الشركة خدمات الشراء الآن والدفع لاحقًا (BNPL) من خلال «U»، مع حضور مباشر كخدمة دفع في أكثر من 9,000 نقطة بيع وموقع إلكتروني، وخطط سداد تصل إلى 60 شهرًا في عدد من القطاعات، من بينها الأجهزة المنزلية والإلكترونيات والأثاث وتشطيب المنازل والطاقة الشمسية والخدمات الصحية والتعليمية والسفر والأزياء.</p>
+<p>كما تشمل منظومة ڤاليو حلولًا استثمارية وادخارية واستردادًا نقديًا فوريًا، وتمويل المنتجات مرتفعة القيمة، ومنصة للتسوق الإلكتروني، إلى جانب حلول موجهة للشركات من خلال «Valu Business».</p>
+<p>وكانت ڤاليو قد أطلقت خدماتها في الأردن خلال مايو 2026 بموجب رخصة تمويل متخصصة، بعد حصولها على الموافقة النهائية من البنك المركزي الأردني، وفقًا لما أعلنته الشركة.</p>
+</section>
+<section>
+<h2>مجموعة الشايع.. أكثر من 3500 متجر ومقهى ووجهة ترفيهية</h2>
+<p>تأسست مجموعة الشايع في الكويت عام 1890، وتدير أكثر من 50 علامة تجارية في عدد من الأسواق، وفقًا للبيانات التعريفية التي قدمتها المجموعة.</p>
+<p>وتمتلك المجموعة أكثر من 3,500 متجر ومقهى ووجهة ترفيهية، إلى جانب أكثر من 125 منصة تسوق إلكترونية ورقمية، ويعمل لديها أكثر من 50 ألف موظف في قطاعات تشمل الأزياء والأغذية والصحة والجمال والضيافة والترفيه.</p>
+<p>وتضم محفظة العلامات التي تديرها المجموعة أسماء عالمية، من بينها ستاربكس، وأمريكان إيجل، وفوت لوكر، وفيكتوريا سيكريت، واتش آند إم، وباث آند بودي وركس، وشارلوت تلبوري، وريزينج كينز، وشيك شاك، وتشيبوتلي، وبرايمارك، وألتا بيوتي.</p>
+</section>
+<section>
+<h2>أهمية الشراكة لسوق الدفع والتمويل الاستهلاكي</h2>
+<p>تعكس الشراكة اتجاهًا متزايدًا نحو دمج حلول التمويل والدفع المرن داخل تجارب التسوق اليومية، بدلًا من اقتصار خدمات التكنولوجيا المالية على منصات مالية مستقلة.</p>
+<p>وبالنسبة لڤاليو، تتيح الشراكة توسيع قاعدة التجار ونقاط استخدام حلولها في قطاع التجزئة، بينما تمنح العلامات التجارية المشاركة وسيلة إضافية لتوفير خيارات دفع مرنة لعملائها عبر القنوات الرقمية والمتاجر.</p>
+</section>
+<footer></footer>
+</article>
+<p>&nbsp;</p>The post <a href="https://riadynews.com/%da%a4%d8%a7%d9%84%d9%8a%d9%88-%d8%aa%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d9%85%d8%b9-%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d9%8a%d8%b9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%ad/">ڤاليو تتعاون مع مجموعة الشايع لتوسيع حلول الدفع المرنة في مصر</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%da%a4%d8%a7%d9%84%d9%8a%d9%88-%d8%aa%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d9%85%d8%b9-%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a9-%d8%a7%d9%84%d8%b4%d8%a7%d9%8a%d8%b9-%d9%84%d8%aa%d9%88%d8%b3%d9%8a%d8%b9-%d8%ad/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21311</post-id>	</item>
+		<item>
+		<title>GIGABYTE تستعرض حلول الذكاء الاصطناعي المدعومة من NVIDIA في أبوظبي</title>
+		<link>https://riadynews.com/gigabyte-%d8%aa%d8%b3%d8%aa%d8%b9%d8%b1%d8%b6-%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=gigabyte-%25d8%25aa%25d8%25b3%25d8%25aa%25d8%25b9%25d8%25b1%25d8%25b6-%25d8%25ad%25d9%2584%25d9%2588%25d9%2584-%25d8%25a7%25d9%2584%25d8%25b0%25d9%2583%25d8%25a7%25d8%25a1-%25d8%25a7%25d9%2584%25d8%25a7%25d8%25b5%25d8%25b7%25d9%2586%25d8%25a7%25d8%25b9%25d9%258a-%25d8%25a7%25d9%2584%25d9%2585%25d8%25af%25d8%25b9%25d9%2588</link>
+					<comments>https://riadynews.com/gigabyte-%d8%aa%d8%b3%d8%aa%d8%b9%d8%b1%d8%b6-%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 07:57:45 +0000</pubDate>
+				<category><![CDATA[تكنولوجيا]]></category>
+		<category><![CDATA[AI Everything Abu Dhabi 2026]]></category>
+		<category><![CDATA[AI TOP ATOM]]></category>
+		<category><![CDATA[GIGABYTE]]></category>
+		<category><![CDATA[GIGABYTE W775-V10]]></category>
+		<category><![CDATA[NVIDIA]]></category>
+		<category><![CDATA[NVIDIA ConnectX-7]]></category>
+		<category><![CDATA[NVIDIA DGX SPARK]]></category>
+		<category><![CDATA[NVIDIA GB300]]></category>
+		<category><![CDATA[الذكاء الاصطناعي]]></category>
+		<category><![CDATA[مراكز البيانات]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21307</guid>
+
+					<description><![CDATA[<p>&#160; تستعرض شركة GIGABYTE Technology أحدث حلول الحوسبة والذكاء الاصطناعي المدعومة بتقنيات NVIDIA، خلال مشاركتها في معرض ومؤتمر AI Everything Abu Dhabi 2026، الذي تستضيفه أبوظبي يومي 6 و7 أكتوبر، مع التركيز على حلول تمتد من أجهزة الذكاء الاصطناعي المكتبية إلى محطات العمل وحلول المؤسسات. AI TOP ATOM.. حاسوب مدمج للذكاء الاصطناعي وتتصدر حلول الشركة [&#8230;]</p>
+The post <a href="https://riadynews.com/gigabyte-%d8%aa%d8%b3%d8%aa%d8%b9%d8%b1%d8%b6-%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88/">GIGABYTE تستعرض حلول الذكاء الاصطناعي المدعومة من NVIDIA في أبوظبي</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>&nbsp;</p>
+<article>
+<header>تستعرض شركة GIGABYTE Technology أحدث حلول الحوسبة والذكاء الاصطناعي المدعومة بتقنيات NVIDIA، خلال مشاركتها في معرض ومؤتمر AI Everything Abu Dhabi 2026، الذي تستضيفه أبوظبي يومي 6 و7 أكتوبر، مع التركيز على حلول تمتد من أجهزة الذكاء الاصطناعي المكتبية إلى محطات العمل وحلول المؤسسات.</p>
+</header>
+<section>
+<h2>AI TOP ATOM.. حاسوب مدمج للذكاء الاصطناعي</h2>
+<p>وتتصدر حلول الشركة المعروضة منصة GIGABYTE AI TOP ATOM، وهي حاسوب شخصي مدمج للذكاء الاصطناعي يعتمد على منصة NVIDIA DGX SPARK، ويوفر أداءً يصل إلى 1 PFLOPS بتنسيق FP4.</p>
+<p>ويأتي النظام بتصميم plug-and-play وخيارات تخزين تتراوح بين 1 تيرابايت و4 تيرابايت، كما يتيح ربط ما يصل إلى أربع وحدات ضمن عنقود حوسبي واحد، باستخدام محوّل QSFP عالي السرعة واتصال بسرعة 200 جيجابت إيثرنت لكل وحدة.</p>
+<p>وبالاعتماد على تقنيات الشبكات NVIDIA ConnectX-7، يوفر تكوين الوحدات الأربع اتصالًا عالي النطاق الترددي بينها، مع ذاكرة نظام موحدة إجمالية تصل إلى 512 جيجابايت.</p>
+</section>
+<section>
+<h2>تطوير نماذج الذكاء الاصطناعي محليًا</h2>
+<p>وتستهدف GIGABYTE من خلال AI TOP ATOM توفير بيئة حوسبة محلية للمطورين والشركات الصغيرة والمتوسطة لبناء نماذج الذكاء الاصطناعي واختبارها وإجراء عمليات الضبط الدقيق عليها، مع الاحتفاظ بالبيانات داخل بيئة العمل المحلية.</p>
+<p>كما يمكن استخدام النظام كمرحلة أولى قبل نقل أعباء العمل إلى مراكز بيانات المؤسسات أو البيئات السحابية عند الحاجة إلى توسيع نطاق الحوسبة، بما يتيح مسارًا يبدأ من التطوير المحلي وينتقل إلى البنية التحتية المؤسسية.</p>
+</section>
+<section>
+<h2>GIGABYTE W775-V10 يصل إلى 20 PFLOPS</h2>
+<p>كما تعرض الشركة محطة العمل عالية الأداء GIGABYTE W775-V10، المدعومة بشريحة NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip، والتي توفر أداءً يصل إلى 20 PFLOPS بتنسيق FP4 وذاكرة مترابطة بسعة تصل إلى 748 جيجابايت.</p>
+<p>ويدعم النظام ما يصل إلى 400 طلب متزامن، وفقًا للشركة، ما يجعله موجهًا إلى أعباء عمل الذكاء الاصطناعي التي تحتاج إلى قدرات حوسبة محلية مرتفعة، خصوصًا لدى المؤسسات التي تتعامل مع بيانات منظمة أو حساسة ونماذج مملوكة لها.</p>
+<p>ويستهدف هذا النوع من الحلول المؤسسات التي تحتاج إلى مستويات أعلى من التحكم في البيانات، مع إمكانية تشغيل تطبيقات الذكاء الاصطناعي وتطويرها داخل بيئة محلية بدلًا من الاعتماد الكامل على موارد الحوسبة السحابية.</p>
+</section>
+<section>
+<h2>GIGABYTE: الحوسبة المحلية تمهد للتوسع المؤسسي</h2>
+<p>قال Jay Lee، المدير العام لمنطقة الشرق الأوسط وتركيا وأفريقيا في شركة Giga Computing، إن تطوير الذكاء الاصطناعي اعتمد لفترة طويلة على استثمارات كبيرة في الخدمات السحابية أو موارد حوسبة مشتركة، وهو ما قد يمثل تحديًا للشركات الصغيرة.</p>
+<blockquote><p>«تمنح هذه الحلول الشركات القدرة على تطوير واختبار تطبيقاتها محليًا، ثم التوسع إلى مراكز البيانات أو البيئات السحابية عندما تكون جاهزة لذلك».</p></blockquote>
+</section>
+<section>
+<h2>من سطح المكتب إلى البنية التحتية للمؤسسات</h2>
+<p>وتعكس الحلول التي تعرضها GIGABYTE في أبوظبي توجهًا نحو توفير مستويات مختلفة من البنية التحتية لتطوير الذكاء الاصطناعي، تبدأ من الحوسبة المحلية للمطورين والشركات الصغيرة والمتوسطة، وصولًا إلى محطات العمل عالية الأداء القادرة على تشغيل أعباء أكثر تطلبًا.</p>
+<p>ويتيح هذا النموذج للشركات بدء تطوير تطبيقات الذكاء الاصطناعي واختبارها محليًا، ثم توسيع نطاقها تدريجيًا إلى مراكز البيانات أو الخدمات السحابية بحسب احتياجات الأداء وحجم أعباء العمل ومتطلبات البيانات.</p>
+</section>
+<section>
+<h2>مشاركة GIGABYTE في AI Everything Abu Dhabi 2026</h2>
+<p>وتشارك GIGABYTE في معرض ومؤتمر AI Everything Abu Dhabi 2026 المقام في أبوظبي يومي 6 و7 أكتوبر، من خلال جناحها في القاعة 3، الجناح H3-04، لاستعراض حلولها المدعومة بتقنيات NVIDIA أمام زوار الحدث.</p>
+<p>وتركز المشاركة على توضيح مسار الانتقال من تطوير الذكاء الاصطناعي على أجهزة الحوسبة المحلية إلى تشغيل تطبيقات قابلة للتوسع على مستوى المؤسسات، من خلال حلول تجمع بين قدرات المعالجة والربط الشبكي والذاكرة والبنية التحتية اللازمة لأعباء العمل الحديثة.</p>
+</section>
+</article>
+<p>&nbsp;</p>The post <a href="https://riadynews.com/gigabyte-%d8%aa%d8%b3%d8%aa%d8%b9%d8%b1%d8%b6-%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88/">GIGABYTE تستعرض حلول الذكاء الاصطناعي المدعومة من NVIDIA في أبوظبي</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/gigabyte-%d8%aa%d8%b3%d8%aa%d8%b9%d8%b1%d8%b6-%d8%ad%d9%84%d9%88%d9%84-%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21307</post-id>	</item>
+		<item>
+		<title>بنيان توافق على شراء أسهم خزينة بحد أقصى 4% من رأس المال.. والسهم يتداول بخصم 50% من قيمة الأصول</title>
+		<link>https://riadynews.com/%d8%a8%d9%86%d9%8a%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%b9%d9%84%d9%89-%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a3%d8%b3%d9%87%d9%85-%d8%ae%d8%b2%d9%8a%d9%86%d8%a9-%d8%a8%d8%ad%d8%af-%d8%a3%d9%82%d8%b5/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25d8%25a8%25d9%2586%25d9%258a%25d8%25a7%25d9%2586-%25d8%25aa%25d9%2588%25d8%25a7%25d9%2581%25d9%2582-%25d8%25b9%25d9%2584%25d9%2589-%25d8%25b4%25d8%25b1%25d8%25a7%25d8%25a1-%25d8%25a3%25d8%25b3%25d9%2587%25d9%2585-%25d8%25ae%25d8%25b2%25d9%258a%25d9%2586%25d8%25a9-%25d8%25a8%25d8%25ad%25d8%25af-%25d8%25a3%25d9%2582%25d8%25b5</link>
+					<comments>https://riadynews.com/%d8%a8%d9%86%d9%8a%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%b9%d9%84%d9%89-%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a3%d8%b3%d9%87%d9%85-%d8%ae%d8%b2%d9%8a%d9%86%d8%a9-%d8%a8%d8%ad%d8%af-%d8%a3%d9%82%d8%b5/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 06:59:10 +0000</pubDate>
+				<category><![CDATA[نبض السوق]]></category>
+		<category><![CDATA[BONY]]></category>
+		<category><![CDATA[أسهم الخزينة]]></category>
+		<category><![CDATA[أسهم بنيان]]></category>
+		<category><![CDATA[الاستثمار العقاري]]></category>
+		<category><![CDATA[البورصة المصرية]]></category>
+		<category><![CDATA[القيمة المؤسسية]]></category>
+		<category><![CDATA[بنيان للتنمية والتجارة]]></category>
+		<category><![CDATA[شراء أسهم خزينة]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21304</guid>
+
+					<description><![CDATA[<p>&#160; &#160; وافق مجلس إدارة شركة بنيان للتنمية والتجارة (BONY.CA) على برنامج لشراء أسهم خزينة بحد أقصى 4% من رأس المال المصدر، في وقت تشير الشركة إلى تداول سهمها عند مستويات تقل بنحو 50% عن القيمة الإجمالية لأصول محفظتها العقارية وفقًا لآخر تقييم مستقل معتمد من الهيئة العامة للرقابة المالية. بنيان تبدأ شراء أسهم الخزينة [&#8230;]</p>
+The post <a href="https://riadynews.com/%d8%a8%d9%86%d9%8a%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%b9%d9%84%d9%89-%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a3%d8%b3%d9%87%d9%85-%d8%ae%d8%b2%d9%8a%d9%86%d8%a9-%d8%a8%d8%ad%d8%af-%d8%a3%d9%82%d8%b5/">بنيان توافق على شراء أسهم خزينة بحد أقصى 4% من رأس المال.. والسهم يتداول بخصم 50% من قيمة الأصول</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>&nbsp;</p>
+<p><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "بنيان توافق على شراء أسهم خزينة بحد أقصى 4% من رأس المال.. والسهم يتداول بخصم 50% من قيمة الأصول",
+    "description": "مجلس إدارة بنيان للتنمية والتجارة يوافق على برنامج لشراء أسهم خزينة بحد أقصى 4% من رأس المال المصدر، مع تداول السهم بخصم نحو 50% من القيمة الإجمالية لأصول المحفظة.",
+    "inLanguage": "ar",
+    "articleSection": "البورصة والاستثمار",
+    "keywords": [
+      "بنيان للتنمية والتجارة",
+      "شراء أسهم خزينة",
+      "أسهم بنيان",
+      "البورصة المصرية",
+      "الاستثمار العقاري"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "ريادي"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ريادي"
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "بنيان للتنمية والتجارة"
+    }
+  }
+  </script></p>
+<p>&nbsp;</p>
+<article>
+<header>وافق مجلس إدارة شركة بنيان للتنمية والتجارة (BONY.CA) على برنامج لشراء أسهم خزينة بحد أقصى 4% من رأس المال المصدر، في وقت تشير الشركة إلى تداول سهمها عند مستويات تقل بنحو 50% عن القيمة الإجمالية لأصول محفظتها العقارية وفقًا لآخر تقييم مستقل معتمد من الهيئة العامة للرقابة المالية.</p>
+</header>
+<section>
+<h2>بنيان تبدأ شراء أسهم الخزينة من 7 أكتوبر</h2>
+<p>وأوضحت بنيان أن تنفيذ البرنامج سيتم من خلال السوق المفتوحة بالبورصة المصرية، على مدار شهر، اعتبارًا من 7 أكتوبر 2026 وحتى 5 نوفمبر 2026.</p>
+<p>وسيتم تحديد توقيت تنفيذ عمليات الشراء ووتيرتها وفقًا لظروف السوق، وبما يتوافق مع القواعد واللوائح المنظمة الصادرة عن الهيئة العامة للرقابة المالية والبورصة المصرية.</p>
+<p>ويأتي القرار في إطار توجه الشركة لاستثمار رأس مالها في الأصول التي ترى أنها تحقق أعلى عوائد لمساهميها، بحسب بيان بنيان.</p>
+</section>
+<section>
+<h2>سهم بنيان عند 88.5 ألف جنيه للقيمة المؤسسية لكل متر مربع</h2>
+<p>واستندت الشركة في تقييمها لمستوى السهم إلى سعر الإغلاق البالغ 4.08 جنيه للسهم في 5 أكتوبر 2026، موضحة أن ذلك يعادل قيمة مؤسسية تبلغ نحو 88.5 ألف جنيه لكل متر مربع من محفظتها العقارية.</p>
+<p>ووفقًا لبنيان، يمثل هذا المستوى خصمًا بنحو 50% من القيمة الإجمالية لأصول المحفظة، استنادًا إلى آخر تقييم أجرته جهة تقييم مستقلة معتمدة من الهيئة العامة للرقابة المالية.</p>
+<p>وتقول الشركة إن برنامج شراء أسهم الخزينة يعكس ثقتها في السهم عند مستويات الأسعار الحالية، مستندة إلى جودة أصولها وقاعدة المستأجرين لديها، إلى جانب عقود الإيجار المقومة بالدولار الأمريكي.</p>
+</section>
+<section>
+<h2>طارق عبد الرحمن: تراجع السهم خلق فرصة لإعادة الشراء</h2>
+<p>قال طارق عبد الرحمن، العضو المنتدب لشركة بنيان، إن سعر السهم الحالي يعكس قيمة مؤسسية تبلغ نحو 88.5 ألف جنيه لكل متر مربع، وهو ما يمثل، بحسب الشركة، نحو نصف القيمة الحالية لمحفظتها العقارية.</p>
+<blockquote><p>«بسعر السهم الحالي، يتداول سهم بنيان عند قيمة مؤسسية لكل متر مربع تبلغ نحو 88.5 ألف جنيه مصري، وهو ما يمثل نصف القيمة الحالية للمحفظة».</p></blockquote>
+<p>وأضاف عبد الرحمن أن تراجع سعر سهم بنيان خلال الفترة الأخيرة جاء، بحسب تقديره، مدفوعًا بحالة العزوف العام لدى المستثمرين عن نموذج التطوير العقاري، معتبرًا أن مستويات التقييم الحالية توفر فرصة للشركة لإعادة شراء أسهمها.</p>
+<p>وأشار إلى أن نموذج أعمال بنيان لا يعتمد على المخاطر المرتبطة بالتطوير العقاري، معتبرًا أن الشركة توفر للمستثمرين فرصة للتعرض للأصول العقارية مع مرونة أكبر من حيث حجم الاستثمار والسيولة، مدعومة بمحفظة من الأصول العقارية المدرة لإيرادات متكررة وزيادة قيمة الأصول.</p>
+</section>
+<section>
+<h2>ما أهمية برنامج شراء أسهم الخزينة لبنيان؟</h2>
+<p>يمثل برنامج شراء أسهم الخزينة أداة تتيح للشركة إعادة شراء جزء من أسهمها المتداولة في السوق، ويأتي قرار بنيان في ظل المستوى السعري الحالي للسهم وتقييم الشركة لقيمة أصولها العقارية.</p>
+<p>وبحسب البرنامج المعلن، يصل الحد الأقصى لعمليات الشراء إلى 4% من رأس المال المصدر، بينما لا يعني الإعلان أن الشركة ستنفذ كامل النسبة المستهدفة بالضرورة، إذ ستحدد عمليات الشراء الفعلية وفقًا لظروف السوق والقواعد المنظمة.</p>
+</section>
+<footer></footer>
+</article>
+<p>&nbsp;</p>The post <a href="https://riadynews.com/%d8%a8%d9%86%d9%8a%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%b9%d9%84%d9%89-%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a3%d8%b3%d9%87%d9%85-%d8%ae%d8%b2%d9%8a%d9%86%d8%a9-%d8%a8%d8%ad%d8%af-%d8%a3%d9%82%d8%b5/">بنيان توافق على شراء أسهم خزينة بحد أقصى 4% من رأس المال.. والسهم يتداول بخصم 50% من قيمة الأصول</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%d8%a8%d9%86%d9%8a%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%b9%d9%84%d9%89-%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a3%d8%b3%d9%87%d9%85-%d8%ae%d8%b2%d9%8a%d9%86%d8%a9-%d8%a8%d8%ad%d8%af-%d8%a3%d9%82%d8%b5/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21304</post-id>	</item>
+		<item>
+		<title>ديب سيك تستهدف جمع 80 مليار يوان استعدادًا لطرح عام أولي في الصين</title>
+		<link>https://riadynews.com/%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%ac%d9%85%d8%b9-80-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d9%8a%d9%88%d8%a7%d9%86-%d8%a7%d8%b3%d8%aa%d8%b9%d8%af%d8%a7%d8%af/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25d8%25af%25d9%258a%25d8%25a8-%25d8%25b3%25d9%258a%25d9%2583-%25d8%25aa%25d8%25b3%25d8%25aa%25d9%2587%25d8%25af%25d9%2581-%25d8%25ac%25d9%2585%25d8%25b9-80-%25d9%2585%25d9%2584%25d9%258a%25d8%25a7%25d8%25b1-%25d9%258a%25d9%2588%25d8%25a7%25d9%2586-%25d8%25a7%25d8%25b3%25d8%25aa%25d8%25b9%25d8%25af%25d8%25a7%25d8%25af</link>
+					<comments>https://riadynews.com/%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%ac%d9%85%d8%b9-80-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d9%8a%d9%88%d8%a7%d9%86-%d8%a7%d8%b3%d8%aa%d8%b9%d8%af%d8%a7%d8%af/#respond</comments>
+		
+		<dc:creator><![CDATA[ريادي]]></dc:creator>
+		<pubDate>Tue, 06 Oct 2026 18:15:03 +0000</pubDate>
+				<category><![CDATA[دولى]]></category>
+		<category><![CDATA[إيجى إنتريبرينور]]></category>
+		<category><![CDATA[التكنولوجيا]]></category>
+		<category><![CDATA[الذكاء الاصطناعي]]></category>
+		<category><![CDATA[الشركات العملاقة]]></category>
+		<category><![CDATA[شركات التكنولوجيا]]></category>
+		<category><![CDATA[شركات الذكاء الاصطناعي]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21301</guid>
+
+					<description><![CDATA[<p>تستعد شركة ديب سيك (DeepSeek) الصينية الناشئة في مجال الذكاء الاصطناعي لجمع أكثر من 80 مليار يوان (11.93 مليار دولار) في أحدث جولة تمويلية، في خطوة تستهدف تعزيز مواردها المالية قبل طرح عام أولي محتمل في السوق الصينية. وقال مصدر مطلع إن الجولة التمويلية الثانية حظيت باهتمام قوي من المستثمرين الحاليين والجدد، بعدما تجاوزت الالتزامات [&#8230;]</p>
+The post <a href="https://riadynews.com/%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%ac%d9%85%d8%b9-80-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d9%8a%d9%88%d8%a7%d9%86-%d8%a7%d8%b3%d8%aa%d8%b9%d8%af%d8%a7%d8%af/">ديب سيك تستهدف جمع 80 مليار يوان استعدادًا لطرح عام أولي في الصين</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>تستعد شركة ديب سيك (<a href="https://riadynews.com/%d9%85%d8%a4%d8%b3%d8%b3-%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d9%8a%d8%b1%d9%81%d8%b6-%d8%b9%d8%b1%d9%88%d8%b6-%d8%a7%d8%b3%d8%aa%d8%ab%d9%85%d8%a7%d8%b1-%d9%81%d9%8a-%d8%b4%d8%b1%d9%83%d8%aa/">DeepSeek</a>) الصينية الناشئة في مجال الذكاء الاصطناعي لجمع أكثر من 80 مليار يوان (11.93 مليار دولار) في أحدث جولة تمويلية، في خطوة تستهدف تعزيز مواردها المالية قبل طرح عام أولي محتمل في السوق الصينية.</p>
+<p>وقال مصدر مطلع إن الجولة التمويلية الثانية حظيت باهتمام قوي من المستثمرين الحاليين والجدد، بعدما تجاوزت الالتزامات التمويلية الهدف الأولي للشركة البالغ 50 مليار يوان.</p>
+<p>وكانت ديب سيك قد بدأت في يوليو الماضي عملية جمع التمويل، مستهدفة تقييمًا للشركة عند نحو 500 مليار يوان (74 مليار دولار)، وذلك بعد شهر واحد فقط من جمعها نحو 7.4 مليار دولار في أول جولة تمويل خارجية لها.</p><div id="riady-552430678" class="riady- riady-entity-placement"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4620366728342170"
+     crossorigin="anonymous"></script></div>
+<h2>100 مليار يوان حصيلة محتملة</h2>
+<p>ومن المتوقع أن تختتم ديب سيك <a href="https://riadynews.com/%d8%a3%d9%88%d8%a8%d9%86-%d8%a5%d9%8a%d9%87-%d8%a2%d9%8a-%d8%aa%d8%a8%d8%ad%d8%ab-%d8%b9%d9%86-%d8%ac%d9%88%d9%84%d8%a9-%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d9%82/">جولة التمويل</a> خلال أكتوبر الجاري، فيما قد تصل الحصيلة النهائية إلى 100 مليار يوان، وفقًا لما أوردته بلومبرغ نقلًا عن مصادر مطلعة.</p>
+<p>وأشارت تقارير إلى أن شركة تصنيع البطاريات الصينية كاتل (CATL) وشركة التكنولوجيا تينسنت (Tencent Holdings) تعتزمان المشاركة بمبالغ كبيرة في الجولة الحالية.</p>
+<p>وتعكس ضخامة الجولة التمويلية حجم الاهتمام الذي تحظى به ديب سيك في سوق الذكاء الاصطناعي الصيني، خصوصًا مع تصاعد المنافسة على تطوير نماذج الذكاء الاصطناعي والبنية التحتية اللازمة لتشغيلها.</p>
+<h2>ديب سيك تقترب من طرح محتمل في بورصة شنغهاي</h2>
+<p>وتأتي جولة التمويل الجديدة بالتزامن مع استعداد الشركة لطرح عام أولي محتمل في سوق STAR Market التابع لبورصة شنغهاي.</p>
+<p>وكانت تقارير قد أشارت إلى تكليف ديب سيك شركة سيتيك للأوراق المالية (CITIC Securities) بالتحضير للطرح المحتمل، إلا أن موعد الطرح وحجم التمويل المستهدف والتقييم النهائي للشركة لم تُحسم بعد.</p>
+<h2>شراكة مع هواوي لمنافسة إنفيديا</h2>
+<p>وفي سياق آخر، دخلت ديب سيك مؤخرًا في شراكة مع شركة هواوي لتطوير أدوات برمجية محسنة للعمل مع رقائق الذكاء الاصطناعي Ascend التابعة لهواوي.</p>
+<p>وتأتي الخطوة في إطار مساعي قطاع التكنولوجيا الصيني لتقليل الاعتماد على منظومة الذكاء الاصطناعي التي تقودها شركة إنفيديا (Nvidia)، في ظل القيود الأميركية المفروضة على تصدير أحدث رقائق الذكاء الاصطناعي إلى الصين.</p>
+<p>كما أطلقت ديب سيك الشهر الماضي أحدث نماذجها DeepSeek-V4.1-Flash، وقالت الشركة إنه يوفر قدرات أكبر وسرعة أعلى في الاستدلال ومعدل معالجة أعلى، مع إمكانية التوسع إلى نماذج أكبر.</p>
+<p>وتعكس التحركات التمويلية والتكنولوجية المتسارعة للشركة تحول ديب سيك من شركة ناشئة بارزة في مجال نماذج الذكاء الاصطناعي إلى لاعب يستعد لبناء قاعدة مالية وتقنية أكبر، بالتزامن مع التحضير لطرح محتمل في سوق الأسهم الصينية.</p>The post <a href="https://riadynews.com/%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%ac%d9%85%d8%b9-80-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d9%8a%d9%88%d8%a7%d9%86-%d8%a7%d8%b3%d8%aa%d8%b9%d8%af%d8%a7%d8%af/">ديب سيك تستهدف جمع 80 مليار يوان استعدادًا لطرح عام أولي في الصين</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%d8%af%d9%8a%d8%a8-%d8%b3%d9%8a%d9%83-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%ac%d9%85%d8%b9-80-%d9%85%d9%84%d9%8a%d8%a7%d8%b1-%d9%8a%d9%88%d8%a7%d9%86-%d8%a7%d8%b3%d8%aa%d8%b9%d8%af%d8%a7%d8%af/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21301</post-id>	</item>
+		<item>
+		<title>10 شركات ناشئة تتأهل لنهائي مسابقة كلية لندن لإدارة الأعمال في الشرق الأوسط</title>
+		<link>https://riadynews.com/10-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%aa%d8%aa%d8%a3%d9%87%d9%84-%d9%84%d9%86%d9%87%d8%a7%d8%a6%d9%8a-%d9%85%d8%b3%d8%a7%d8%a8%d9%82%d8%a9-%d9%83%d9%84%d9%8a%d8%a9/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=10-%25d8%25b4%25d8%25b1%25d9%2583%25d8%25a7%25d8%25aa-%25d9%2586%25d8%25a7%25d8%25b4%25d8%25a6%25d8%25a9-%25d8%25aa%25d8%25aa%25d8%25a3%25d9%2587%25d9%2584-%25d9%2584%25d9%2586%25d9%2587%25d8%25a7%25d8%25a6%25d9%258a-%25d9%2585%25d8%25b3%25d8%25a7%25d8%25a8%25d9%2582%25d8%25a9-%25d9%2583%25d9%2584%25d9%258a%25d8%25a9</link>
+					<comments>https://riadynews.com/10-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%aa%d8%aa%d8%a3%d9%87%d9%84-%d9%84%d9%86%d9%87%d8%a7%d8%a6%d9%8a-%d9%85%d8%b3%d8%a7%d8%a8%d9%82%d8%a9-%d9%83%d9%84%d9%8a%d8%a9/#respond</comments>
+		
+		<dc:creator><![CDATA[ريادي]]></dc:creator>
+		<pubDate>Tue, 06 Oct 2026 17:26:02 +0000</pubDate>
+				<category><![CDATA[فعاليات]]></category>
+		<category><![CDATA[إيجى إنتريبرينور]]></category>
+		<category><![CDATA[الشركات الناشئة]]></category>
+		<category><![CDATA[كلية لندن لإدارة الأعمال]]></category>
+		<category><![CDATA[مسابقة الشركات الناشئة]]></category>
+		<category><![CDATA[منظومة الشركات الناشئة]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21297</guid>
+
+					<description><![CDATA[<p>أعلنت مسابقة الشركات الناشئة في منطقة الشرق الأوسط وشمال أفريقيا لعام 2026، التي تنظمها كلية لندن لإدارة الأعمال، تأهل 10 شركات ناشئة إلى المرحلة النهائية، بعد منافسات نصف نهائية ضمت 20 شركة من مختلف أنحاء المنطقة. وتُقام المرحلة النهائية في دبي يوم 14 أكتوبر 2026، حيث تعرض الشركات المتأهلة مشاريعها أمام لجنة تضم مستثمرين ورواد [&#8230;]</p>
+The post <a href="https://riadynews.com/10-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%aa%d8%aa%d8%a3%d9%87%d9%84-%d9%84%d9%86%d9%87%d8%a7%d8%a6%d9%8a-%d9%85%d8%b3%d8%a7%d8%a8%d9%82%d8%a9-%d9%83%d9%84%d9%8a%d8%a9/">10 شركات ناشئة تتأهل لنهائي مسابقة كلية لندن لإدارة الأعمال في الشرق الأوسط</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p>أعلنت مسابقة الشركات الناشئة في منطقة الشرق الأوسط وشمال أفريقيا لعام 2026، التي تنظمها كلية لندن لإدارة الأعمال، تأهل 10 شركات ناشئة إلى المرحلة النهائية، بعد منافسات نصف نهائية ضمت 20 شركة من مختلف أنحاء المنطقة.</p>
+<p>وتُقام المرحلة النهائية في دبي يوم 14 أكتوبر 2026، حيث تعرض الشركات المتأهلة مشاريعها أمام لجنة تضم مستثمرين ورواد أعمال وقادة في منظومة الشركات الناشئة، فيما تحصل الشركات الثلاث الفائزة على جوائز مالية بإجمالي 45 ألف دولار، دون اشتراط التنازل عن حصص ملكية.</p>
+<h2>10 شركات في نهائي مسابقة الشركات الناشئة</h2>
+<p>تضم قائمة الشركات المتأهلة شركات من الإمارات والسعودية ومصر ولبنان، وتعمل في قطاعات متنوعة تشمل الذكاء الاصطناعي والتكنولوجيا المالية والصحية والزراعية والتعليم والعقارات والبيئة.</p><div id="riady-552430678" class="riady- riady-entity-placement"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4620366728342170"
+     crossorigin="anonymous"></script></div>
+<ul>
+<li>P-Vita – الإمارات ومصر: شركة تكنولوجيا زراعية تعمل على إعادة تدوير المخلفات الزراعية لإنتاج أسمدة طبيعية ومكملات أعلاف حيوية مستدامة باستخدام تقنيات قائمة على الطحالب.</li>
+<li>Arusto Inc. – الإمارات: منصة لإنشاء وحوكمة حلول الذكاء الاصطناعي المخصصة للتدريب المؤسسي في القطاعات الخاضعة للتنظيم.</li>
+<li>NSBH – السعودية: شركة توفر بنية تحتية لخدمات الائتمان التجاري الموجهة للشركات الصغيرة والمتوسطة.</li>
+<li>SDM – السعودية: شركة متخصصة في الذكاء الاصطناعي الصحي، تركز على الكشف المبكر عن الأمراض المزمنة والتنبؤ بها.</li>
+<li>Persium – الإمارات والمملكة المتحدة: منصة تعتمد على إنترنت الأشياء والتوائم الرقمية لمراقبة وإدارة جودة الهواء ومستويات الضوضاء والبيانات البيئية.</li>
+<li>Beaver Edu – لبنان: شركة متخصصة في أدوات التعليم العملي والتفاعلي، وتوفر تحديات متوافقة مع المناهج الدراسية لمساعدة الأطفال على تطبيق ما يتعلمونه داخل الفصول.</li>
+<li>ReachLLM – الإمارات: منصة ذكاء اصطناعي للمؤسسات تعتمد على وكلاء مستقلين لتنفيذ مهام النمو، بما يشمل البحث وصناعة المحتوى والعلاقات العامة الرقمية والتوزيع والقياس.</li>
+<li>Kwelio – الإمارات: تطبيق يربط المرضى بشركات التأمين من خلال طبقة بيانات موثقة.</li>
+<li>UpSkillMe – السعودية: منصة تستهدف العمالة الميدانية والفنية، وتجمع بين التعلم الموجه والشهادات القائمة على التقييم وسوق العمل.</li>
+<li>FRANK AI – الإمارات: نظام تشغيل قائم على وكلاء برمجيين ومصمم للوسطاء العقاريين المستقلين في دول مجلس التعاون الخليجي.</li>
+</ul>
+<h2>نحو 100 طلب مشاركة من مؤسسي المنطقة</h2>
+<p>استقطبت نسخة 2026 نحو 100 طلب مشاركة من مؤسسين وشركات ناشئة في منطقة الشرق الأوسط وشمال أفريقيا، قبل اختيار 20 شركة للمنافسة في المرحلة نصف النهائية.</p>
+<p>وضمت قائمة المتأهلين لنصف النهائي مؤسسين من الإمارات والسعودية والكويت ومصر وسوريا، من بينهم 11 رائدة أعمال.</p>
+<p>وتغطي الشركات العشر المتأهلة للنهائي ثمانية قطاعات رئيسية، من بينها الذكاء الاصطناعي وبرمجيات المؤسسات، والتكنولوجيا الصحية والزراعية والحيوية، وتكنولوجيا التعليم والمناخ، والتكنولوجيا المالية والعقارية، إلى جانب تقنيات الموارد البشرية والقوى العاملة.</p>
+<p>واعتمد اختيار الشركات على مجموعة من المعايير، شملت فرص النمو، ومؤشرات الأداء والزخم، وخبرات فرق التأسيس، وقدرة الحلول على معالجة احتياجات فعلية في الأسواق، إلى جانب مدى استفادة الشركات من شبكة كلية لندن لإدارة الأعمال وبرامج التوجيه والإرشاد.</p>
+<h2>ربط الشركات الناشئة بالمستثمرين</h2>
+<p>وتقام المسابقة بدعم من معهد ريادة الأعمال ورأس المال الخاص (IEPC) التابع لكلية لندن لإدارة الأعمال، بهدف ربط المؤسسين في المراحل المبكرة بالمستثمرين والمرشدين ورواد الأعمال ذوي الخبرة، والاستفادة من شبكة الكلية العالمية من الخريجين وأعضاء هيئة التدريس.</p>
+<p>وقالت جين خضير، المديرة التنفيذية لمعهد ريادة الأعمال ورأس المال الخاص في كلية لندن لإدارة الأعمال وعضو لجنة تحكيم المرحلة النهائية، إن المسابقة تستهدف تعزيز الروابط بين المؤسسين والمستثمرين ودعم منظومة الشركات الناشئة في المنطقة.</p>
+<p>وأضافت أن ربط الشركات الناشئة بشبكة من الخبرات والعلاقات يتيح لها فرصًا أوسع للوصول إلى الأسواق وتعزيز حضورها، بما يساعد رواد الأعمال على تحويل أفكارهم إلى شركات قابلة للنمو والتوسع.</p>
+<p>وتستهدف المسابقة الشركات الناشئة الواعدة في المراحل المتقدمة من التمويل التمهيدي والتمويل البذري، وتوفر منصة للتواصل مع أصحاب رؤوس الأموال والمستثمرين في المنطقة</p>The post <a href="https://riadynews.com/10-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%aa%d8%aa%d8%a3%d9%87%d9%84-%d9%84%d9%86%d9%87%d8%a7%d8%a6%d9%8a-%d9%85%d8%b3%d8%a7%d8%a8%d9%82%d8%a9-%d9%83%d9%84%d9%8a%d8%a9/">10 شركات ناشئة تتأهل لنهائي مسابقة كلية لندن لإدارة الأعمال في الشرق الأوسط</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/10-%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d9%86%d8%a7%d8%b4%d8%a6%d8%a9-%d8%aa%d8%aa%d8%a3%d9%87%d9%84-%d9%84%d9%86%d9%87%d8%a7%d8%a6%d9%8a-%d9%85%d8%b3%d8%a7%d8%a8%d9%82%d8%a9-%d9%83%d9%84%d9%8a%d8%a9/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21297</post-id>	</item>
+		<item>
+		<title>بلتون لإدارة الأصول تطلق صندوقًا عقاريًا متعدد الإصدارات مستهدفًا 2 مليار جنيه</title>
+		<link>https://riadynews.com/%d8%a8%d9%84%d8%aa%d9%88%d9%86-%d9%84%d8%a5%d8%af%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b5%d9%88%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%b5%d9%86%d8%af%d9%88%d9%82%d9%8b%d8%a7-%d8%b9%d9%82%d8%a7%d8%b1/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25d8%25a8%25d9%2584%25d8%25aa%25d9%2588%25d9%2586-%25d9%2584%25d8%25a5%25d8%25af%25d8%25a7%25d8%25b1%25d8%25a9-%25d8%25a7%25d9%2584%25d8%25a3%25d8%25b5%25d9%2588%25d9%2584-%25d8%25aa%25d8%25b7%25d9%2584%25d9%2582-%25d8%25b5%25d9%2586%25d8%25af%25d9%2588%25d9%2582%25d9%258b%25d8%25a7-%25d8%25b9%25d9%2582%25d8%25a7%25d8%25b1</link>
+					<comments>https://riadynews.com/%d8%a8%d9%84%d8%aa%d9%88%d9%86-%d9%84%d8%a5%d8%af%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b5%d9%88%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%b5%d9%86%d8%af%d9%88%d9%82%d9%8b%d8%a7-%d8%b9%d9%82%d8%a7%d8%b1/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Tue, 06 Oct 2026 16:54:56 +0000</pubDate>
+				<category><![CDATA[نبض السوق]]></category>
+		<category><![CDATA[أمتار كابيتال]]></category>
+		<category><![CDATA[الاستثمار الجزئي]]></category>
+		<category><![CDATA[الاستثمار العقاري]]></category>
+		<category><![CDATA[الاستثمار العقاري الرقمي]]></category>
+		<category><![CDATA[بلتون القابضة]]></category>
+		<category><![CDATA[بلتون لإدارة الأصول]]></category>
+		<category><![CDATA[صناديق الاستثمار العقاري]]></category>
+		<category><![CDATA[صندوق استثمار عقاري]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21294</guid>
+
+					<description><![CDATA[<p>أعلنت شركة بلتون لإدارة الأصول، التابعة لبلتون القابضة، تعاونها مع أمتار كابيتال لإطلاق صندوق استثمار عقاري متعدد الإصدارات، لا يزال قيد التأسيس، ويستهدف إجمالي إصدارات بقيمة 2 مليار جنيه، في نموذج يجمع بين إدارة الاستثمارات العقارية والمنصات الرقمية لإتاحة الاستثمار الجزئي أمام المستثمرين. 500 إلى 700 مليون جنيه قيمة الإصدار الأول وبحسب الشركتين، من المتوقع [&#8230;]</p>
+The post <a href="https://riadynews.com/%d8%a8%d9%84%d8%aa%d9%88%d9%86-%d9%84%d8%a5%d8%af%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b5%d9%88%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%b5%d9%86%d8%af%d9%88%d9%82%d9%8b%d8%a7-%d8%b9%d9%82%d8%a7%d8%b1/">بلتون لإدارة الأصول تطلق صندوقًا عقاريًا متعدد الإصدارات مستهدفًا 2 مليار جنيه</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "بلتون لإدارة الأصول تطلق صندوقًا عقاريًا متعدد الإصدارات مستهدفًا 2 مليار جنيه",
+    "description": "بلتون لإدارة الأصول تتعاون مع أمتار كابيتال لإطلاق صندوق استثمار عقاري متعدد الإصدارات قيد التأسيس، يستهدف إجمالي إصدارات بقيمة 2 مليار جنيه، مع إصدار أول متوقع بين 500 و700 مليون جنيه.",
+    "inLanguage": "ar",
+    "articleSection": "استثمار وتمويل",
+    "keywords": [
+      "بلتون لإدارة الأصول",
+      "أمتار كابيتال",
+      "صندوق استثمار عقاري",
+      "الاستثمار العقاري",
+      "الاستثمار الجزئي"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "ريادي"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ريادي"
+    },
+    "about": [
+      {
+        "@type": "Organization",
+        "name": "بلتون لإدارة الأصول"
+      },
+      {
+        "@type": "Organization",
+        "name": "أمتار كابيتال"
+      },
+      {
+        "@type": "Thing",
+        "name": "الاستثمار العقاري"
+      }
+    ]
+  }
+  </script></p>
+<article>
+<header>أعلنت شركة بلتون لإدارة الأصول، التابعة لبلتون القابضة، تعاونها مع أمتار كابيتال لإطلاق صندوق استثمار عقاري متعدد الإصدارات، لا يزال قيد التأسيس، ويستهدف إجمالي إصدارات بقيمة 2 مليار جنيه، في نموذج يجمع بين إدارة الاستثمارات العقارية والمنصات الرقمية لإتاحة الاستثمار الجزئي أمام المستثمرين.</p>
+</header>
+<section>
+<h2>500 إلى 700 مليون جنيه قيمة الإصدار الأول</h2>
+<p>وبحسب الشركتين، من المتوقع أن تتراوح قيمة الإصدار الأول للصندوق بين 500 و700 مليون جنيه، ضمن خطة تستهدف الوصول بإجمالي الإصدارات إلى نحو 2 مليار جنيه.</p>
+<p>وتتولى بلتون لإدارة الأصول تأسيس الصندوق وإدارته والإشراف على اختيار الأصول العقارية بما يتوافق مع استراتيجيته الاستثمارية، بينما توفر أمتار كابيتال المنصة الرقمية للإصدار الأول، بما يتيح للمستثمرين الوصول إلى الفرصة الاستثمارية عبر تجربة رقمية.</p>
+<p>ولا يزال الصندوق في مرحلة التأسيس، على أن يخضع إطلاقه وإصداراته للشروط والإجراءات والموافقات ذات الصلة.</p>
+</section>
+<section>
+<h2>الاستثمار العقاري يبدأ من 1,000 جنيه</h2>
+<p>ويستهدف الصندوق إتاحة الاستثمار الجزئي في وحدات عقارية مدرّة للدخل، من خلال منصة أمتار كابيتال الرقمية، بما يسمح للمستثمرين بالمشاركة في الاستثمار العقاري دون الحاجة إلى شراء العقار بالكامل.</p>
+<p>ووفقًا للشركة، يمكن للمستثمر المشاركة في الصندوق بدءًا من حصة بقيمة 1,000 جنيه، مع إمكانية الاستفادة من دخل الإيجارات الناتج عن الأصول العقارية، إلى جانب احتمالية ارتفاع قيمة الأصول، وذلك بحسب استراتيجية الصندوق وأدائه والشروط والأحكام المعمول بها.</p>
+</section>
+<section>
+<h2>بلتون: الاستثمار العقاري يحتاج إلى بدائل للتملك المباشر</h2>
+<p>قال خالد درويش، الرئيس التنفيذي لبلتون لإدارة الأصول، إن الاستثمار العقاري يمثل عنصرًا مهمًا في محافظ العديد من المستثمرين، إلا أن التملك المباشر عادةً ما يتطلب رأس مال كبيرًا وقد يؤدي إلى تركّز الاستثمار في أصل واحد.</p>
+<p>وأضاف أن الصندوق يقدم مسارًا مختلفًا للاستثمار العقاري المُدار، بالاعتماد على خبرات بلتون لإدارة الأصول في إدارة الاستثمارات، إلى جانب المنصة الرقمية التي توفرها أمتار كابيتال.</p>
+</section>
+<section>
+<h2>أمتار كابيتال توفر المنصة الرقمية</h2>
+<p>من جانبه، قال عمرو عفيفي، الشريك المؤسس والرئيس التنفيذي لأمتار كابيتال، إن الشراكة تجمع بين خبرات بلتون لإدارة الأصول في إدارة الاستثمارات ومنصة أمتار الرقمية، بما يتيح لشريحة أوسع من المستثمرين الوصول إلى فرص الاستثمار العقاري من خلال تجربة رقمية أكثر سهولة.</p>
+</section>
+<section>
+<h2>نموذج يجمع إدارة الأصول مع الاستثمار العقاري الرقمي</h2>
+<p>وتعكس الشراكة توجهًا متزايدًا نحو استخدام المنصات الرقمية لتوسيع نطاق الوصول إلى أدوات الاستثمار البديلة، من خلال الجمع بين إدارة الأصول المتخصصة والبنية الرقمية التي تتيح للمستثمرين الدخول في فرص عقارية بحصص أقل من تكلفة التملك المباشر.</p>
+<p>ويستهدف النموذج المقترح توسيع قاعدة المستثمرين القادرين على الوصول إلى الأصول العقارية المدرة للدخل، مع بقاء العوائد الفعلية مرتبطة بأداء الأصول واستراتيجية الصندوق والشروط المنظمة للاستثمار.</p>
+</section>
+<footer></footer>
+</article>
+<p>&nbsp;</p>The post <a href="https://riadynews.com/%d8%a8%d9%84%d8%aa%d9%88%d9%86-%d9%84%d8%a5%d8%af%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b5%d9%88%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%b5%d9%86%d8%af%d9%88%d9%82%d9%8b%d8%a7-%d8%b9%d9%82%d8%a7%d8%b1/">بلتون لإدارة الأصول تطلق صندوقًا عقاريًا متعدد الإصدارات مستهدفًا 2 مليار جنيه</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%d8%a8%d9%84%d8%aa%d9%88%d9%86-%d9%84%d8%a5%d8%af%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a3%d8%b5%d9%88%d9%84-%d8%aa%d8%b7%d9%84%d9%82-%d8%b5%d9%86%d8%af%d9%88%d9%82%d9%8b%d8%a7-%d8%b9%d9%82%d8%a7%d8%b1/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21294</post-id>	</item>
+		<item>
+		<title>اتصالات تحتفل بـ50 عامًا وتتجه نحو عصر الذكاء الاصطناعي.. واتصالات مصر تواصل مسيرة الريادة</title>
+		<link>https://riadynews.com/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%ad%d8%aa%d9%81%d9%84-%d8%a8%d9%8050-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%88%d8%aa%d8%aa%d8%ac%d9%87-%d9%86%d8%ad%d9%88-%d8%b9%d8%b5%d8%b1-%d8%a7/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=%25d8%25a7%25d8%25aa%25d8%25b5%25d8%25a7%25d9%2584%25d8%25a7%25d8%25aa-%25d8%25aa%25d8%25ad%25d8%25aa%25d9%2581%25d9%2584-%25d8%25a8%25d9%258050-%25d8%25b9%25d8%25a7%25d9%2585%25d9%258b%25d8%25a7-%25d9%2588%25d8%25aa%25d8%25aa%25d8%25ac%25d9%2587-%25d9%2586%25d8%25ad%25d9%2588-%25d8%25b9%25d8%25b5%25d8%25b1-%25d8%25a7</link>
+					<comments>https://riadynews.com/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%ad%d8%aa%d9%81%d9%84-%d8%a8%d9%8050-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%88%d8%aa%d8%aa%d8%ac%d9%87-%d9%86%d8%ad%d9%88-%d8%b9%d8%b5%d8%b1-%d8%a7/#respond</comments>
+		
+		<dc:creator><![CDATA[هناء حمزة]]></dc:creator>
+		<pubDate>Tue, 06 Oct 2026 16:51:25 +0000</pubDate>
+				<category><![CDATA[تكنولوجيا]]></category>
+		<category><![CDATA[اتصالات مصر]]></category>
+		<category><![CDATA[البنية التحتية الرقمية]]></category>
+		<category><![CDATA[التكنولوجيا المالية]]></category>
+		<category><![CDATA[الخدمات الرقمية]]></category>
+		<category><![CDATA[الذكاء الاصطناعي]]></category>
+		<category><![CDATA[قطاع الاتصالات]]></category>
+		<category><![CDATA[مجموعة اتصالات]]></category>
+		<guid isPermaLink="false">https://riadynews.com/?p=21290</guid>
+
+					<description><![CDATA[<p>احتفلت مجموعة «اتصالات» العالمية بمرور 50 عامًا على تأسيسها عام 1976، معلنةً بدء مرحلة جديدة من مسيرتها تركز على توسيع حضورها في قطاع الاتصالات والذكاء الاصطناعي، بالتزامن مع مواصلة «اتصالات مصر» العمل في السوق المصرية بالاسم الذي عُرفت به على مدار السنوات الماضية. 50 عامًا من الاتصالات إلى التكنولوجيا والذكاء الاصطناعي وأطلقت المجموعة احتفالات اليوبيل [&#8230;]</p>
+The post <a href="https://riadynews.com/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%ad%d8%aa%d9%81%d9%84-%d8%a8%d9%8050-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%88%d8%aa%d8%aa%d8%ac%d9%87-%d9%86%d8%ad%d9%88-%d8%b9%d8%b5%d8%b1-%d8%a7/">اتصالات تحتفل بـ50 عامًا وتتجه نحو عصر الذكاء الاصطناعي.. واتصالات مصر تواصل مسيرة الريادة</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></description>
+										<content:encoded><![CDATA[<p><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "اتصالات تحتفل بـ50 عامًا وتتجه نحو عصر الذكاء الاصطناعي.. واتصالات مصر تواصل مسيرة الريادة",
+    "description": "مجموعة اتصالات تحتفل بمرور 50 عامًا على تأسيسها، وتعلن مرحلة جديدة تركز على الاتصالات والذكاء الاصطناعي والبنية التحتية والتكنولوجيا المالية، بينما تواصل اتصالات مصر العمل باسمها في السوق المصرية.",
+    "inLanguage": "ar",
+    "articleSection": "تكنولوجيا واتصالات",
+    "keywords": [
+      "اتصالات",
+      "اتصالات مصر",
+      "مجموعة اتصالات",
+      "الذكاء الاصطناعي",
+      "قطاع الاتصالات",
+      "التكنولوجيا المالية"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "ريادي"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ريادي"
+    },
+    "about": [
+      {
+        "@type": "Organization",
+        "name": "مجموعة اتصالات"
+      },
+      {
+        "@type": "Organization",
+        "name": "اتصالات مصر"
+      }
+    ]
+  }
+  </script></p>
+<article>
+<header>احتفلت مجموعة «اتصالات» العالمية بمرور 50 عامًا على تأسيسها عام 1976، معلنةً بدء مرحلة جديدة من مسيرتها تركز على توسيع حضورها في قطاع الاتصالات والذكاء الاصطناعي، بالتزامن مع مواصلة «اتصالات مصر» العمل في السوق المصرية بالاسم الذي عُرفت به على مدار السنوات الماضية.</p>
+</header>
+<section>
+<h2>50 عامًا من الاتصالات إلى التكنولوجيا والذكاء الاصطناعي</h2>
+<p>وأطلقت المجموعة احتفالات اليوبيل الذهبي تحت شعار «50 عامًا معًا، 50 عامًا اتصالات»، في مناسبة تستهدف الاحتفاء بمسيرتها الممتدة منذ تأسيسها في دولة الإمارات العربية المتحدة، والانتقال إلى فصل جديد من استراتيجية أعمالها.</p>
+<p>وقالت المجموعة إن رؤيتها الحالية تستند إلى التحول الذي بدأته عام 2022، والذي وسّع نطاق أعمالها من خدمات الاتصالات التقليدية إلى مجالات الخدمات الرقمية والحوسبة السحابية والأمن السيبراني والذكاء الاصطناعي.</p>
+<p>وترتكز الاستراتيجية الجديدة على أربعة مجالات رئيسية تشمل الاتصالات، وحلول الذكاء الاصطناعي والأعمال، والبنية التحتية، والتكنولوجيا المالية، مع توسيع استخدام تقنيات الذكاء الاصطناعي في الشبكات والعمليات وتجارب العملاء.</p>
+</section>
+<section>
+<h2>اتصالات مصر تواصل العمل باسمها في السوق المصرية</h2>
+<p>وفي مصر، تواصل «اتصالات مصر» نشاطها تحت اسم «اتصالات»، بالتزامن مع احتفالات المجموعة بمرور نصف قرن على تأسيسها، لتستمر في تقديم خدمات وحلول الاتصالات والتكنولوجيا للعملاء في السوق المحلية.</p>
+<p>وأوضحت الشركة أن المرحلة الحالية تمثل امتدادًا لمسيرة التوسع والاستثمار في التكنولوجيا الحديثة، والتي ساهمت، بحسب الشركة، في تطوير تجربة العملاء وتعزيز قدراتها التنافسية في السوق المصرية.</p>
+<p>ويأتي استمرار «اتصالات مصر» بالاسم نفسه في إطار توجه المجموعة الجديد، مع التركيز على تطوير الخدمات بما يتواكب مع التحولات التي يشهدها قطاع الاتصالات، خصوصًا مع التوسع في تطبيقات الذكاء الاصطناعي والخدمات الرقمية.</p>
+</section>
+<section>
+<h2>250 مليون مشترك في 38 دولة</h2>
+<p>وعلى مدار خمسة عقود، تطورت مجموعة «اتصالات» من شركة ركزت في بداياتها على بناء البنية التحتية للاتصالات في دولة الإمارات العربية المتحدة، إلى مجموعة تعمل في أسواق دولية متعددة في مجالات الاتصالات الثابتة والمحمولة والإنترنت والألياف الضوئية وتقنيات الاتصال اللاسلكي.</p>
+<p>وبحسب المجموعة، تخدم أعمالها حاليًا أكثر من 250 مليون مشترك في 38 دولة، موزعة على مناطق الشرق الأوسط وآسيا وأفريقيا ووسط وشرق أوروبا.</p>
+</section>
+<section>
+<h2>اتصالات مصر: تجربة العملاء في مقدمة المرحلة المقبلة</h2>
+<p>وقال المهندس حازم متولي، الرئيس التنفيذي لـ«اتصالات مصر»، إن الشركة تفخر بكونها جزءًا من مسيرة المجموعة الممتدة على مدار 50 عامًا، مشيرًا إلى أن اسم «اتصالات» أصبح مرتبطًا بثقة العملاء في السوق المصرية.</p>
+<blockquote><p>«نحتفل مع مجموعة اتصالات بمرور 50 عامًا على مسيرة عريقة، ونفخر بأن نكون جزءًا منها، ونعتز بالإنجازات التي حققناها جنبًا إلى جنب مع عملائنا في مصر. فقد ظل اسم اتصالات حاضرًا على مدار سنوات طويلة، وتلك الثقة هي أثمن رصيد نملكه».</p></blockquote>
+<p>وأضاف متولي أن الاستفادة من التوسعات التي حققتها الشركة خلال السنوات الماضية، إلى جانب الاعتماد على التكنولوجيا الحديثة، تضع «اتصالات مصر» في موقع يمكنها من مواكبة المرحلة الجديدة للمجموعة.</p>
+<p>وأكد أن الشركة تستهدف خلال المرحلة المقبلة الاقتراب بصورة أكبر من احتياجات العملاء، وتقديم تجربة تعتمد على إمكانات التكنولوجيا الحديثة وتواكب التطورات المرتبطة بعصر الذكاء الاصطناعي.</p>
+</section>
+<section>
+<h2>الذكاء الاصطناعي يعيد تشكيل استراتيجية قطاع الاتصالات</h2>
+<p>وتعكس استراتيجية المجموعة انتقال شركات الاتصالات الكبرى تدريجيًا من التركيز على خدمات الاتصال والبنية التحتية فقط إلى بناء منظومات رقمية أوسع تشمل الذكاء الاصطناعي والحوسبة السحابية والأمن السيبراني والتكنولوجيا المالية.</p>
+<p>وبالنسبة إلى «اتصالات مصر»، تمثل هذه المرحلة امتدادًا لتطور أعمال الشركة في السوق المحلية، مع التركيز على استخدام التكنولوجيا لتطوير الخدمات وتجربة العملاء، بالتوازي مع التحول الأوسع الذي تتبناه المجموعة عالميًا.</p>
+</section>
+<footer></footer>
+</article>
+<p>&nbsp;</p>The post <a href="https://riadynews.com/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%ad%d8%aa%d9%81%d9%84-%d8%a8%d9%8050-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%88%d8%aa%d8%aa%d8%ac%d9%87-%d9%86%d8%ad%d9%88-%d8%b9%d8%b5%d8%b1-%d8%a7/">اتصالات تحتفل بـ50 عامًا وتتجه نحو عصر الذكاء الاصطناعي.. واتصالات مصر تواصل مسيرة الريادة</a> appeared first on <a href="https://riadynews.com">ريادي</a>.]]></content:encoded>
+					
+					<wfw:commentRss>https://riadynews.com/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d8%aa%d8%ad%d8%aa%d9%81%d9%84-%d8%a8%d9%8050-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%88%d8%aa%d8%aa%d8%ac%d9%87-%d9%86%d8%ad%d9%88-%d8%b9%d8%b5%d8%b1-%d8%a7/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">21290</post-id>	</item>
+	</channel>
+</rss>
