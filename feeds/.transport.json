@@ -3,13 +3,17 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20261007020420id_/https://www.mobizil.com/",
+  "snapTs": 1791338681751
  },
  "riadynews.com": {
   "via": "direct"
  },
  "www.echaab.dz": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20261007020831/https://www.echaab.dz/",
+  "snapTs": 1791338924100
  },
  "www.latinamericanewsagency.com": {
   "via": "direct"
@@ -18,7 +22,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "proxy:2"
+  "via": "direct"
  },
  "saharazoom.com": {
   "via": "direct"
