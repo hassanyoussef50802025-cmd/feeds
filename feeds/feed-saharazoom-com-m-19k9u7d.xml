@@ -5,7 +5,7 @@
 <link>https://saharazoom.com/m/</link>
 <description>خلاصة تُحدَّث تلقائيًا من saharazoom.com/m/</description>
 <language>ar</language>
-<lastBuildDate>Wed, 07 Oct 2026 11:54:39 GMT</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 12:19:26 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: dom -->
 <atom:link href="https://saharazoom.com/m/" rel="self" type="application/rss+xml"/>
@@ -14,9 +14,7 @@
 <link>https://saharazoom.com/m/news32337.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/news32337.html</guid>
 <pubDate>Sat, 03 Oct 2026 14:32:00 GMT</pubDate>
-<media:thumbnail url="https://saharazoom.com/imagesnews/t_1791039901.jpg"/>
-<description><![CDATA[<img src="https://saharazoom.com/imagesnews/t_1791039901.jpg" alt=""/><p>الصحراء زووم : محمد كنتور // صادق المجلس الوطني لحزب الاستقلال، خلال دورته الاستثنائية المنعقدة اليوم السبت بمدينة سلا،</p>]]></description>
-<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/t_1791039901.jpg" alt=""/><p>الصحراء زووم : محمد كنتور // صادق المجلس الوطني لحزب الاستقلال، خلال دورته الاستثنائية المنعقدة اليوم السبت بمدينة سلا،</p>]]></content:encoded>
+<description>المجلس الوطني لحزب الاستقلال يفوض الأمين العام التفاوض بشأن التحالف الحكومي</description>
 </item>
 <item>
 <title>نزار بركة ينوه بالنتائج المحققة بالصحراء والمجلس الوطني لحزب الاستقلال يحتفي بولد الرشيد</title>
@@ -164,9 +162,8 @@
 <link>https://saharazoom.com/m/news32366.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/news32366.html</guid>
 <pubDate>Wed, 07 Oct 2026 11:51:00 GMT</pubDate>
-<media:thumbnail url="https://saharazoom.com/imagesnews/1791373890.jpeg"/>
-<description><![CDATA[<img src="https://saharazoom.com/imagesnews/1791373890.jpeg" alt=""/><p>الصحراء زووم : سيد احمد السلامي // تتجه أنظار المتابعين لملف نزاع الصحراء، اليوم الأربعاء 7 أكتوبر، إلى مجلس الأمن الدولي</p>]]></description>
-<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/1791373890.jpeg" alt=""/><p>الصحراء زووم : سيد احمد السلامي // تتجه أنظار المتابعين لملف نزاع الصحراء، اليوم الأربعاء 7 أكتوبر، إلى مجلس الأمن الدولي</p>]]></content:encoded>
+<description><![CDATA[<p>الصحراء زووم : سيد احمد السلامي // تتجه أنظار المتابعين لملف نزاع الصحراء، اليوم الأربعاء 7 أكتوبر، إلى مجلس الأمن الدولي</p>]]></description>
+<content:encoded><![CDATA[<p>الصحراء زووم : سيد احمد السلامي // تتجه أنظار المتابعين لملف نزاع الصحراء، اليوم الأربعاء 7 أكتوبر، إلى مجلس الأمن الدولي</p>]]></content:encoded>
 </item>
 <item>
 <title>بالفيديو.. القناة الأولى تبرز مشاركة الوفد البرلماني المغربي برئاسة رئيس مجلس المستشارين في الاتحاد البرلماني الدولي بتنزانيا</title>
