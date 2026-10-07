@@ -3,21 +3,25 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20261007091220id_/https://www.mobizil.com/",
+  "snapTs": 1791364355914
  },
  "riadynews.com": {
   "via": "direct"
  },
  "www.echaab.dz": {
   "via": "wayback",
-  "snap": "https://web.archive.org/web/20261007084923/https://www.echaab.dz/",
-  "snapTs": 1791362965066
+  "snap": "https://web.archive.org/web/20261007084859id_/https://www.echaab.dz/",
+  "snapTs": 1791364705013
  },
  "www.latinamericanewsagency.com": {
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20261007021351id_/https://almarkazia.com/",
+  "snapTs": 1791364969453
  },
  "newslb.org": {
   "via": "direct"
@@ -30,8 +34,5 @@
  },
  "alhayapress.com": {
   "via": "direct"
- },
- "_archiveCooldownUntil": {
-  "until": 1791362717425
  }
 }
