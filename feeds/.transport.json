@@ -15,7 +15,9 @@
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20261008043139id_/https://almarkazia.com/",
+  "snapTs": 1791433926101
  },
  "newslb.org": {
   "via": "direct"
