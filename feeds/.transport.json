@@ -8,6 +8,9 @@
  "riadynews.com": {
   "via": "direct"
  },
+ "www.echaab.dz": {
+  "via": "proxy:2"
+ },
  "www.latinamericanewsagency.com": {
   "via": "direct"
  },
@@ -15,7 +18,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "direct"
+  "via": "proxy:2"
  },
  "saharazoom.com": {
   "via": "direct"
