@@ -3,15 +3,17 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20261008182506/https://www.mobizil.com/",
+  "snapTs": 1791483906979
  },
  "riadynews.com": {
   "via": "direct"
  },
  "www.echaab.dz": {
   "via": "wayback",
-  "snap": "https://web.archive.org/web/20261008175951/https://www.echaab.dz/",
-  "snapTs": 1791482392829
+  "snap": "https://web.archive.org/web/20261008183045/https://www.echaab.dz/",
+  "snapTs": 1791484247006
  },
  "www.latinamericanewsagency.com": {
   "via": "direct"
@@ -32,5 +34,8 @@
  },
  "alhayapress.com": {
   "via": "direct"
+ },
+ "_archiveCooldownUntil": {
+  "until": 1791506472370
  }
 }
