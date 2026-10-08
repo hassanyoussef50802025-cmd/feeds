@@ -10,14 +10,16 @@
  },
  "www.echaab.dz": {
   "via": "wayback",
-  "snap": "https://web.archive.org/web/20261008045320/https://www.echaab.dz/",
-  "snapTs": 1791435201322
+  "snap": "https://web.archive.org/web/20261008175951/https://www.echaab.dz/",
+  "snapTs": 1791482392829
  },
  "www.latinamericanewsagency.com": {
   "via": "direct"
  },
  "almarkazia.com": {
-  "via": "proxy:2"
+  "via": "wayback",
+  "snap": "https://web.archive.org/web/20261008043139id_/https://almarkazia.com/",
+  "snapTs": 1791482632424
  },
  "newslb.org": {
   "via": "direct"
@@ -30,8 +32,5 @@
  },
  "alhayapress.com": {
   "via": "direct"
- },
- "_archiveCooldownUntil": {
-  "until": 1791480926802
  }
 }
