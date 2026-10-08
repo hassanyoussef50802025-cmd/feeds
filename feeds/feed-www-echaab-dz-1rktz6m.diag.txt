@@ -2,71 +2,68 @@
 مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
   - وسيط#0: حالة 403 / 6443 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6358 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
   - وسيط#3: حالة 403 / 5850 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
   - وسيط#0: حالة 403 / 6464 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6379 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5865 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
   - وسيط#0: حالة 403 / 6455 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6370 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 400 / 85 حرفًا / «{"error":"Error: Network connection lost.","stack":"Error: Network connection lost."}»
   - وسيط#3: حالة 403 / 5862 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
   - وسيط#0: حالة 403 / 6506 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6421 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+  - وسيط#2: حالة 400 / 85 حرفًا / «{"error":"Error: Network connection lost.","stack":"Error: Network connection lost."}»
   - وسيط#3: حالة 403 / 5895 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
   - وسيط#0: حالة 403 / 6464 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6379 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5871 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
   - وسيط#0: حالة 403 / 6452 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6367 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7257 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 403 / 5859 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
-  - وسيط#0: حالة 403 / 6467 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#1: حالة 403 / 6382 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - وسيط#3: حالة 403 / 5874 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+تجاوزنا مهلة الدورة قبل الوسائط
 الصفحة غير متاحة (؟) — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.
-مباشر web.archive.org: حالة 0 / 0 حرفًا / خطأ: fetch failed
-تجاوزنا مهلة الدورة قبل الوسائط
-نسخة أرشيف حديثة أُعيد استخدامها: 0 / 0 حرفًا (غير صالحة)
-أقرب نسخة ليست طازجة (لا شيء) — نطلب التقاطًا جديدًا.
-مباشر web.archive.org: حالة 0 / 0 حرفًا / خطأ: fetch failed
-تجاوزنا مهلة الدورة قبل الوسائط
-أرشيف الإنترنت (التقاط): 0 / 0 حرفًا
-أقرب نسخة من واجهة الأرشيف: لا شيء
-مباشر web.archive.org: حالة 429 / 620 حرفًا / «Your request is being blocked because our system has flagged it as suspected abusive bot t»
-تجاوزنا مهلة الدورة قبل الوسائط
-أرشيف الإنترنت حدّ من الوصول (429) عند نسخة معروضة — تهدئة 6 ساعات محفوظة.
+مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه.
 مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
   - وسيط#0: حالة 403 / 6443 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6358 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+  - وسيط#2: حالة 400 / 85 حرفًا / «{"error":"Error: Network connection lost.","stack":"Error: Network connection lost."}»
   - وسيط#3: حالة 403 / 5850 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
   - وسيط#0: حالة 403 / 6464 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6379 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 400 / 85 حرفًا / «{"error":"Error: Network connection lost.","stack":"Error: Network connection lost."}»
   - وسيط#3: حالة 403 / 5865 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
   - وسيط#0: حالة 403 / 6455 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6370 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-(وأُسقط 20 سطرًا زائدًا)
+  - وسيط#2: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
+  - وسيط#3: حالة 403 / 5862 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7245 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
+تجاوزنا مهلة الدورة قبل الوسائط
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+تجاوزنا مهلة الدورة قبل الوسائط
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+تجاوزنا مهلة الدورة قبل الوسائط
+مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
+تجاوزنا مهلة الدورة قبل الوسائط
+الصفحة غير متاحة (؟) — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.
+مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه.
