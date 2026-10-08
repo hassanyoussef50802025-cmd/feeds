@@ -1,237 +1,202 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
 <channel>
-<title>alhayapress.com</title>
-<link>https://alhayapress.com/</link>
-<description>خلاصة تُحدَّث تلقائيًا من alhayapress.com</description>
-<language>ar</language>
-<lastBuildDate>Thu, 08 Oct 2026 15:38:56 GMT</lastBuildDate>
-<generator>RSS Worker</generator>
-<!-- rss-src: rest -->
-<atom:link href="https://alhayapress.com/" rel="self" type="application/rss+xml"/>
-<item>
-<title>*انشقاق قائد العمليات الخاصة بالدعم السريع ومعه 300 مقاتل*</title>
-<link>https://alhayapress.com/71947/</link>
-<guid isPermaLink="true">https://alhayapress.com/71947/</guid>
-<pubDate>Thu, 08 Oct 2026 15:31:39 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA03121.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA03121.jpg" alt=""/><p>أعلن قائد العمليات الخاصة في قوات الدعم السريع، محمد أزرق الفنجري، انشقاقه عن القوات وانحيازه للقوات المسلحة، ومعه قوة قوامها 300 ضابط وجندي و30 عربة قتالية بكامل عتادها. وقال الفنجري في إعلان مصور إن قرار الانشقاق جاء بعد تقييم للأوضاع الميدانية، مؤكداً التزامه بالعمل تحت قيادة القوات المسلحة السودانية. ويُعد الفنجري من القيادات الميدانية البارزة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA03121.jpg" alt=""/><p>أعلن قائد العمليات الخاصة في قوات الدعم السريع، محمد أزرق الفنجري، انشقاقه عن القوات وانحيازه للقوات المسلحة، ومعه قوة قوامها 300 ضابط وجندي و30 عربة قتالية بكامل عتادها. وقال الفنجري في إعلان مصور إن قرار الانشقاق جاء بعد تقييم للأوضاع الميدانية، مؤكداً التزامه بالعمل تحت قيادة القوات المسلحة السودانية. ويُعد الفنجري من القيادات الميدانية البارزة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*رمضان محجوب.. يكتب : برقيق المبادرات المجتمعية</title>
-<link>https://alhayapress.com/71942/</link>
-<guid isPermaLink="true">https://alhayapress.com/71942/</guid>
-<pubDate>Thu, 08 Oct 2026 11:18:20 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2023/07/رمضان-.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2023/07/رمضان-.jpg" alt=""/><p>​▪️ بدت محلية البرقيق وكأنها أيقونة متألقة للمبادرات المجتمعية حين حط الوفد الإعلامي رحاله ضمن طواف المجلس الأعلى للثقافة والإعلام بالولاية الشمالية، لنعيش تفاصيل ميدانية حية تنبض بالإرادة الصلبة نحو البناء والتنمية والنهوض الشامل بخدمات إنسان المنطقة. ​▪️ استقبلنا الأهالي والمسؤولون بحفاوة بالغة تعكس أصالة أهل الشمال، حيث تجسدت روح التلاحم المجتمعي والمبادرات الشعبية الخالصة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2023/07/رمضان-.jpg" alt=""/><p>​▪️ بدت محلية البرقيق وكأنها أيقونة متألقة للمبادرات المجتمعية حين حط الوفد الإعلامي رحاله ضمن طواف المجلس الأعلى للثقافة والإعلام بالولاية الشمالية، لنعيش تفاصيل ميدانية حية تنبض بالإرادة الصلبة نحو البناء والتنمية والنهوض الشامل بخدمات إنسان المنطقة. ​▪️ استقبلنا الأهالي والمسؤولون بحفاوة بالغة تعكس أصالة أهل الشمال، حيث تجسدت روح التلاحم المجتمعي والمبادرات الشعبية الخالصة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>وزارة الصحة الاتحادية ومركز الملك سلمان للإغاثة يدشنان مشروع إعادة تأهيل ستة مستشفيات وإنشاء ثلاث محطات أوكسجين</title>
-<link>https://alhayapress.com/71939/</link>
-<guid isPermaLink="true">https://alhayapress.com/71939/</guid>
-<pubDate>Thu, 08 Oct 2026 11:10:49 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg" alt=""/><p>شهد وزير الصحة الاتحادي بروفسير هيثم محمد إبراهيم، وسفير خادم الحرمين الشريفين لدى السودان د. زيد بن مخلد الحربي، ووزير المالية والتخطيط الاقتصادي د. جبريل إبراهيم، ووالي ولاية الخرطوم الأستاذ أحمد عثمان حمزة، ووالي ولاية شمال كردفان عبدالخالق عبداللطيف، و وكيل وزارة الصحة الإتحادية دكتور علي بابكر سيد أحمد، ووزير الصحة بولاية الجزيرة الدكتور أسامة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg" alt=""/><p>شهد وزير الصحة الاتحادي بروفسير هيثم محمد إبراهيم، وسفير خادم الحرمين الشريفين لدى السودان د. زيد بن مخلد الحربي، ووزير المالية والتخطيط الاقتصادي د. جبريل إبراهيم، ووالي ولاية الخرطوم الأستاذ أحمد عثمان حمزة، ووالي ولاية شمال كردفان عبدالخالق عبداللطيف، و وكيل وزارة الصحة الإتحادية دكتور علي بابكر سيد أحمد، ووزير الصحة بولاية الجزيرة الدكتور أسامة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>حد القول* *بقلم :حسن السر * *مركز الملك سلمان للإغاثة والأعمال الإنسانية يعيد الأمل للقطاع الصحي*</title>
-<link>https://alhayapress.com/71935/</link>
-<guid isPermaLink="true">https://alhayapress.com/71935/</guid>
-<pubDate>Thu, 08 Oct 2026 07:39:15 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg" alt=""/><p>شهدت الخرطوم تدشين مشروع صحي كبير يهدف إلى إعادة تأهيل ستة مستشفيات وإنشاء ثلاث محطات أوكسجين بولاية الخرطوم، وذلك بدعم من مركز الملك سلمان للإغاثة والأعمال الإنسانية. حضر الفعالية وزير الصحة الاتحادي بروفسير هيثم محمد إبراهيم، وسفير المملكة العربية السعودية لدى السودان د. زيد بن مخلد الحربي، ووزير المالية الاتحادي د. جبريل إبراهيم، إلى جانب [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg" alt=""/><p>شهدت الخرطوم تدشين مشروع صحي كبير يهدف إلى إعادة تأهيل ستة مستشفيات وإنشاء ثلاث محطات أوكسجين بولاية الخرطوم، وذلك بدعم من مركز الملك سلمان للإغاثة والأعمال الإنسانية. حضر الفعالية وزير الصحة الاتحادي بروفسير هيثم محمد إبراهيم، وسفير المملكة العربية السعودية لدى السودان د. زيد بن مخلد الحربي، ووزير المالية الاتحادي د. جبريل إبراهيم، إلى جانب [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*الزكاة في زمن الحرب.. تجربة تروي صمود ديوان الزكاة *</title>
-<link>https://alhayapress.com/71931/</link>
-<guid isPermaLink="true">https://alhayapress.com/71931/</guid>
-<pubDate>Wed, 07 Oct 2026 22:02:59 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg" alt=""/><p>نظمت أمانة زكاة الشركات الاتحادية بالتعاون مع صحيفة ( أول النهار ) و ( منتدى اندياح ) المنتدى الإعلامي حول الزكاة في زمن الحرب.. تجربة تروي بمشاركة عدد من قيادات ديوان الزكاة بالمركز وولاية الخرطوم وممثلي الشركات الاتحادية و ممثلي الشركات( دافعي الزكاة) و مجموعة من الإعلاميين في لقاء تناول تجربة الزكاة خلال فترة الحرب [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg" alt=""/><p>نظمت أمانة زكاة الشركات الاتحادية بالتعاون مع صحيفة ( أول النهار ) و ( منتدى اندياح ) المنتدى الإعلامي حول الزكاة في زمن الحرب.. تجربة تروي بمشاركة عدد من قيادات ديوان الزكاة بالمركز وولاية الخرطوم وممثلي الشركات الاتحادية و ممثلي الشركات( دافعي الزكاة) و مجموعة من الإعلاميين في لقاء تناول تجربة الزكاة خلال فترة الحرب [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*بيان اليونسيف بالسودان حول إستهداف المليشيات لمعسكرات النزوح*</title>
-<link>https://alhayapress.com/71926/</link>
-<guid isPermaLink="true">https://alhayapress.com/71926/</guid>
-<pubDate>Wed, 07 Oct 2026 19:45:26 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/Screenshot_٢٠٢٦١٠٠٧_٢٢٤٣٠٧_edit_50329578604706.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/Screenshot_٢٠٢٦١٠٠٧_٢٢٤٣٠٧_edit_50329578604706.jpg" alt=""/><p>أصدر مكتب اليونسيف بالسودان بياناً مطلع هذا الشهر بشأن إستهداف مليشيات الدعم السريع بطائرة مسيرة معسكر الميناء البري للنازحين داخلياً في مدينة الأبيض بولاية شمال كردفان مما أسفر عن مقتل طفل وإصابة 12 طفلاً آخرين، بينهم خمسة أولاد وسبع فتيات وتناول البيان النقاط التالية: 1.أجبرت المسيرة الأسر والأطفال على المغادرة من معسكر الميناء البري إلى [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/Screenshot_٢٠٢٦١٠٠٧_٢٢٤٣٠٧_edit_50329578604706.jpg" alt=""/><p>أصدر مكتب اليونسيف بالسودان بياناً مطلع هذا الشهر بشأن إستهداف مليشيات الدعم السريع بطائرة مسيرة معسكر الميناء البري للنازحين داخلياً في مدينة الأبيض بولاية شمال كردفان مما أسفر عن مقتل طفل وإصابة 12 طفلاً آخرين، بينهم خمسة أولاد وسبع فتيات وتناول البيان النقاط التالية: 1.أجبرت المسيرة الأسر والأطفال على المغادرة من معسكر الميناء البري إلى [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*الإدارة العامة للمرور تشارك في المؤتمر العربي الثاني والعشرين لرؤساء أجهزة المرور بتونس*</title>
-<link>https://alhayapress.com/71923/</link>
-<guid isPermaLink="true">https://alhayapress.com/71923/</guid>
-<pubDate>Wed, 07 Oct 2026 19:29:57 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg" alt=""/><p>شاركت الإدارة العامة للمرور في أعمال المؤتمر العربي الثاني والعشرين لرؤساء أجهزة المرور ، الذي افتتح أعماله اليوم الأربعاء بمقر الأمانة العامة لمجلس وزراء الداخلية العرب بالعاصمة التونسية،بحضور اللواء شرطة حاتم محمود منصور مدير الإدارة العامة للمرور وبمشاركة واسعة من رؤساء أجهزة المرور وممثليهم في الدول العربية، إلى جانب جامعة نايف العربية للعلوم الأمنية،، وافتتح [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg" alt=""/><p>شاركت الإدارة العامة للمرور في أعمال المؤتمر العربي الثاني والعشرين لرؤساء أجهزة المرور ، الذي افتتح أعماله اليوم الأربعاء بمقر الأمانة العامة لمجلس وزراء الداخلية العرب بالعاصمة التونسية،بحضور اللواء شرطة حاتم محمود منصور مدير الإدارة العامة للمرور وبمشاركة واسعة من رؤساء أجهزة المرور وممثليهم في الدول العربية، إلى جانب جامعة نايف العربية للعلوم الأمنية،، وافتتح [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*بيان توضيحي وزارة التعليم العالي تنفي صحة الخطاب المتداول بشأن إعلان نتيجة القبول*</title>
-<link>https://alhayapress.com/71920/</link>
-<guid isPermaLink="true">https://alhayapress.com/71920/</guid>
-<pubDate>Wed, 07 Oct 2026 19:05:08 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg" alt=""/><p>تنفي وزارة التعليم العالي والبحث العلمي نفياً قاطعاً صحة الخطاب المتداول عبر منصات التواصل الاجتماعي، والذي يتضمن ما يُزعم أنه توضيح بشأن موعد إعلان نتيجة القبول لمؤسسات التعليم العالي والبحث العلمي للعام الدراسي 2026–2027م، وتؤكد أن الخطاب مفبرك ولا يمت إلى الوزارة أو أي من إداراتها المختصة بصلة. وتوضح الوزارة أن المستند المتداول يحمل عدداً [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg" alt=""/><p>تنفي وزارة التعليم العالي والبحث العلمي نفياً قاطعاً صحة الخطاب المتداول عبر منصات التواصل الاجتماعي، والذي يتضمن ما يُزعم أنه توضيح بشأن موعد إعلان نتيجة القبول لمؤسسات التعليم العالي والبحث العلمي للعام الدراسي 2026–2027م، وتؤكد أن الخطاب مفبرك ولا يمت إلى الوزارة أو أي من إداراتها المختصة بصلة. وتوضح الوزارة أن المستند المتداول يحمل عدداً [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*مجلس الثقافة والإعلام بالشمالية يفتتح طوافاته الميدانية للمحليات من البرقيق*</title>
-<link>https://alhayapress.com/71917/</link>
-<guid isPermaLink="true">https://alhayapress.com/71917/</guid>
-<pubDate>Wed, 07 Oct 2026 18:54:14 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg" alt=""/><p>​انطلق المجلس الأعلى للثقافة والإعلام بالولاية الشمالية في جولة ميدانية موسعة تحت شعار أرض الواقع ، تدشيناً لبرامجه الهادفة لخدمة المجتمع؛ حيث حط الوفد رحاله بمحلية البرقيق بمعية كوكبة من الإعلاميين، وسط استقبال رسمي وشعبي قاده المدير التنفيذي وأركان حرب المحلية لتقييم الأداء على الأرض. و​قال الأستاذ زهير الطيب بانقا، الأمين العام للمجلس الأعلى للثقافة والإعلام، [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg" alt=""/><p>​انطلق المجلس الأعلى للثقافة والإعلام بالولاية الشمالية في جولة ميدانية موسعة تحت شعار أرض الواقع ، تدشيناً لبرامجه الهادفة لخدمة المجتمع؛ حيث حط الوفد رحاله بمحلية البرقيق بمعية كوكبة من الإعلاميين، وسط استقبال رسمي وشعبي قاده المدير التنفيذي وأركان حرب المحلية لتقييم الأداء على الأرض. و​قال الأستاذ زهير الطيب بانقا، الأمين العام للمجلس الأعلى للثقافة والإعلام، [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*فوكس* قيادة الدفاع المدني من عثمان عطا إلى يوسف الإمام قيادة َوريادة *هويدا حمزة*</title>
-<link>https://alhayapress.com/71915/</link>
-<guid isPermaLink="true">https://alhayapress.com/71915/</guid>
-<pubDate>Wed, 07 Oct 2026 18:43:19 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg" alt=""/><p>تُمثّل مراسم التسليم والتسلم التي شهدتها رئاسة قوات الدفاع المدني بالخرطوم بين الفريق شرطة حقوقي د. عثمان عطا مصطفى وخلفه اللواء شرطة حقوقي يوسف الإمام الأمين أكثر من مجرد إجراء إداري بروتوكولي إنها تجسيد حي لثقافة سلسلة القيادة والواجب الوطني في أحلك الظروف وأشدها تعقيداً. ​ الفريق د. عثمان عطا مصطفى عرفناه في قيادة الأزمات [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg" alt=""/><p>تُمثّل مراسم التسليم والتسلم التي شهدتها رئاسة قوات الدفاع المدني بالخرطوم بين الفريق شرطة حقوقي د. عثمان عطا مصطفى وخلفه اللواء شرطة حقوقي يوسف الإمام الأمين أكثر من مجرد إجراء إداري بروتوكولي إنها تجسيد حي لثقافة سلسلة القيادة والواجب الوطني في أحلك الظروف وأشدها تعقيداً. ​ الفريق د. عثمان عطا مصطفى عرفناه في قيادة الأزمات [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*حد القول* *بقلم :حسن السر 9090… رقم الحياة والثقة بين المواطن والصحة*</title>
-<link>https://alhayapress.com/71913/</link>
-<guid isPermaLink="true">https://alhayapress.com/71913/</guid>
-<pubDate>Wed, 07 Oct 2026 18:15:31 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg" alt=""/><p>الرقم (9090) الخاص بمركز الاتصال الموحد لوزارة الصحة الاتحادية ليس مجرد رقم عادي، بل هو مركز الاتصال القومي للطوارئ الصحية، وقناة مباشرة للتواصل مع المواطن وسماع صوته والعمل على الاستجابة الفورية. هذا الرقم يمثل أداة استراتيجية للاستعداد المبكر لمواجهة أي طارئ صحي، والتقصي عن الأوبئة والأمراض، وهو جسر من الثقة بين وزارة الصحة والمواطنين. إن [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg" alt=""/><p>الرقم (9090) الخاص بمركز الاتصال الموحد لوزارة الصحة الاتحادية ليس مجرد رقم عادي، بل هو مركز الاتصال القومي للطوارئ الصحية، وقناة مباشرة للتواصل مع المواطن وسماع صوته والعمل على الاستجابة الفورية. هذا الرقم يمثل أداة استراتيجية للاستعداد المبكر لمواجهة أي طارئ صحي، والتقصي عن الأوبئة والأمراض، وهو جسر من الثقة بين وزارة الصحة والمواطنين. إن [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*​فريني ومدير سجون ولاية الخرطوم يتفقدان سجن النساء بأم درمان ويطوفان على مرافقه الخدمية والتأهيلية* .</title>
-<link>https://alhayapress.com/71910/</link>
-<guid isPermaLink="true">https://alhayapress.com/71910/</guid>
-<pubDate>Wed, 07 Oct 2026 17:21:54 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261006-WA0602.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261006-WA0602.jpg" alt=""/><p>​أكد الأستاذ صديق حسن فريني، المدير العام لوزارة التنمية الاجتماعية بولاية الخرطوم والوزير المكلف التزام الوزارة التام بدعم ورعاية الفئات الضعيفة والخاصة ومؤسسات الإصلاح مشيراً إلى أن نزيلات السجون يمثلن جزءاً أصيلاً من المجتمع ويتطلبن رعاية كاملة تمكنهن من العودة الصالحة والإيجابية عقب إكمال فترات العقوبة. ​جاء ذلك لدى تفقده اليوم سجن النساء بأم درمان [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261006-WA0602.jpg" alt=""/><p>​أكد الأستاذ صديق حسن فريني، المدير العام لوزارة التنمية الاجتماعية بولاية الخرطوم والوزير المكلف التزام الوزارة التام بدعم ورعاية الفئات الضعيفة والخاصة ومؤسسات الإصلاح مشيراً إلى أن نزيلات السجون يمثلن جزءاً أصيلاً من المجتمع ويتطلبن رعاية كاملة تمكنهن من العودة الصالحة والإيجابية عقب إكمال فترات العقوبة. ​جاء ذلك لدى تفقده اليوم سجن النساء بأم درمان [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*انطلاق الدورة الرابعة لمعرض المنتجات الوطنية والتسوق بالخرطوم مساء اليوم*</title>
-<link>https://alhayapress.com/71906/</link>
-<guid isPermaLink="true">https://alhayapress.com/71906/</guid>
-<pubDate>Wed, 07 Oct 2026 17:08:51 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0165.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0165.jpg" alt=""/><p>​ تنطلق مساء اليوم الأربعاء في تمام الساعة السادسة مساءً فعاليات الدورة الرابعة لمعرض المنتجات الوطنية والتسوق، والذي تنظمه الشركة السودانية للمناطق والأسواق الحرة بإشراف وزارة الصناعة والتجارة. ويشهد افتتاح المعرض أحمد عثمان حمزة، والي الخرطوم وراعي المعرض، ليمتد برنامجه المتكامل خلال الفترة من السابع وحتى الرابع عشر من شهر أكتوبر لعام 2026م. ​وأوضح الأستاذ [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0165.jpg" alt=""/><p>​ تنطلق مساء اليوم الأربعاء في تمام الساعة السادسة مساءً فعاليات الدورة الرابعة لمعرض المنتجات الوطنية والتسوق، والذي تنظمه الشركة السودانية للمناطق والأسواق الحرة بإشراف وزارة الصناعة والتجارة. ويشهد افتتاح المعرض أحمد عثمان حمزة، والي الخرطوم وراعي المعرض، ليمتد برنامجه المتكامل خلال الفترة من السابع وحتى الرابع عشر من شهر أكتوبر لعام 2026م. ​وأوضح الأستاذ [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*إعلام الأزمات: عندما تغرد العربية خارج السرب..!؟ * ما وراء إصرار العربية على تسمية البرهان بقائد الجيش فقط؟</title>
-<link>https://alhayapress.com/71903/</link>
-<guid isPermaLink="true">https://alhayapress.com/71903/</guid>
-<pubDate>Wed, 07 Oct 2026 17:06:38 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20260924-WA0185.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20260924-WA0185.jpg" alt=""/><p>​القناة تتجاهل عمداً الصفة الرسمية لرئيس مجلس السيادة ​غرف الأخبار المظلمة تدير حرباً نفسية رخيصة ضد السودان ​الدبلوماسية السعودية تثبت بوضوح دعمها الكامل لوحدة ومؤسسات السودان ​تناقض صارخ يربك المشهد بين سياسة الرياض وقناة العربية ​الدبلوماسية المصرية توثق بكل قوة شرعية رئيس مجلس السيادة ​مسعد بولس يقر علناً بشرعية القيادة السودانية الرسمية المعتمدة ​ العربية تتغاضى [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20260924-WA0185.jpg" alt=""/><p>​القناة تتجاهل عمداً الصفة الرسمية لرئيس مجلس السيادة ​غرف الأخبار المظلمة تدير حرباً نفسية رخيصة ضد السودان ​الدبلوماسية السعودية تثبت بوضوح دعمها الكامل لوحدة ومؤسسات السودان ​تناقض صارخ يربك المشهد بين سياسة الرياض وقناة العربية ​الدبلوماسية المصرية توثق بكل قوة شرعية رئيس مجلس السيادة ​مسعد بولس يقر علناً بشرعية القيادة السودانية الرسمية المعتمدة ​ العربية تتغاضى [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*خارج النص *يوسف عبد المنان * *الطريق إلى النهود*</title>
-<link>https://alhayapress.com/71901/</link>
-<guid isPermaLink="true">https://alhayapress.com/71901/</guid>
-<pubDate>Wed, 07 Oct 2026 17:03:06 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2025/12/يوسف-عبد-المنان.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2025/12/يوسف-عبد-المنان.jpg" alt=""/><p>حينما يحدثك البروفيسور علي محمد شمو السياسي والخبير الإعلامي عن نشأته في النهود ومجتمع المدينة التي تآلفت فيه كل مكونات السودان من الشمال والوسط والغرب والأرض هي دار لقبائل الحمر، وهولاء دفعوا في أرضهم أموال طائلة لحكومة السودان التي تمثلها في ذلك الوقت سلطنة الفور اشترى حمر أرضهم بمال كُتب في وثيقة تحتفظ بها القبيلة [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2025/12/يوسف-عبد-المنان.jpg" alt=""/><p>حينما يحدثك البروفيسور علي محمد شمو السياسي والخبير الإعلامي عن نشأته في النهود ومجتمع المدينة التي تآلفت فيه كل مكونات السودان من الشمال والوسط والغرب والأرض هي دار لقبائل الحمر، وهولاء دفعوا في أرضهم أموال طائلة لحكومة السودان التي تمثلها في ذلك الوقت سلطنة الفور اشترى حمر أرضهم بمال كُتب في وثيقة تحتفظ بها القبيلة [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>الكلية الاردنية.. * احجز مقعدك**</title>
-<link>https://alhayapress.com/71894/</link>
-<guid isPermaLink="true">https://alhayapress.com/71894/</guid>
-<pubDate>Wed, 07 Oct 2026 16:52:16 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0781.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0781.jpg" alt=""/><p>*الإدارة العامة للتعليم العالي الخاص والأهلي والأجنبي* *الكلية الأردنية السودانية للعلوم والتكنولوجيا* *Jordanian Sudanese College of Science Technology* هي ثمرة تعاون سوداني أردني بغرض تقديم خدمة جامعية متميزة في السودان من خلال برامج تعليمية متطورة وتسير خطواتها بصورة جيدة لتصبح في مصاف الجامعات السودانية قريبا بإذن الله *البرامج الأكاديمية:* بكالوريوس الشرف في الهندسة الكهربائية [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0781.jpg" alt=""/><p>*الإدارة العامة للتعليم العالي الخاص والأهلي والأجنبي* *الكلية الأردنية السودانية للعلوم والتكنولوجيا* *Jordanian Sudanese College of Science Technology* هي ثمرة تعاون سوداني أردني بغرض تقديم خدمة جامعية متميزة في السودان من خلال برامج تعليمية متطورة وتسير خطواتها بصورة جيدة لتصبح في مصاف الجامعات السودانية قريبا بإذن الله *البرامج الأكاديمية:* بكالوريوس الشرف في الهندسة الكهربائية [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>💢 عاجل :إعفاء العميد فتح الرحمن محمد التوم من منصبه كناطق رسمي باسم قوات الشرطة *</title>
-<link>https://alhayapress.com/71889/</link>
-<guid isPermaLink="true">https://alhayapress.com/71889/</guid>
-<pubDate>Wed, 07 Oct 2026 15:50:20 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/19_2026-639151686445767461-576.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/19_2026-639151686445767461-576.jpg" alt=""/><p>[object Object]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/19_2026-639151686445767461-576.jpg" alt=""/><p>[object Object]</p>]]></content:encoded>
-</item>
-<item>
-<title>*أهل القصيم.. جيناكم غداً.. انطلاق دوري تاركو للطيران في القصيم*</title>
-<link>https://alhayapress.com/71888/</link>
-<guid isPermaLink="true">https://alhayapress.com/71888/</guid>
-<pubDate>Wed, 07 Oct 2026 15:49:13 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA00371.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA00371.jpg" alt=""/><p>تنطلق غداً الخميس منافسات دوري تاركو للطيران للفرق السودانية بمنطقة القصيم، في فعالية رياضية تجمع أبناء الجالية السودانية وتعزز التواصل والمحبة بينهم، برعاية تاركو للطيران وبمشاركة عدد من الفرق السودانية بالمنطقة. وتأتي البطولة في إطار اهتمام تاركو بالطيران بالرياضة والمجتمع السوداني، وحرصها على أن تكون قريبة من السودانيين في مختلف مناطق المملكة، ليس عبر السفر [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA00371.jpg" alt=""/><p>تنطلق غداً الخميس منافسات دوري تاركو للطيران للفرق السودانية بمنطقة القصيم، في فعالية رياضية تجمع أبناء الجالية السودانية وتعزز التواصل والمحبة بينهم، برعاية تاركو للطيران وبمشاركة عدد من الفرق السودانية بالمنطقة. وتأتي البطولة في إطار اهتمام تاركو بالطيران بالرياضة والمجتمع السوداني، وحرصها على أن تكون قريبة من السودانيين في مختلف مناطق المملكة، ليس عبر السفر [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*مكافحة التهريب الجزيرة تُفشل تهريب أدوية إلى الخارج وتضبط سجائر وقطعة سلاح وذخائر*</title>
-<link>https://alhayapress.com/71884/</link>
-<guid isPermaLink="true">https://alhayapress.com/71884/</guid>
-<pubDate>Wed, 07 Oct 2026 15:45:34 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0177.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0177.jpg" alt=""/><p>تمكنت إدارة مكافحة التهريب بولاية الجزيرة من إحباط محاولتي تهريب نوعيتين، أسفرتا عن ضبط كميات كبيرة من الأدوية البشرية والسجائر، إلى جانب قطعة سلاح وذخائر، وذلك في إطار الجهود المستمرة لقوات الجمارك لمكافحة التهريب وحماية الاقتصاد الوطني. وتمكنت القوة، إثر كمين محكم، من ضبط عربة صالون على متنها عدد (1000) باكو سجائر مهربة، إلى جانب [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0177.jpg" alt=""/><p>تمكنت إدارة مكافحة التهريب بولاية الجزيرة من إحباط محاولتي تهريب نوعيتين، أسفرتا عن ضبط كميات كبيرة من الأدوية البشرية والسجائر، إلى جانب قطعة سلاح وذخائر، وذلك في إطار الجهود المستمرة لقوات الجمارك لمكافحة التهريب وحماية الاقتصاد الوطني. وتمكنت القوة، إثر كمين محكم، من ضبط عربة صالون على متنها عدد (1000) باكو سجائر مهربة، إلى جانب [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*وزير التعليم العالي: نتطلع لتوسيع التعاون الأكاديمي والتدريب مع ماليزيا*</title>
-<link>https://alhayapress.com/71880/</link>
-<guid isPermaLink="true">https://alhayapress.com/71880/</guid>
-<pubDate>Wed, 07 Oct 2026 15:18:50 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0737.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0737.jpg" alt=""/><p>أكد بروفيسور أحمد مضوي موسى، وزير التعليم العالي والبحث العلمي، أن السودان يتطلع إلى توسيع آفاق التعاون الأكاديمي والتدريبي مع ماليزيا، والاستفادة من التجارب والخبرات الماليزية في تطوير التعليم العالي والبحث العلمي، بما يخدم المصالح المشتركة بين البلدين. جاء ذلك لدى لقائه بعدد من المسؤولين الماليزيين المعنيين، علي هامش انعقاد منتدى العلوم والتكنولوجيا في المجتمع [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0737.jpg" alt=""/><p>أكد بروفيسور أحمد مضوي موسى، وزير التعليم العالي والبحث العلمي، أن السودان يتطلع إلى توسيع آفاق التعاون الأكاديمي والتدريبي مع ماليزيا، والاستفادة من التجارب والخبرات الماليزية في تطوير التعليم العالي والبحث العلمي، بما يخدم المصالح المشتركة بين البلدين. جاء ذلك لدى لقائه بعدد من المسؤولين الماليزيين المعنيين، علي هامش انعقاد منتدى العلوم والتكنولوجيا في المجتمع [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*جهاز المغتربين واتحاد شباب السودان يوقعان مذكرة للتعاون المشترك*</title>
-<link>https://alhayapress.com/71876/</link>
-<guid isPermaLink="true">https://alhayapress.com/71876/</guid>
-<pubDate>Wed, 07 Oct 2026 14:26:22 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0647.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0647.jpg" alt=""/><p>قطع جهاز تنظيم شؤون السودانيين بالخارج وإتحاد الشباب السوداني بأن التدريب المهني والتشغيلي للشباب يمثل العامل الرئيسي لتحقيق هدف الهجرة القائمة على المعرفة التأهيل وذلك بتمليك الشباب المهارات والقدرات الفنية والمهنية التي تعزز حظوظهم في سوق العمل بالخارج وتحسن أوضاعهم وترفع مؤشر الإقتصاد الوطني . ووقع الجانبان ظهر اليوم بجهاز المغتربين مذكرة للتعاون المشترك في [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0647.jpg" alt=""/><p>قطع جهاز تنظيم شؤون السودانيين بالخارج وإتحاد الشباب السوداني بأن التدريب المهني والتشغيلي للشباب يمثل العامل الرئيسي لتحقيق هدف الهجرة القائمة على المعرفة التأهيل وذلك بتمليك الشباب المهارات والقدرات الفنية والمهنية التي تعزز حظوظهم في سوق العمل بالخارج وتحسن أوضاعهم وترفع مؤشر الإقتصاد الوطني . ووقع الجانبان ظهر اليوم بجهاز المغتربين مذكرة للتعاون المشترك في [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*​الكلية الأردنية السودانية: عراقة وتحديات ومسيرة متواصلة نحو التحول إلى جامعة*</title>
-<link>https://alhayapress.com/71872/</link>
-<guid isPermaLink="true">https://alhayapress.com/71872/</guid>
-<pubDate>Wed, 07 Oct 2026 13:10:18 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0560.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0560.jpg" alt=""/><p>​تُعتبر الكلية الأردنية السودانية واحدة من المؤسسات التعليمية التي استطاعت أن تحافظ على استمراريتها الأكاديمية رغم الظروف المعقدة وتداعيات الحرب. وفي هذا الحوار الشامل مع عميد الكلية بروفيسور أمين بابكر عبد النبي مصطفى نفتح ملفات الكلية: من النشأة والتخصصات، إلى تحديات الرسوم والتعافي من آثار الدمار، وصولاً إلى خطط التحول إلى جامعة، ودور اتحاد المهندسين [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0560.jpg" alt=""/><p>​تُعتبر الكلية الأردنية السودانية واحدة من المؤسسات التعليمية التي استطاعت أن تحافظ على استمراريتها الأكاديمية رغم الظروف المعقدة وتداعيات الحرب. وفي هذا الحوار الشامل مع عميد الكلية بروفيسور أمين بابكر عبد النبي مصطفى نفتح ملفات الكلية: من النشأة والتخصصات، إلى تحديات الرسوم والتعافي من آثار الدمار، وصولاً إلى خطط التحول إلى جامعة، ودور اتحاد المهندسين [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*الدور الإماراتي في حرب السودان وتوازنات المصالح الغربية *</title>
-<link>https://alhayapress.com/71869/</link>
-<guid isPermaLink="true">https://alhayapress.com/71869/</guid>
-<pubDate>Wed, 07 Oct 2026 12:50:09 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/Screenshot_20261007_151808_com_google_android_googlequicksearchbox_MainActivity.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/Screenshot_20261007_151808_com_google_android_googlequicksearchbox_MainActivity.jpg" alt=""/><p>​يتناول هذا التقرير قراءة شاملة ومستفيضة للطروحات والتحليلات التي قدمتها الكاتبة الصحفية البريطانية نسرين مالك في مقالها الشامل المنشور برعايته في صحيفة الغارديان (The Guardian) بتاريخ 1 أكتوبر. -​يقوم التقرير على فكك التناقض الجوهري بين الخطاب الدبلوماسي الرسمي والدعم العسكري الفعلي في حرب السودان، كما يسلط الضوء على شبكة العلاقات الاقتصادية والمالية الضخمة التي تربط [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/Screenshot_20261007_151808_com_google_android_googlequicksearchbox_MainActivity.jpg" alt=""/><p>​يتناول هذا التقرير قراءة شاملة ومستفيضة للطروحات والتحليلات التي قدمتها الكاتبة الصحفية البريطانية نسرين مالك في مقالها الشامل المنشور برعايته في صحيفة الغارديان (The Guardian) بتاريخ 1 أكتوبر. -​يقوم التقرير على فكك التناقض الجوهري بين الخطاب الدبلوماسي الرسمي والدعم العسكري الفعلي في حرب السودان، كما يسلط الضوء على شبكة العلاقات الاقتصادية والمالية الضخمة التي تربط [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*وزير العدل يُشارك في القمة الدولية للعدالة بتركيا*</title>
-<link>https://alhayapress.com/71866/</link>
-<guid isPermaLink="true">https://alhayapress.com/71866/</guid>
-<pubDate>Wed, 07 Oct 2026 09:43:33 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0215.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0215.jpg" alt=""/><p>غادر السيد وزير العدل د. عبدالله درف و الوفد المرافق له صباح اليوم إلي جمهورية تركيا و ذلك للمشاركة في القمة العربية المنعقدة بمدينة إسطنبول بجمهورية تركيا في الفترة من ٨ -٩ اكتوبر ٢٠٢٦م . و تجئ القمة تحت شعار ( مستقبل العدالة مسؤلية مشتركة من أجل الإنسانية ) بمشاركة وزراء العدل وكبار أعضاء الهيئات [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0215.jpg" alt=""/><p>غادر السيد وزير العدل د. عبدالله درف و الوفد المرافق له صباح اليوم إلي جمهورية تركيا و ذلك للمشاركة في القمة العربية المنعقدة بمدينة إسطنبول بجمهورية تركيا في الفترة من ٨ -٩ اكتوبر ٢٠٢٦م . و تجئ القمة تحت شعار ( مستقبل العدالة مسؤلية مشتركة من أجل الإنسانية ) بمشاركة وزراء العدل وكبار أعضاء الهيئات [&amp;hellip;]</p>]]></content:encoded>
-</item>
-<item>
-<title>*المرور السريع بالبحر الأحمر يفتتح نقطة الميزان وغرفة للتتبع الآلي للبصات السفرية بسواكن تعزيزا للسلامة المرورية*</title>
-<link>https://alhayapress.com/71863/</link>
-<guid isPermaLink="true">https://alhayapress.com/71863/</guid>
-<pubDate>Wed, 07 Oct 2026 09:36:07 GMT</pubDate>
-<media:thumbnail url="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0249.jpg"/>
-<description><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0249.jpg" alt=""/><p>في إطار خطط الإدارة العامة للمرور ودائرة المرور السريع الرامية لتوسعة الخدمات المرورية افتتحت إدارة المرور السريع بولاية البحر الأحمر نقطة الميزان وغرفة التتبع الآلي الجغرافي للبصات السفرية بمحلية سواكن، إلى جانب إعادة تأهيل وصيانة عدد من القطاعات المرورية المنتشرة على امتداد الطريق بالولاية شمل (سنكات، هيا، درديب، الزهتيب /الكسارة) ، في خطوة تهدف لتعزيز [&amp;hellip;]</p>]]></description>
-<content:encoded><![CDATA[<img src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0249.jpg" alt=""/><p>في إطار خطط الإدارة العامة للمرور ودائرة المرور السريع الرامية لتوسعة الخدمات المرورية افتتحت إدارة المرور السريع بولاية البحر الأحمر نقطة الميزان وغرفة التتبع الآلي الجغرافي للبصات السفرية بمحلية سواكن، إلى جانب إعادة تأهيل وصيانة عدد من القطاعات المرورية المنتشرة على امتداد الطريق بالولاية شمل (سنكات، هيا، درديب، الزهتيب /الكسارة) ، في خطوة تهدف لتعزيز [&amp;hellip;]</p>]]></content:encoded>
-</item>
-</channel></rss>
+	<title>الحياة اليوم</title>
+	<atom:link href="https://alhayapress.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://alhayapress.com</link>
+	<description>وجه الحقيقة</description>
+	<lastBuildDate>Thu, 08 Oct 2026 15:42:11 +0000</lastBuildDate>
+	<language>ar</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+
+<image>
+	<url>https://i0.wp.com/alhayapress.com/wp-content/uploads/2022/03/v-icom-1.png?fit=32%2C32&#038;ssl=1</url>
+	<title>الحياة اليوم</title>
+	<link>https://alhayapress.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">203721719</site>	<item>
+		<title>*فوكس* *هويدا حمزة* *صلصة الكرامة *</title>
+		<link>https://alhayapress.com/71950/</link>
+					<comments>https://alhayapress.com/71950/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2026 15:42:11 +0000</pubDate>
+				<category><![CDATA[رأي]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71950</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1280" height="734" src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg?resize=300%2C172&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg?resize=1024%2C587&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg?resize=768%2C440&amp;ssl=1 768w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260322-WA0160.jpg?resize=750%2C430&amp;ssl=1 750w" sizes="(max-width: 1280px) 100vw, 1280px" /></div>استأنس كثيرا بالحديث مع أستاذنا عبد العظيم صالح ملك السخرية والقصص المضحكة الذي اشتكي لصاحبه ذات يوم من قلة الشغل فنصحه صديقه نصيحة ذهبية وقال له (انت يا عظمة صلصة الكرامة دي ما بتعرفا؟ والصديق اللماح يشير إلى الذين يسترزقون من معركة الكرامة وهم لم يحملوا السلاح ولم يشونوا دفارات الإغاثة للمتأثرين بالحرب بل من [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71950/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71950</post-id>	</item>
+		<item>
+		<title>*انشقاق قائد العمليات الخاصة بالدعم السريع ومعه 300 مقاتل*</title>
+		<link>https://alhayapress.com/71947/</link>
+					<comments>https://alhayapress.com/71947/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2026 15:31:39 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71947</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="487" height="370" src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA03121.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA03121.jpg?w=487&amp;ssl=1 487w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA03121.jpg?resize=300%2C228&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA03121.jpg?resize=86%2C64&amp;ssl=1 86w" sizes="(max-width: 487px) 100vw, 487px" /></div>أعلن قائد العمليات الخاصة في قوات الدعم السريع، محمد أزرق الفنجري، انشقاقه عن القوات وانحيازه للقوات المسلحة، ومعه قوة قوامها 300 ضابط وجندي و30 عربة قتالية بكامل عتادها. وقال الفنجري في إعلان مصور إن قرار الانشقاق جاء بعد تقييم للأوضاع الميدانية، مؤكداً التزامه بالعمل تحت قيادة القوات المسلحة السودانية. ويُعد الفنجري من القيادات الميدانية البارزة [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71947/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71947</post-id>	</item>
+		<item>
+		<title>*رمضان محجوب.. يكتب :  &#8220;برقيق&#8221; المبادرات المجتمعية&#8217;</title>
+		<link>https://alhayapress.com/71942/</link>
+					<comments>https://alhayapress.com/71942/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2026 11:18:20 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<category><![CDATA[ولايات]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71942</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="498" height="414" src="https://alhayapress.com/wp-content/uploads/2023/07/رمضان-.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2023/07/%D8%B1%D9%85%D8%B6%D8%A7%D9%86-.jpg?w=498&amp;ssl=1 498w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2023/07/%D8%B1%D9%85%D8%B6%D8%A7%D9%86-.jpg?resize=300%2C249&amp;ssl=1 300w" sizes="(max-width: 498px) 100vw, 498px" /></div>​▪️ بدت محلية البرقيق وكأنها أيقونة متألقة للمبادرات المجتمعية حين حط الوفد الإعلامي رحاله ضمن طواف المجلس الأعلى للثقافة والإعلام بالولاية الشمالية، لنعيش تفاصيل ميدانية حية تنبض بالإرادة الصلبة نحو البناء والتنمية والنهوض الشامل بخدمات إنسان المنطقة. ​▪️ استقبلنا الأهالي والمسؤولون بحفاوة بالغة تعكس أصالة أهل الشمال، حيث تجسدت روح التلاحم المجتمعي والمبادرات الشعبية الخالصة [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71942/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71942</post-id>	</item>
+		<item>
+		<title>وزارة الصحة الاتحادية ومركز الملك سلمان للإغاثة يدشنان مشروع إعادة تأهيل ستة مستشفيات وإنشاء ثلاث محطات أوكسجين</title>
+		<link>https://alhayapress.com/71939/</link>
+					<comments>https://alhayapress.com/71939/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2026 11:10:49 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71939</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="2560" height="1440" src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg?w=2560&amp;ssl=1 2560w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg?resize=768%2C432&amp;ssl=1 768w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg?resize=1536%2C864&amp;ssl=1 1536w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg?resize=2048%2C1152&amp;ssl=1 2048w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261008-WA0149.jpg?w=2340&amp;ssl=1 2340w" sizes="auto, (max-width: 2560px) 100vw, 2560px" /></div>شهد وزير الصحة الاتحادي بروفسير هيثم محمد إبراهيم، وسفير خادم الحرمين الشريفين لدى السودان د. زيد بن مخلد الحربي، ووزير المالية والتخطيط الاقتصادي د. جبريل إبراهيم، ووالي ولاية الخرطوم الأستاذ أحمد عثمان حمزة، ووالي ولاية شمال كردفان عبدالخالق عبداللطيف، و وكيل وزارة الصحة الإتحادية دكتور علي بابكر سيد أحمد، ووزير الصحة بولاية الجزيرة الدكتور أسامة [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71939/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71939</post-id>	</item>
+		<item>
+		<title>حد القول* *بقلم :حسن السر *  *مركز الملك سلمان للإغاثة والأعمال الإنسانية يعيد الأمل للقطاع الصحي*</title>
+		<link>https://alhayapress.com/71935/</link>
+					<comments>https://alhayapress.com/71935/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2026 07:39:15 +0000</pubDate>
+				<category><![CDATA[رأي]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71935</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="839" height="653" src="https://alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg?w=839&amp;ssl=1 839w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg?resize=300%2C233&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/03/IMG-20260309-WA0137_edit_11098281530296.jpg?resize=768%2C598&amp;ssl=1 768w" sizes="auto, (max-width: 839px) 100vw, 839px" /></div>شهدت الخرطوم تدشين مشروع صحي كبير يهدف إلى إعادة تأهيل ستة مستشفيات وإنشاء ثلاث محطات أوكسجين بولاية الخرطوم، وذلك بدعم من مركز الملك سلمان للإغاثة والأعمال الإنسانية. حضر الفعالية وزير الصحة الاتحادي بروفسير هيثم محمد إبراهيم، وسفير المملكة العربية السعودية لدى السودان د. زيد بن مخلد الحربي، ووزير المالية الاتحادي د. جبريل إبراهيم، إلى جانب [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71935/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71935</post-id>	</item>
+		<item>
+		<title>*الزكاة في زمن الحرب.. تجربة تروي صمود ديوان الزكاة *</title>
+		<link>https://alhayapress.com/71931/</link>
+					<comments>https://alhayapress.com/71931/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 22:02:59 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71931</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1280" height="853" src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg?resize=1024%2C682&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA09632.jpg?resize=768%2C512&amp;ssl=1 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></div>نظمت أمانة زكاة الشركات الاتحادية بالتعاون مع صحيفة ( أول النهار ) و ( منتدى اندياح ) المنتدى الإعلامي حول الزكاة في زمن الحرب.. تجربة تروي بمشاركة عدد من قيادات ديوان الزكاة بالمركز وولاية الخرطوم وممثلي الشركات الاتحادية و ممثلي الشركات( دافعي الزكاة) و مجموعة من الإعلاميين في لقاء تناول تجربة الزكاة خلال فترة الحرب [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71931/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71931</post-id>	</item>
+		<item>
+		<title>*بيان اليونسيف بالسودان حول إستهداف المليشيات لمعسكرات النزوح*</title>
+		<link>https://alhayapress.com/71926/</link>
+					<comments>https://alhayapress.com/71926/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 19:45:26 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71926</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1105" height="645" src="https://alhayapress.com/wp-content/uploads/2026/10/Screenshot_٢٠٢٦١٠٠٧_٢٢٤٣٠٧_edit_50329578604706.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A1%D9%A0%D9%A0%D9%A7_%D9%A2%D9%A2%D9%A4%D9%A3%D9%A0%D9%A7_edit_50329578604706.jpg?w=1105&amp;ssl=1 1105w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A1%D9%A0%D9%A0%D9%A7_%D9%A2%D9%A2%D9%A4%D9%A3%D9%A0%D9%A7_edit_50329578604706.jpg?resize=300%2C175&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A1%D9%A0%D9%A0%D9%A7_%D9%A2%D9%A2%D9%A4%D9%A3%D9%A0%D9%A7_edit_50329578604706.jpg?resize=1024%2C598&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/Screenshot_%D9%A2%D9%A0%D9%A2%D9%A6%D9%A1%D9%A0%D9%A0%D9%A7_%D9%A2%D9%A2%D9%A4%D9%A3%D9%A0%D9%A7_edit_50329578604706.jpg?resize=768%2C448&amp;ssl=1 768w" sizes="auto, (max-width: 1105px) 100vw, 1105px" /></div>أصدر مكتب اليونسيف بالسودان بياناً مطلع هذا الشهر بشأن إستهداف مليشيات الدعم السريع بطائرة مسيرة معسكر الميناء البري للنازحين داخلياً في مدينة الأبيض بولاية شمال كردفان مما أسفر عن مقتل طفل وإصابة 12 طفلاً آخرين، بينهم خمسة أولاد وسبع فتيات وتناول البيان النقاط التالية: 1.أجبرت المسيرة الأسر والأطفال على المغادرة من معسكر الميناء البري إلى [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71926/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71926</post-id>	</item>
+		<item>
+		<title>*الإدارة العامة للمرور تشارك في المؤتمر العربي الثاني والعشرين لرؤساء أجهزة المرور بتونس*</title>
+		<link>https://alhayapress.com/71923/</link>
+					<comments>https://alhayapress.com/71923/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 19:29:57 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71923</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1280" height="852" src="https://alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg?resize=1024%2C682&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/FB_IMG_1791401262787.jpg?resize=768%2C511&amp;ssl=1 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></div>شاركت الإدارة العامة للمرور في أعمال المؤتمر العربي الثاني والعشرين لرؤساء أجهزة المرور ، الذي افتتح أعماله اليوم الأربعاء بمقر الأمانة العامة لمجلس وزراء الداخلية العرب بالعاصمة التونسية،بحضور اللواء شرطة حاتم محمود منصور مدير الإدارة العامة للمرور وبمشاركة واسعة من رؤساء أجهزة المرور وممثليهم في الدول العربية، إلى جانب جامعة نايف العربية للعلوم الأمنية،، وافتتح [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71923/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71923</post-id>	</item>
+		<item>
+		<title>*بيان توضيحي وزارة التعليم العالي تنفي صحة الخطاب المتداول بشأن إعلان نتيجة القبول*</title>
+		<link>https://alhayapress.com/71920/</link>
+					<comments>https://alhayapress.com/71920/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 19:05:08 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71920</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1000" height="1279" src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg?w=1000&amp;ssl=1 1000w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg?resize=235%2C300&amp;ssl=1 235w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg?resize=801%2C1024&amp;ssl=1 801w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0927.jpg?resize=768%2C982&amp;ssl=1 768w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></div>تنفي وزارة التعليم العالي والبحث العلمي نفياً قاطعاً صحة الخطاب المتداول عبر منصات التواصل الاجتماعي، والذي يتضمن ما يُزعم أنه توضيح بشأن موعد إعلان نتيجة القبول لمؤسسات التعليم العالي والبحث العلمي للعام الدراسي 2026–2027م، وتؤكد أن الخطاب مفبرك ولا يمت إلى الوزارة أو أي من إداراتها المختصة بصلة. وتوضح الوزارة أن المستند المتداول يحمل عدداً [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71920/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71920</post-id>	</item>
+		<item>
+		<title>*مجلس الثقافة والإعلام بالشمالية يفتتح طوافاته الميدانية للمحليات من البرقيق*</title>
+		<link>https://alhayapress.com/71917/</link>
+					<comments>https://alhayapress.com/71917/#respond</comments>
+		
+		<dc:creator><![CDATA[الحياة اليوم]]></dc:creator>
+		<pubDate>Wed, 07 Oct 2026 18:54:14 +0000</pubDate>
+				<category><![CDATA[أخبار]]></category>
+		<guid isPermaLink="false">https://alhayapress.com/?p=71917</guid>
+
+					<description><![CDATA[<div style="margin-bottom:20px;"><img width="1280" height="720" src="https://alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg?w=1280&amp;ssl=1 1280w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg?resize=300%2C169&amp;ssl=1 300w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg?resize=1024%2C576&amp;ssl=1 1024w, https://i0.wp.com/alhayapress.com/wp-content/uploads/2026/10/IMG-20261007-WA0892.jpg?resize=768%2C432&amp;ssl=1 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" /></div>​انطلق المجلس الأعلى للثقافة والإعلام بالولاية الشمالية في جولة ميدانية موسعة تحت شعار &#8220;أرض الواقع&#8221;، تدشيناً لبرامجه الهادفة لخدمة المجتمع؛ حيث حط الوفد رحاله بمحلية البرقيق بمعية كوكبة من الإعلاميين، وسط استقبال رسمي وشعبي قاده المدير التنفيذي وأركان حرب المحلية لتقييم الأداء على الأرض. و​قال الأستاذ زهير الطيب بانقا، الأمين العام للمجلس الأعلى للثقافة والإعلام، [&#8230;]]]></description>
+		
+					<wfw:commentRss>https://alhayapress.com/71917/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">71917</post-id>	</item>
+	</channel>
+</rss>
