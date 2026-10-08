@@ -1,1 +1,1 @@
-تعذّر جلب الصفحة (الحالة 0). fetch failed
+تعذّر جلب الصفحة (الحالة 0). This operation was aborted
