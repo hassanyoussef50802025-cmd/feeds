@@ -1,0 +1,72 @@
+الخطأ: لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار).
+  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6328 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+  - وسيط#3: حالة 403 / 5819 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+الرابط يُحوّل خارج الموقع (recaptcha.cloud) — نعود إلى newslb.org.
+  - وسيط#2 متذكَّر: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6455 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6370 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+  - وسيط#3: حالة 403 / 5856 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 200 / 82933 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6446 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6361 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+  - وسيط#3: حالة 403 / 5831 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6476 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6391 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#3: حالة 403 / 5886 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+الصفحة غير متاحة (200) — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.
+مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه.
+  - وسيط#2 متذكَّر: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6328 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 520 / 7366 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#3: حالة 403 / 5819 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+الرابط يُحوّل خارج الموقع (recaptcha.cloud) — نعود إلى newslb.org.
+  - وسيط#2 متذكَّر: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+  - وسيط#0: حالة 403 / 6455 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6370 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 520 / 7366 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#3: حالة 403 / 5856 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2 متذكَّر: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+  - وسيط#2 متذكَّر: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+تجاوزنا مهلة الدورة قبل الوسائط
+(وأُسقط 2 سطرًا زائدًا)
