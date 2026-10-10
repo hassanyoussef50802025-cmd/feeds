@@ -9,9 +9,7 @@
   "via": "direct"
  },
  "www.echaab.dz": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20261009070525/https://www.echaab.dz/",
-  "snapTs": 1791529526364
+  "via": "proxy:2"
  },
  "www.latinamericanewsagency.com": {
   "via": "direct"
