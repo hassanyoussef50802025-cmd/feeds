@@ -1,17 +1,17 @@
 الخطأ: لم نتمكّن من استخراج مقالات من هذه الصفحة. جرّب رابط قسم معيّن من الموقع (مثل صفحة الأخبار).
-مباشر newslb.org: حالة 200 / 82933 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
   - وسيط#0: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6328 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#2: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
   - وسيط#3: حالة 403 / 5819 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#4: حالة 522 / 7249 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - JSON وسيط#2: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
-  - JSON مباشر: حالة 403 / 1609 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
+  - JSON مباشر: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
   - JSON وسيط#0: حالة 403 / 6871 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - JSON وسيط#1: حالة 403 / 6786 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - JSON وسيط#2: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
   - JSON وسيط#3: حالة 403 / 6193 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - JSON وسيط#4: حالة 522 / 7249 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
@@ -22,13 +22,13 @@
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
 مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه.
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
-  - JSON وسيط#2: حالة 429 / 7192 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - JSON مباشر: حالة 403 / 1609 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
+  - JSON وسيط#2: حالة 429 / 7193 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - JSON مباشر: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
   - JSON وسيط#0: حالة 403 / 6871 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - JSON وسيط#1: حالة 403 / 6786 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - JSON وسيط#2: حالة 429 / 7192 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - JSON وسيط#2: حالة 429 / 7193 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - JSON وسيط#3: حالة 403 / 6193 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - JSON وسيط#4: حالة 522 / 7249 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
   - وسيط#2 متذكَّر: حالة 200 / 1242 حرفًا / «<!DOCTYPE html> <html style="height:100%"> <head> <meta name="viewport" content="width=dev»
