@@ -5,7 +5,7 @@
 <link>https://saharazoom.com/m/</link>
 <description>خلاصة تُحدَّث تلقائيًا من saharazoom.com/m/</description>
 <language>ar</language>
-<lastBuildDate>Mon, 12 Oct 2026 23:14:55 GMT</lastBuildDate>
+<lastBuildDate>Mon, 12 Oct 2026 23:40:00 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: dom -->
 <atom:link href="https://saharazoom.com/m/" rel="self" type="application/rss+xml"/>
@@ -14,9 +14,7 @@
 <link>https://saharazoom.com/m/news32366.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/news32366.html</guid>
 <pubDate>Wed, 07 Oct 2026 11:51:00 GMT</pubDate>
-<media:thumbnail url="https://saharazoom.com/imagesnews/1791373890.jpeg"/>
-<description><![CDATA[<img src="https://saharazoom.com/imagesnews/1791373890.jpeg" alt=""/><p>الصحراء زووم : سيد احمد السلامي // تتجه أنظار المتابعين لملف نزاع الصحراء، اليوم الأربعاء 7 أكتوبر، إلى مجلس الأمن الدولي</p>]]></description>
-<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/1791373890.jpeg" alt=""/><p>الصحراء زووم : سيد احمد السلامي // تتجه أنظار المتابعين لملف نزاع الصحراء، اليوم الأربعاء 7 أكتوبر، إلى مجلس الأمن الدولي</p>]]></content:encoded>
+<description>مجلس الأمن يفتتح مناقشاته لملف نزاع الصحراء باجتماع حول بعثة المينورسو</description>
 </item>
 <item>
 <title>بالفيديو.. القناة الأولى تبرز مشاركة الوفد البرلماني المغربي برئاسة رئيس مجلس المستشارين في الاتحاد البرلماني الدولي بتنزانيا</title>
@@ -164,9 +162,8 @@
 <link>https://saharazoom.com/m/news32394.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/news32394.html</guid>
 <pubDate>Mon, 12 Oct 2026 23:07:00 GMT</pubDate>
-<media:thumbnail url="https://saharazoom.com/imagesnews/1791846425.jpeg"/>
-<description><![CDATA[<img src="https://saharazoom.com/imagesnews/1791846425.jpeg" alt=""/><p>الصحراء زووم : سيد احمد السلامي //مع اقتراب موعد انتهاء ولاية بعثة الأمم المتحدة «المينورسو» في 31 أكتوبر الجاري، تبدو الجزائر متوجسة من التحولات</p>]]></description>
-<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/1791846425.jpeg" alt=""/><p>الصحراء زووم : سيد احمد السلامي //مع اقتراب موعد انتهاء ولاية بعثة الأمم المتحدة «المينورسو» في 31 أكتوبر الجاري، تبدو الجزائر متوجسة من التحولات</p>]]></content:encoded>
+<description><![CDATA[<p>الصحراء زووم : سيد احمد السلامي //مع اقتراب موعد انتهاء ولاية بعثة الأمم المتحدة «المينورسو» في 31 أكتوبر الجاري، تبدو الجزائر متوجسة من التحولات</p>]]></description>
+<content:encoded><![CDATA[<p>الصحراء زووم : سيد احمد السلامي //مع اقتراب موعد انتهاء ولاية بعثة الأمم المتحدة «المينورسو» في 31 أكتوبر الجاري، تبدو الجزائر متوجسة من التحولات</p>]]></content:encoded>
 </item>
 <item>
 <title>المنتخب المغربي لكرة القدم داخل القاعة يكتسح الجزائر برباعية نظيفة في افتتاح كأس إفريقيا 2026</title>
