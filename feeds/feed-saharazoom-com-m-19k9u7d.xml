@@ -5,10 +5,19 @@
 <link>https://saharazoom.com/m/</link>
 <description>خلاصة تُحدَّث تلقائيًا من saharazoom.com/m/</description>
 <language>ar</language>
-<lastBuildDate>Mon, 12 Oct 2026 20:15:38 GMT</lastBuildDate>
+<lastBuildDate>Mon, 12 Oct 2026 20:42:28 GMT</lastBuildDate>
 <generator>RSS Worker</generator>
 <!-- rss-src: dom -->
 <atom:link href="https://saharazoom.com/m/" rel="self" type="application/rss+xml"/>
+<item>
+<title>حموشي يجدد ثقته في حسن أبو الذهب لمواصلة مهامه على رأس ولاية أمن العيون</title>
+<link>https://saharazoom.com/m/news32364.html</link>
+<guid isPermaLink="true">https://saharazoom.com/m/news32364.html</guid>
+<pubDate>Wed, 07 Oct 2026 09:34:00 GMT</pubDate>
+<media:thumbnail url="https://saharazoom.com/imagesnews/1791365685.jpeg"/>
+<description><![CDATA[<img src="https://saharazoom.com/imagesnews/1791365685.jpeg" alt=""/><p>الصحراء زووم : مصطفى اشكيريد // جدد المدير العام للأمن الوطني ومراقبة التراب الوطني، السيد عبد اللطيف حموشي،</p>]]></description>
+<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/1791365685.jpeg" alt=""/><p>الصحراء زووم : مصطفى اشكيريد // جدد المدير العام للأمن الوطني ومراقبة التراب الوطني، السيد عبد اللطيف حموشي،</p>]]></content:encoded>
+</item>
 <item>
 <title>«شهادة الحياة».. أوديسا تفتتح جولتها المسرحية من طانطان</title>
 <link>https://saharazoom.com/m/news32363.html</link>
@@ -143,13 +152,6 @@
 <description>المنتخب الوطني يتعادل وديا امام منتخب مالي</description>
 </item>
 <item>
-<title>بيان الدورة الإستثنائية للمجلس الوطني لحزب الاستقلال</title>
-<link>https://saharazoom.com/m/news32343.html</link>
-<guid isPermaLink="true">https://saharazoom.com/m/news32343.html</guid>
-<pubDate>Sun, 04 Oct 2026 12:34:00 GMT</pubDate>
-<description>بيان الدورة الإستثنائية للمجلس الوطني لحزب الاستقلال</description>
-</item>
-<item>
 <title>أخبار وطنية</title>
 <link>https://saharazoom.com/m/categories17.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/categories17.html</guid>
@@ -158,12 +160,21 @@
 <content:encoded><![CDATA[<p>أخبار وطنية أخبار جهوية شطاري بالحسانية صوت وصورة النسخة العادية</p>]]></content:encoded>
 </item>
 <item>
+<title>بيان هام بشأن الأغلبية الحكومية</title>
+<link>https://saharazoom.com/m/news32392.html</link>
+<guid isPermaLink="true">https://saharazoom.com/m/news32392.html</guid>
+<pubDate>Mon, 12 Oct 2026 20:16:00 GMT</pubDate>
+<media:thumbnail url="https://saharazoom.com/imagesnews/1791836199.jpg"/>
+<description><![CDATA[<img src="https://saharazoom.com/imagesnews/1791836199.jpg" alt=""/><p>الصحراء زووم : بيان // مباشرة بعد تفضل مولانا صاحب الجلالة الملك محمد السادس حفظه الله ونصره بتعيين السيدة فاطمة الزهراء المنصوري،</p>]]></description>
+<content:encoded><![CDATA[<img src="https://saharazoom.com/imagesnews/1791836199.jpg" alt=""/><p>الصحراء زووم : بيان // مباشرة بعد تفضل مولانا صاحب الجلالة الملك محمد السادس حفظه الله ونصره بتعيين السيدة فاطمة الزهراء المنصوري،</p>]]></content:encoded>
+</item>
+<item>
 <title>منصور لمباركي.. الخطاب الملكي أعاد الاعتبار لقضايا الشباب كأولوية وطنية</title>
 <link>https://saharazoom.com/m/news32391.html</link>
 <guid isPermaLink="true">https://saharazoom.com/m/news32391.html</guid>
 <pubDate>Mon, 12 Oct 2026 12:25:00 GMT</pubDate>
-<description><![CDATA[<p>الصحراء زووم : مصطفى اشكيريد // أكد منصور لمباركي، الكاتب العام لمنظمة الشبيبة الاستقلالية، أن الخطاب الملكي السامي</p>]]></description>
-<content:encoded><![CDATA[<p>الصحراء زووم : مصطفى اشكيريد // أكد منصور لمباركي، الكاتب العام لمنظمة الشبيبة الاستقلالية، أن الخطاب الملكي السامي</p>]]></content:encoded>
+<description><![CDATA[<p>الصحراء زووم : مصطفى اشكيريد // أكد منصور لمباركي، الكاتب العام لمنظمة الشبيبة الاستقلالية، أن الخطاب الملكي السامي ...</p>]]></description>
+<content:encoded><![CDATA[<p>الصحراء زووم : مصطفى اشكيريد // أكد منصور لمباركي، الكاتب العام لمنظمة الشبيبة الاستقلالية، أن الخطاب الملكي السامي ...</p>]]></content:encoded>
 </item>
 <item>
 <title>الخارجية الأمريكية تدرس أربع خيارات لمستقبل بعثة</title>
@@ -220,13 +231,5 @@
 <pubDate>Fri, 09 Oct 2026 22:38:00 GMT</pubDate>
 <description><![CDATA[<p>الصحراء زووم : جماعة العيون// قال الله تعالى{كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ ...</p>]]></description>
 <content:encoded><![CDATA[<p>الصحراء زووم : جماعة العيون// قال الله تعالى{كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ ...</p>]]></content:encoded>
-</item>
-<item>
-<title>بالفيديو : جلالة الملك يستقبل رئيس مجلس المستشارين ويطلع على حصيلة إصدار المجلس</title>
-<link>https://saharazoom.com/m/news32383.html</link>
-<guid isPermaLink="true">https://saharazoom.com/m/news32383.html</guid>
-<pubDate>Fri, 09 Oct 2026 21:10:00 GMT</pubDate>
-<description><![CDATA[<p>الصحراء زووم : محمد كنتور //استقبل جلالة الملك محمد السادس، رئيس مجلس المستشارين، محمد ولد الرشيد، الذي قدم لجلالته مجموعة من ...</p>]]></description>
-<content:encoded><![CDATA[<p>الصحراء زووم : محمد كنتور //استقبل جلالة الملك محمد السادس، رئيس مجلس المستشارين، محمد ولد الرشيد، الذي قدم لجلالته مجموعة من ...</p>]]></content:encoded>
 </item>
 </channel></rss>
