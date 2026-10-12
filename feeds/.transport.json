@@ -3,13 +3,13 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:2"
+  "via": "proxy:3"
  },
  "riadynews.com": {
   "via": "direct"
  },
  "www.echaab.dz": {
-  "via": "proxy:2"
+  "via": "proxy:3"
  },
  "www.latinamericanewsagency.com": {
   "via": "direct"
