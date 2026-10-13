@@ -18,10 +18,10 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "direct"
+  "via": "proxy:3"
  },
  "saharazoom.com": {
-  "via": "direct"
+  "via": "proxy:3"
  },
  "www.saharaexpo.com": {
   "via": "direct"
