@@ -6,7 +6,7 @@
   "via": "proxy:3"
  },
  "riadynews.com": {
-  "via": "proxy:2"
+  "via": "direct"
  },
  "www.echaab.dz": {
   "via": "proxy:3"
