@@ -3,21 +3,21 @@
   - هوية Googlebot: حالة 403 / 5625 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6405 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6320 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-  - وسيط#3: حالة 200 / 5765 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
+  - وسيط#2: حالة 520 / 7361 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#3: حالة 200 / 5787 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
   - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر mugtama.com: حالة 403 / 5747 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5640 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6447 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6362 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 200 / 5683 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#3: حالة 200 / 5802 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
   - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر mugtama.com: حالة 403 / 5744 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5637 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6438 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6353 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 520 / 7363 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 200 / 5799 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
   - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر mugtama.com: حالة 403 / 5777 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -26,7 +26,7 @@
   - وسيط#1: حالة 403 / 6383 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 200 / 5832 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-  - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر mugtama.com: حالة 403 / 5753 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5646 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6447 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -53,20 +53,20 @@
   - JSON وسيط#0: حالة 403 / 6863 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - JSON وسيط#1: حالة 403 / 6778 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - JSON وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-أقرب نسخة ليست طازجة (لا شيء) — نطلب التقاطًا جديدًا.
-مباشر web.archive.org: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
-تجاوزنا مهلة الدورة قبل الوسائط
-أرشيف الإنترنت (التقاط): 0 / 0 حرفًا
-أقرب نسخة من واجهة الأرشيف: لا شيء
-مباشر web.archive.org: حالة 429 / 620 حرفًا / «Your request is being blocked because our system has flagged it as suspected abusive bot t»
-تجاوزنا مهلة الدورة قبل الوسائط
-أرشيف الإنترنت حدّ من الوصول (429) عند نسخة معروضة — تهدئة 6 ساعات محفوظة.
+  - JSON وسيط#3: حالة 200 / 6160 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
+مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه.
 مباشر mugtama.com: حالة 403 / 5711 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - هوية Googlebot: حالة 403 / 5625 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#0: حالة 403 / 6405 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
   - وسيط#1: حالة 403 / 6320 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-  - وسيط#2: حالة 522 / 7261 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
   - وسيط#3: حالة 200 / 5787 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
   - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 مباشر mugtama.com: حالة 403 / 5747 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-(وأُسقط 35 سطرًا زائدًا)
+  - هوية Googlebot: حالة 403 / 5640 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#0: حالة 403 / 6447 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#1: حالة 403 / 6362 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+  - وسيط#2: حالة 522 / 7259 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+  - وسيط#3: حالة 200 / 5802 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
+  - وسيط#4: حالة 522 / 7247 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+(وأُسقط 29 سطرًا زائدًا)
