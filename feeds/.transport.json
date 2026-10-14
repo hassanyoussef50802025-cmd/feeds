@@ -28,5 +28,8 @@
  },
  "alhayapress.com": {
   "via": "direct"
+ },
+ "_archiveCooldownUntil": {
+  "until": 1792000168771
  }
 }
