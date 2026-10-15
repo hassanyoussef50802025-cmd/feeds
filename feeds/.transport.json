@@ -18,7 +18,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "proxy:3"
+  "via": "direct"
  },
  "saharazoom.com": {
   "via": "proxy:3"
@@ -30,6 +30,6 @@
   "via": "direct"
  },
  "_archiveCooldownUntil": {
-  "until": 1792044325020
+  "until": 1792066000493
  }
 }
