@@ -1,31 +1,31 @@
-دورة 2026-10-16T06:12:19.652Z
-mugtama | https://mugtama.com/ | 263s | via=- | خطأ: تعذّر جلب الصفحة (الحالة 403).
+دورة 2026-10-16T06:36:02.472Z
+mugtama | https://mugtama.com/ | 252s | via=- | خطأ: تعذّر جلب الصفحة (الحالة 403).
     مباشر mugtama.com: حالة 403 / 5711 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5625 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6405 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6320 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 5787 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر mugtama.com: حالة 403 / 5747 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5640 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6447 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6362 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
       - وسيط#3: حالة 200 / 5802 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
       - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر mugtama.com: حالة 403 / 5744 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5637 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6438 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6353 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2: حالة 200 / 5680 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#3: حالة 200 / 5799 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر mugtama.com: حالة 403 / 5777 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5692 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6468 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6383 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2: حالة 200 / 5713 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#3: حالة 200 / 5832 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
       - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر mugtama.com: حالة 403 / 5753 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -34,26 +34,28 @@ mugtama | https://mugtama.com/ | 263s | via=- | خطأ: تعذّر جلب الص
       - وسيط#1: حالة 403 / 6362 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 5808 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر mugtama.com: حالة 403 / 5741 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5634 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6435 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6350 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+      - وسيط#2: حالة 200 / 5677 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#3: حالة 200 / 5796 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر mugtama.com: حالة 403 / 5756 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5649 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6450 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6365 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
       - وسيط#3: حالة 200 / 5811 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
       - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     الصفحة غير متاحة (403) — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.
       - JSON مباشر: حالة 403 / 6085 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#0: حالة 403 / 6863 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6778 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - JSON وسيط#2: حالة 200 / 6020 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - JSON وسيط#3: حالة 200 / 6160 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
+      - JSON وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه.
     مباشر mugtama.com: حالة 403 / 5711 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5625 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -66,59 +68,22 @@ mugtama | https://mugtama.com/ | 263s | via=- | خطأ: تعذّر جلب الص
       - هوية Googlebot: حالة 403 / 5640 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6447 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6362 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 200 / 5683 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 5802 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    مباشر mugtama.com: حالة 403 / 5744 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-feed-www-mobizil-com-shp3i3 | https://www.mobizil.com/ | 62s | via=proxy:3 | أُبقيت النسخة السابقة (الجديدة أقدم: 2026-09-25 00:30)
+feed-www-mobizil-com-shp3i3 | https://www.mobizil.com/ | 10s | via=proxy:3 | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-10-13 18:28
       - وسيط#3 متذكَّر: حالة 200 / 161833 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
       - JSON مباشر: حالة 403 / 5982 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#0: حالة 403 / 6875 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6790 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#2: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
-      - JSON وسيط#3: حالة 200 / 77550 حرفًا / «<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-w»
-      - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    مباشر mobizil.com: حالة 403 / 5677 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-    مباشر mobizil.com: حالة 403 / 5686 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-    مباشر mobizil.com: حالة 403 / 5686 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - هوية Googlebot: حالة 403 / 5600 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-    مباشر mobizil.com: حالة 403 / 5725 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - هوية Googlebot: حالة 403 / 5591 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - هوية Googlebot: حالة 403 / 5600 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - هوية Googlebot: حالة 403 / 5618 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#0: حالة 403 / 6504 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6419 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
-      - وسيط#3: حالة 200 / 160951 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#0: حالة 403 / 6513 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6428 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 520 / 7362 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 160632 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#0: حالة 403 / 6531 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6446 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 520 / 7362 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 159892 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#0: حالة 403 / 6513 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6428 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 163141 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3 متذكَّر: حالة 200 / 160551 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#3 متذكَّر: حالة 200 / 204462 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#3 متذكَّر: حالة 200 / 213631 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#3 متذكَّر: حالة 200 / 198399 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#3 متذكَّر: حالة 200 / 211643 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-      - وسيط#3 متذكَّر: حالة 200 / 208346 حرفًا / «<html dir="rtl" lang="ar" prefix="og: http://ogp.me/ns#"><head><meta charset="UTF-8"><meta»
-feed-riadynews-com-1nw2k | https://riadynews.com/ | 3s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-10-15 14:13
-    مباشر riadynews.com: حالة 200 / 281486 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="rtl" lang=»
+      - JSON وسيط#2: حالة 200 / 77324 حرفًا / «[{"date":"2026-10-13T21:28:06","date_gmt":"2026-10-13T18:28:06","link":"https:\/\/mobizil.»
+      - JSON وسيط#2: حالة 200 / 2790 حرفًا / «[{"id":89009,"source_url":"https:\/\/mobizil.com\/wp-content\/uploads\/2026\/10\/realme-c1»
+feed-riadynews-com-1nw2k | https://riadynews.com/ | 2s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-10-15 14:13
+    مباشر riadynews.com: حالة 200 / 281611 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="rtl" lang=»
     مباشر riadynews.com: حالة 200 / 77478 حرفًا / «<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rs»
       - JSON مباشر: حالة 200 / 91114 حرفًا / «[{"date":"2026-10-15T17:13:46","date_gmt":"2026-10-15T14:13:46","link":"https:\/\/riadynew»
       - JSON مباشر: حالة 200 / 3053 حرفًا / «[{"id":21508,"source_url":"https:\/\/riadynews.com\/wp-content\/uploads\/2026\/10\/2026100»
-feed-www-echaab-dz-1rktz6m | https://www.echaab.dz/ | 84s | via=proxy:3 | نُشرت 5 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-10-15 12:00
-      - وسيط#3 متذكَّر: حالة 200 / 318331 حرفًا / «<html class="no-js" dir="rtl" lang="ar"> <head> <meta http-equiv="Content-Type" content="t»
+feed-www-echaab-dz-1rktz6m | https://www.echaab.dz/ | 68s | via=proxy:3 | نُشرت 5 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-10-15 12:00
+      - وسيط#3 متذكَّر: حالة 200 / 318172 حرفًا / «<html class="no-js" dir="rtl" lang="ar"> <head> <meta http-equiv="Content-Type" content="t»
       - وسيط#3 متذكَّر: حالة 422 / 339 حرفًا / «{"data":null,"cause":{"code":92},"code":422,"name":"AssertionFailureError","status":42206,»
     مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
       - وسيط#0: حالة 403 / 6453 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -130,71 +95,57 @@ feed-www-echaab-dz-1rktz6m | https://www.echaab.dz/ | 84s | via=proxy:3 | نُش
     مباشر www.echaab.dz: حالة 0 / 0 حرفًا / خطأ: fetch failed
       - وسيط#0: حالة 403 / 6507 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6422 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+      - وسيط#2: حالة 520 / 7362 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 422 / 339 حرفًا / «{"data":null,"cause":{"code":92},"code":422,"name":"AssertionFailureError","status":42206,»
       - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - JSON مباشر: حالة 0 / 0 حرفًا / خطأ: fetch failed
       - JSON وسيط#0: حالة 403 / 6869 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6784 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - JSON وسيط#3: حالة 200 / 90490 حرفًا / «<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-w»
+      - JSON وسيط#2: حالة 400 / 85 حرفًا / «{"error":"Error: Network connection lost.","stack":"Error: Network connection lost."}»
+      - JSON وسيط#3: حالة 200 / 90958 حرفًا / «<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-w»
       - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-feed-www-latinamericanewsagency-com-lang-ar-1ax5cjy | https://www.latinamericanewsagency.com/?lang=ar | 22s | via=direct | نُشرت 23 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-10-15 16:04
+feed-www-latinamericanewsagency-com-lang-ar-1ax5cjy | https://www.latinamericanewsagency.com/?lang=ar | 41s | via=direct | نُشرت 23 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-10-15 16:04
     مباشر www.latinamericanewsagency.com: حالة 200 / 59600 حرفًا / «<!doctype html> <html lang="ar" dir="rtl"> <head> <!-- Required meta tags --> <meta charse»
       - JSON مباشر: حالة 404 / 1130 حرفًا / «<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>404 Page Not Found</»
       - JSON وسيط#0: حالة 403 / 6941 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6856 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
       - JSON وسيط#3: حالة 200 / 1114 حرفًا / «<html lang="en"> <head> <meta charset="utf-8"> <title>404 Page Not Found</title> <style ty»
-      - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - JSON وسيط#4: حالة 522 / 7250 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر www.latinamericanewsagency.com: حالة 200 / 8335 حرفًا / «<!doctype html> <html lang="en" dir="ltr"> <head> <!-- Required meta tags --> <meta charse»
     مباشر www.latinamericanewsagency.com: حالة 200 / 8335 حرفًا / «<!doctype html> <html lang="en" dir="ltr"> <head> <!-- Required meta tags --> <meta charse»
     مباشر www.latinamericanewsagency.com: حالة 200 / 8335 حرفًا / «<!doctype html> <html lang="en" dir="ltr"> <head> <!-- Required meta tags --> <meta charse»
-feed-almarkazia-com-1c6abkv | https://almarkazia.com/ | 332s | via=- | خطأ: تعذّر جلب الصفحة (الحالة 403).
-      - وسيط#2 متذكَّر: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+feed-almarkazia-com-1c6abkv | https://almarkazia.com/ | 264s | via=proxy:2 | خطأ: تعذّر جلب الصفحة (الحالة 403).
+      - وسيط#2 متذكَّر: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر almarkazia.com: حالة 403 / 5607 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5522 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6435 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6350 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2: حالة 502 / 6429 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 5790 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#2 متذكَّر: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+      - وسيط#4: حالة 522 / 7250 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2 متذكَّر: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر almarkazia.com: حالة 403 / 5644 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5537 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6456 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6371 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2: حالة 520 / 7366 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 5826 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
       - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2 متذكَّر: حالة 520 / 7366 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر almarkazia.com: حالة 403 / 5641 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5534 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6447 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6362 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 5802 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#2 متذكَّر: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
+      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - وسيط#2 متذكَّر: حالة 522 / 7262 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر almarkazia.com: حالة 403 / 5674 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5588 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#0: حالة 403 / 6498 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
-      - وسيط#3: حالة 200 / 5856 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#2 متذكَّر: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    مباشر almarkazia.com: حالة 403 / 5650 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - هوية Googlebot: حالة 403 / 5543 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#0: حالة 403 / 6456 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6371 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 5832 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    مباشر almarkazia.com: حالة 403 / 5638 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - هوية Googlebot: حالة 403 / 5531 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
     تجاوزنا مهلة الدورة قبل الوسائط
+      - وسيط#2 متذكَّر: حالة 200 / 53408 حرفًا / «<!DOCTYPE html> <html> <head> <meta http-equiv="Content-type" content="text/html; charset=»
+      - وسيط#2 متذكَّر: حالة 200 / 53408 حرفًا / «<!DOCTYPE html> <html> <head> <meta http-equiv="Content-type" content="text/html; charset=»
       - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر almarkazia.com: حالة 403 / 5653 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5546 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
@@ -209,106 +160,71 @@ feed-almarkazia-com-1c6abkv | https://almarkazia.com/ | 332s | via=- | خطأ: �
       - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 5790 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
       - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#2 متذكَّر: حالة 0 / 0 حرفًا / خطأ: This operation was aborted
+      - وسيط#2 متذكَّر: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
     مباشر almarkazia.com: حالة 403 / 5644 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5537 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#0: حالة 403 / 6456 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6371 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 5805 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
+      - وسيط#3: حالة 200 / 5826 حرفًا / «<html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" co»
       - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#2 متذكَّر: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    مباشر almarkazia.com: حالة 403 / 5641 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+    مباشر almarkazia.com: حالة 403 / 5662 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - هوية Googlebot: حالة 403 / 5534 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
     تجاوزنا مهلة الدورة قبل الوسائط
-feed-newslb-org-1o09j3i | https://newslb.org/ | 250s | via=proxy:3 | أُبقيت النسخة السابقة (تقاطع 16/16)
-      - وسيط#3 متذكَّر: حالة 200 / 69009 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-    مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
-      - وسيط#0: حالة 403 / 6402 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6317 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    الرابط يُحوّل خارج الموقع (recaptcha.cloud) — نعود إلى newslb.org.
+      - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+    مباشر almarkazia.com: حالة 403 / 5674 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - هوية Googlebot: حالة 403 / 5588 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+    تجاوزنا مهلة الدورة قبل الوسائط
+      - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+    مباشر almarkazia.com: حالة 403 / 5671 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - هوية Googlebot: حالة 403 / 5543 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+    تجاوزنا مهلة الدورة قبل الوسائط
+      - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+    مباشر almarkazia.com: حالة 403 / 5638 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - هوية Googlebot: حالة 403 / 5531 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+    تجاوزنا مهلة الدورة قبل الوسائط
+      - وسيط#2 متذكَّر: حالة 502 / 6425 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+    مباشر almarkazia.com: حالة 403 / 5653 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+feed-newslb-org-1o09j3i | https://newslb.org/ | 90s | via=proxy:3 | أُبقيت النسخة السابقة (تقاطع 16/16)
+      - وسيط#3 متذكَّر: حالة 200 / 188639 حرفًا / «<html dir="rtl" lang="ar" class="s-light site-s-light"> <head> <meta charset="UTF-8"> <met»
       - وسيط#3 متذكَّر: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
     مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
       - وسيط#0: حالة 403 / 6444 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6359 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 69009 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3 متذكَّر: حالة 200 / 69009 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-    مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
-      - وسيط#0: حالة 403 / 6435 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6350 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
-      - وسيط#3: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3 متذكَّر: حالة 200 / 68997 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-    مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
-      - وسيط#0: حالة 403 / 6465 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6380 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
-      - وسيط#3: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-      - وسيط#4: حالة 503 / 7108 حرفًا / «<!doctype html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3 متذكَّر: حالة 200 / 69009 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-    مباشر newslb.org: حالة 404 / 75266 حرفًا / «<!DOCTYPE html> <html dir="rtl" lang="ar" class="s-light site-s-light"> <head> <meta chars»
-      - وسيط#0: حالة 403 / 6444 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6359 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
-      - وسيط#3: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3 متذكَّر: حالة 200 / 69009 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-    مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
-      - وسيط#0: حالة 403 / 6432 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6347 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - وسيط#3: حالة 200 / 69001 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
       - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3 متذكَّر: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-    مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
-      - وسيط#0: حالة 403 / 6447 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6362 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 69009 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    الصفحة غير متاحة (200) — المسار: خلاصة الموقع ثم WordPress ثم أرشيف الإنترنت.
-      - JSON مباشر: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
-      - JSON وسيط#0: حالة 403 / 6860 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#1: حالة 403 / 6775 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-    مسار الأرشيف في تهدئة (حدّ 429 سابق) — نتخطاه.
-      - وسيط#3 متذكَّر: حالة 200 / 188639 حرفًا / «<html dir="rtl" lang="ar" class="s-light site-s-light"> <head> <meta charset="UTF-8"> <met»
-      - وسيط#3 متذكَّر: حالة 200 / 69001 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-    مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
-      - وسيط#0: حالة 403 / 6444 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#1: حالة 403 / 6359 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 408 / 24 حرفًا / «Oops... Request Timeout.»
-      - وسيط#3: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3 متذكَّر: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
+      - وسيط#3 متذكَّر: حالة 200 / 69013 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
     مباشر newslb.org: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
       - وسيط#0: حالة 403 / 6498 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - وسيط#1: حالة 403 / 6413 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - وسيط#2: حالة 520 / 7362 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-      - وسيط#3: حالة 200 / 69001 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
-feed-saharazoom-com-m-19k9u7d | https://saharazoom.com/m/ | 41s | via=proxy:3 | نُشرت 30 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-10-15 18:44
+      - وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
+      - وسيط#3: حالة 200 / 69005 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
+      - وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - JSON مباشر: حالة 200 / 82937 حرفًا / «<!DOCTYPE html> <html> <head> <title>Human verification</title> <meta name="robots" conten»
+      - JSON وسيط#0: حالة 403 / 6860 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - JSON وسيط#1: حالة 403 / 6775 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
+      - JSON وسيط#2: حالة 520 / 7362 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - JSON وسيط#3: حالة 200 / 69013 حرفًا / «<html> <head> <title>Human verification</title> <meta name="robots" content="noindex,nofol»
+      - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+feed-saharazoom-com-m-19k9u7d | https://saharazoom.com/m/ | 35s | via=proxy:3 | نُشرت 30 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-10-15 18:44
       - وسيط#3 متذكَّر: حالة 200 / 18206 حرفًا / «<html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content»
       - JSON مباشر: حالة 404 / 435 حرفًا / «<meta http-equiv=refresh content=0;url=http://www.saharazoom.com>"; <script type="module" »
       - JSON وسيط#0: حالة 403 / 6872 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6787 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
-      - JSON وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
+      - JSON وسيط#2: حالة 500 / 579 حرفًا / «<html> <head><title>500 Internal Server Error</title></head> <body> <center><h1>500 Intern»
       - JSON وسيط#3: حالة 200 / 102 حرفًا / «<meta http-equiv="refresh" content="0;url=http://www.saharazoom.com"><head></head><body></»
       - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
 feed-www-saharaexpo-com-470yyv | https://www.saharaexpo.com/ | 42s | via=direct | نُشرت 5 عنصرًا (via استخراج مباشر من الصفحة) أحدثها 2026-09-24 12:08
-    مباشر www.saharaexpo.com: حالة 200 / 462268 حرفًا / «<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8"/><meta name="viewport»
-      - JSON مباشر: حالة 404 / 188623 حرفًا / «<!DOCTYPE html><html id="__next_error__"><head><meta charSet="utf-8"/><meta name="viewport»
+    مباشر www.saharaexpo.com: حالة 200 / 462195 حرفًا / «<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8"/><meta name="viewport»
+      - JSON مباشر: حالة 404 / 188622 حرفًا / «<!DOCTYPE html><html id="__next_error__"><head><meta charSet="utf-8"/><meta name="viewport»
       - JSON وسيط#0: حالة 403 / 6884 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#1: حالة 403 / 6799 حرفًا / «<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="C»
       - JSON وسيط#2: حالة 522 / 7258 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
       - JSON وسيط#3: حالة 200 / 188570 حرفًا / «<html id="__next_error__"><head><meta charSet="utf-8"><meta name="viewport" content="width»
       - JSON وسيط#4: حالة 522 / 7246 حرفًا / «<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->»
-feed-alhayapress-com-1kpivin | https://alhayapress.com/ | 2s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-10-15 16:09
+feed-alhayapress-com-1kpivin | https://alhayapress.com/ | 3s | via=direct | نُشرت 25 عنصرًا (via WordPress REST) أحدثها 2026-10-15 16:09
     مباشر alhayapress.com: حالة 200 / 133893 حرفًا / «<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=c»
     مباشر alhayapress.com: حالة 200 / 20300 حرفًا / «<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rs»
       - JSON مباشر: حالة 200 / 92117 حرفًا / «[{"date":"2026-10-15T18:09:32","date_gmt":"2026-10-15T16:09:32","link":"https:\/\/alhayapr»
