@@ -21,7 +21,7 @@
   "via": "direct"
  },
  "saharazoom.com": {
-  "via": "proxy:3"
+  "via": "direct"
  },
  "www.saharaexpo.com": {
   "via": "direct"
@@ -30,6 +30,6 @@
   "via": "direct"
  },
  "_archiveCooldownUntil": {
-  "until": 1792176839923
+  "until": 1792198505945
  }
 }
