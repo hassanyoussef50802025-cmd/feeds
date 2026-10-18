@@ -18,9 +18,7 @@
   "via": "proxy:2"
  },
  "newslb.org": {
-  "via": "wayback",
-  "snap": "https://web.archive.org/web/20261018205340/https://newslb.org/",
-  "snapTs": 1792356825330
+  "via": "proxy:3"
  },
  "saharazoom.com": {
   "via": "direct"
@@ -32,6 +30,6 @@
   "via": "direct"
  },
  "_archiveCooldownUntil": {
-  "until": 1792355971478
+  "until": 1792379405087
  }
 }
