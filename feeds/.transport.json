@@ -3,7 +3,7 @@
   "via": "direct"
  },
  "www.mobizil.com": {
-  "via": "proxy:3"
+  "via": "proxy:2"
  },
  "riadynews.com": {
   "via": "direct"
