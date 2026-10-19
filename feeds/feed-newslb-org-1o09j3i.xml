@@ -1,144 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
 <channel>
-<title>newslb.org</title>
-<link>https://newslb.org/</link>
-<description>خلاصة تُحدَّث تلقائيًا من newslb.org</description>
-<language>ar</language>
-<lastBuildDate>Mon, 19 Oct 2026 03:35:40 GMT</lastBuildDate>
-<generator>RSS Worker</generator>
-<!-- rss-src: dom -->
-<atom:link href="https://newslb.org/" rel="self" type="application/rss+xml"/>
-<item>
-<title>ابرز ما تناولته الصحف العربية الصادرة في بيروت اليوم السبت في 17/18/2026</title>
-<link>https://newslb.org/94137/</link>
-<guid isPermaLink="true">https://newslb.org/94137/</guid>
-<pubDate>Sat, 17 Oct 2026 06:47:28 +0000</pubDate>
-<description>ابرز ما تناولته الصحف العربية الصادرة في بيروت اليوم السبت في 17/18/2026</description>
-</item>
-<item>
-<title>عناوين الصحف اللبنانية الصادرة اليوم السبت في 17/10/2026</title>
-<link>https://newslb.org/94135/</link>
-<guid isPermaLink="true">https://newslb.org/94135/</guid>
-<pubDate>Sat, 17 Oct 2026 06:41:50 +0000</pubDate>
-<description>عناوين الصحف اللبنانية الصادرة اليوم السبت في 17/10/2026</description>
-</item>
-<item>
-<title>أسرار الصحف اللبنانية الصادرة اليوم السبت في 17/10/2026</title>
-<link>https://newslb.org/94133/</link>
-<guid isPermaLink="true">https://newslb.org/94133/</guid>
-<pubDate>Sat, 17 Oct 2026 06:36:04 +0000</pubDate>
-<description>أسرار الصحف اللبنانية الصادرة اليوم السبت في 17/10/2026</description>
-</item>
-<item>
-<title>واشنطن تفاجأت بالقرار اللبناني… فما المطلوب؟</title>
-<link>https://newslb.org/94130/</link>
-<guid isPermaLink="true">https://newslb.org/94130/</guid>
-<pubDate>Sat, 17 Oct 2026 06:22:42 +0000</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية واشنطن تفاجأت بالقرار اللبناني… فما المطلوب؟أكتوبر 17, 202638 زيارة1 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية واشنطن تفاجأت بالقرار اللبناني… فما المطلوب؟أكتوبر 17, 202638 زيارة1 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>ثلاثة حمير وشحنتان… تصل إلى واشنطن شكّل اتّصال وزير الخارجيّة الأميركيّ ماركو روبيو برئيس الجمهوريّة جوزف عون، وتحذيره من أنّ “إعادة شحنة المتفجّرات المضبوطة إلى “الحزب”</title>
-<link>https://newslb.org/94126/</link>
-<guid isPermaLink="true">https://newslb.org/94126/</guid>
-<pubDate>Sat, 17 Oct 2026 06:13:40 +0000</pubDate>
-<description>ثلاثة حمير وشحنتان… تصل إلى واشنطن شكّل اتّصال وزير الخارجيّة الأميركيّ ماركو روبيو برئيس الجمهوريّة جوزف عون، وتحذيره من أنّ “إعادة شحنة المتفجّرات المضبوطة إلى “الحزب”</description>
-</item>
-<item>
-<title>العفو العام سقط بين حسابات السلطة وصمت النواب… فمن يحاسب من؟*</title>
-<link>https://newslb.org/94108/</link>
-<guid isPermaLink="true">https://newslb.org/94108/</guid>
-<pubDate>Sat, 17 Oct 2026 05:42:18 +0000</pubDate>
-<description><![CDATA[<p>*العفو العام سقط بين حسابات السلطة وصمت النواب… فمن يحاسب من؟*</p>]]></description>
-<content:encoded><![CDATA[<p>*العفو العام سقط بين حسابات السلطة وصمت النواب… فمن يحاسب من؟*</p>]]></content:encoded>
-</item>
-<item>
-<title>شكوى ضدّ السفيرة اللبنانية تفجّر موقفًا أميركيًا غاضبًا.. “لن نتسامح”! استنكرت الخارجية الأميركية تقديم محامٍ شكوى ضد السفيرة اللبنانية في واشنطن، “ندى حمادة معوض”.</title>
-<link>https://newslb.org/94055/</link>
-<guid isPermaLink="true">https://newslb.org/94055/</guid>
-<pubDate>Wed, 14 Oct 2026 08:59:15 GMT</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية شكوى ضدّ السفيرة اللبنانية تفجّر موقفًا أميركيًا غاضبًا.. “لن نتسامح”! استنكرت الخارجية الأميركية تقديم محامٍ شكوى ضد السفيرة اللبنانية في واشنطن، “ندى حمادة معوض”.أكتوبر 14, 202615 زيارة1 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية شكوى ضدّ السفيرة اللبنانية تفجّر موقفًا أميركيًا غاضبًا.. “لن نتسامح”! استنكرت الخارجية الأميركية تقديم محامٍ شكوى ضد السفيرة اللبنانية في واشنطن، “ندى حمادة معوض”.أكتوبر 14, 202615 زيارة1 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>رسائل مُتفجّرة عابرة للحدود! لا يمكن التعامل مع إحباط محاولات تهريب المتفجرات من سوريا إلى لبنان باعتباره حدثاً أمنياً عابراً</title>
-<link>https://newslb.org/94049/</link>
-<guid isPermaLink="true">https://newslb.org/94049/</guid>
-<pubDate>Wed, 14 Oct 2026 07:15:13 GMT</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية رسائل مُتفجّرة عابرة للحدود! لا يمكن التعامل مع إحباط محاولات تهريب المتفجرات من سوريا إلى لبنان باعتباره حدثاً أمنياً عابراًأكتوبر 14, 202610 زيارة3 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية رسائل مُتفجّرة عابرة للحدود! لا يمكن التعامل مع إحباط محاولات تهريب المتفجرات من سوريا إلى لبنان باعتباره حدثاً أمنياً عابراًأكتوبر 14, 202610 زيارة3 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>عمال بلدية الميناء ينصبون خيمة داخل باحة البلدية احتجاجًا على تأخّر رواتبهم ومستحقاتهم لأكثر من ثلاثة أشهر</title>
-<link>https://newslb.org/94042/</link>
-<guid isPermaLink="true">https://newslb.org/94042/</guid>
-<pubDate>Wed, 14 Oct 2026 05:45:33 GMT</pubDate>
-<description>عمال بلدية الميناء ينصبون خيمة داخل باحة البلدية احتجاجًا على تأخّر رواتبهم ومستحقاتهم لأكثر من ثلاثة أشهر</description>
-</item>
-<item>
-<title>ماذا يحدث في أوروبا؟ تقرير إسرائيلي يتحدّث عن “انهيار”*</title>
-<link>https://newslb.org/93999/</link>
-<guid isPermaLink="true">https://newslb.org/93999/</guid>
-<pubDate>Sun, 11 Oct 2026 10:00:32 GMT</pubDate>
-<description><![CDATA[<p>أخبار دولية أخبار دولية *ماذا يحدث في أوروبا؟ تقرير إسرائيلي يتحدّث عن “انهيار”*أكتوبر 11, 202614 زيارة1 دقائق</p>]]></description>
-<content:encoded><![CDATA[<p>أخبار دولية أخبار دولية *ماذا يحدث في أوروبا؟ تقرير إسرائيلي يتحدّث عن “انهيار”*أكتوبر 11, 202614 زيارة1 دقائق</p>]]></content:encoded>
-</item>
-<item>
-<title>مساعدات «أمان» إلى 150 ألف عائلة العام المقبل!*</title>
-<link>https://newslb.org/93983/</link>
-<guid isPermaLink="true">https://newslb.org/93983/</guid>
-<pubDate>Sun, 11 Oct 2026 06:01:03 GMT</pubDate>
-<description><![CDATA[<p>*مساعدات «أمان» إلى 150 ألف عائلة العام المقبل!*</p>]]></description>
-<content:encoded><![CDATA[<p>*مساعدات «أمان» إلى 150 ألف عائلة العام المقبل!*</p>]]></content:encoded>
-</item>
-<item>
-<title>المدير العام للمؤسسة العامة لسكك الحديد والنقل المشترك زياد شيا ردّاً على منتقدي قطار البربارة: استعدنا السكة من الإهمال والتعديات من دون تحميل الخزينة قرشاً واحداً… ولن نتراجع عن إحياء سكك الحديد والتنمّر والتقليل من جه…</title>
-<link>https://newslb.org/93980/</link>
-<guid isPermaLink="true">https://newslb.org/93980/</guid>
-<pubDate>Sun, 11 Oct 2026 05:53:48 GMT</pubDate>
-<description>المدير العام للمؤسسة العامة لسكك الحديد والنقل المشترك زياد شيا ردّاً على منتقدي قطار البربارة: استعدنا السكة من الإهمال والتعديات من دون تحميل الخزينة قرشاً واحداً… ولن نتراجع عن إحياء سكك الحديد والتنمّر والتقليل من جه…</description>
-</item>
-<item>
-<title>رئيس الحكومة الأسبق نجيب ميقاتب لـ “يا أبيض يا أسود”: الرئيس نواف_سلام “باقٍ إلى ما شاء الله”</title>
-<link>https://newslb.org/93884/</link>
-<guid isPermaLink="true">https://newslb.org/93884/</guid>
-<pubDate>Tue, 06 Oct 2026 05:27:36 GMT</pubDate>
-<description>رئيس الحكومة الأسبق نجيب ميقاتب لـ “يا أبيض يا أسود”: الرئيس نواف_سلام “باقٍ إلى ما شاء الله”</description>
-</item>
-<item>
-<title>النائب ايهاب مطر إنّ استهداف المدينة المنوّرة ليس استهدافاً لمكانٍ فحسب، بل اعتداء مكتمل العناصر على الإسلام ومشاعر المسلمين في لبنان والعالم.</title>
-<link>https://newslb.org/93815/</link>
-<guid isPermaLink="true">https://newslb.org/93815/</guid>
-<pubDate>Fri, 02 Oct 2026 12:43:08 GMT</pubDate>
-<description>النائب ايهاب مطر إنّ استهداف المدينة المنوّرة ليس استهدافاً لمكانٍ فحسب، بل اعتداء مكتمل العناصر على الإسلام ومشاعر المسلمين في لبنان والعالم.</description>
-</item>
-<item>
-<title>النائب أديب عبد المسيح: «هناك معلومات وبوادر تشير إلى جهوزية لدى الحـ.zب للنزول إلى الشارع في أي وقت، في مشهد يشبه أحداث 7 أيار. وعلى الدولة أن تحتاط وتستبق الأمور، لأن البلد لن يتحمّل 7 أيار جديدًا».</title>
-<link>https://newslb.org/93730/</link>
-<guid isPermaLink="true">https://newslb.org/93730/</guid>
-<pubDate>Tue, 29 Sep 2026 19:38:37 GMT</pubDate>
-<description>النائب أديب عبد المسيح: «هناك معلومات وبوادر تشير إلى جهوزية لدى الحـ.zب للنزول إلى الشارع في أي وقت، في مشهد يشبه أحداث 7 أيار. وعلى الدولة أن تحتاط وتستبق الأمور، لأن البلد لن يتحمّل 7 أيار جديدًا».</description>
-</item>
-<item>
-<title>كتب النائب السابق مصباح الأحدب في سلسلة تغريدات عبر منصة إكس: الأحدب: انتبهوا ممن يحاول استغلال وجعكم ومطالبكم ليعيد إلى السلطة تحالف قوى الفساد والسلاح غير الشرعي.</title>
-<link>https://newslb.org/93722/</link>
-<guid isPermaLink="true">https://newslb.org/93722/</guid>
-<pubDate>Tue, 29 Sep 2026 16:33:34 GMT</pubDate>
-<description>كتب النائب السابق مصباح الأحدب في سلسلة تغريدات عبر منصة إكس: الأحدب: انتبهوا ممن يحاول استغلال وجعكم ومطالبكم ليعيد إلى السلطة تحالف قوى الفساد والسلاح غير الشرعي.</description>
-</item>
-<item>
-<title>ثورة في عالم الجراحة الروبوتية في لبنان والعالم العربي Ircad لبنان يستضيف حدثاً استثنائياً : جراحات روبوتية مباشرة وآفاق جديدة تصل إلى عمليات القلب وجراحة الصدر</title>
-<link>https://newslb.org/93641/</link>
-<guid isPermaLink="true">https://newslb.org/93641/</guid>
-<pubDate>Sat, 26 Sep 2026 09:03:33 GMT</pubDate>
-<description>ثورة في عالم الجراحة الروبوتية في لبنان والعالم العربي Ircad لبنان يستضيف حدثاً استثنائياً : جراحات روبوتية مباشرة وآفاق جديدة تصل إلى عمليات القلب وجراحة الصدر</description>
-</item>
-<item>
-<title>أفادت مديريّة العلاقات العامّة الصندوق الوطني للضمان الاجتماعي ، بأن “منذ نحو 8 أشهر، اتّخذت إدارة الصندوق خطوةً إصلاحيّة بالغة الأهميّة لدعم القطاع الاستشفائي، وذلك من خلال معالجة الملفات الماليّة المتراكمة وتسديد المست…</title>
-<link>https://newslb.org/93563/</link>
-<guid isPermaLink="true">https://newslb.org/93563/</guid>
-<pubDate>Wed, 23 Sep 2026 07:59:27 GMT</pubDate>
-<description>أفادت مديريّة العلاقات العامّة الصندوق الوطني للضمان الاجتماعي ، بأن “منذ نحو 8 أشهر، اتّخذت إدارة الصندوق خطوةً إصلاحيّة بالغة الأهميّة لدعم القطاع الاستشفائي، وذلك من خلال معالجة الملفات الماليّة المتراكمة وتسديد المست…</description>
-</item>
-</channel></rss>
+	<title>
+	تعليقات لموقع موقع لبنان الاخباري	</title>
+	<atom:link href="https://newslb.org/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://newslb.org/</link>
+	<description>منصّة إعلاميّة لبنانيّة عربيّة</description>
+	<lastBuildDate>Sun, 18 Oct 2026 14:55:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+</channel>
+</rss>
